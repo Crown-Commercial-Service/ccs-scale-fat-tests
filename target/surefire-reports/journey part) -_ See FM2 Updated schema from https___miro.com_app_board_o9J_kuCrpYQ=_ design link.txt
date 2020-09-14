@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: journey part) -> See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3,058.475 s <<< FAILURE! - in journey part) -> See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
+To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Devolved", selects Service area as "<serviceArea>" during the journey(GM Journey for FM2 framework (journey part) -> See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link)  Time elapsed: 45.133 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[contains(text(),'Start now')] (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Start now')]"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e4f18f1a8df4bb1b4a2cd46d8f2fd796
+*** Element info: {Using=xpath, value=//*[contains(text(),'Start now')]}
+

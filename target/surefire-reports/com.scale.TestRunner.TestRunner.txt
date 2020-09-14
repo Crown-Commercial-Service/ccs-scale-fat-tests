@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.scale.TestRunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! - in com.scale.TestRunner.TestRunner
+initializationError(com.scale.TestRunner.TestRunner)  Time elapsed: 0.004 s  <<< ERROR!
+cucumber.runtime.CucumberException: 
+gherkin.ParserException$CompositeParserException: Parser errors:
+(50:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'And User selects how much budget "<budgetRadio>" radio button'
+(51:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'And User enters budget amount "<enterBudgets>" in the budget field'
+Caused by: gherkin.ParserException$CompositeParserException: 
+Parser errors:
+(50:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'And User selects how much budget "<budgetRadio>" radio button'
+(51:5): expected: #EOF, #TableRow, #TagLine, #ExamplesLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'And User enters budget amount "<enterBudgets>" in the budget field'
+

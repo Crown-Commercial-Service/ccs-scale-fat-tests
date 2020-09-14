@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="1,605.048" tests="14" errors="14" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\308211\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\308211\IdeaProjects\scaleautomation\target\test-classes;C:\Users\308211\IdeaProjects\scaleautomation\target\classes;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\308211\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\308211\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\308211\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\308211\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\308211\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\308211\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\308211\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\308211\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\308211\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\308211\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.40.0\selenium-ie-driver-2.40.0.jar;C:\Users\308211\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\308211\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-java\4.2.5\cucumber-java-4.2.5.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-core\4.2.5\cucumber-core-4.2.5.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;C:\Users\308211\.m2\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-expressions\6.2.0\cucumber-expressions-6.2.0.jar;C:\Users\308211\.m2\repository\io\cucumber\datatable\1.1.12\datatable-1.1.12.jar;C:\Users\308211\.m2\repository\io\cucumber\datatable-dependencies\1.1.12\datatable-dependencies-1.1.12.jar;C:\Users\308211\.m2\repository\net\masterthought\cucumber-reporting\4.6.0\cucumber-reporting-4.6.0.jar;C:\Users\308211\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\308211\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\308211\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\308211\.m2\repository\velocity-tools\velocity-tools\1.4\velocity-tools-1.4.jar;C:\Users\308211\.m2\repository\joda-time\joda-time\2.10.1\joda-time-2.10.1.jar;C:\Users\308211\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\308211\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\308211\.m2\repository\org\codehaus\plexus\plexus-utils\3.1.1\plexus-utils-3.1.1.jar;C:\Users\308211\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\308211\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20190325.1\owasp-java-html-sanitizer-20190325.1.jar;C:\Users\308211\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\308211\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\308211\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\308211\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-picocontainer\4.2.5\cucumber-picocontainer-4.2.5.jar;C:\Users\308211\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\308211\.m2\repository\io\cucumber\gherkin\5.1.0\gherkin-5.1.0.jar;C:\Users\308211\.m2\repository\io\cucumber\gherkin-jvm-deps\1.0.4\gherkin-jvm-deps-1.0.4.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-junit\4.2.5\cucumber-junit-4.2.5.jar;C:\Users\308211\.m2\repository\io\appium\java-client\6.1.0\java-client-6.1.0.jar;C:\Users\308211\.m2\repository\com\google\code\gson\gson\2.8.4\gson-2.8.4.jar;C:\Users\308211\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\308211\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\308211\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\308211\.m2\repository\cglib\cglib\3.2.6\cglib-3.2.6.jar;C:\Users\308211\.m2\repository\org\ow2\asm\asm\6.0\asm-6.0.jar;C:\Users\308211\.m2\repository\org\apache\ant\ant\1.9.6\ant-1.9.6.jar;C:\Users\308211\.m2\repository\org\apache\ant\ant-launcher\1.9.6\ant-launcher-1.9.6.jar;C:\Users\308211\.m2\repository\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;C:\Users\308211\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\308211\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\308211\.m2\repository\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;C:\Users\308211\.m2\repository\org\aspectj\aspectjweaver\1.9.1\aspectjweaver-1.9.1.jar;C:\Users\308211\.m2\repository\org\openpnp\opencv\3.2.0-1\opencv-3.2.0-1.jar;C:\Users\308211\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\308211\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\308211\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\308211\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\308211\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\308211\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\308211\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\308211\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\308211\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\308211\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\308211\.m2\repository\org\json\json\20180813\json-20180813.jar;C:\Users\308211\.m2\repository\org\jboss\aerogear\aerogear-otp-java\1.0.0\aerogear-otp-java-1.0.0.jar;C:\Users\308211\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.0.pr1\jackson-databind-2.10.0.pr1.jar;C:\Users\308211\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.0.pr1\jackson-annotations-2.10.0.pr1.jar;C:\Users\308211\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.0.pr1\jackson-core-2.10.0.pr1.jar;C:\Users\308211\.m2\repository\io\github\bonigarcia\webdrivermanager\3.6.2\webdrivermanager-3.6.2.jar;C:\Users\308211\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\308211\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\308211\.m2\repository\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar;C:\Users\308211\.m2\repository\com\assertthat\selenium-shutterbug\0.8\selenium-shutterbug-0.8.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\308211\AppData\Local\Temp\surefire1693587070448887708\surefirebooter7110799786951374571.jar C:\Users\308211\AppData\Local\Temp\surefire1693587070448887708 2020-09-08T11-50-30_583-jvmRun1 surefire7646449105023658578tmp surefire_05950690228939607731tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\308211\IdeaProjects\scaleautomation\target\test-classes;C:\Users\308211\IdeaProjects\scaleautomation\target\classes;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\308211\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\308211\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\308211\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\308211\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\308211\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\308211\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\308211\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\308211\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\308211\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\308211\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.40.0\selenium-ie-driver-2.40.0.jar;C:\Users\308211\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\308211\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\308211\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-java\4.2.5\cucumber-java-4.2.5.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-core\4.2.5\cucumber-core-4.2.5.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;C:\Users\308211\.m2\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-expressions\6.2.0\cucumber-expressions-6.2.0.jar;C:\Users\308211\.m2\repository\io\cucumber\datatable\1.1.12\datatable-1.1.12.jar;C:\Users\308211\.m2\repository\io\cucumber\datatable-dependencies\1.1.12\datatable-dependencies-1.1.12.jar;C:\Users\308211\.m2\repository\net\masterthought\cucumber-reporting\4.6.0\cucumber-reporting-4.6.0.jar;C:\Users\308211\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\308211\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\308211\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\308211\.m2\repository\velocity-tools\velocity-tools\1.4\velocity-tools-1.4.jar;C:\Users\308211\.m2\repository\joda-time\joda-time\2.10.1\joda-time-2.10.1.jar;C:\Users\308211\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\308211\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\308211\.m2\repository\org\codehaus\plexus\plexus-utils\3.1.1\plexus-utils-3.1.1.jar;C:\Users\308211\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\308211\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20190325.1\owasp-java-html-sanitizer-20190325.1.jar;C:\Users\308211\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\308211\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\308211\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\308211\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-picocontainer\4.2.5\cucumber-picocontainer-4.2.5.jar;C:\Users\308211\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\308211\.m2\repository\io\cucumber\gherkin\5.1.0\gherkin-5.1.0.jar;C:\Users\308211\.m2\repository\io\cucumber\gherkin-jvm-deps\1.0.4\gherkin-jvm-deps-1.0.4.jar;C:\Users\308211\.m2\repository\io\cucumber\cucumber-junit\4.2.5\cucumber-junit-4.2.5.jar;C:\Users\308211\.m2\repository\io\appium\java-client\6.1.0\java-client-6.1.0.jar;C:\Users\308211\.m2\repository\com\google\code\gson\gson\2.8.4\gson-2.8.4.jar;C:\Users\308211\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\308211\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\308211\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\308211\.m2\repository\cglib\cglib\3.2.6\cglib-3.2.6.jar;C:\Users\308211\.m2\repository\org\ow2\asm\asm\6.0\asm-6.0.jar;C:\Users\308211\.m2\repository\org\apache\ant\ant\1.9.6\ant-1.9.6.jar;C:\Users\308211\.m2\repository\org\apache\ant\ant-launcher\1.9.6\ant-launcher-1.9.6.jar;C:\Users\308211\.m2\repository\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;C:\Users\308211\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\308211\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\308211\.m2\repository\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;C:\Users\308211\.m2\repository\org\aspectj\aspectjweaver\1.9.1\aspectjweaver-1.9.1.jar;C:\Users\308211\.m2\repository\org\openpnp\opencv\3.2.0-1\opencv-3.2.0-1.jar;C:\Users\308211\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\308211\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\308211\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\308211\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\308211\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\308211\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\308211\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\308211\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\308211\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\308211\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\308211\.m2\repository\org\json\json\20180813\json-20180813.jar;C:\Users\308211\.m2\repository\org\jboss\aerogear\aerogear-otp-java\1.0.0\aerogear-otp-java-1.0.0.jar;C:\Users\308211\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.0.pr1\jackson-databind-2.10.0.pr1.jar;C:\Users\308211\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.0.pr1\jackson-annotations-2.10.0.pr1.jar;C:\Users\308211\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.0.pr1\jackson-core-2.10.0.pr1.jar;C:\Users\308211\.m2\repository\io\github\bonigarcia\webdrivermanager\3.6.2\webdrivermanager-3.6.2.jar;C:\Users\308211\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\308211\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\308211\.m2\repository\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar;C:\Users\308211\.m2\repository\com\assertthat\selenium-shutterbug\0.8\selenium-shutterbug-0.8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\308211"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_191\jre"/>
+    <property name="basedir" value="C:\Users\308211\IdeaProjects\scaleautomation"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\308211\AppData\Local\Temp\surefire1693587070448887708\surefirebooter7110799786951374571.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_191-b12"/>
+    <property name="user.name" value="308211"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\308211\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\308211\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_191"/>
+    <property name="user.dir" value="C:\Users\308211\IdeaProjects\scaleautomation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Webex\Webex\Applications;C:\Development_Avecto\bin;C:\Users\308211\AppData\Local\Microsoft\WindowsApps;C:\Development_Avecto\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\308211\AppData\Local\Programs\Git\cmd;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;&lt;details&gt;&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;&lt;sector&gt;&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="104.064">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58083}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c538687fedce7bcc6f32f75e371537cf
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 11:50:33 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 11:50:33 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 11:50:46 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 11:51:27 INFO  BrowserFactory:91 -  launched
+2020-09-08 11:51:59 INFO  BrowserFactory:126 - 
+2020-09-08 11:52:02 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 21019
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Sep 08, 2020 11:50:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;&lt;details&gt;&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;&lt;sector&gt;&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="120.005">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59610}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6e77ca2ac92584a7aecf479d7b2fe341
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 12:15:18 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 12:15:18 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 12:15:35 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 12:16:39 INFO  BrowserFactory:91 -  launched
+2020-09-08 12:17:12 INFO  BrowserFactory:126 - 
+2020-09-08 12:17:15 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 5156
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1599563727.165][WARNING]: Timed out connecting to Chrome, retrying...
+[1599563731.167][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 08, 2020 12:15:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmMarketPlacePhase2&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Ministry of Defence or defence infrastructure organisation&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="142.999">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52113}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0a64afdb57f5ee5e3b63adf8a0ae1ebc
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 11:52:17 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 11:52:17 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 11:52:38 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 11:53:47 INFO  BrowserFactory:91 -  launched
+2020-09-08 11:54:20 INFO  BrowserFactory:126 - 
+2020-09-08 11:54:25 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 5815
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1599562345.303][WARNING]: Timed out connecting to Chrome, retrying...
+[1599562349.336][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 08, 2020 11:52:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmMarketPlacePhase2&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Ministry of Defence or defence infrastructure organisation&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="125.361">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63434}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b3e325e1d0bcb1c15ec6ef31e938ad20
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 11:54:40 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 11:54:40 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 11:54:55 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 11:56:09 INFO  BrowserFactory:91 -  launched
+2020-09-08 11:56:41 INFO  BrowserFactory:126 - 
+2020-09-08 11:56:44 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 35566
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1599562492.158][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 08, 2020 11:54:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmMarketPlacePhase2&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Ministry of Defence or defence infrastructure organisation&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="94.509">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4ff6e435764f96474d7a8a0847863c77
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 11:56:46 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 11:56:46 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 11:56:56 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 11:57:30 INFO  BrowserFactory:91 -  launched
+2020-09-08 11:58:02 INFO  BrowserFactory:126 - 
+2020-09-08 11:58:04 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 34747
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Sep 08, 2020 11:56:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 08, 2020 11:58:20 AM org.openqa.selenium.os.OsProcess destroy
+INFO: Unable to drain process streams. Ignoring but the exception being swallowed follows.
+org.apache.commons.exec.ExecuteException: The stop timeout of 2000 ms was exceeded (Exit value: -559038737)
+	at org.apache.commons.exec.PumpStreamHandler.stopThread(PumpStreamHandler.java:295)
+	at org.apache.commons.exec.PumpStreamHandler.stop(PumpStreamHandler.java:180)
+	at org.openqa.selenium.os.OsProcess.destroy(OsProcess.java:136)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:232)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:95)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at com.scale.context.TestContext.cleanUp(TestContext.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.TestCase.run(TestCase.java:49)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Sep 08, 2020 11:58:20 AM org.openqa.selenium.os.OsProcess destroy
+SEVERE: Unable to kill process java.lang.ProcessImpl@28e26fc4
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmMarketPlacePhase2&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Ministry of Defence or defence infrastructure organisation&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="127.118">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58018}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2d9440741115e57a55f7da587d8abc06
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 11:58:20 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 11:58:20 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 11:58:34 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 11:59:40 INFO  BrowserFactory:91 -  launched
+2020-09-08 12:00:13 INFO  BrowserFactory:126 - 
+2020-09-08 12:00:14 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 34234
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Sep 08, 2020 11:58:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmmDetails&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Central Government&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="133.922">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3712d78513727c34e17ce62f30198fbe
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 12:00:27 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Central Government", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 12:00:27 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 12:00:58 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 12:02:04 INFO  BrowserFactory:91 -  launched
+2020-09-08 12:02:37 INFO  BrowserFactory:126 - 
+2020-09-08 12:02:40 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Central Government", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 7320
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1599562846.471][WARNING]: Timed out connecting to Chrome, retrying...
+[1599562850.502][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 08, 2020 12:00:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmmDetails&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Education&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="110.573">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58501}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8dd2400b82127314dc5605a694b8dcd0
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 12:02:41 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Education", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 12:02:41 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 12:02:50 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 12:03:55 INFO  BrowserFactory:91 -  launched
+2020-09-08 12:04:27 INFO  BrowserFactory:126 - 
+2020-09-08 12:04:30 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Education", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 45152
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Sep 08, 2020 12:02:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmmDetails&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Devolved&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="124.203">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6a483cf743f7434252834eba226accef
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 12:04:32 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Devolved", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 12:04:32 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 12:04:44 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 12:06:01 INFO  BrowserFactory:91 -  launched
+2020-09-08 12:06:33 INFO  BrowserFactory:126 - 
+2020-09-08 12:06:35 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Devolved", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 23493
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Sep 08, 2020 12:04:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmmDetails&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Health&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="147.201">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 11bb62a4c8ddf1718d1e5584ed9a884e
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 12:06:36 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Health", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 12:06:36 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 12:07:07 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 12:08:27 INFO  BrowserFactory:91 -  launched
+2020-09-08 12:09:00 INFO  BrowserFactory:126 - 
+2020-09-08 12:09:02 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Health", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 30957
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1599563210.039][WARNING]: Timed out connecting to Chrome, retrying...
+[1599563214.077][WARNING]: Timed out connecting to Chrome, retrying...
+[1599563222.122][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 08, 2020 12:07:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmmDetails&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Blue light&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="80.251">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4e89100f7c8b2545a0769e46b89c04dc
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 12:09:03 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Blue light", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 12:09:03 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 12:09:09 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 12:09:42 INFO  BrowserFactory:91 -  launched
+2020-09-08 12:10:15 INFO  BrowserFactory:126 - 
+2020-09-08 12:10:17 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Blue light", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 31825
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Sep 08, 2020 12:09:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmmDetails&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Housing&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="116.6">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50228}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cba86eee288c249addd2340f0cf43a6b
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 12:10:23 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Housing", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 12:10:23 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 12:10:38 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 12:11:42 INFO  BrowserFactory:91 -  launched
+2020-09-08 12:12:14 INFO  BrowserFactory:126 - 
+2020-09-08 12:12:17 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Housing", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 44606
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1599563429.919][WARNING]: Timed out connecting to Chrome, retrying...
+[1599563433.919][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 08, 2020 12:10:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmmDetails&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;Charities&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="108.122">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 01b8db5e92454347bbd00a2012fdde76
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 12:12:20 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Charities", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 12:12:20 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 12:12:28 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 12:13:33 INFO  BrowserFactory:91 -  launched
+2020-09-08 12:14:06 INFO  BrowserFactory:126 - 
+2020-09-08 12:14:07 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Charities", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 36862
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Sep 08, 2020 12:12:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="To verify Buyer has provided with different recommendations &quot;&lt;recommServices&gt;&quot;, service details &quot;fmmDetails_buildingCleaningServices&quot; on GM results page after initiating GM journey for framework &quot;housing&quot; and after answering different set of question as sector looking for &quot;&lt;sector&gt;&quot;, selects Service area as &quot;&lt;serviceArea&gt;&quot; during the journey(GM Journey for FM2 framework " classname="Housing journey part) -&gt; See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link" time="70.074">
+    <error message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;framework_q&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='framework_q']' (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='framework_q']"}
+  (Session info: headless chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTIBUK06252', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\308211\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9141d87a42948755ed61f0ae77613f33
+*** Element info: {Using=xpath, value=//input[@id='framework_q']}
+</error>
+    <system-out><![CDATA[2020-09-08 12:14:08 INFO  TestContext:41 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails_buildingCleaningServices" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+2020-09-08 12:14:08 INFO  BrowserFactory:33 - Opening CHROME_HEADLESSbrowser
+Started in thread: 13, in JVM: 25044@LTIBUK06252
+2020-09-08 12:14:15 INFO  TestContext:54 - Successfully lunched the chrome browser
+2020-09-08 12:14:43 INFO  BrowserFactory:91 -  launched
+2020-09-08 12:15:16 INFO  BrowserFactory:126 - 
+2020-09-08 12:15:17 INFO  TestContext:90 - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails_buildingCleaningServices" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 21391
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1599563652.999][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 08, 2020 12:14:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

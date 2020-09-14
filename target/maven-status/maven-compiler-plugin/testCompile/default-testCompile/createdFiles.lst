@@ -1,0 +1,6 @@
+com\scale\stepdefs\SearchFrameworksPageSteps.class
+com\scale\stepdefs\GMPageSteps.class
+com\scale\context\TestContext.class
+com\scale\context\ScenarioContext.class
+com\scale\stepdefs\HomeSteps.class
+com\scale\TestRunner\TestRunner.class
