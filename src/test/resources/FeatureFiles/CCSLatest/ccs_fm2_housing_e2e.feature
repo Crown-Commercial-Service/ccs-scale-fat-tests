@@ -3,8 +3,10 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     #housing, hosing management and maintenance -> Estates
   @FM2Housing1 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
-    When User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>"
+    When User enters "<framework>" details
+    And User clicks on the "Start now" button
+    And User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
     And User selects which type of housing services is required "<housingServices>"
@@ -19,10 +21,12 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
       | Scenario 1 | housing   | Housing | Estate services |
 
     #housing, hosing management and maintenance -> MOD sector and non Mod sector
-  @FM2Housing2 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProd @Prod @SFC1050
+  @FM2Housing2 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
-    When User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>"
+    When User enters "<framework>" details
+    And User clicks on the "Start now" button
+    And User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
     And User selects which type of housing services is required "<housingServices>"
@@ -42,8 +46,8 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID   | framework | housing | housingServices                    | sector                                                     | frameworkId | expirationDate | details             | recommendation        | lots |
-      | Scenario 1   | housing   | Housing | Housing maintenance and management | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2b_fmtwolot2a | 2    |
+      | ScenarioID | framework | housing | housingServices                    | sector                                                     | frameworkId | expirationDate | details             | recommendation        | lots |
+      | Scenario 1 | housing   | Housing | Housing maintenance and management | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2b_fmtwolot2a | 2    |
 #      | Scenario 2   | housing   | Housing | Housing maintenance and management | Central Government                                         | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
 #      | Scenario 2.1 | housing   | Housing | Housing maintenance and management | Education                                                  | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
 #      | Scenario 2.2 | housing   | Housing | Housing maintenance and management | Devolved                                                   | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
@@ -53,10 +57,12 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
 #      | Scenario 2.6 | housing   | Housing | Housing maintenance and management | Charities                                                  | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
 
         #housing, Facilities -> Services multiple -> MOD sector
-  @FM2Housing3 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @SFC1050
+  @FM2Housing3 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
-    When User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>"
+    When User enters "<framework>" details
+    And User clicks on the "Start now" button
+    And User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
     And User selects which services "<services>" required multi choice checkboxes
@@ -77,15 +83,17 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
 
     Examples:
       | ScenarioID   | framework | housing               | services                                            | sector                                                     | frameworkId | expirationDate | details             | recommendation | lots |
-      | Scenario 1   | housing   | Facilities Management (FM) | Catering services_Statutory inspections and testing | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
-#      | Scenario 1.1 | housing   | Facilities Management | Cleaning services_Reception services                | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
-#      | Scenario 1.2 | housing   | Facilities Management | Cleaning services_Maintenance services              | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
+      | Scenario 1   | housing   | Facilities Management | Catering services_Statutory inspections and testing | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
+      | Scenario 1.1 | housing   | Facilities Management | Cleaning services_Reception services                | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
+      | Scenario 1.2 | housing   | Facilities Management | Cleaning services_Maintenance services              | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
 
    #housing, Facilities -> Services multiple -> non Mod sector
-  @FM2Housing4 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProd @Prod @SFC1050
+  @FM2Housing4 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
-    When User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>"
+    When User enters "<framework>" details
+    And User clicks on the "Start now" button
+    And User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
     And User selects which services "<services>" required multi choice checkboxes
@@ -103,8 +111,8 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID   | framework | housing               | services                                                                            | sector             | frameworkId | expirationDate | details    |
-      | Scenario 1   | housing   | Facilities Management (FM) | Cleaning services_Reception services                                                | Central Government | RM3830      | 09/07/2022     | fmmDetails |
+      | ScenarioID | framework | housing                    | services                             | sector             | frameworkId | expirationDate | details    |
+      | Scenario 1 | housing   | Facilities Management (FM) | Cleaning services_Reception services | Central Government | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 1.1 | housing   | Facilities Management | Cleaning services_Maintenance services                                              | Education          | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 1.2 | housing   | Facilities Management | Grounds maintenance and horticultural services_Waste services                       | Devolved           | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 1.3 | housing   | Facilities Management | Computer Aided Facility Management (CAFM) and helpdesk provision_Reception services | Health             | RM3830      | 09/07/2022     | fmmDetails |
@@ -113,10 +121,12 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
 #      | Scenario 1.6 | housing   | Facilities Management | Maintenance services_Reception services_Waste services                              | Charities          | RM3830      | 09/07/2022     | fmmDetails |
 
    #housing, Facilities -> Services: cleaning
-  @FM2Housing5 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @SFC1050
+  @FM2Housing5 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
-    When User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>"
+    When User enters "<framework>" details
+    And User clicks on the "Start now" button
+    And User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
     And User selects which services "<services>" required multi choice checkboxes
@@ -137,8 +147,10 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
    #housing, Facilities -> Services: Anything else
   @FM2Housing1 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
-    When User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>"
+    When User enters "<framework>" details
+    And User clicks on the "Start now" button
+    And User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
     And User selects which services "<services>" required multi choice checkboxes

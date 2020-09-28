@@ -110,6 +110,15 @@ public class E2ESteps {
         testContextObj.takeSnapShot();
     }
 
+    @When("User selects which location \"([^\"]*)\" multi selection")
+    public void user_selects_which_location(String serviceArea) throws InterruptedException {
+        homePageObj = objectManager.getHomePageObj();
+        String[] options = serviceArea.split("_");
+        List<String> optionList = new ArrayList<String>(Arrays.asList(options));
+        optionList.forEach((n) -> homePageObj.clickCheckBoxButton(n));
+        testContextObj.takeSnapShot();
+    }
+
     @When("User selects which type of housing is required \"([^\"]*)\"")
     public void user_selects_which_type_of_housing_required(String serviceArea) throws InterruptedException {
         /*e2EPageObj = objectManager.getE2EPageObj();
@@ -186,6 +195,20 @@ public class E2ESteps {
         String[] options = string.split("_");
         List<String> optionList = new ArrayList<String>(Arrays.asList(options));
         optionList.forEach((n) -> homePageObj.clickCheckBoxButton(n));
+        testContextObj.takeSnapShot();
+    }
+
+    @When("User select which \"([^\"]*)\" your requirements")
+    public void user_select_which_your_requirements(String areaSuits) {
+        homePageObj = objectManager.getHomePageObj();
+        homePageObj.clickRadioButton(areaSuits);
+        testContextObj.takeSnapShot();
+    }
+
+    @When("User selects which \"([^\"]*)\" your requirements")
+    public void user_selects_which_your_requirements(String areaSuits) {
+        homePageObj = objectManager.getHomePageObj();
+        homePageObj.clickRadioButton(areaSuits);
         testContextObj.takeSnapShot();
     }
 

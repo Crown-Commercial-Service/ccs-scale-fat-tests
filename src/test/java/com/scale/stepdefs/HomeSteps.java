@@ -16,6 +16,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.net.MalformedURLException;
+import java.util.ArrayList;
+
 
 public class HomeSteps {
     private Logger log = Log.getLogger(HomeSteps.class);
@@ -49,11 +51,23 @@ public class HomeSteps {
     @And("User enters \"([^\"]*)\" details")
     public void user_enters_details(String framework) throws MalformedURLException, InterruptedException {
         HomePage homePageObj = objectManager.getHomePageObj();
+       /* if (!(framework.matches("\\w+\\srandom"))) {
+            homePageObj.enterFrameworkDetails(framework);
+        } else {
+            String frameworksName = StringUtils.getMatchedGroupByIndexFromAString(framework, "(\\w+)(\\srandom)", 1);
+            ArrayList<String> keywordsList = StringUtils.getTxtItemsAsList("\\config\\" + frameworksName+ "KeywordsSets.txt");
+            int keywordIndex = StringUtils.getRandomIntNumberInRange(0, keywordsList.size() - 1);
+            testContextObj.setRandomlyPickedKeyWord(keywordsList.get(keywordIndex));
+            homePageObj.enterFrameworkDetails(testContextObj.getRandomlyPickedKeyWord());
+        }
+*/
+
         homePageObj.enterFrameworkDetails(framework);
         //        String iniUrl = driver.getCurrentUrl();
 //        iniUrl = iniUrl + "&feature=guidedmatch";
 //        driver.navigate().to(iniUrl);
         testContextObj.takeSnapShot();
+
 
     }
 

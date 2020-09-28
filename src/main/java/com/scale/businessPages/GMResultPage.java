@@ -172,7 +172,7 @@ public class GMResultPage extends Actions {
     }
 
     private String getFrameworksLotsRecommended() {
-        String frameworkLotsRecommendedText = "Framework(s)/Lot(s) recommendations";
+        String frameworkLotsRecommendedText = "Agreement(s)/Lot(s) recommendations";
         String returnedSearchPhrase = null;
         int frameworkLotsRecommendedIndex = -1;
         for (Map.Entry<Integer, String> entry : getQuestionsRowsText().entrySet()) {

@@ -12,7 +12,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 
     Examples:
       | ScenarioID | framework | lookingFor |
-      | Scenario 1 | linen     | Product    |
+      | Scenario 1 | linen random | Product    |
 
   @linenProduct2 @Regression @IntLinenTest
   Scenario Outline: To verify Buyer has initiated GM journey for framework "<framework>" and is provided with GM Escape page on selection of Product during the journey
@@ -88,7 +88,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
       | Scenario 4 | linen     | Service    | Yes         | 12345        | Yes           | 7              | Standard wash                 | No, I have everything I need | RM6154      | 19/03/2023     | linenDetails | lot1b          | 1    |
 
     #budget: < 1 mil , months: <12, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
-  @linenService2 @Regression @IntLinenTest
+  @linenService2 @Regression @IntLinenTest @PreProd @Prod @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User clicks on the "Start now" button
@@ -123,17 +123,17 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 1.2 | linen     | Service    | Yes         | 12345        | Yes           | 7              | Theatre pack and gowns        | Grounds maintenance | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 1.3 | linen     | Service    | Yes         | 12345        | Yes           | 11             | Theatre pack and gowns        | Catering            | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 1.4 | linen     | Service    | Yes         | 12345        | Yes           | 6              | Theatre pack and gowns        | Pest control        | RM3830      | 09/07/2022     | fmmDetails |
-      | Scenario 2 | linen     | Service    | Yes         | 12345        | Yes           | 5              | Cleanroom services            | Anything else | RM3830      | 09/07/2022     | fmmDetails |
+#      | Scenario 2 | linen     | Service    | Yes         | 12345        | Yes           | 5              | Cleanroom services            | Anything else | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 2.1 | linen     | Service    | Yes         | 12345        | Yes           | 1              | Cleanroom services            | Security            | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 2.2 | linen     | Service    | Yes         | 12345        | Yes           | 2              | Cleanroom services            | Grounds maintenance | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 2.3 | linen     | Service    | Yes         | 12345        | Yes           | 3              | Cleanroom services            | Catering            | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 2.4 | linen     | Service    | Yes         | 12345        | Yes           | 4              | Cleanroom services            | Pest control        | RM3830      | 09/07/2022     | fmmDetails |
-      | Scenario 3 | linen     | Service    | Yes         | 12345        | Yes           | 5              | Linen hire with standard wash | Anything else | RM3830      | 09/07/2022     | fmmDetails |
+#      | Scenario 3 | linen     | Service    | Yes         | 12345        | Yes           | 5              | Linen hire with standard wash | Anything else | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 3.1 | linen     | Service    | Yes         | 12345        | Yes           | 1              | Linen hire with standard wash | Security            | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 3.2 | linen     | Service    | Yes         | 12345        | Yes           | 2              | Linen hire with standard wash | Grounds maintenance | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 3.3 | linen     | Service    | Yes         | 12345        | Yes           | 3              | Linen hire with standard wash | Catering            | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 3.4 | linen     | Service    | Yes         | 12345        | Yes           | 4              | Linen hire with standard wash | Pest control        | RM3830      | 09/07/2022     | fmmDetails |
-      | Scenario 4 | linen     | Service    | Yes         | 12345        | Yes           | 5              | Standard wash                 | Anything else | RM3830      | 09/07/2022     | fmmDetails |
+#      | Scenario 4 | linen     | Service    | Yes         | 12345        | Yes           | 5              | Standard wash                 | Anything else | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 4.1 | linen     | Service    | Yes         | 12345        | Yes           | 1              | Standard wash                 | Security            | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 4.2 | linen     | Service    | Yes         | 12345        | Yes           | 2              | Standard wash                 | Grounds maintenance | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 4.3 | linen     | Service    | Yes         | 12345        | Yes           | 3              | Standard wash                 | Catering            | RM3830      | 09/07/2022     | fmmDetails |

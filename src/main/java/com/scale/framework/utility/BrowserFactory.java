@@ -44,7 +44,9 @@ public class BrowserFactory {
                 //Uncomment below lines if you would like to run it in incognito mode
 //                ChromeOptions option = new ChromeOptions();
 //                option.addArguments("--incognito");
-                driver = new ChromeDriver();
+                ChromeOptions option = new ChromeOptions();
+                option.addArguments("--ignore-ssl-errors=yes", "--ignore-certificate-errors");
+                driver = new ChromeDriver(option);
                 driver.manage().window().maximize();
                 break;
             case "SAFARI":
@@ -68,6 +70,7 @@ public class BrowserFactory {
 //                options.addArguments("user-data-dir=" + actualPath + "/Library/Application Support/Google/Chrome");
                 options.addArguments("--no-sandbox");
                 options.addArguments("--headless");
+                options.addArguments("--ignore-ssl-errors=yes", "--ignore-certificate-errors");
                 options.setExperimentalOption("useAutomationExtension", false);
                 // options.addArguments("disable-infobars");
                 // options.addArguments("--disable-extensions");

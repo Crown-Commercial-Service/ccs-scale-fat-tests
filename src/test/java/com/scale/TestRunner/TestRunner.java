@@ -16,7 +16,7 @@ import java.io.IOException;
         monochrome = true,
         plugin = { "pretty", "html:target/cucumber-html-reports", "json:target/cucumber-html-reports/cucumber.json"},
 
-        tags = "@TechnicalErrorHandling"
+        tags = "@legalAdvice3"
 //                "@IntLinenTest,@IntLegalTest,@IntTechEduTest,@FM2HousingIntTest"
 )
 

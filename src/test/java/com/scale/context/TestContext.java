@@ -4,6 +4,7 @@ package com.scale.context;
 import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
+import com.scale.framework.utility.*;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -12,12 +13,14 @@ import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import com.scale.framework.utility.*;
+
 import javax.imageio.ImageIO;
 import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.net.MalformedURLException;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -33,7 +36,7 @@ public class TestContext {
     private ConfigurationReader configReader;
     public List<String> navigationButtonList;
     public String allPageScreenshotFlag;
-
+    private String randomlyPickedKeyWord;
 
 
     @Before
@@ -74,11 +77,20 @@ public class TestContext {
     }
 
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException {
-        scenarioContext.setKeyValue("ScenarioID",ScenarioID);
+    public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
+        scenarioContext.setKeyValue("ScenarioID", ScenarioID);
         objectManager = new PageObjectManager(driver, scenario);
-        browserFactory.launchURL("appscaleintURL", searchedFramework.toLowerCase());
-        scenario.write("CCS application is launched");
+        if (!(searchedFramework.matches("\\w+\\srandom"))) {
+            browserFactory.launchURL("appscaleintURL", searchedFramework.toLowerCase());
+            scenario.write("CCS application is launched");
+        } else {
+            String frameworksName = StringUtils.getMatchedGroupByIndexFromAString(searchedFramework, "(\\w+)(\\srandom)", 1);
+            ArrayList<String> keywordsList = StringUtils.getTxtItemsAsList("\\config\\" + frameworksName+ "KeywordsSets.txt");
+            int keywordIndex = StringUtils.getRandomIntNumberInRange(0, keywordsList.size() - 1);
+            randomlyPickedKeyWord = keywordsList.get(keywordIndex);
+            browserFactory.launchURL("appscaleintURL", randomlyPickedKeyWord.toLowerCase());
+            scenario.write("CCS application is launched");
+        }
     }
 
     @After
@@ -134,5 +146,11 @@ public class TestContext {
         return jsonUtilityObj;
     }
 
+    public String getRandomlyPickedKeyWord() {
+        return randomlyPickedKeyWord;
+    }
 
+    public void setRandomlyPickedKeyWord(String randomlyPickedKeyWord) {
+        this.randomlyPickedKeyWord = randomlyPickedKeyWord;
+    }
 }

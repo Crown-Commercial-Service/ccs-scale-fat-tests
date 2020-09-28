@@ -45,13 +45,18 @@ public class GMResultPageSteps {
     @And("User is displayed with initial search phrase from \"([^\"]*)\"")
     public void user_is_displayed_with_initial_search_phrase(String initialSearchPhrase) {
         gmResultPage = objectManager.getGmSearchResultPageObj();
-        gmResultPage.checkTheInitialSearchPhrase(initialSearchPhrase);
+        if (!(initialSearchPhrase.matches("\\w+\\srandom"))) {
+            gmResultPage.checkTheInitialSearchPhrase(initialSearchPhrase);
+        } else {
+            gmResultPage.checkTheInitialSearchPhrase(testContextObj.getRandomlyPickedKeyWord());
+        }
         testContextObj.takeSnapShot();
     }
 
     @And("User is displayed with Framework Lot Recommended: \"([^\"]*)\"")
     public void user_is_displayed_with_frameworks_lots_recommended(String frameworksLotsRecommended) {
-        List<String> frameworkId = new ArrayList<String>();;
+        List<String> frameworkId = new ArrayList<String>();
+        ;
         if (frameworksLotsRecommended.matches("([A-Z]+[0-9]+)([a-z]+[0-9]+[a-z]{0,5})(?:_[a-z]+[0-9]+[a-z]{0,5})*")) {
             frameworkId.add(frameworksLotsRecommended);
         } else {
@@ -82,8 +87,9 @@ public class GMResultPageSteps {
     public void user_is_displayed_with_answer_for_question(String answer, String question) {
         if (answer.contains("_")) {
             answer = answer.replace("_", ", ");
-        } else if (answer.contains("£")) {
-            answer = "£" +NumberFormat.getInstance(Locale.UK).format(parseInt(answer.replace("£", "")));
+        }
+        if (answer.contains("£")) {
+            answer = "£" + NumberFormat.getInstance(Locale.UK).format(parseInt(answer.replace("£", "")));
         }
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkTheAnswerForTheQuestion(question, answer);
@@ -110,7 +116,7 @@ public class GMResultPageSteps {
             String fullExpectedResult = configurationReader.returnProperty(frameworkId[i] + frameworksLotsRecommended);
             String framework = frameworkId[i];
             //if (frameworkId[i].matches("\\D+\\d+[a-zA-Z]+\\d+"))
-                if (frameworkId[i].matches("\\D+\\d+[a-zA-Z]+\\d+\\D?")) {
+            if (frameworkId[i].matches("\\D+\\d+[a-zA-Z]+\\d+\\D?")) {
                 framework = StringUtils.getMatchedGroupByIndexFromAString(frameworkId[i], "(^\\D+\\d+)([a-zA-Z]+.*$)", 1).trim();
             }
             gmResultPage = objectManager.getGmSearchResultPageObj();
@@ -190,7 +196,7 @@ public class GMResultPageSteps {
         if (condition) {
             for (int i = 0; i < framework.length; i += 2) {
                 String[] recommendations = framework[i].split("_");
-                String[] indexes = framework[i+1].split("");
+                String[] indexes = framework[i + 1].split("");
                 gmResultPage = objectManager.getGmSearchResultPageObj();
                 gmResultPage.checkFrameworkLotsAndDetails(recommendations, Integer.parseInt(indexes[i]));
                 testContextObj.takeSnapShot();

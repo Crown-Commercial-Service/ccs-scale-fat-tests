@@ -51,10 +51,12 @@ public class E2EPage extends Actions {
     @FindBy(xpath = "")
     private WebElement budRadioNo;
 
-    @FindBy(xpath = "//input[@class='govuk-input govuk-!-width-one-third custom-input width-pound']")
+    @FindBy(xpath = "//input[@class='govuk-input govuk-!-width-one-third custom-input conditional-input-selector\n" +
+            "                            width-pound']")
     private WebElement enterBudget;
 
-    @FindBy(xpath = "//input[@class='govuk-input govuk-!-width-one-third custom-input width-month']")
+    @FindBy(xpath = "//input[@class='govuk-input govuk-!-width-one-third custom-input conditional-input-selector\n" +
+            "                            width-month']")
     private WebElement enterContract;
 
     @FindBy(xpath = "")
