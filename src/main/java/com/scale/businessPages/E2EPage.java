@@ -6,6 +6,7 @@ import com.scale.framework.utility.Log;
 import cucumber.api.Scenario;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -819,9 +820,10 @@ public class E2EPage extends Actions {
     public void checkTheFocusAfterClickingErrorSummary() {
         errorSummaryLink.click();
         WebElement focused = driver.switchTo().activeElement();
-        focused.click();
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", focused);
         Assert.assertTrue("The element is not in focus", firstSelectableElement.isSelected());
-        focused.click();
+        executor.executeScript("arguments[0].click();", focused);
     }
 
 }
