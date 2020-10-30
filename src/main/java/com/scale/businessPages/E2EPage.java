@@ -43,7 +43,8 @@ public class E2EPage extends Actions {
     @FindBy(xpath = "//label[@class='govuk-label govuk-radios__label'][contains(text(),'Product')]")
     private WebElement productRadio;
 
-    @FindBy(xpath = "//a[@class='govuk-back-link'][contains(text(),'Back')]")
+    //@FindBy(xpath = "//a[@class='govuk-back-link'][contains(text(),'Back')]")
+    @FindBy(css = "a.govuk-back-link")
     private WebElement backCTA;
 
     @FindBy(xpath = "")
@@ -814,13 +815,19 @@ public class E2EPage extends Actions {
 
     public void clickOnTheBackCTA() {
         waitForSeconds(3);
-        backCTA.click();
+
+        // TODO: code cleanup - common javascript methods needs to be implemented
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].scrollIntoView();", backCTA);
+        executor.executeScript("arguments[0].click();", backCTA);
     }
 
     public void checkTheFocusAfterClickingErrorSummary() {
-        errorSummaryLink.click();
-        WebElement focused = driver.switchTo().activeElement();
         JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].scrollIntoView();", errorSummaryLink);
+        executor.executeScript("arguments[0].click();", errorSummaryLink);
+
+        WebElement focused = driver.switchTo().activeElement();
         executor.executeScript("arguments[0].click();", focused);
         Assert.assertTrue("The element is not in focus", firstSelectableElement.isSelected());
         executor.executeScript("arguments[0].click();", focused);
