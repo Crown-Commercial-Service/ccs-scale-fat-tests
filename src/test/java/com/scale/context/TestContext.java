@@ -72,7 +72,7 @@ public class TestContext {
     public void User_logs_in_to_the_CCS_application_for(String ScenarioID) throws MalformedURLException, InterruptedException {
         scenarioContext.setKeyValue("ScenarioID",ScenarioID);
         objectManager = new PageObjectManager(driver, scenario);
-        browserFactory.launchURL("appccswebdev");
+        browserFactory.launchURL("appccswebURL");
         scenario.write("CCS application is launched");
     }
 
