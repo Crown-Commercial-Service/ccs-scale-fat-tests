@@ -1,10 +1,10 @@
+@regTests
 Feature: GM Journey for FM2 framework (Technical and Security journey branch) -> See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
 
-  @TechnicalSecService1 @Regression @PreProd @Prod
+  @TechnicalSecService1 @Regression @PreProd @Prod @CCS
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     And User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
@@ -28,11 +28,10 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
       | Scenario 1 | Detection          | Security Services | Technical security | Risk assessments                               | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
       | Scenario 2 | Technical security | Security Services | Technical security | Design and installation of electronic security | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
 
-  @TechnicalSecService12 @Regression @PreProd @Prod
+  @TechnicalSecService12 @Regression @PreProd @Prod @CCS
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     And User clicks on the "Start now" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
     And  User clicks on the "Continue" button
@@ -52,14 +51,13 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
     Examples:
       | ScenarioID | framework  | secTypeRadio       | techSecurity                                 | frameworkId | expirationDate | details | recommendation | lots |
       | Scenario 1 | Monitoring | Technical security | Design and installation of physical security | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
-#      | Scenario 2 | Intrusion  | Technical security | Anything else                                | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
+      | Scenario 2 | Intrusion  | Technical security | Anything else                                | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
 
 
-  @SecurityServices1 @Regression @PreProd @Prod
+  @SecurityServices1 @IntSecurityServices @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     And User clicks on the "Start now" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
     And  User clicks on the "Continue" button
@@ -95,11 +93,10 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 #      | Scenario 9  | cctv      | Security services | Physical security_ Alarm response centres                               | Catering services                                    | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | wpsfm2  | seclot3        | 1    |
 #      | Scenario 10 | cctv      | Security services | Security risk assessment_Design of security systems_Electronic security | Reception services_Waste services                    | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | wpsfm2  | seclot3        | 1    |
 
-  @SecurityServices2 @Regression @PreProd @Prod
+  @SecurityServices2 @IntSecurityServices @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     And User clicks on the "Start now" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
     And  User clicks on the "Continue" button
@@ -133,11 +130,10 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 #      | Scenario 9  | cctv      | Security services | Guarding services and patrols_Electronic security | Statutory inspections and testing_Reception services                | Central Government | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 10 | cctv      | Security services | Guarding services and patrols                     | Statutory inspections and testing_Catering services                 | Central Government | RM3830      | 09/07/2022     | fmmDetails |
 
-  @SecurityServices3 @Regression @TechSecurityServices3
+  @SecurityServices3 @TechSecurityServices3 @IntSecurityServices
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     And User clicks on the "Start now" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
     And  User clicks on the "Continue" button
@@ -157,13 +153,12 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
     Examples:
       | ScenarioID | framework | secTypeRadio                             | secserviceAreaOpt | frameworkId | expirationDate | details | recommendation     | lots |
       | Scenario 1 | cctv      | Security services                        | Anything else     | RM6089      | 24/01/2023     | wpsfm2  | seclot1a_techlot1b | 2    |
-#      | Scenario 2 | cctv      | Security services and technical security | Anything else     | RM6089      | 24/01/2023     | wpsfm2  | techlot1b_seclot1a | 2    |
+      | Scenario 2 | cctv      | Security services and technical security | Anything else     | RM6089      | 24/01/2023     | wpsfm2  | techlot1b_seclot1a | 2    |
 
-  @SecurityServices4 @TechnicalSecurityServices4 @Regression @PreProd @Prod
+  @SecurityServices4 @TechnicalSecurityServices4 @IntSecurityServices @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     And User clicks on the "Start now" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
     And  User clicks on the "Continue" button
@@ -189,11 +184,10 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 #      | Scenario 2 | cctv      | Security services | Alarm response centres        | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
 #      | Scenario 3 | cctv      | Security services | Helpdesk services             | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
 
-  @TechSecurityServices1 @Regression @PreProd @Prod
+  @TechSecurityServices1 @IntSecurityServices @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     And User clicks on the "Start now" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
     And  User clicks on the "Continue" button
@@ -218,7 +212,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 
     Examples:
       | ScenarioID | framework  | secTypeRadio                             | secserviceAreaOpt             | addFacilities        | sectorRadio                                                | frameworkId | expirationDate | details | recommendation   | lots |
-      | Scenario 1 | Monitoring | Security services and technical security | Guarding services and patrols | Maintenance services | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | wpsfm2  | seclot1a_seclot3 | 2    |
+      | Scenario 1 | Monitoring | Security services and technical security | Guarding services and patrols | Maintenance services | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | wpsfm2  | seclot3_seclot1a | 2    |
 #      | Scenario 2 | cctv      | Security services and technical security | Alarm response centres                          | Waste services                                 | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | wpsfm2  | seclot1a_seclot3 | 2    |
 #      | Scenario 3 | cctv      | Security services and technical security | Helpdesk services                               | Statutory inspections and testing              | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | wpsfm2  | seclot1a_seclot3 | 2    |
 #      | Scenario 4 | cctv      | Security services and technical security | Security risk assessment                        | Grounds maintenance and horticultural services | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | wpsfm2  | seclot1a_seclot3 | 2    |
@@ -227,11 +221,10 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 #      | Scenario 7 | cctv      | Security services and technical security | Physical security                               | Cleaning services_Waste services               | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | wpsfm2  | seclot1a_seclot3 | 2    |
 #      | Scenario 8 | cctv      | Security services and technical security | Physical security_Guarding services and patrols | Cleaning services_Maintenance services         | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | wpsfm2  | seclot1a_seclot3 | 2    |
 
-  @TechSecurityServices2 @Regression @PreProd @Prod
+  @TechSecurityServices2 @IntSecurityServices @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     And User clicks on the "Start now" button
     And User select which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
@@ -269,11 +262,10 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 #      | Scenario 9 | cctv      |Security Services |Security services and technical security | Physical security_Security risk assessment | Reception services_Grounds maintenance and horticultural services | Charities   | RM3830_RM6089 | 09/07/2022_24/01/2023 | fmmDetails_wpsfm2 | seclot1a       | 1    | 2     |
 
 
-  @SecurityServices4 @TechnicalSecurityServices4 @Regression
+  @SecurityServices4 @TechnicalSecurityServices4 @IntSecurityServices
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     And User clicks on the "Start now" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
     And  User clicks on the "Continue" button
@@ -296,5 +288,5 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
     Examples:
       | ScenarioID | framework | secTypeRadio                             | secserviceAreaOpt             | addFacilities                | frameworkId | expirationDate | details | recommendation | lots |
       | Scenario 1 | cctv      | Security services and technical security | Alarm response centres        | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
-#      | Scenario 2 | cctv      | Security services and technical security | Helpdesk services             | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
-#      | Scenario 3 | cctv      | Security services and technical security | Guarding services and patrols | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
+      | Scenario 2 | cctv      | Security services and technical security | Helpdesk services             | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
+      | Scenario 3 | cctv      | Security services and technical security | Guarding services and patrols | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |

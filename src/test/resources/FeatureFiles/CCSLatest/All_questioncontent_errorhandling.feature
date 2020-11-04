@@ -1,10 +1,10 @@
+@regTests
 Feature: Scenarios for checking all questions and errors handling content for each flows and Routes to Market content
 
   @linenQuestionContent @LinenErrorHandling @linenRoutesToMarketContent
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     Then User checks question content for question "linen-qst1"
     When User clicks on the "Continue" button
@@ -47,9 +47,8 @@ Feature: Scenarios for checking all questions and errors handling content for ea
 
   @legalQuestionContent @LegalErrorHandling @LegalRoutesToMarketContent
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     Then User checks question content for question "legal-qst1"
     When User clicks on the "Continue" button
@@ -76,7 +75,7 @@ Feature: Scenarios for checking all questions and errors handling content for ea
     Then User checks question content for question "legal-qst3.1"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "legal-qst3.1"
-    And User selects which location "<location>" multi selection
+    And User selects which sector are you looking for "<location>" radio button
     And User clicks on the "Continue" button
     Then User checks Routes to Market Definitions content on "routesToMarketContent"
 
@@ -86,9 +85,8 @@ Feature: Scenarios for checking all questions and errors handling content for ea
 
   @Fm2HousingQuestionContent @Fm2HousingErrorHandling @Fm2HousingRoutesToMarketContent
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     Then User checks question content for question "housing-qst1"
     When User clicks on the "Continue" button
@@ -119,5 +117,5 @@ Feature: Scenarios for checking all questions and errors handling content for ea
     And User clicks on the "Continue" button
     Then User checks Routes to Market Definitions content on "routesToMarketContent"
     Examples:
-      | ScenarioID | framework | sectorRadio1 | sectorRadio2               | housingServices                    | services                         | sector    |
-      | Scenario 1 | housing   | Housing      | Facilities Management (FM) | Housing maintenance and management | Cleaning services_Waste services | Education |
+      | ScenarioID | framework | sectorRadio1 | sectorRadio2          | housingServices                    | services                         | sector    |
+      | Scenario 1 | housing   | Housing      | Facilities Management | Housing maintenance and management | Cleaning services_Waste services | Education |
