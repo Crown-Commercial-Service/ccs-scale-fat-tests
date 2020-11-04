@@ -1,6 +1,6 @@
 Feature: GM Journey for Linen framework -> See Linen schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
 
-  @linenProduct1 @Regression @CCS
+  @linenProduct1 @Regression
   Scenario Outline: To verify Buyer has initiated GM journey for framework "<framework>" and is provided with GM Escape page on selection of Product during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -16,7 +16,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
       | ScenarioID | framework | lookingFor |
       | Scenario 1 | linen     | Product    |
 
-  @linenProduct2 @Regression @CCS
+  @linenProduct2 @Regression
   Scenario Outline: To verify Buyer has initiated GM journey for framework "<framework>" and is provided with GM Escape page on selection of Product during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -55,7 +55,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
       | Scenario 1 | LINEN     | Product    | Service     | No          | No            | Theatre pack and gowns | Anything else | RM3830      | 09/07/2022     | fmmDetails |
 
     #budget: < 1 mil , months: <12, addFacilities: answer No
-  @linenService1  @Regression @CCS
+  @linenService1  @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -94,7 +94,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4 | laundry services | Service    | Yes         | 12345        | Yes           | 7              | Standard wash                 | No, I have everything I need | RM6154      | 19/03/2023     | linenDetails | lot1b          | 1    |
 
     #budget: < 1 mil , months: <12, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
-  @linenService2 @Regression @PreProd @Prod @CCS
+  @linenService2 @Regression @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -148,7 +148,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4.4 | linen    | Service    | Yes         | 12345        | Yes           | 4              | Standard wash                 | Pest control        | RM3830      | 09/07/2022     | fmmDetails |
 
       #budget: > 1 mil, addFacilities: answer No
-  @linenService3 @Regression @CCS
+  @linenService3 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -183,7 +183,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4 | Laundry           | Service    | Yes         | 12345000     | Standard wash                 | No, I have everything I need | RM6154      | 19/03/2023     | linenDetails | lot1b          | 1    |
 
     #budget: > 1 mil, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
-  @linenService4111 @Regression @CCS
+  @linenService4111 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -233,7 +233,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4.4 | linen     | Service    | Yes         | 12345000     | Standard wash                 | Pest control        | RM3830      | 09/07/2022     | fmmDetails |
 
     #budget: < 1 mil , months: >12, addFacilities: answer No
-  @linenService5 @Regression @CCS
+  @linenService5 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -272,7 +272,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4 | Laundry           | Service    | Yes         | 12345        | Yes           | 30             | Standard wash                 | No, I have everything I need | RM6154      | 19/03/2023     | linenDetails | lot1b          | 1    |
 
     #budget: < 1 mil , months: >12, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
-  @linenService6 @Regression @CCS
+  @linenService6 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -326,7 +326,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4.4 | linen     | Service    | Yes         | 12345        | Yes           | 34             | Standard wash                 | Pest control        | RM3830      | 09/07/2022     | fmmDetails |
 
     #budget: don't know/not sure, months: <12, addFacilities: answer No
-  @linenService7 @Regression @CCS
+  @linenService7 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -364,7 +364,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4 | linen             | Service    | No          | Yes           | 8              | Standard wash                 | No, I have everything I need | RM6154      | 19/03/2023     | linenDetails | lot1b          | 1    |
 
     #budget: don't know/not sure, months: <12, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
-  @linenService8 @Regression @CCS
+  @linenService8 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -417,7 +417,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4.4 | linen     | Service    | No          | Yes           | 4              | Standard wash                 | Pest control        | RM3830      | 09/07/2022     | fmmDetails |
 
    #budget: don't know/not sure, months: >12, addFacilities: answer No
-  @linenService9 @Regression @CCS
+  @linenService9 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -455,7 +455,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4 | linen     | Service    | No          | Yes           | 18             | Standard wash                 | No, I have everything I need | RM6154      | 19/03/2023     | linenDetails | lot1b          | 1    |
 
    #budget: don't know/not sure, months: >12, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
-  @linenService10 @Regression @CCS
+  @linenService10 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -508,7 +508,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4.4 | linen     | Service    | No          | Yes           | 24             | Standard wash                 | Pest control        | RM3830      | 09/07/2022     | fmmDetails |
 
    #budget: don't know/not sure, months: don't know/not sure, addFacilities: answer No
-  @linenService11 @Regression @CCS
+  @linenService11 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -545,7 +545,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4 | linen     | Service    | No          | No            | Standard wash                 | No, I have everything I need | RM6154      | 19/03/2023     | linenDetails | lot1b          | 1    |
 
    #budget don't know/not sure, months: don't know/not sure, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
-  @linenService12 @Regression @CCS
+  @linenService12 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -597,7 +597,7 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 #      | Scenario 4.4 | linen     | Service    | No          | No            | Standard wash                 | Pest control        | RM3830      | 09/07/2022     | fmmDetails |
 
      #budget don't know/not sure, months: don't know/not sure, addFacilities: answer multiple
-  @linenService12 @Regression @CCS
+  @linenService12 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details

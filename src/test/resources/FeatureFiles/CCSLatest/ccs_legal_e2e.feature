@@ -1,7 +1,7 @@
 Feature: GM Journey for Legal framework -> See Linen schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
 
   #sector= Central Government, service Area leads to route (one option ore multiple from same kind)
-  @IntlegalAdvice1 @Regression @CCS
+  @IntlegalAdvice1 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -26,7 +26,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 #      | Scenario 2 | wps le       | Ministry of Defence or defence infrastructure organisation | Finance & Complex | RM3786_RM3787 | 27/12/2021_20/12/2021 | GLAS_financeAndComplexLegalServices |
 #      | Scenario 3 | wps legal    | Central Government                                         | Anything else     | RM3786_RM3787 | 27/12/2021_20/12/2021 | GLAS_financeAndComplexLegalServices |
 
-  @IntlegalAdvice1 @Regression @CCS
+  @IntlegalAdvice1 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -55,7 +55,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 
 
     #sector= Central Government, service Area leads budget question with answer no/not sure
-  @legalAdvice2 @Regression @CCS
+  @legalAdvice2 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -86,7 +86,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 #      | Scenario 3 | lawyer    | Ministry of Defence or defence infrastructure organisation | Property              | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 
     #sector= Central Government, service Area leads budget question with answer >20k
-  @legalAdvice3 @Regression @CCS
+  @legalAdvice3 @Regression
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -114,7 +114,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
       | Scenario 1 | Negotiation | Central Government | Employment litigation | Yes         | 20000        | RM3786      | 27/12/2021     | GLAS    |
 #      | Scenario 2 | legal counsel | Ministry of Defence or defence infrastructure organisation | Litigation            | Yes         | 35000        | RM3786      | 27/12/2021     | GLAS    |
 
-  @legalAdvice31 @Regression @CCS
+  @legalAdvice31 @Regression
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -143,7 +143,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
       | Scenario 1 | Conveyancing | Legal     | Central Government | Property    | Yes         | 20001        | RM3786      | 27/12/2021     | GLAS    |
 
    #sector= Central Government, service Area leads budget question with answer <20k
-  @legalAdvice4 @Regression @CCS
+  @legalAdvice4 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -174,7 +174,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 #      | Scenario 3 | legal Representation | Central Government                                         | Property              | Yes         | 19999        | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 
    #sector not Central Government, service Area leads to route (one option ore multiple from same kind)
-  @legalAdvice5 @Regression @CCS
+  @legalAdvice5 @Regression
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -206,7 +206,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 #      | Scenario 9  | draftsman      | Education        | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
 #      | Scenario 10 | Drafting       | Devolved         | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
 
-  @legalAdvice51 @Regression @CCS
+  @legalAdvice51 @Regression
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -232,7 +232,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
       | Scenario 1 | Statutes  | Legal     | Charities | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails |
 
     #sector not Central Government, service Area leads to wps recommendations with lot 3 and 4
-  @legalAdvice6 @Regression @PreProd @Prod @CCS
+  @legalAdvice6 @Regression @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -262,7 +262,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 #      | Scenario 4 | Property       | Legal     | Education        | Property and construction | RM3788      | 30/09/2021     | wpsLegalServices | wpslot3        | 1    |
 #      | Scenario 5 | Construction   | Legal     | Health           | Property and construction | RM3788      | 30/09/2021     | wpsLegalServices | wpslot3        | 1    |
 
-  @legalAdvice61 @Regression @PreProd @Prod @CCS
+  @legalAdvice61 @Regression @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -293,7 +293,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 #      | Scenario 6 | rail legal services | Devolved         | Transport and rail | RM3788      | 30/09/2021     | wpsLegalServices | wpslot4        | 1    |
 
       #sector not Central Government, service Area leads to locations and then to wps recommendations with lot 2a, 2b and 2c
-  @legalAdvice7 @Regression @CCS
+  @legalAdvice7 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
@@ -324,7 +324,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 #      | Scenario 4 | General Legal Advice Services | Blue light       | Multiple services | Scotland         | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2b_wpslot1 | 2    |
 #      | Scenario 5 | strategy                      | Health           | Anything else     | Northern Ireland | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2c | 2    |
 
-  @legalAdvice7 @Regression @CCS
+  @legalAdvice7 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>"
     When User enters "<framework>" details
