@@ -7,3 +7,4 @@ Reports/
 *.iws
 *.iml
 *.ipr
+.DS_Store
