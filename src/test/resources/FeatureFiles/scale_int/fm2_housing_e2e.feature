@@ -19,7 +19,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
       | Scenario 1 | housing   | Housing | Estate services |
 
     #housing, hosing management and maintenance -> MOD sector and non Mod sector
-  @FM2Housing2 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProd @Prod @SFC1050
+  @FM2Housing2 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProdSC @ProdSC @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User clicks on the "Start now" button
@@ -82,7 +82,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
 #      | Scenario 1.2 | housing   | Facilities Management | Cleaning services_Maintenance services              | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
 
    #housing, Facilities -> Services multiple -> non Mod sector
-  @FM2Housing4 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProd @Prod @SFC1050
+  @FM2Housing4 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProdSC @ProdSC @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User clicks on the "Start now" button

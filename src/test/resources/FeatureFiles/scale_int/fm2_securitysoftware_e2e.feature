@@ -52,7 +52,7 @@ Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See 
       | ScenarioID | framework | secTypeRadio      | lookingFor | sectorRadio | frameworkId | expirationDate | details            | recommendation | lots |
       | Scenario 1 | cctv      | Security software | Product    | Education   | RM6103      | 10/06/2022     | techProdEduDetails | lot5_lot4      | 2    |
 
-  @SecuritySoftware3 @TechnicalSecServiceTest1122 @PreProd @Prod @SFC1050
+  @SecuritySoftware3 @TechnicalSecServiceTest1122 @PreProdSC @ProdSC @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", selects multiple service areas "<serviceAreaOpt>", Sector buying as "<sectorRadio>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User clicks on the "Start now" button

@@ -146,7 +146,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
       | Scenario 11 | legal     | Devolved         | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
 
     #sector not Central Government, service Area leads to wps recommendations with lot 3 and 4
-  @legalAdvice6 @Legal_Regression @IntLegalTest @PreProd @Prod @SFC1050
+  @legalAdvice6 @Legal_Regression @IntLegalTest @PreProdSC @ProdSC @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User clicks on the "Start now" button
