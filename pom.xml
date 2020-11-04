@@ -36,6 +36,7 @@
         <timestamp>${maven.build.timestamp}</timestamp>
         <maven.build.timestamp.format>yyyy-MM-dd-HH_mm</maven.build.timestamp.format>
         <sonar.maven.version>3.6.0.1398</sonar.maven.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
