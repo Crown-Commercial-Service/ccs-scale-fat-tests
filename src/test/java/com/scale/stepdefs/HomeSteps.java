@@ -48,27 +48,16 @@ public class HomeSteps {
 
     }
 
-    @And("User enters \"([^\"]*)\" details")
-    public void user_enters_details(String framework) throws MalformedURLException, InterruptedException {
-        HomePage homePageObj = objectManager.getHomePageObj();
-       /* if (!(framework.matches("\\w+\\srandom"))) {
+    @And("User enters \"([^\"]*)\" details and click \"([^\"]*)\" button")
+    public void user_enters_details(String framework, String buttonName) {
+        if (testContextObj.isScenarioViaCSS()) {
+            homePageObj = objectManager.getHomePageObj();
             homePageObj.enterFrameworkDetails(framework);
-        } else {
-            String frameworksName = StringUtils.getMatchedGroupByIndexFromAString(framework, "(\\w+)(\\srandom)", 1);
-            ArrayList<String> keywordsList = StringUtils.getTxtItemsAsList("\\config\\" + frameworksName+ "KeywordsSets.txt");
-            int keywordIndex = StringUtils.getRandomIntNumberInRange(0, keywordsList.size() - 1);
-            testContextObj.setRandomlyPickedKeyWord(keywordsList.get(keywordIndex));
-            homePageObj.enterFrameworkDetails(testContextObj.getRandomlyPickedKeyWord());
+            testContextObj.takeSnapShot();
+
+            homePageObj = objectManager.getHomePageObj();
+            homePageObj.clickButton(buttonName);
         }
-*/
-
-        homePageObj.enterFrameworkDetails(framework);
-        //        String iniUrl = driver.getCurrentUrl();
-//        iniUrl = iniUrl + "&feature=guidedmatch";
-//        driver.navigate().to(iniUrl);
-        testContextObj.takeSnapShot();
-
-
     }
 
     @And("User clicks on the \"([^\"]*)\" button")
