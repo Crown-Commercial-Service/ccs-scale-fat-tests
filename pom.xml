@@ -209,7 +209,9 @@
                                     <skip>false</skip>
                                     <outputDirectory>Reports/${timestamp}</outputDirectory>
                                     <inputDirectory>${project.build.directory}/cucumber-html-reports</inputDirectory>
-                                    <jsonFiles>**/*.json</jsonFiles>
+                                    <jsonFiles>
+                                        <jsonFile>**/*.json</jsonFile>
+                                    </jsonFiles>
                                     <checkBuildResult>false</checkBuildResult>
                                 </configuration>
                             </execution>
