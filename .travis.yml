@@ -3,23 +3,23 @@ os: linux
 dist: xenial
 before_install:
   - mvn install
-#  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome
-#    |\.[0-9]+ )//g'`
-#    - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
-#    - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
-#    -O
-#    - unzip chromedriver_linux64.zip -d ~/bin
+  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome
+    |\.[0-9]+ )//g'`
+    - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
+    - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
+    -O
+    - unzip chromedriver_linux64.zip -d ~/bin
 
 #  - mvn install -DskipTests=false -Dmaven.javadoc.skip=false -B -V
 #  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome |\.[0-9]+ )//g'`
 #  - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
 #  - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
 #  - unzip chromedriver_linux64.zip -d ~/bin
-sudo: required
-addons:
-  chrome: stable
-  apt:
-    packages:
-      - chromium-chromedriver
+#sudo: required
+#addons:
+#  chrome: stable
+#  apt:
+#    packages:
+#      - chromium-chromedriver
 script:
   - mvn test
