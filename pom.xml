@@ -191,6 +191,9 @@
                             <perCoreThreadCount>false</perCoreThreadCount>
                             <argLine>-Xmx8192m</argLine>
                             <testFailureIgnore>${testFailureIgnore}</testFailureIgnore>
+                            <systemPropertyVariables>
+                                <base.url>https://webuat.crowncommercial.gov.uk</base.url>
+                            </systemPropertyVariables>
                         </configuration>
                     </plugin>
                     <plugin>
