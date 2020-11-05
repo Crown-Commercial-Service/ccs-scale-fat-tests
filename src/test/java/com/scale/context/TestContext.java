@@ -68,6 +68,7 @@ public class TestContext {
         objectManager = new PageObjectManager(driver, scenario);
         //String baseURL = configReader.get("baseURL");
         String baseURL = System.getProperty("base.url");
+        log.info("base.url:" + baseURL);
         if(baseURL.contains("ppd.scale")) {
             isScenarioViaCSS = false;
         }

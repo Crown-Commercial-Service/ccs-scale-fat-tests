@@ -46,6 +46,7 @@ public class BrowserFactory {
 //                option.addArguments("--incognito");
                 ChromeOptions option = new ChromeOptions();
                 option.addArguments("--ignore-ssl-errors=yes", "--ignore-certificate-errors");
+                option.setExperimentalOption("useAutomationExtension", false);
                 driver = new ChromeDriver(option);
                 driver.manage().window().maximize();
                 break;
@@ -89,14 +90,14 @@ public class BrowserFactory {
         return driver;
     }
 
-    public void launchURL(String portalName) {
-        driver.get(configReader.get(portalName));
-        log.info(URL + " launched");
+    public void launchURL(String url) {
+        driver.get(url);
+        log.info(url + " is launched");
     }
 
-    public void launchURL(String portalName, String portalExtension) {
-        driver.get(configReader.get(portalName) + portalExtension);
-        log.info(URL + " launched");
+    public void launchURL(String url, String portalExtension) {
+        driver.get(url + portalExtension);
+        log.info(url + " is launched");
     }
 
 
