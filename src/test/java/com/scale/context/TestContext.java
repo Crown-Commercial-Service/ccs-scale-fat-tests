@@ -66,7 +66,8 @@ public class TestContext {
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
         scenarioContext.setKeyValue("ScenarioID", ScenarioID);
         objectManager = new PageObjectManager(driver, scenario);
-        String baseURL = configReader.get("baseURL");
+        //String baseURL = configReader.get("baseURL");
+        String baseURL = System.getProperty("base.url");
         if(baseURL.contains("ppd.scale")) {
             isScenarioViaCSS = false;
         }
