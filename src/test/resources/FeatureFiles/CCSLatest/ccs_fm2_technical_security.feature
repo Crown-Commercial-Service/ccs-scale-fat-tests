@@ -26,7 +26,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
     Examples:
       | ScenarioID | framework          | areaSuits         | secTypeRadio       | techSecurity                                   | frameworkId | expirationDate | details | recommendation | lots |
       | Scenario 1 | Detection          | Security Services | Technical security | Risk assessments                               | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
-      | Scenario 2 | Technical security | Security Services | Technical security | Design and installation of electronic security | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
+#      | Scenario 2 | Technical security | Security Services | Technical security | Design and installation of electronic security | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
 
   @TechnicalSecService12 @Regression @PreProd @Prod @CCS
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
@@ -51,7 +51,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
     Examples:
       | ScenarioID | framework  | secTypeRadio       | techSecurity                                 | frameworkId | expirationDate | details | recommendation | lots |
       | Scenario 1 | Monitoring | Technical security | Design and installation of physical security | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
-      | Scenario 2 | Intrusion  | Technical security | Anything else                                | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
+#      | Scenario 2 | Intrusion  | Technical security | Anything else                                | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
 
 
   @SecurityServices1 @IntSecurityServices @PreProd @Prod
@@ -153,7 +153,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
     Examples:
       | ScenarioID | framework | secTypeRadio                             | secserviceAreaOpt | frameworkId | expirationDate | details | recommendation     | lots |
       | Scenario 1 | cctv      | Security services                        | Anything else     | RM6089      | 24/01/2023     | wpsfm2  | seclot1a_techlot1b | 2    |
-      | Scenario 2 | cctv      | Security services and technical security | Anything else     | RM6089      | 24/01/2023     | wpsfm2  | techlot1b_seclot1a | 2    |
+#      | Scenario 2 | cctv      | Security services and technical security | Anything else     | RM6089      | 24/01/2023     | wpsfm2  | techlot1b_seclot1a | 2    |
 
   @SecurityServices4 @TechnicalSecurityServices4 @IntSecurityServices @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
@@ -288,5 +288,5 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
     Examples:
       | ScenarioID | framework | secTypeRadio                             | secserviceAreaOpt             | addFacilities                | frameworkId | expirationDate | details | recommendation | lots |
       | Scenario 1 | cctv      | Security services and technical security | Alarm response centres        | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
-      | Scenario 2 | cctv      | Security services and technical security | Helpdesk services             | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
-      | Scenario 3 | cctv      | Security services and technical security | Guarding services and patrols | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
+#      | Scenario 2 | cctv      | Security services and technical security | Helpdesk services             | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
+#      | Scenario 3 | cctv      | Security services and technical security | Guarding services and patrols | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |

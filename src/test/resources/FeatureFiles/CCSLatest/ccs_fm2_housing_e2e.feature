@@ -83,8 +83,8 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     Examples:
       | ScenarioID   | framework | housing               | services                                            | sector                                                     | frameworkId | expirationDate | details             | recommendation | lots |
       | Scenario 1   | housing   | Facilities Management | Catering services_Statutory inspections and testing | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
-      | Scenario 1.1 | housing   | Facilities Management | Cleaning services_Reception services                | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
-      | Scenario 1.2 | housing   | Facilities Management | Cleaning services_Maintenance services              | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
+#      | Scenario 1.1 | housing   | Facilities Management | Cleaning services_Reception services                | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
+#      | Scenario 1.2 | housing   | Facilities Management | Cleaning services_Maintenance services              | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
 
    #housing, Facilities -> Services multiple -> non Mod sector
   @FM2Housing4 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProd @Prod
