@@ -1,4 +1,4 @@
-@regTests
+@regTests @QnErrTests
 Feature: Scenarios for checking all questions and errors handling content for each flows and Routes to Market content
 
   @linenQuestionContent @LinenErrorHandling @linenRoutesToMarketContent
