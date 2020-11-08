@@ -5,11 +5,10 @@ import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
 import com.scale.framework.utility.*;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.Given;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -62,7 +61,7 @@ public class TestContext {
         log.info("Successfully lunched the chrome browser");
     }
 
-    @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
+    @Given("User logs in to the CCS application for {string} and {string}")
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
         scenarioContext.setKeyValue("ScenarioID", ScenarioID);
         objectManager = new PageObjectManager(driver, scenario);
@@ -121,19 +120,19 @@ public class TestContext {
 
     public void takeSnapShot() {
         //Code to take full page screenshot
-        ByteArrayOutputStream imageStream = new ByteArrayOutputStream();
-        scenario.write("URL - "+driver.getCurrentUrl());
-        PageSnapshot snapshot = Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS, true);
-        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0)");
-
-        try {
-            ImageIO.write(snapshot.getImage(), "png", imageStream);
-            imageStream.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        byte[] source = imageStream.toByteArray();
-        scenario.embed(source, "image/png");
+//        ByteArrayOutputStream imageStream = new ByteArrayOutputStream();
+//        scenario.log("URL - "+driver.getCurrentUrl());
+//        PageSnapshot snapshot = Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS, true);
+//        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0)");
+//
+//        try {
+//            ImageIO.write(snapshot.getImage(), "png", imageStream);
+//            imageStream.flush();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        byte[] source = imageStream.toByteArray();
+//        scenario.attach(source, "image/png", "");
     }
 
     public JSONUtility getJsonUtilityObj() {
