@@ -2,7 +2,7 @@ language: java
 os: linux
 dist: xenial
 before_install:
-  - travis_wait 30 mvn install
+  - mvn install
 #  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome
 #    |\.[0-9]+ )//g'`
 #    - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
