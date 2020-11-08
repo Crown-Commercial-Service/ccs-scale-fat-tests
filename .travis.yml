@@ -1,3 +1,4 @@
+sudo: required
 language: java
 os: linux
 dist: xenial
@@ -15,7 +16,7 @@ before_install:
 #  - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
 #  - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
 #  - unzip chromedriver_linux64.zip -d ~/bin
-sudo: required
+
 addons:
   chrome: stable
   apt:
