@@ -1,15 +1,14 @@
 package com.scale.businessPages;
 
 import com.scale.framework.utility.*;
+import io.cucumber.java.Scenario;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.apache.log4j.Logger;
-import cucumber.api.Scenario;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -48,10 +47,10 @@ public class HomePage extends Actions {
             String homeLogoText = homeLogo.getAttribute("alt");
             Assert.assertTrue(homeLogoText.contains("CCS homepage"));
             log.info("User is on CCS home page");
-            scenario.write("User is on CCS home page");
+            scenario.log("User is on CCS home page");
         } else {
             log.info("User is not on CCS home page");
-            scenario.write("User is not on CCS home page");
+            scenario.log("User is not on CCS home page");
         }
     }
 
@@ -79,7 +78,7 @@ public class HomePage extends Actions {
         //   waitForSeconds(2);
         //element.click();
         log.info("Clicked on " + buttonName + " button");
-        scenario.write(" User Clicked on " + buttonName + " button");
+        scenario.log(" User Clicked on " + buttonName + " button");
     }
 
     public void clickRadioButton(String radioButtonName) {
@@ -90,7 +89,7 @@ public class HomePage extends Actions {
         executor.executeScript("arguments[0].click();", element);
        // element.click();
         log.info("Buyer clicked on " + radioButtonName + " radio button");
-        scenario.write(" Buyer clicked on " + radioButtonName + " radio button");
+        scenario.log(" Buyer clicked on " + radioButtonName + " radio button");
     }
 
     public void clickCheckBoxButton(String checkboxButtonName) {
@@ -101,6 +100,6 @@ public class HomePage extends Actions {
         executor.executeScript("arguments[0].click();", element);
         // element.click();
         log.info("Buyer clicked on " + checkboxButtonName + " checkbox  button");
-        scenario.write(" Buyer clicked on " + checkboxButtonName + " checkbox button");
+        scenario.log(" Buyer clicked on " + checkboxButtonName + " checkbox button");
     }
 }

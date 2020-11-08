@@ -1,22 +1,13 @@
 package com.scale.stepdefs;
 
-
-import com.scale.context.ScenarioContext;
 import com.scale.context.TestContext;
 import com.scale.framework.utility.*;
 import com.scale.businessPages.*;
-import com.scale.TestRunner.*;
-import cucumber.api.Scenario;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-
-import java.net.MalformedURLException;
-import java.util.ArrayList;
 
 
 public class HomeSteps {
@@ -48,8 +39,8 @@ public class HomeSteps {
 
     }
 
-    @And("User enters \"([^\"]*)\" details and click \"([^\"]*)\" button")
-    public void user_enters_details(String framework, String buttonName) {
+    @And("User enters {string} details and click {string} button")
+    public void user_enters_details_and_click_button(String framework, String buttonName) {
         if (testContextObj.isScenarioViaCSS()) {
             homePageObj = objectManager.getHomePageObj();
             homePageObj.enterFrameworkDetails(framework);
@@ -60,7 +51,7 @@ public class HomeSteps {
         }
     }
 
-    @And("User clicks on the \"([^\"]*)\" button")
+    @And("User clicks on the {string} button")
     public void user_clicks_on_the_button(String buttonName) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
         testContextObj.takeSnapShot();
@@ -68,7 +59,7 @@ public class HomeSteps {
 
     }
 
-    @And("User clicks on the \"([^\"]*)\" link")
+    @And("User clicks on the {string} link")
     public void user_clicks_on_the_link(String linkName) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
         testContextObj.takeSnapShot();
@@ -76,7 +67,7 @@ public class HomeSteps {
 
     }
 
-    @And("User selects \"([^\"]*)\" Option")
+    @And("User selects {string} Option")
     public void user_selects_Option(String linkName) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
         homePageObj.clickElement(linkName);

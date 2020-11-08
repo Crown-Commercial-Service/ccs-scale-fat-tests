@@ -3,7 +3,7 @@ package com.scale.businessPages;
 import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.Log;
-import cucumber.api.Scenario;
+import io.cucumber.java.Scenario;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
@@ -261,7 +261,7 @@ public class E2EPage extends Actions {
         } else if (serviceRadio.isDisplayed()) {
             productRadio.click();
         }
-        scenario.write("Buyer clicked on " + lookingFor + " radio button");
+        scenario.log("Buyer clicked on " + lookingFor + " radio button");
     }
 
     public void selectBudget(String budgetRadio) {
@@ -272,13 +272,13 @@ public class E2EPage extends Actions {
         } else if (budRadioNo.isDisplayed()) {
             budRadioNo.click();
         }
-        scenario.write("Buyer clicked on " + budgetRadio + " radio button");
+        scenario.log("Buyer clicked on " + budgetRadio + " radio button");
     }
 
     public void enterBudget(String enterBudgets) {
         waitForSeconds(1);
         enterBudget.sendKeys(enterBudgets);
-        scenario.write("Buyer entered budget as " + enterBudgets + "");
+        scenario.log("Buyer entered budget as " + enterBudgets + "");
     }
 
     public void selectContract(String contractRadio) {
@@ -289,13 +289,13 @@ public class E2EPage extends Actions {
         } else if (contRadioNo.isDisplayed()) {
             contRadioNo.click();
         }
-        scenario.write("Buyer clicked on " + contractRadio + " radio button");
+        scenario.log("Buyer clicked on " + contractRadio + " radio button");
     }
 
     public void enterContractLength(String contractLength) {
         waitForSeconds(1);
         enterContract.sendKeys(contractLength);
-        scenario.write("Buyer entered contract length as " + contractLength + "");
+        scenario.log("Buyer entered contract length as " + contractLength + "");
     }
 
     public void selectServiceAreaRadio(String serviceArea) {
@@ -479,7 +479,7 @@ public class E2EPage extends Actions {
 
 
         }
-        scenario.write("Buyer clicked on " + serviceArea + " radio button");
+        scenario.log("Buyer clicked on " + serviceArea + " radio button");
     }
 
     public void selectAddFacilities(String addFacilities) {
@@ -531,7 +531,7 @@ public class E2EPage extends Actions {
                 }
                 break;
         }
-        scenario.write("Buyer clicked on " + addFacilities + " radio button");
+        scenario.log("Buyer clicked on " + addFacilities + " radio button");
     }
 
     public void selectSector(String sector){
@@ -610,7 +610,7 @@ public class E2EPage extends Actions {
                 break;
         }
 
-        scenario.write("Buyer clicked on " + sector + " radio button");
+        scenario.log("Buyer clicked on " + sector + " radio button");
     }
 
     public void selectServiceLocation(String location){
@@ -640,7 +640,7 @@ public class E2EPage extends Actions {
                 }
                 break;
         }
-            scenario.write("Buyer clicked on " + location + " radio button");
+            scenario.log("Buyer clicked on " + location + " radio button");
 
     }
 
@@ -784,7 +784,7 @@ public class E2EPage extends Actions {
                 }
                 break;
         }
-        scenario.write("Buyer clicked on " + serviceAreaCheckbox + " Checkbox");
+        scenario.log("Buyer clicked on " + serviceAreaCheckbox + " Checkbox");
     }
 
     public String getQuestionPageContent() {

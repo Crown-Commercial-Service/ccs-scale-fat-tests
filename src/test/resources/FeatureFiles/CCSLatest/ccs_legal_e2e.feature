@@ -1,4 +1,4 @@
-@regTests
+@regTests @legal
 Feature: GM Journey for Legal framework -> See Linen schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
 
   #sector= Central Government, service Area leads to route (one option ore multiple from same kind)

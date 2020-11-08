@@ -1,4 +1,4 @@
-@regTests
+@regTests @linen
 Feature: GM Journey for Linen framework -> See Linen schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
 
   @linenProduct1 @Regression @CCS

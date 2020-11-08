@@ -22,4 +22,4 @@ addons:
     packages:
       - chromium-chromedriver
 script:
-  - mvn test -DCucumberOptions=$TAGS -Dbase.url=$URL
+  - mvn test

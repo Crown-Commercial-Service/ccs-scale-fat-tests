@@ -7,9 +7,9 @@ import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.Log;
 import com.scale.framework.utility.PageObjectManager;
 import com.scale.framework.utility.StringUtils;
-import cucumber.api.Scenario;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
@@ -42,7 +42,7 @@ public class GMResultPageSteps {
         gmResultPage.gmNeedMoreInformationResultPage();
     }
 
-    @And("User is displayed with initial search phrase from \"([^\"]*)\"")
+    @And("User is displayed with initial search phrase from {string}")
     public void user_is_displayed_with_initial_search_phrase(String initialSearchPhrase) {
         gmResultPage = objectManager.getGmSearchResultPageObj();
         if (!(initialSearchPhrase.matches("\\w+\\srandom"))) {
@@ -53,7 +53,7 @@ public class GMResultPageSteps {
         testContextObj.takeSnapShot();
     }
 
-    @And("User is displayed with Framework Lot Recommended: \"([^\"]*)\"")
+    @And("User is displayed with Framework Lot Recommended: {string}")
     public void user_is_displayed_with_frameworks_lots_recommended(String frameworksLotsRecommended) {
         List<String> frameworkId = new ArrayList<String>();
         ;
@@ -73,7 +73,7 @@ public class GMResultPageSteps {
         testContextObj.takeSnapShot();
     }
 
-    @And("User is displayed with \"([^\"]*)\" answer for question number \"([^\"]*)\"")
+    @And("User is displayed with {string} answer for question number {string}")
     public void user_is_displayed_with_answer_for_question_number(String answer, String questionNumber) {
         if (answer.contains("_")) {
             answer = answer.replace("_", ", ");
@@ -83,7 +83,7 @@ public class GMResultPageSteps {
         testContextObj.takeSnapShot();
     }
 
-    @And("User is displayed with \"([^\"]*)\" answer for the question \"([^\"]*)\"")
+    @And("User is displayed with {string} answer for the question {string}")
     public void user_is_displayed_with_answer_for_question(String answer, String question) {
         if (answer.contains("_")) {
             answer = answer.replace("_", ", ");
@@ -96,19 +96,19 @@ public class GMResultPageSteps {
         testContextObj.takeSnapShot();
     }
 
-    @Then("User clicks on the Change button adjacent to question number \"([^\"]*)\"")
+    @Then("User clicks on the Change button adjacent to question number {string}")
     public void user_clicks_on_change_button_adjacent_to_question_number(String questionNumber) {
         gmResultPage.clickChangeToTheRelatedQuestion(parseInt(questionNumber));
         testContextObj.takeSnapShot();
     }
 
-    @Then("User clicks on the Change button adjacent to question \"([^\"]*)\"")
+    @Then("User clicks on the Change button adjacent to question {string}")
     public void user_clicks_on_change_button_adjacent_to_question(String question) {
         gmResultPage.clickChangeToTheRelatedQuestion(question);
         testContextObj.takeSnapShot();
     }
 
-    @Then("User should be displayed with recommendations \"([^\"]*)\" services for lots \"([^\"]*)\"")
+    @Then("User should be displayed with recommendations {string} services for lots {string}")
     public void user_should_be_displayed_with_recommendations_services(String frameworkIds, String frameworksLotsRecommended) throws InterruptedException {
         String[] frameworkId = frameworkIds.split("_");
         for (int i = 0; i < frameworkId.length; i++) {
@@ -137,7 +137,7 @@ public class GMResultPageSteps {
         }
     }
 
-    @Then("User should be displayed with a number of \"([^\"]*)\" Lot services")
+    @Then("User should be displayed with a number of {string} Lot services")
     public void user_should_be_displayed_with_Lot_services(String string) throws InterruptedException {
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkTheLotsNumber(string);
@@ -165,7 +165,7 @@ public class GMResultPageSteps {
         testContextObj.takeSnapShot();
     }
 
-    @Then("User is displayed with Framework Id \"([^\"]*)\" and the expiration date \"([^\"]*)\" and the details \"([^\"]*)\" text")
+    @Then("User is displayed with Framework Id {string} and the expiration date {string} and the details {string} text")
     public void user_is_displayed_with_multiple_details(String frameworkIds, String expirationDates, String details) throws InterruptedException {
         String[] frameworkId = frameworkIds.split("_");
         String[] expirationDate = expirationDates.split("_");
@@ -179,7 +179,7 @@ public class GMResultPageSteps {
         }
     }
 
-    @Then("User is displayed with recommendations: \"([^\"]*)\" in the right order")
+    @Then("User is displayed with recommendations: {string} in the right order")
     public void user_is_displayed_with_recommendations_in_the_right_order(String frameworks) throws InterruptedException {
         String[] framework = frameworks.split(" ");
         boolean condition = false;
@@ -211,7 +211,7 @@ public class GMResultPageSteps {
         }
     }
 
-    @Then("User is displayed with \"Start Procurement\" button for: \"([^\"]*)\" ordered recommendations")
+    @Then("User is displayed with \"Start Procurement\" button for: {string} ordered recommendations")
     public void user_is_displayed_with_start_procurement_button_in_the_right_order(String recommendation) throws InterruptedException {
         String[] recommendations = recommendation.split("_");
         gmResultPage = objectManager.getGmSearchResultPageObj();
@@ -226,7 +226,7 @@ public class GMResultPageSteps {
         testContextObj.takeSnapShot();
     }
 
-    @Then("User should be displayed with GM Escape page with route to \"([^\"]*)\"")
+    @Then("User should be displayed with GM Escape page with route to {string}")
     public void user_is_displayed_with_gm_escape_page_with_route_to_rail_legal_services(String escapeRouteFramework) throws InterruptedException {
         String[] recommendation = escapeRouteFramework.split("_");
         for (int i = 0; i < recommendation.length; i++) {
@@ -240,7 +240,7 @@ public class GMResultPageSteps {
     }
 
 
-    @Then("User checks Routes to Market Definitions content on \"([^\"]*)\"")
+    @Then("User checks Routes to Market Definitions content on {string}")
     public void user_gets_routes_to_market_content(String routesToMarketDefinitionName) {
         gmResultPage = objectManager.getGmSearchResultPageObj();
         ConfigurationReader configurationReader = new ConfigurationReader("config//QuestionTypesContent.properties");

@@ -1,4 +1,4 @@
-@regTests
+@regTests @techEdu
 Feature: GM Journey for Tech /EduTech framework
 
   @EduTech1 @Regression @CCS

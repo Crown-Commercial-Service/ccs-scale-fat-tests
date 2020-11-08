@@ -1,7 +1,7 @@
 package com.scale.framework.utility;
 
 import com.scale.businessPages.*;
-import cucumber.api.Scenario;
+import io.cucumber.java.Scenario;
 import org.openqa.selenium.WebDriver;
 
 public class PageObjectManager {

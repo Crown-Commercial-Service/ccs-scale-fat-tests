@@ -3,7 +3,7 @@ package com.scale.businessPages;
 import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.Log;
-import cucumber.api.Scenario;
+import io.cucumber.java.Scenario;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;

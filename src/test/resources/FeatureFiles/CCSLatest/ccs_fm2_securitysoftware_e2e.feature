@@ -1,4 +1,4 @@
-@regTests
+@regTests @fm2-security-sw
 Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
 
   @SecuritySoftware1 @Regression @CCS

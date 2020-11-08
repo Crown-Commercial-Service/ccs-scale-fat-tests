@@ -1,4 +1,4 @@
-@regTests
+@regTests @errhandling
 Feature: Error handling scenarios for fm journeys
 
 @TechnicalErrorHandling

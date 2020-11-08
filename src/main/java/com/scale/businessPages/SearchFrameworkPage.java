@@ -3,7 +3,7 @@ package com.scale.businessPages;
 import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.Log;
-import cucumber.api.Scenario;
+import io.cucumber.java.Scenario;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -40,10 +40,10 @@ public class SearchFrameworkPage extends Actions {
             String searchFrameworkPageTitle = searchFrameworksPage.getText();
             Assert.assertTrue(searchFrameworkPageTitle.contains("Search frameworks"));
             log.info("User is on Search Frameworks page");
-            scenario.write("User is on Search Frameworks page");
+            scenario.log("User is on Search Frameworks page");
         } else {
             log.info("User is not on Search Frameworks  page");
-            scenario.write("User is not on Search Frameworks  page");
+            scenario.log("User is not on Search Frameworks  page");
         }
     }
 

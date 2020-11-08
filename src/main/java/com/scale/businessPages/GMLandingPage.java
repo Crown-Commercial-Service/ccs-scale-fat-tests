@@ -3,7 +3,7 @@ package com.scale.businessPages;
 import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.Log;
-import cucumber.api.Scenario;
+import io.cucumber.java.Scenario;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -46,10 +46,10 @@ public class GMLandingPage extends Actions {
             String gmPageTest = gmPage.getText();
             Assert.assertTrue(gmPageTest.contains("Guided match"));
             log.info("User is on Guided match landing page");
-            scenario.write("User is on Guided match landing page");
+            scenario.log("User is on Guided match landing page");
         } else {
             log.info("User is not on Guided match landing page");
-            scenario.write("User is not on Guided match landing page");
+            scenario.log("User is not on Guided match landing page");
         }
     }
 
