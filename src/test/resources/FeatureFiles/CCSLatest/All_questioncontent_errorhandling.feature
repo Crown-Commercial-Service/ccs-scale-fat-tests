@@ -1,7 +1,7 @@
 @regTests @QnErrTests
 Feature: Scenarios for checking all questions and errors handling content for each flows and Routes to Market content
 
-  @linenQuestionContent @LinenErrorHandling @linenRoutesToMarketContent
+  @linenQuestionContent @LinenErrorHandling @linenRoutesToMarketContent @test123
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
