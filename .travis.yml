@@ -5,7 +5,7 @@ jdk:
 os: linux
 dist: xenial
 before_install:
-  - mvn install
+  -mvn install
 #  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome
 #    |\.[0-9]+ )//g'`
 #    - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
@@ -25,7 +25,7 @@ addons:
     packages:
       - chromium-chromedriver
 script:
-  - mvn clean test
+  - travis_wait 10 mvn clean test
 
 #before_deploy:
 #  - cp docs/reports/test_report.html docs/reports/index.html
