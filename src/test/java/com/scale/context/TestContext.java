@@ -120,19 +120,19 @@ public class TestContext {
 
     public void takeSnapShot() {
         //Code to take full page screenshot
-//        ByteArrayOutputStream imageStream = new ByteArrayOutputStream();
-//        scenario.log("URL - "+driver.getCurrentUrl());
-//        PageSnapshot snapshot = Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS, true);
-//        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0)");
-//
-//        try {
-//            ImageIO.write(snapshot.getImage(), "png", imageStream);
-//            imageStream.flush();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        byte[] source = imageStream.toByteArray();
-//        scenario.attach(source, "image/png", "");
+        ByteArrayOutputStream imageStream = new ByteArrayOutputStream();
+        scenario.log("URL - "+driver.getCurrentUrl());
+        PageSnapshot snapshot = Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS, true);
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0)");
+
+        try {
+            ImageIO.write(snapshot.getImage(), "png", imageStream);
+            imageStream.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        byte[] source = imageStream.toByteArray();
+        scenario.attach(source, "image/png", "");
     }
 
     public JSONUtility getJsonUtilityObj() {

@@ -37,6 +37,7 @@
         <maven.build.timestamp.format>yyyy-MM-dd-HH_mm</maven.build.timestamp.format>
         <sonar.maven.version>3.6.0.1398</sonar.maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <cucumber.reporting.version>5.4.0</cucumber.reporting.version>
     </properties>
 
     <dependencies>
@@ -79,11 +80,6 @@
             <artifactId>cucumber-java8</artifactId>
             <version>${cucumber.version}</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.masterthought</groupId>
-            <artifactId>cucumber-reporting</artifactId>
-            <version>4.6.0</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -168,6 +164,11 @@
             <version>6.7.0</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>de.monochromata.cucumber</groupId>
+            <artifactId>reporting-plugin</artifactId>
+            <version>4.0.84</version>
+        </dependency>
     </dependencies>
     <profiles>
         <profile>
@@ -201,51 +202,6 @@
                                 <base.url>https://webuat.crowncommercial.gov.uk</base.url>
                             </systemPropertyVariables>
                         </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>net.masterthought</groupId>
-                        <artifactId>maven-cucumber-reporting</artifactId>
-                        <version>4.6.0</version>
-                        <executions>
-                            <execution>
-                                <id>execution</id>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>generate</goal>
-                                </goals>
-                                <configuration>
-                                    <projectName>scale</projectName>
-                                    <skip>false</skip>
-                                    <outputDirectory>Reports/${timestamp}</outputDirectory>
-                                    <inputDirectory>${project.build.directory}</inputDirectory>
-                                    <jsonFiles>
-                                        <jsonFile>**/*.json</jsonFile>
-                                    </jsonFiles>
-                                    <checkBuildResult>false</checkBuildResult>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.6.0</version>
-                        <executions>
-                            <execution>
-                                <id>test-execution-summary</id>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <classpathScope>test</classpathScope>
-                                    <mainClass>com.scale.framework.utility.ExecutionSummary</mainClass>
-                                    <arguments>
-                                        <argument>${project.build.directory}/cucumber.json</argument>
-                                    </arguments>
-                                </configuration>
-                            </execution>
-                        </executions>
                     </plugin>
                     <plugin>
                         <groupId>org.sonarsource.scanner.maven</groupId>
@@ -293,49 +249,49 @@
                             </includes>
                         </configuration>
                     </plugin>
-                    <plugin>
-                        <groupId>net.masterthought</groupId>
-                        <artifactId>maven-cucumber-reporting</artifactId>
-                        <version>4.6.0</version>
-                        <executions>
-                            <execution>
-                                <id>execution</id>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>generate</goal>
-                                </goals>
-                                <configuration>
-                                    <projectName>Scale</projectName>
-                                    <skip>false</skip>
-                                    <outputDirectory>Reports/${timestamp}</outputDirectory>
-                                    <inputDirectory>${project.build.directory}</inputDirectory>
-                                    <jsonFiles>**/*.json</jsonFiles>
-                                    <checkBuildResult>false</checkBuildResult>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.6.0</version>
-                        <executions>
-                            <execution>
-                                <id>test-execution-summary</id>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <classpathScope>test</classpathScope>
-                                    <mainClass>com.scale.scaleautomation.framework.utility.ExecutionSummary</mainClass>
-                                    <arguments>
-                                        <argument>${project.build.directory}/cucumber.json</argument>
-                                    </arguments>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>net.masterthought</groupId>-->
+<!--                        <artifactId>maven-cucumber-reporting</artifactId>-->
+<!--                        <version>4.6.0</version>-->
+<!--                        <executions>-->
+<!--                            <execution>-->
+<!--                                <id>execution</id>-->
+<!--                                <phase>test</phase>-->
+<!--                                <goals>-->
+<!--                                    <goal>generate</goal>-->
+<!--                                </goals>-->
+<!--                                <configuration>-->
+<!--                                    <projectName>Scale</projectName>-->
+<!--                                    <skip>false</skip>-->
+<!--                                    <outputDirectory>Reports/${timestamp}</outputDirectory>-->
+<!--                                    <inputDirectory>${project.build.directory}</inputDirectory>-->
+<!--                                    <jsonFiles>**/*.json</jsonFiles>-->
+<!--                                    <checkBuildResult>false</checkBuildResult>-->
+<!--                                </configuration>-->
+<!--                            </execution>-->
+<!--                        </executions>-->
+<!--                    </plugin>-->
+<!--                    <plugin>-->
+<!--                        <groupId>org.codehaus.mojo</groupId>-->
+<!--                        <artifactId>exec-maven-plugin</artifactId>-->
+<!--                        <version>1.6.0</version>-->
+<!--                        <executions>-->
+<!--                            <execution>-->
+<!--                                <id>test-execution-summary</id>-->
+<!--                                <phase>test</phase>-->
+<!--                                <goals>-->
+<!--                                    <goal>java</goal>-->
+<!--                                </goals>-->
+<!--                                <configuration>-->
+<!--                                    <classpathScope>test</classpathScope>-->
+<!--                                    <mainClass>com.scale.scaleautomation.framework.utility.ExecutionSummary</mainClass>-->
+<!--                                    <arguments>-->
+<!--                                        <argument>${project.build.directory}/cucumber.json</argument>-->
+<!--                                    </arguments>-->
+<!--                                </configuration>-->
+<!--                            </execution>-->
+<!--                        </executions>-->
+<!--                    </plugin>-->
                     <plugin>
                         <groupId>org.sonarsource.scanner.maven</groupId>
                         <artifactId>sonar-maven-plugin</artifactId>
