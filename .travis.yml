@@ -5,7 +5,8 @@ jdk:
 os: linux
 dist: xenial
 before_install:
-  -travis_wait 10 mvn install
+  - travis_wait 10 mvn install
+
   - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome
     |\.[0-9]+ )//g'`
     - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
