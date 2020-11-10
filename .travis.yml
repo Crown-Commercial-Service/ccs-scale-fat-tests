@@ -1,11 +1,12 @@
 sudo: required
+build: trusty
 language: java
 jdk:
   - openjdk8
 os: linux
 dist: xenial
 before_install:
-  - travis_wait 10 mvn install
+  - mvn install
 
   - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome
     |\.[0-9]+ )//g'`
@@ -27,7 +28,7 @@ before_install:
 #      - chromium-chromedriver
 
 script:
-  - mvn clean test
+  - mvn clean package
 
 #before_deploy:
 #  - cp docs/reports/test_report.html docs/reports/index.html
