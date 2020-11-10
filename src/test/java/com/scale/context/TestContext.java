@@ -63,6 +63,7 @@ public class TestContext {
 
     @Given("User logs in to the CCS application for {string} and {string}")
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
+        System.out.println("Testing.....");
         scenarioContext.setKeyValue("ScenarioID", ScenarioID);
         objectManager = new PageObjectManager(driver, scenario);
         //String baseURL = configReader.get("baseURL");
