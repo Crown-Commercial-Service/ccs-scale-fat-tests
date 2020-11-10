@@ -23,8 +23,8 @@ addons:
     packages:
       - chromium-chromedriver
 script:
-  - mvn test
-#
+  - mvn clean test
+
 #before_deploy:
 #  - cp docs/reports/test_report.html docs/reports/index.html
 #
