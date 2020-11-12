@@ -1,63 +1,72 @@
-sudo: required
-build: trusty
-cache:
-  directories:
-    - $HOME/.m2
 language: java
-jdk:
-  - openjdk8
-os: linux
-dist: xenial
 before_install:
-  - mvn install
-
-  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome
-    |\.[0-9]+ )//g'`
-    - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
-    - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
-    -O
-    - unzip chromedriver_linux64.zip -d ~/bin
-
-#  - mvn install -DskipTests=false -Dmaven.javadoc.skip=false -B -V
-#  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome |\.[0-9]+ )//g'`
-#  - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
-#  - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
-#  - unzip chromedriver_linux64.zip -d ~/bin
-
-#addons:
-#  chrome: stable
-#  apt:
-#    packages:
-#      - chromium-chromedriver
-
+  - mvn install -DskipTests=false -Dmaven.javadoc.skip=false -B -V
+  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome |\.[0-9]+ )//g'`
+  - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
+  - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
+  - unzip chromedriver_linux64.zip -d ~/bin
 script:
   - mvn test
-
-#before_deploy:
-#  - cp docs/reports/test_report.html docs/reports/index.html
-
-#deploy:
+#sudo: required
+#build: trusty
+##cache:
+##  directories:
+##    - $HOME/.m2
+#language: java
+##jdk:
+##  - openjdk8
+#os: linux
+#dist: xenial
+#before_install:
+#  - mvn install
 #
-#  provider: s3
+#  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome
+#    |\.[0-9]+ )//g'`
+#    - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
+#    - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
+#    -O
+#    - unzip chromedriver_linux64.zip -d ~/bin
 #
-#  access_key_id: AKIAIN3M44BAB64RBO5A
+##  - mvn install -DskipTests=false -Dmaven.javadoc.skip=false -B -V
+##  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome |\.[0-9]+ )//g'`
+##  - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
+##  - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
+##  - unzip chromedriver_linux64.zip -d ~/bin
 #
-#  secret_access_key:
+##addons:
+##  chrome: stable
+##  apt:
+##    packages:
+##      - chromium-chromedriver
 #
-#    secure: oepEGifF9UJ2uDgYh7pbiP66L3dkTbtTO8yk9kkITlKTB8irrof7/O1LLwhOyzVnhdon++GXa1xdoWTTopYMImSAftF+c9vxLb/XWW/ECxN20yeks3kfodyOL12wa6raPI1SbGmpWRrZwmvZ5BDA+o5BCyq55UUHT/53p2006mmRz+kIirCLlBJ8mR//u9AY5C7UtKSvGyy6v3PK1IsJL4UMTqZiV5aGXrdYUAkDS2WGxIU/JSS1PfY0CQAoR2AFNaNXH85xZU5YdzEOL8qxGGfAzQY+ZbmoGT4ZFnbsBheN1CgeyjoDlx2l1lRxlNkwf7Z840IUhrITZISqBSjUY0f6mcbFQ/a74LJqn8Aey4AUcLxIGbJ78c/0ABd4eRCLqb2bimGnkZUYr+vZRrzrLcab+XGvzlsOexhh8MwAdMxPqUFG4ZfprpeNXPBo/3xikG9B7jUbH1Rhsqxcv7Kidq48qnP8OgGoP5yYl7wn3iO39USihi4/KKq66mGcNdbfisymbBpcdceOcOAzBapvbYCLC/BSaEIlVr1JlPvM7nlyFeGe2PNoGQ0vYJPSihGAI+9avXZDNg/IGFhvkO4Tg209TiRbFT89IcWamKW5NbOIqZXYDME2nrLOg5QEr15phad1tOg5uo3JTKJWErLqZcy3ovRc6xXYghSU9Qzq/IU=
+#script:
+#  - mvn test
 #
-#  bucket: travis-test-report
+##before_deploy:
+##  - cp docs/reports/test_report.html docs/reports/index.html
 #
-#  local-dir: docs/reports
-#
-#  upload-dir: test-reports
-#
-#  acl: public_read
-#
-#  on:
-#
-#    repo: ToyinOtak/fm-ci-test
-#
-#    branch: master
-#
-#  skip_cleanup: 'true'
+##deploy:
+##
+##  provider: s3
+##
+##  access_key_id: AKIAIN3M44BAB64RBO5A
+##
+##  secret_access_key:
+##
+##    secure: oepEGifF9UJ2uDgYh7pbiP66L3dkTbtTO8yk9kkITlKTB8irrof7/O1LLwhOyzVnhdon++GXa1xdoWTTopYMImSAftF+c9vxLb/XWW/ECxN20yeks3kfodyOL12wa6raPI1SbGmpWRrZwmvZ5BDA+o5BCyq55UUHT/53p2006mmRz+kIirCLlBJ8mR//u9AY5C7UtKSvGyy6v3PK1IsJL4UMTqZiV5aGXrdYUAkDS2WGxIU/JSS1PfY0CQAoR2AFNaNXH85xZU5YdzEOL8qxGGfAzQY+ZbmoGT4ZFnbsBheN1CgeyjoDlx2l1lRxlNkwf7Z840IUhrITZISqBSjUY0f6mcbFQ/a74LJqn8Aey4AUcLxIGbJ78c/0ABd4eRCLqb2bimGnkZUYr+vZRrzrLcab+XGvzlsOexhh8MwAdMxPqUFG4ZfprpeNXPBo/3xikG9B7jUbH1Rhsqxcv7Kidq48qnP8OgGoP5yYl7wn3iO39USihi4/KKq66mGcNdbfisymbBpcdceOcOAzBapvbYCLC/BSaEIlVr1JlPvM7nlyFeGe2PNoGQ0vYJPSihGAI+9avXZDNg/IGFhvkO4Tg209TiRbFT89IcWamKW5NbOIqZXYDME2nrLOg5QEr15phad1tOg5uo3JTKJWErLqZcy3ovRc6xXYghSU9Qzq/IU=
+##
+##  bucket: travis-test-report
+##
+##  local-dir: docs/reports
+##
+##  upload-dir: test-reports
+##
+##  acl: public_read
+##
+##  on:
+##
+##    repo: ToyinOtak/fm-ci-test
+##
+##    branch: master
+##
+##  skip_cleanup: 'true'
