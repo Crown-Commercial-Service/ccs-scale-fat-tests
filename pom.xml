@@ -178,8 +178,8 @@
             <version>3.0.0-M5</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
+
     <profiles>
         <profile>
             <id>TestRunner</id>
@@ -232,6 +232,9 @@
 
         <profile>
             <id>RetryFailure</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
             <build>
                 <plugins>
                     <plugin>
@@ -322,7 +325,7 @@
         <profile>
             <id>sonar</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->

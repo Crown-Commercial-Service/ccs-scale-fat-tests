@@ -31,7 +31,7 @@ before_install:
 #      - chromium-chromedriver
 
 script:
-  - mvn clean package
+  - mvn test
 
 #before_deploy:
 #  - cp docs/reports/test_report.html docs/reports/index.html
