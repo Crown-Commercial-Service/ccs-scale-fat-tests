@@ -38,6 +38,8 @@
         <sonar.maven.version>3.6.0.1398</sonar.maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <cucumber.reporting.version>5.4.0</cucumber.reporting.version>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
 
     <dependencies>
@@ -169,6 +171,14 @@
             <artifactId>reporting-plugin</artifactId>
             <version>4.0.84</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <version>3.0.0-M5</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
     <profiles>
         <profile>
@@ -322,4 +332,5 @@
             </properties>
         </profile>
     </profiles>
+
 </project>
