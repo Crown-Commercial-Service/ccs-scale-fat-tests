@@ -37,6 +37,7 @@ public class TestContext {
     public List<String> navigationButtonList;
     public String allPageScreenshotFlag;
     private String randomlyPickedKeyWord;
+    private boolean isScenarioViaCSS = true;
 
 
     @Before
@@ -68,28 +69,36 @@ public class TestContext {
         browserFactory.launchURL("appWelcomeURL");
     }
 
-    @Given("User logs in to the CCS application for \"([^\"]*)\"$")
-    public void User_logs_in_to_the_CCS_application_for(String ScenarioID) throws MalformedURLException, InterruptedException {
-        scenarioContext.setKeyValue("ScenarioID",ScenarioID);
-        objectManager = new PageObjectManager(driver, scenario);
-        browserFactory.launchURL("appccswebdev");
-        scenario.write("CCS application is launched");
-    }
+//    @Given("User logs in to the CCS application for \"([^\"]*)\"$")
+//    public void User_logs_in_to_the_CCS_application_for(String ScenarioID) throws MalformedURLException, InterruptedException {
+//        scenarioContext.setKeyValue("ScenarioID",ScenarioID);
+//        objectManager = new PageObjectManager(driver, scenario);
+//        browserFactory.launchURL("appccswebdev");
+//        scenario.write("CCS application is launched");
+//    }
 
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
         scenarioContext.setKeyValue("ScenarioID", ScenarioID);
         objectManager = new PageObjectManager(driver, scenario);
-        if (!(searchedFramework.matches("\\w+\\srandom"))) {
-            browserFactory.launchURL("appscaleintURL", searchedFramework.toLowerCase());
-            scenario.write("CCS application is launched");
+        String baseURL = configReader.get("baseURL");
+        //String baseURL = System.getProperty("base.url");
+        log.info("base.url:" + baseURL);
+        if(baseURL.contains("ppd.scale")) {
+            isScenarioViaCSS = false;
+        }
+        if(!isScenarioViaCSS) {
+            if (!(searchedFramework.matches("\\w+\\srandom"))) {
+                browserFactory.launchURL(baseURL, searchedFramework.toLowerCase());
+            } else {
+                String frameworksName = StringUtils.getMatchedGroupByIndexFromAString(searchedFramework, "(\\w+)(\\srandom)", 1);
+                ArrayList<String> keywordsList = StringUtils.getTxtItemsAsList("\\config\\" + frameworksName + "KeywordsSets.txt");
+                int keywordIndex = StringUtils.getRandomIntNumberInRange(0, keywordsList.size() - 1);
+                randomlyPickedKeyWord = keywordsList.get(keywordIndex);
+                browserFactory.launchURL(baseURL, randomlyPickedKeyWord.toLowerCase());
+            }
         } else {
-            String frameworksName = StringUtils.getMatchedGroupByIndexFromAString(searchedFramework, "(\\w+)(\\srandom)", 1);
-            ArrayList<String> keywordsList = StringUtils.getTxtItemsAsList("\\config\\" + frameworksName+ "KeywordsSets.txt");
-            int keywordIndex = StringUtils.getRandomIntNumberInRange(0, keywordsList.size() - 1);
-            randomlyPickedKeyWord = keywordsList.get(keywordIndex);
-            browserFactory.launchURL("appscaleintURL", randomlyPickedKeyWord.toLowerCase());
-            scenario.write("CCS application is launched");
+            browserFactory.launchURL(baseURL);
         }
     }
 
@@ -126,20 +135,20 @@ public class TestContext {
     }
 
     public void takeSnapShot() {
-        //Code to take full page screenshot
-        ByteArrayOutputStream imageStream = new ByteArrayOutputStream();
-        scenario.write("URL - "+driver.getCurrentUrl());
-        PageSnapshot snapshot = Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS, true);
-        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0)");
-
-        try {
-            ImageIO.write(snapshot.getImage(), "png", imageStream);
-            imageStream.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        byte[] source = imageStream.toByteArray();
-        scenario.embed(source, "image/png");
+//        //Code to take full page screenshot
+//        ByteArrayOutputStream imageStream = new ByteArrayOutputStream();
+//        scenario.write("URL - "+driver.getCurrentUrl());
+//        PageSnapshot snapshot = Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS, true);
+//        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0)");
+//
+//        try {
+//            ImageIO.write(snapshot.getImage(), "png", imageStream);
+//            imageStream.flush();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        byte[] source = imageStream.toByteArray();
+//        scenario.embed(source, "image/png");
     }
 
     public JSONUtility getJsonUtilityObj() {
@@ -152,5 +161,9 @@ public class TestContext {
 
     public void setRandomlyPickedKeyWord(String randomlyPickedKeyWord) {
         this.randomlyPickedKeyWord = randomlyPickedKeyWord;
+    }
+
+    public boolean isScenarioViaCSS() {
+        return isScenarioViaCSS;
     }
 }

@@ -2,9 +2,8 @@ Feature: Scenarios for checking all questions and errors handling content for ea
 
   @linenQuestionContent @LinenErrorHandling @linenRoutesToMarketContent
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     Then User checks question content for question "linen-qst1"
     When User clicks on the "Continue" button
@@ -47,9 +46,8 @@ Feature: Scenarios for checking all questions and errors handling content for ea
 
   @legalQuestionContent @LegalErrorHandling @LegalRoutesToMarketContent
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     Then User checks question content for question "legal-qst1"
     When User clicks on the "Continue" button
@@ -86,9 +84,8 @@ Feature: Scenarios for checking all questions and errors handling content for ea
 
   @Fm2HousingQuestionContent @Fm2HousingErrorHandling @Fm2HousingRoutesToMarketContent
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     Then User checks question content for question "housing-qst1"
     When User clicks on the "Continue" button

@@ -3,10 +3,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
   #sector= Central Government, service Area leads to route (one option ore multiple from same kind)
   @IntlegalAdvice1 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -28,10 +27,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 
   @IntlegalAdvice1 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
@@ -57,10 +55,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     #sector= Central Government, service Area leads budget question with answer no/not sure
   @legalAdvice2 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -81,17 +78,16 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 
     Examples:
       | ScenarioID | framework | sector                                                     | serviceArea           | budgetRadio | frameworkId   | expirationDate        | details               | recommendation | lots | order |
-      | Scenario 1 | Finance   | Central Government                                         | Employment litigation | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
-#      | Scenario 2 | law       | Central Government                                         | Litigation            | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
+#      | Scenario 1 | Finance   | Central Government                                         | Employment litigation | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
+      | Scenario 2 | law       | Central Government                                         | Litigation            | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 #      | Scenario 3 | lawyer    | Ministry of Defence or defence infrastructure organisation | Property              | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 
     #sector= Central Government, service Area leads budget question with answer >20k
   @legalAdvice3 @Regression
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -116,10 +112,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 
   @legalAdvice31 @Regression
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
@@ -145,10 +140,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
    #sector= Central Government, service Area leads budget question with answer <20k
   @legalAdvice4 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -176,10 +170,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
    #sector not Central Government, service Area leads to route (one option ore multiple from same kind)
   @legalAdvice5 @Regression
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -208,10 +201,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 
   @legalAdvice51 @Regression
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
@@ -234,10 +226,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     #sector not Central Government, service Area leads to wps recommendations with lot 3 and 4
   @legalAdvice6 @Regression @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
@@ -264,10 +255,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 
   @legalAdvice61 @Regression @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -295,10 +285,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
       #sector not Central Government, service Area leads to locations and then to wps recommendations with lot 2a, 2b and 2c
   @legalAdvice7 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -326,10 +315,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 
   @legalAdvice7 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button

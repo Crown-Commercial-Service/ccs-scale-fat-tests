@@ -2,10 +2,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 
   @linenProduct1 @Regression
   Scenario Outline: To verify Buyer has initiated GM journey for framework "<framework>" and is provided with GM Escape page on selection of Product during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     Then User should be displayed with GM Escape page
@@ -18,10 +17,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
 
   @linenProduct2 @Regression
   Scenario Outline: To verify Buyer has initiated GM journey for framework "<framework>" and is provided with GM Escape page on selection of Product during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     Then User should be displayed with GM Escape page
@@ -57,10 +55,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
     #budget: < 1 mil , months: <12, addFacilities: answer No
   @linenService1  @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -96,10 +93,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
     #budget: < 1 mil , months: <12, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
   @linenService2 @Regression @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -150,10 +146,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
       #budget: > 1 mil, addFacilities: answer No
   @linenService3 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -185,10 +180,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
     #budget: > 1 mil, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
   @linenService4111 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -235,10 +229,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
     #budget: < 1 mil , months: >12, addFacilities: answer No
   @linenService5 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -274,10 +267,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
     #budget: < 1 mil , months: >12, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
   @linenService6 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -328,10 +320,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
     #budget: don't know/not sure, months: <12, addFacilities: answer No
   @linenService7 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -366,10 +357,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
     #budget: don't know/not sure, months: <12, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
   @linenService8 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -419,10 +409,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
    #budget: don't know/not sure, months: >12, addFacilities: answer No
   @linenService9 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -457,10 +446,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
    #budget: don't know/not sure, months: >12, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
   @linenService10 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -510,10 +498,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
    #budget: don't know/not sure, months: don't know/not sure, addFacilities: answer No
   @linenService11 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -547,10 +534,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
    #budget don't know/not sure, months: don't know/not sure, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
   @linenService12 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button
@@ -599,10 +585,9 @@ Feature: GM Journey for Linen framework -> See Linen schema from https://miro.co
      #budget don't know/not sure, months: don't know/not sure, addFacilities: answer multiple
   @linenService12 @Regression 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
     And User selects how much budget "<budgetRadio>" radio button

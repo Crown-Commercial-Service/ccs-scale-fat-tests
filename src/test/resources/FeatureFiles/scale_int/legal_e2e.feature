@@ -21,10 +21,10 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     Examples:
       | ScenarioID | framework | sector                                                     | serviceArea                            | frameworkId   | expirationDate        | details                                 |
       | Scenario 1 | legal     | Central Government                                         | Rail                                   | RM3756        | 31/03/2022            | railLegalDetails                        |
-      | Scenario 2 | legal     | Ministry of Defence or defence infrastructure organisation | eDisclosure and eDiscovery             | RM3717        | 01/06/2021            | eDisclosureandeDiscoveryServicesDetails |
-      | Scenario 3 | legal     | Central Government                                         | Costs lawyer and legal costs draftsmen | RM6137        | 18/08/2022            | costLawyerDetails                       |
-      | Scenario 4 | legal     | Ministry of Defence or defence infrastructure organisation | Finance & Complex                      | RM3786_RM3787 | 27/12/2021_20/12/2021 | GLAS_financeAndComplexLegalServices     |
-      | Scenario 5 | legal     | Central Government                                         | Anything else                          | RM3786_RM3787 | 27/12/2021_20/12/2021 | GLAS_financeAndComplexLegalServices     |
+#      | Scenario 2 | legal     | Ministry of Defence or defence infrastructure organisation | eDisclosure and eDiscovery             | RM3717        | 01/06/2021            | eDisclosureandeDiscoveryServicesDetails |
+#      | Scenario 3 | legal     | Central Government                                         | Costs lawyer and legal costs draftsmen | RM6137        | 18/08/2022            | costLawyerDetails                       |
+#      | Scenario 4 | legal     | Ministry of Defence or defence infrastructure organisation | Finance & Complex                      | RM3786_RM3787 | 27/12/2021_20/12/2021 | GLAS_financeAndComplexLegalServices     |
+#      | Scenario 5 | legal     | Central Government                                         | Anything else                          | RM3786_RM3787 | 27/12/2021_20/12/2021 | GLAS_financeAndComplexLegalServices     |
 
     #sector= Central Government, service Area leads budget question with answer no/not sure
   @legalAdvice2 @Legal_Regression @IntLegalTest
@@ -52,8 +52,8 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     Examples:
       | ScenarioID | framework | sector                                                     | serviceArea           | budgetRadio | frameworkId   | expirationDate        | details               | recommendation | lots | order |
       | Scenario 1 | legal     | Central Government                                         | Employment litigation | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
-      | Scenario 2 | legal     | Central Government                                         | Litigation            | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
-      | Scenario 3 | legal     | Ministry of Defence or defence infrastructure organisation | Property              | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
+#      | Scenario 2 | legal     | Central Government                                         | Litigation            | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
+#      | Scenario 3 | legal     | Ministry of Defence or defence infrastructure organisation | Property              | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 
     #sector= Central Government, service Area leads budget question with answer >20k
   @legalAdvice3 @Legal_Regression @IntLegalTest11
@@ -80,8 +80,8 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     Examples:
       | ScenarioID | framework | sector                                                     | serviceArea           | budgetRadio | enterBudgets | frameworkId | expirationDate | details |
       | Scenario 1 | legal     | Central Government                                         | Employment litigation | Yes         | 20000        | RM3786      | 27/12/2021     | GLAS    |
-      | Scenario 2 | legal     | Ministry of Defence or defence infrastructure organisation | Litigation            | Yes         | 35000        | RM3786      | 27/12/2021     | GLAS    |
-      | Scenario 3 | legal     | Central Government                                         | Property              | Yes         | 20001        | RM3786      | 27/12/2021     | GLAS    |
+#      | Scenario 2 | legal     | Ministry of Defence or defence infrastructure organisation | Litigation            | Yes         | 35000        | RM3786      | 27/12/2021     | GLAS    |
+#      | Scenario 3 | legal     | Central Government                                         | Property              | Yes         | 20001        | RM3786      | 27/12/2021     | GLAS    |
 
    #sector= Central Government, service Area leads budget question with answer <20k
   @legalAdvice4 @Legal_Regression @IntLegalTest
@@ -110,8 +110,8 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     Examples:
       | ScenarioID | framework | sector                                                     | serviceArea           | budgetRadio | enterBudgets | frameworkId   | expirationDate        | details               | recommendation | lots | order |
       | Scenario 1 | legal     | Ministry of Defence or defence infrastructure organisation | Employment litigation | Yes         | 5000         | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
-      | Scenario 2 | legal     | Central Government                                         | Litigation            | Yes         | 15000        | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
-      | Scenario 3 | legal     | Central Government                                         | Property              | Yes         | 19999        | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
+#      | Scenario 2 | legal     | Central Government                                         | Litigation            | Yes         | 15000        | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
+#      | Scenario 3 | legal     | Central Government                                         | Property              | Yes         | 19999        | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 
    #sector not Central Government, service Area leads to route (one option ore multiple from same kind)
   @legalAdvice5 @Legal_Regression @IntLegalTest
@@ -134,16 +134,16 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     Examples:
       | ScenarioID  | framework | sector           | serviceArea                            | frameworkId | expirationDate | details                                 |
       | Scenario 1  | legal     | Local Government | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
-      | Scenario 2  | legal     | Charities        | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
-      | Scenario 3  | legal     | Devolved         | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
-      | Scenario 4  | legal     | Education        | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
-      | Scenario 5  | legal     | Health           | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
-      | Scenario 6  | legal     | Blue light       | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
-      | Scenario 7  | legal     | Housing          | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
+#      | Scenario 2  | legal     | Charities        | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
+#      | Scenario 3  | legal     | Devolved         | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
+#      | Scenario 4  | legal     | Education        | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
+#      | Scenario 5  | legal     | Health           | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
+#      | Scenario 6  | legal     | Blue light       | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
+#      | Scenario 7  | legal     | Housing          | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
       | Scenario 8  | legal     | Charities        | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
-      | Scenario 9  | legal     | Local Government | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
-      | Scenario 10 | legal     | Education        | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
-      | Scenario 11 | legal     | Devolved         | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
+#      | Scenario 9  | legal     | Local Government | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
+#      | Scenario 10 | legal     | Education        | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
+#      | Scenario 11 | legal     | Devolved         | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
 
     #sector not Central Government, service Area leads to wps recommendations with lot 3 and 4
   @legalAdvice6 @Legal_Regression @IntLegalTest @PreProdSC @ProdSC @SFC1050

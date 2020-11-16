@@ -2,9 +2,8 @@ Feature: Error handling scenarios for fm journeys
 
 @TechnicalErrorHandling
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of technical security journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     Then User checks question content for question "technical-qa1"
     When User clicks on the "Continue" button
@@ -24,9 +23,8 @@ Feature: Error handling scenarios for fm journeys
 
   @TSecurityServiceErrorHandling
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of security services journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     Then User checks question content for question "technical-qa1"
     And User clicks on the "Continue" button
@@ -56,10 +54,9 @@ Feature: Error handling scenarios for fm journeys
 
   @TechnicalSecurityServiceErrorHandling
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of security services journey
-    Given User logs in to the CCS application for "<ScenarioID>"
-    When User enters "<framework>" details
-    And User clicks on the "Start now" button
-    And User clicks on the "Start now" button
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
+    When User clicks on the "Start now" button
     Then User checks question content for question "technical-qa1"
     And User clicks on the "Continue" button
     Then User checks error handling content for question "technical-qa1"
