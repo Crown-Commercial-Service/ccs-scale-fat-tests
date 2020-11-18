@@ -9,3 +9,4 @@ Reports/
 *.ipr
 .DS_Store
 *.json
+*.log

@@ -1,3 +1,4 @@
+@regression-tests
 Feature: GM Journey for Tech /EduTech framework
 
   @EduTech1 @Regression 
@@ -221,7 +222,7 @@ Feature: GM Journey for Tech /EduTech framework
       | ScenarioID | framework | lookingFor                | serviceAreaOpt                      | sectorRadio | frameworkId | expirationDate | details                 | recommendation | lots |
       | Scenario 1 | projector | Both, product and service | Hardware and software ICT solutions | Charities   | RM6068      | 09/12/2021     | techBothTechDetailsInfo | tech-both-lot1 | 1    |
 
-  @EduTech9 @Regression @PreProd @Prod 
+  @EduTech9 @Regression @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", selects multiple service areas "<serviceAreaOpt>", Sector buying as "<sectorRadio>" and and Buyer clicks on "Start over to change your answers" link during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button

@@ -1,3 +1,4 @@
+@regression-tests
 Feature: GM Journey for FM2 framework (Technical and Security journey branch) -> See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
 
   @TechnicalSecService1 @Regression @PreProd @Prod

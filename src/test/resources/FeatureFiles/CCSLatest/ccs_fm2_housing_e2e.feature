@@ -1,3 +1,4 @@
+@regression-tests
 Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
 
     #housing, hosing management and maintenance -> Estates
