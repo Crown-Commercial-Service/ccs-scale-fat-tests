@@ -1,12 +1,8 @@
 package com.scale.TestRunner;
 
-import com.scale.context.*;
-import org.json.simple.parser.ParseException;
-import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import java.io.IOException;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -16,15 +12,8 @@ import java.io.IOException;
         monochrome = true,
         plugin = { "pretty", "html:target/cucumber-html-reports", "json:target/cucumber-html-reports/cucumber.json"},
 
-        tags = "@legalAdvice3"
-//                "@IntLinenTest,@IntLegalTest,@IntTechEduTest,@FM2HousingIntTest"
+        tags =  "@regression-tests, @Prod"
 )
-
-
-// dryRun = false
-
-
-
 
 public class TestRunner {
 }

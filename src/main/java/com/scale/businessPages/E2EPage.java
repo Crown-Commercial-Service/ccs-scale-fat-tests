@@ -6,6 +6,7 @@ import com.scale.framework.utility.Log;
 import cucumber.api.Scenario;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,7 +43,8 @@ public class E2EPage extends Actions {
     @FindBy(xpath = "//label[@class='govuk-label govuk-radios__label'][contains(text(),'Product')]")
     private WebElement productRadio;
 
-    @FindBy(xpath = "//a[@class='govuk-back-link'][contains(text(),'Back')]")
+    //@FindBy(xpath = "//a[@class='govuk-back-link'][contains(text(),'Back')]")
+    @FindBy(css = "a.govuk-back-link")
     private WebElement backCTA;
 
     @FindBy(xpath = "")
@@ -51,12 +53,10 @@ public class E2EPage extends Actions {
     @FindBy(xpath = "")
     private WebElement budRadioNo;
 
-    @FindBy(xpath = "//input[@class='govuk-input govuk-!-width-one-third custom-input conditional-input-selector\n" +
-            "                            width-pound']")
+    @FindBy(xpath = "//input[@class='govuk-input govuk-!-width-one-third custom-input conditional-input-selector width-pound']")
     private WebElement enterBudget;
 
-    @FindBy(xpath = "//input[@class='govuk-input govuk-!-width-one-third custom-input conditional-input-selector\n" +
-            "                            width-month']")
+    @FindBy(xpath = "//input[@class='govuk-input govuk-!-width-one-third custom-input conditional-input-selector width-month']")
     private WebElement enterContract;
 
     @FindBy(xpath = "")
@@ -815,15 +815,22 @@ public class E2EPage extends Actions {
 
     public void clickOnTheBackCTA() {
         waitForSeconds(3);
-        backCTA.click();
+
+        // TODO: code cleanup - common javascript methods needs to be implemented
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].scrollIntoView();", backCTA);
+        executor.executeScript("arguments[0].click();", backCTA);
     }
 
     public void checkTheFocusAfterClickingErrorSummary() {
-        errorSummaryLink.click();
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].scrollIntoView();", errorSummaryLink);
+        executor.executeScript("arguments[0].click();", errorSummaryLink);
+
         WebElement focused = driver.switchTo().activeElement();
-        focused.click();
+        executor.executeScript("arguments[0].click();", focused);
         Assert.assertTrue("The element is not in focus", firstSelectableElement.isSelected());
-        focused.click();
+        executor.executeScript("arguments[0].click();", focused);
     }
 
 }
