@@ -172,7 +172,7 @@ public class GMResultPage extends Actions {
     }
 
     private String getFrameworksLotsRecommended() {
-        String frameworkLotsRecommendedText = "Agreement(s)/Lot(s) recommendations";
+        String frameworkLotsRecommendedText = "Agreement or lot recommendations";
         String returnedSearchPhrase = null;
         int frameworkLotsRecommendedIndex = -1;
         for (Map.Entry<Integer, String> entry : getQuestionsRowsText().entrySet()) {
@@ -312,13 +312,14 @@ public class GMResultPage extends Actions {
         int size = driver.findElements(By.xpath("//div[@class='govuk-accordion__section-heading']")).size();
         for (int i = 0; i < size; i++) {
             WebElement detailsLinkInUse = driver.findElements(By.xpath("//div[@class='govuk-accordion__section-heading']//following-sibling::p")).get(i);
-            if (!(detailsLinkInUse.getText().equals("Show Details"))) {
+            if (!(detailsLinkInUse.getText().equals("Show details"))) {
                 log.info("The details related to CTA is already expanded");
                 scenario.write("The details related to CTA is already expanded");
             } else {
                 wait.until(ExpectedConditions.elementToBeClickable(detailsLinkInUse));
                 JavascriptExecutor executor = ((JavascriptExecutor) driver);
                 executor.executeScript("arguments[0].click();", detailsLinkInUse);
+                waitForSeconds(2);
             }
             //Assert.assertTrue("The details section related to CTA are not expanded", detailsLinkInUse.getText().equals("Hide Details"));
         }
@@ -329,10 +330,10 @@ public class GMResultPage extends Actions {
         String xpath = "//div[@id='accordion-with-summary-sections-content-" + index + "']//following-sibling::p";
         WebElement frameworkIdAndExpirationDateSection = driver.findElement(By.xpath(xpath));
         String idAndExpiration = frameworkIdAndExpirationDateSection.getText();
-        String actualFrameworkId = StringUtils.getMatchedGroupByIndexFromAString(idAndExpiration, "(^Agreement ID: )(.*)( End Date: )(.*$)", 2);
-        String actualExpirationDate = StringUtils.getMatchedGroupByIndexFromAString(idAndExpiration, "(^Agreement ID: )(.*)( End Date: )(.*$)", 4);
-        Assert.assertEquals("The actual Agreement ID: <" + actualFrameworkId + "> is not equal with the expected one <" + frameworkId + ">",
-                frameworkId, actualFrameworkId);
+        String actualFrameworkId = StringUtils.getMatchedGroupByIndexFromAString(idAndExpiration, "(^Agreement ID: )(.*)(End date: )(.*$)", 2);
+        String actualExpirationDate = StringUtils.getMatchedGroupByIndexFromAString(idAndExpiration, "(^Agreement ID: )(.*)(End date: )(.*$)", 4);
+        Assert.assertEquals("The actual Agreement ID: <" + actualFrameworkId.trim() + "> is not equal with the expected one <" + frameworkId + ">",
+                frameworkId, actualFrameworkId.trim());
         Assert.assertEquals("The actual expiration date: <" + actualExpirationDate + "> is not equal with the expected one <" + expirationDate + ">",
                 expirationDate, actualExpirationDate);
         String xpathDescription = "//div[@id='accordion-with-summary-sections-content-" + index + "']/div";

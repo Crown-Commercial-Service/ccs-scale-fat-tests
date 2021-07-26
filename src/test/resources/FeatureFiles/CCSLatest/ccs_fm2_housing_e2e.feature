@@ -46,7 +46,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
 
     Examples:
       | ScenarioID | framework | housing | housingServices                    | sector                                                     | frameworkId | expirationDate | details             | recommendation        | lots |
-      | Scenario 1 | housing   | Housing | Housing maintenance and management | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2a_fmtwolot2b | 2    |
+      | Scenario 1 | housing   | Housing | Housing maintenance and management | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2b_fmtwolot2a | 2    |
 #      | Scenario 2   | housing   | Housing | Housing maintenance and management | Central Government                                         | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
 #      | Scenario 2.1 | housing   | Housing | Housing maintenance and management | Education                                                  | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
 #      | Scenario 2.2 | housing   | Housing | Housing maintenance and management | Devolved                                                   | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
@@ -141,7 +141,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
       | Scenario 1 | housing   | Facilities Management (FM) | Cleaning services | RM3830_RM6130 | 09/07/2022_25/02/2024 | fmmDetails_buildingCleaningServices |
 
    #housing, Facilities -> Services: Anything else
-  @FM2Housing1 @FM2_Regression @FM2_Housing
+  @FM2Housing6 @FM2_Regression @FM2_Housing
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button

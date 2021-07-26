@@ -43,8 +43,7 @@ public class E2EPage extends Actions {
     @FindBy(xpath = "//label[@class='govuk-label govuk-radios__label'][contains(text(),'Product')]")
     private WebElement productRadio;
 
-    //@FindBy(xpath = "//a[@class='govuk-back-link'][contains(text(),'Back')]")
-    @FindBy(css = "a.govuk-back-link")
+    @FindBy(xpath = "//a[contains(text(),'Back')]")
     private WebElement backCTA;
 
     @FindBy(xpath = "")
@@ -53,10 +52,10 @@ public class E2EPage extends Actions {
     @FindBy(xpath = "")
     private WebElement budRadioNo;
 
-    @FindBy(xpath = "//input[@class='govuk-input govuk-!-width-one-third custom-input conditional-input-selector width-pound']")
+    @FindBy(xpath = "//*[@class='govuk-radios__conditional conditional-input']/div/span[2]/span/input")
     private WebElement enterBudget;
 
-    @FindBy(xpath = "//input[@class='govuk-input govuk-!-width-one-third custom-input conditional-input-selector width-month']")
+    @FindBy(xpath = "//*[@class='govuk-radios__conditional conditional-input']/div/span[2]/span/input")
     private WebElement enterContract;
 
     @FindBy(xpath = "")
@@ -814,12 +813,16 @@ public class E2EPage extends Actions {
     }
 
     public void clickOnTheBackCTA() {
-        waitForSeconds(3);
+        waitForSeconds(5);
 
         // TODO: code cleanup - common javascript methods needs to be implemented
         JavascriptExecutor executor = (JavascriptExecutor)driver;
-        executor.executeScript("arguments[0].scrollIntoView();", backCTA);
-        executor.executeScript("arguments[0].click();", backCTA);
+        if(!backCTA.isDisplayed()) {
+            executor.executeScript("arguments[0].scrollIntoView();", backCTA);
+        }else {
+            executor.executeScript("arguments[0].click();", backCTA);
+        }
+        waitForSeconds(5);
     }
 
     public void checkTheFocusAfterClickingErrorSummary() {

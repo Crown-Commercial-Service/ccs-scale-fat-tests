@@ -4,7 +4,10 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
   @legalAdvice1 @Legal_Regression @IntLegalTest
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -16,11 +19,11 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID | framework | sector                                                     | serviceArea                            | frameworkId   | expirationDate        | details                                 |
-      | Scenario 1 | legal     | Central Government                                         | Rail                                   | RM3756        | 31/03/2022            | railLegalDetails                        |
+      | ScenarioID | framework | areaSuits | sector            | serviceArea                            | frameworkId   | expirationDate        | details                                 |
+      | Scenario 1 | legal     | Legal     |Central Government | Rail                                   | RM3756        | 31/03/2022            | railLegalDetails                        |
 #      | Scenario 2 | legal     | Ministry of Defence or defence infrastructure organisation | eDisclosure and eDiscovery             | RM3717        | 01/06/2021            | eDisclosureandeDiscoveryServicesDetails |
 #      | Scenario 3 | legal     | Central Government                                         | Costs lawyer and legal costs draftsmen | RM6137        | 18/08/2022            | costLawyerDetails                       |
 #      | Scenario 4 | legal     | Ministry of Defence or defence infrastructure organisation | Finance & Complex                      | RM3786_RM3787 | 27/12/2021_20/12/2021 | GLAS_financeAndComplexLegalServices     |
@@ -30,7 +33,10 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
   @legalAdvice2 @Legal_Regression @IntLegalTest
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -47,11 +53,11 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with "<budgetRadio>" answer for the question "Do you know your budget?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | sector                                                     | serviceArea           | budgetRadio | frameworkId   | expirationDate        | details               | recommendation | lots | order |
-      | Scenario 1 | legal     | Central Government                                         | Employment litigation | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
+      | ScenarioID | framework | areaSuits |sector              | serviceArea           | budgetRadio | frameworkId   | expirationDate        | details               | recommendation | lots | order |
+      | Scenario 1 | legal     | Legal     |Central Government  | Employment litigation | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 #      | Scenario 2 | legal     | Central Government                                         | Litigation            | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 #      | Scenario 3 | legal     | Ministry of Defence or defence infrastructure organisation | Property              | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 
@@ -59,7 +65,10 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
   @legalAdvice3 @Legal_Regression @IntLegalTest11
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -75,11 +84,11 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with "£<enterBudgets>" answer for the question "Do you know your budget?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID | framework | sector                                                     | serviceArea           | budgetRadio | enterBudgets | frameworkId | expirationDate | details |
-      | Scenario 1 | legal     | Central Government                                         | Employment litigation | Yes         | 20000        | RM3786      | 27/12/2021     | GLAS    |
+      | ScenarioID | framework | areaSuits |sector             | serviceArea           | budgetRadio | enterBudgets | frameworkId | expirationDate | details |
+      | Scenario 1 | legal     | Legal     |Central Government | Employment litigation | Yes         | 20000        | RM3786      | 27/12/2021     | GLAS    |
 #      | Scenario 2 | legal     | Ministry of Defence or defence infrastructure organisation | Litigation            | Yes         | 35000        | RM3786      | 27/12/2021     | GLAS    |
 #      | Scenario 3 | legal     | Central Government                                         | Property              | Yes         | 20001        | RM3786      | 27/12/2021     | GLAS    |
 
@@ -87,7 +96,10 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
   @legalAdvice4 @Legal_Regression @IntLegalTest
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -105,11 +117,11 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with "£<enterBudgets>" answer for the question "Do you know your budget?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | sector                                                     | serviceArea           | budgetRadio | enterBudgets | frameworkId   | expirationDate        | details               | recommendation | lots | order |
-      | Scenario 1 | legal     | Ministry of Defence or defence infrastructure organisation | Employment litigation | Yes         | 5000         | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
+      | ScenarioID | framework | areaSuits |sector                                                     | serviceArea           | budgetRadio | enterBudgets | frameworkId   | expirationDate        | details               | recommendation | lots | order |
+      | Scenario 1 | legal     | Legal     |Ministry of Defence or defence infrastructure organisation | Employment litigation | Yes         | 5000         | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 #      | Scenario 2 | legal     | Central Government                                         | Litigation            | Yes         | 15000        | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 #      | Scenario 3 | legal     | Central Government                                         | Property              | Yes         | 19999        | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 
@@ -117,7 +129,10 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
   @legalAdvice5 @Legal_Regression @IntLegalTest
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -129,18 +144,18 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID  | framework | sector           | serviceArea                            | frameworkId | expirationDate | details                                 |
-      | Scenario 1  | legal     | Local Government | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
+      | ScenarioID  | framework | areaSuits |sector           | serviceArea                            | frameworkId | expirationDate | details                                 |
+      | Scenario 1  | legal     | Legal     |Local Government | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
 #      | Scenario 2  | legal     | Charities        | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
 #      | Scenario 3  | legal     | Devolved         | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
 #      | Scenario 4  | legal     | Education        | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
 #      | Scenario 5  | legal     | Health           | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
 #      | Scenario 6  | legal     | Blue light       | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
 #      | Scenario 7  | legal     | Housing          | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
-      | Scenario 8  | legal     | Charities        | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
+      | Scenario 8  | legal     | Legal     |Charities        | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
 #      | Scenario 9  | legal     | Local Government | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
 #      | Scenario 10 | legal     | Education        | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
 #      | Scenario 11 | legal     | Devolved         | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
@@ -149,7 +164,10 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
   @legalAdvice6 @Legal_Regression @IntLegalTest @PreProdSC @ProdSC @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -163,10 +181,10 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
     Examples:
-      | ScenarioID | framework | sector           | serviceArea               | frameworkId | expirationDate | details          | recommendation | lots |
-      | Scenario 1 | legal     | Local Government | Property and construction | RM3788      | 30/09/2021     | wpsLegalServices | wpslot3        | 1    |
+      | ScenarioID | framework | areaSuits |sector           | serviceArea               | frameworkId | expirationDate | details          | recommendation | lots |
+      | Scenario 1 | legal     | Legal     |Local Government | Property and construction | RM3788      | 30/09/2021     | wpsLegalServices | wpslot3        | 1    |
 #      | Scenario 2  | legal     | Charities        | Property and construction | RM3788      | 30/09/2021     | wpsLegalServices | wpslot3        | 1    |
 #      | Scenario 3  | legal     | Devolved         | Property and construction | RM3788      | 30/09/2021     | wpsLegalServices | wpslot3        | 1    |
 #      | Scenario 4  | legal     | Education        | Property and construction | RM3788      | 30/09/2021     | wpsLegalServices | wpslot3        | 1    |
@@ -182,7 +200,10 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
   @legalAdvice7 @Legal_Regression @IntLegalTest
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
@@ -199,13 +220,13 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with "<location>" answer for the question "Where do you need this service?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
     Examples:
-      | ScenarioID | framework | sector           | serviceArea       | location                                   | frameworkId | expirationDate | details          | recommendation   | lots |
-      | Scenario 1 | legal     | Local Government | Anything else     | England or Wales                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2a | 2    |
-      | Scenario 2 | legal     | Devolved         | Multiple services | England or Wales                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2a | 2    |
-      | Scenario 3 | legal     | Education        | Anything else     | Scotland                                   | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2b | 2    |
-      | Scenario 4 | legal     | Blue light       | Multiple services | Scotland                                   | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2b | 2    |
-      | Scenario 5 | legal     | Health           | Anything else     | Northern Ireland                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2c | 2    |
-      | Scenario 6 | legal     | Charities        | Multiple services | Northern Ireland                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2c | 2    |
-      | Scenario 6 | legal     | Charities        | Multiple services | England or Wales_Northern Ireland_Scotland | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1          | 1    |
+      | ScenarioID | framework | areaSuits |sector           | serviceArea       | location                                   | frameworkId | expirationDate | details          | recommendation   | lots |
+      | Scenario 1 | legal     | Legal     |Local Government | Anything else     | England or Wales                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2a | 2    |
+      | Scenario 2 | legal     | Legal     |Devolved         | Multiple services | England or Wales                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2a | 2    |
+      | Scenario 3 | legal     | Legal     |Education        | Anything else     | Scotland                                   | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2b_wpslot1 | 2    |
+      | Scenario 4 | legal     | Legal     |Blue light       | Multiple services | Scotland                                   | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2b_wpslot1 | 2    |
+      | Scenario 5 | legal     | Legal     |Health           | Anything else     | Northern Ireland                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2c | 2    |
+      | Scenario 6 | legal     | Legal     |Charities        | Multiple services | Northern Ireland                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2c | 2    |
+      | Scenario 6 | legal     | Legal     |Charities        | Multiple services | England or Wales_Northern Ireland_Scotland | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1          | 1    |

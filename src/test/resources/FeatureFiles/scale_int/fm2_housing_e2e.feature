@@ -4,6 +4,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
   @FM2Housing1 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
@@ -22,6 +23,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
   @FM2Housing2 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProdSC @ProdSC @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
@@ -31,7 +33,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User clicks on the "Continue" button
     And User can successfully expand the details section
     Then User should be displayed with recommendations "<frameworkId>" services for lots "<recommendation>"
-    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
+#    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
     And User should be displayed with GM Escape page with route to "<frameworkId>"
     And User is displayed with recommendations: "<recommendation>" in the right order
     And User should be displayed with a number of "<lots>" Lot services
@@ -39,11 +41,11 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User is displayed with "<housingServices>" answer for the question "What type of housing services do you need?"
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
       | ScenarioID   | framework | housing | housingServices                    | sector                                                     | frameworkId | expirationDate | details             | recommendation        | lots |
-      | Scenario 1   | housing   | Housing | Housing maintenance and management | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2b_fmtwolot2a | 2    |
+      | Scenario 1   | housing   | Housing | Housing maintenance and management | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2a_fmtwolot2b | 2    |
 #      | Scenario 2   | housing   | Housing | Housing maintenance and management | Central Government                                         | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
 #      | Scenario 2.1 | housing   | Housing | Housing maintenance and management | Education                                                  | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
 #      | Scenario 2.2 | housing   | Housing | Housing maintenance and management | Devolved                                                   | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
@@ -56,6 +58,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
   @FM2Housing3 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
@@ -65,7 +68,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User clicks on the "Continue" button
     And User can successfully expand the details section
     Then User should be displayed with recommendations "<frameworkId>" services for lots "<recommendation>"
-    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
+#    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
     And User should be displayed with GM Escape page with route to "<frameworkId>"
     And User is displayed with recommendations: "<recommendation>" in the right order
     And User should be displayed with a number of "<lots>" Lot services
@@ -73,7 +76,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User is displayed with "<services>" answer for the question "Which services do you need?"
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
       | ScenarioID   | framework | housing               | services                                            | sector                                                     | frameworkId | expirationDate | details             | recommendation | lots |
@@ -85,6 +88,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
   @FM2Housing4 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProdSC @ProdSC @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
@@ -94,13 +98,13 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User clicks on the "Continue" button
     Then User can successfully expand the details section
     And User should be displayed with recommendations "<frameworkId>" services for lots ""
-    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
+#    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
     And User should be displayed with GM Escape page with route to FM
     And User is displayed with "<housing>" answer for the question "What type of housing do you need?"
     And User is displayed with "<services>" answer for the question "Which services do you need?"
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
       | ScenarioID   | framework | housing               | services                                                                            | sector             | frameworkId | expirationDate | details    |
@@ -116,6 +120,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
   @FM2Housing5 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
@@ -123,21 +128,22 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User clicks on the "Continue" button
     And User can successfully expand the details section
     Then User should be displayed with recommendations "<frameworkId>" services for lots ""
-    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
+#    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
     And User should be displayed with GM Escape page with route to "<frameworkId>"
-    And User is displayed with "<housing>" answer for the question "What type of housing do you need?"
+    And User is displayed with "<housingAns>" answer for the question "What type of housing do you need?"
     And User is displayed with "<services>" answer for the question "Which services do you need?"
     And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId>"
+#    And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID | framework | housing               | services          | frameworkId   | expirationDate        | details                             |
-      | Scenario 1 | housing   | Facilities Management | Cleaning services | RM3830_RM6130 | 09/07/2022_25/02/2024 | fmmDetails_buildingCleaningServices |
+      | ScenarioID | framework | housing               | housingAns                |services          | frameworkId   | expirationDate        | details                             |
+      | Scenario 1 | housing   | Facilities Management | Facilities Management (FM)|Cleaning services | RM3830_RM6130 | 09/07/2022_25/02/2024 | fmmDetails_buildingCleaningServices |
 
    #housing, Facilities -> Services: Anything else
   @FM2Housing1 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which type of housing is required "<housing>"
     And User clicks on the "Continue" button
@@ -145,10 +151,10 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User clicks on the "Continue" button
     And User can successfully expand the details section
     Then User should be displayed with GM Escape page
-    And User is displayed with "<housing>" answer for the question "What type of housing do you need?"
+    And User is displayed with "<housingAns>" answer for the question "What type of housing do you need?"
     And User is displayed with "<services>" answer for the question "Which services do you need?"
     And User is displayed with initial search phrase from "<framework>"
 
     Examples:
-      | ScenarioID | framework | housing               | services      |
-      | Scenario 1 | housing   | Facilities Management | Anything else |
+      | ScenarioID | framework | housing               | housingAns| services      |
+      | Scenario 1 | housing   | Facilities Management | Facilities Management (FM) |Anything else |
