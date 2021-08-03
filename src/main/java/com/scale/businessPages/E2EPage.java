@@ -813,16 +813,12 @@ public class E2EPage extends Actions {
     }
 
     public void clickOnTheBackCTA() {
-        waitForSeconds(5);
+        waitForSeconds(3);
 
         // TODO: code cleanup - common javascript methods needs to be implemented
         JavascriptExecutor executor = (JavascriptExecutor)driver;
-        if(!backCTA.isDisplayed()) {
-            executor.executeScript("arguments[0].scrollIntoView();", backCTA);
-        }else {
-            executor.executeScript("arguments[0].click();", backCTA);
-        }
-        waitForSeconds(5);
+        executor.executeScript("arguments[0].scrollIntoView();", backCTA);
+        executor.executeScript("arguments[0].click();", backCTA);
     }
 
     public void checkTheFocusAfterClickingErrorSummary() {

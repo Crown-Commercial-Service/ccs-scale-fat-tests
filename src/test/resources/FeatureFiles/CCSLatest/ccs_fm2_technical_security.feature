@@ -281,7 +281,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
     When User clicks on the "Start now" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
     And  User clicks on the "Continue" button
-    And  User selects what type of security "<secTypeRadio1>" is needed radio button
+    And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And User selects which services "<secserviceAreaOpt>" required multi choice checkboxes
     And User clicks on the "Continue" button
@@ -294,14 +294,14 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
     And User should be displayed with GM Escape page with route to "<frameworkId>"
     And User is displayed with recommendations: "<recommendation>" in the right order
     And User should be displayed with a number of "<lots>" Lot services
-    And User is displayed with "<secTypeRadio1>" answer for the question "What type of security do you need?"
+    And User is displayed with "<areaSuits>" answer for the question "What type of security do you need?"
     And User is displayed with "<secserviceAreaOpt>" answer for the question "What type of security services do you need?"
     And User is displayed with "<addFacilities>" answer for the question "Do you need any additional facility management services?"
     And User is displayed with initial search phrase from "<framework>"
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | secTypeRadio      | secTypeRadio1      |secserviceAreaOpt             | addFacilities                | frameworkId | expirationDate | details | recommendation | lots |
+      | ScenarioID | framework | secTypeRadio      | areaSuits      |secserviceAreaOpt             | addFacilities                | frameworkId | expirationDate | details | recommendation | lots |
       | Scenario 1 | cctv      | Security Services | Security services  |Alarm response centres        | No, I have everything I need	 | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
 #      | Scenario 2 | cctv      | Security services and technical security | Helpdesk services             | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
 #      | Scenario 3 | cctv      | Security services and technical security | Guarding services and patrols | No, I have everything I need | RM6089      | 24/01/2023     | wpsfm2  | seclot1a       | 1    |
