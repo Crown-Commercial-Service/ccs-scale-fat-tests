@@ -6,7 +6,12 @@ Feature: Error handling scenarios for fm journeys
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
-    Then User checks question content for question "technical-qa1"
+  Then User checks question content for question "technical-qa0"
+  When User clicks on the "Continue" button
+  Then User checks error handling content for question "technical-qa0"
+  When User selects response of looking for "<requirements>"
+  When User clicks on the "Continue" button
+  Then User checks question content for question "technical-qa1"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "technical-qa1"
     When User selects response of looking for "<secTypeRadio>"
@@ -19,14 +24,19 @@ Feature: Error handling scenarios for fm journeys
     Then User checks Routes to Market Definitions content on "routesToMarketContent"
 
     Examples:
-      | ScenarioID | framework | secTypeRadio       | techSecurity     |
-      | Scenario 1 | cctv      | Technical security | Risk assessments |
+      | ScenarioID | framework |secTypeRadio       | requirements |techSecurity     |
+      | Scenario 1 | cctv      |Technical security | Security Services |Risk assessments |
 
   @TSecurityServiceErrorHandling
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of security services journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    Then User checks question content for question "technical-qa0"
+    When User clicks on the "Continue" button
+    Then User checks error handling content for question "technical-qa0"
+    When User selects response of looking for "<requirements>"
+    When User clicks on the "Continue" button
     Then User checks question content for question "technical-qa1"
     And User clicks on the "Continue" button
     Then User checks error handling content for question "technical-qa1"
@@ -50,14 +60,19 @@ Feature: Error handling scenarios for fm journeys
     Then User checks Routes to Market Definitions content on "routesToMarketContent"
 
     Examples:
-      | ScenarioID | framework | secTypeRadio      | secserviceAreaOpt             | addFacilities  | sectorRadio                                                |
-      | Scenario 1 | cctv      | Security services | Guarding services and patrols | Waste services | Ministry of Defence or defence infrastructure organisation |
+      | ScenarioID | framework | secTypeRadio      | secserviceAreaOpt             | requirements |addFacilities  | sectorRadio                                                |
+      | Scenario 1 | cctv      | Security services | Guarding services and patrols | Security Services |Waste services | Ministry of Defence or defence infrastructure organisation |
 
   @TechnicalSecurityServiceErrorHandling
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of security services journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    Then User checks question content for question "technical-qa0"
+    When User clicks on the "Continue" button
+    Then User checks error handling content for question "technical-qa0"
+    When User selects response of looking for "<requirements>"
+    When User clicks on the "Continue" button
     Then User checks question content for question "technical-qa1"
     And User clicks on the "Continue" button
     Then User checks error handling content for question "technical-qa1"
@@ -81,6 +96,6 @@ Feature: Error handling scenarios for fm journeys
     Then User checks Routes to Market Definitions content on "routesToMarketContent"
 
     Examples:
-      | ScenarioID | framework | secTypeRadio                             | secserviceAreaOpt      | addFacilities                     | sectorRadio |
-      | Scenario 1 | cctv      | Security services and technical security | Alarm response centres | Statutory inspections and testing | Education   |
+      | ScenarioID | framework | secTypeRadio                             | secserviceAreaOpt      | requirements |addFacilities                     | sectorRadio |
+      | Scenario 1 | cctv      | Security services and technical security | Alarm response centres | Security Services |Statutory inspections and testing | Education   |
 

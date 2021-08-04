@@ -6,6 +6,11 @@ Feature: Scenarios for checking all questions and errors handling content for ea
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    Then User checks question content for question "linen-qst0"
+    When User clicks on the "Continue" button
+    Then User checks error handling content for question "linen-qst0"
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     Then User checks question content for question "linen-qst1"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "linen-qst1"
@@ -15,7 +20,6 @@ Feature: Scenarios for checking all questions and errors handling content for ea
     When User clicks on the "Continue" button
     Then User checks error handling content for question "linen-qst2"
     When User selects how much budget "Yes" radio button
-    Then User checks question content for question "linen-qst2.1"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "linen-qst2.1"
     When User selects how much budget "<budgetRadio>" radio button
@@ -24,7 +28,6 @@ Feature: Scenarios for checking all questions and errors handling content for ea
     When User clicks on the "Continue" button
     Then User checks error handling content for question "linen-qst3"
     When User selects how much budget "Yes" radio button
-    Then User checks question content for question "linen-qst3.1"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "linen-qst3.1"
     When User selects how long contract "<contractRadio>" radio button
@@ -41,15 +44,21 @@ Feature: Scenarios for checking all questions and errors handling content for ea
     And User clicks on the "Continue" button
     Then User checks Routes to Market Definitions content on "routesToMarketContent"
 
+
     Examples:
-      | ScenarioID | framework | lookingFor | budgetRadio | contractRadio | serviceArea            | addFacilities |
-      | Scenario 1 | linen     | Service    | No          | No            | Theatre pack and gowns | Anything else |
+      | ScenarioID | framework | lookingFor | areaSuits |budgetRadio | contractRadio | serviceArea            | addFacilities |
+      | Scenario 1 | linen     | Service    | Linen     |No          | No            | Theatre pack and gowns | Anything else |
 
   @legalQuestionContent @LegalErrorHandling @LegalRoutesToMarketContent
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    Then User checks question content for question "legal-qst0"
+    When User clicks on the "Continue" button
+    Then User checks error handling content for question "legal-qst0"
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     Then User checks question content for question "legal-qst1"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "legal-qst1"
@@ -80,8 +89,8 @@ Feature: Scenarios for checking all questions and errors handling content for ea
     Then User checks Routes to Market Definitions content on "routesToMarketContent"
 
     Examples:
-      | ScenarioID | framework | sectorRadio1       | sectorRadio2 | serviceArea1 | serviceArea2  | location         |
-      | Scenario 1 | legal     | Central Government | Devolved     | Property     | Anything else | England or Wales |
+      | ScenarioID | framework |areaSuits | sectorRadio1       | sectorRadio2 | serviceArea1 | serviceArea2  | location         |
+      | Scenario 1 | legal     | Legal    |Central Government | Devolved     | Property     | Anything else | England or Wales |
 
   @Fm2HousingQuestionContent @Fm2HousingErrorHandling @Fm2HousingRoutesToMarketContent
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
@@ -90,7 +99,7 @@ Feature: Scenarios for checking all questions and errors handling content for ea
     When User clicks on the "Start now" button
     Then User checks question content for question "housing-qst1"
     When User clicks on the "Continue" button
-    #Then User checks error handling content for question "housing-qst1"
+    Then User checks error handling content for question "housing-qst1"
     And User selects which sector are you looking for "<sectorRadio1>" radio button
     And User clicks on the "Continue" button
     Then User checks question content for question "housing-qst2"

@@ -1,11 +1,12 @@
 @regression-tests
 Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
 
-  @SecuritySoftware1 @Regression
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question by selecting what type of security "<secTypeRadio>", looking for "<lookingFor>", selects multiple service areas "<serviceAreaOpt>", Sector buying as "<sectorRadio>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
     And  User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"
@@ -27,14 +28,16 @@ Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See 
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | secTypeRadio      | lookingFor                | serviceAreaOpt                      | sectorRadio | frameworkId | expirationDate | details                 | recommendation | lots |
-      | Scenario 1 | cctv      | Security software | Both, product and service | Hardware and software ICT solutions | Devolved    | RM6068      | 09/12/2021     | techBothTechDetailsInfo | tech-both-lot1 | 1    |
+      | ScenarioID | framework | secTypeRadio      | areaSuits |lookingFor    | serviceAreaOpt                      | sectorRadio | frameworkId | expirationDate | details                 | recommendation | lots |
+      | Scenario 1 | cctv      | Security software | Security Services |Both, product and service | Hardware and software ICT solutions | Devolved    | RM6068      | 09/12/2021     | techBothTechDetailsInfo | tech-both-lot1 | 1    |
 
   @SecuritySoftware2 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", Sector buying as "<sectorRadio>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
     And  User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"
@@ -52,8 +55,9 @@ Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See 
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | secTypeRadio      | lookingFor | sectorRadio | frameworkId | expirationDate | details            | recommendation | lots |
-      | Scenario 1 | cctv      | Security software | Product    | Education   | RM6103      | 10/06/2022     | techProdEduDetails | lot4_lot5      | 2    |
+      | ScenarioID | framework | secTypeRadio      | areaSuits |lookingFor | sectorRadio | frameworkId | expirationDate | details            | recommendation | lots |
+      | Scenario 1 | cctv      | Security software | Security Services |Product    | Education   | RM6103      | 10/06/2022     | techProdEduDetails | lot5_lot4      | 2    |
+#      | Scenario 1 | cctv      | Security Services | Security Services    | Education   | RM6103      | 10/06/2022     | techProdEduDetails | lot4_lot5      | 2    |
 
   @SecuritySoftware3 @Regression @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", selects multiple service areas "<serviceAreaOpt>", Sector buying as "<sectorRadio>" during the journey
@@ -63,6 +67,8 @@ Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See 
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
+    And  User clicks on the "Continue" button
+    And  User selects what type of security "<technology>" is needed radio button
     And  User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"
     And User clicks on the "Continue" button
@@ -82,5 +88,5 @@ Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See 
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | areaSuits         | secTypeRadio      | lookingFor | serviceArea                    | sectorRadio | frameworkId | expirationDate | details           | recommendation | lots |
-      | Scenario 1 | Risk      | Security Services | Security software | Service    | Broadband fibre infrastructure | Education   | RM6103      | 10/06/2022     | techSerEduDetails | lot2-tech      | 1    |
+      | ScenarioID   | framework | areaSuits  | secTypeRadio                     | technology            |lookingFor | serviceArea                    | sectorRadio | frameworkId | expirationDate | details           | recommendation | lots |
+      | Scenario 1   | Risk      | Technology | Technology products and services | Hardware and software |Service    | Broadband fibre infrastructure | Education   | RM6103      | 10/06/2022     | techSerEduDetails | lot2-tech      | 1    |
