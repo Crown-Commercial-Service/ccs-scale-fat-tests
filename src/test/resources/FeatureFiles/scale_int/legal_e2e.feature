@@ -19,7 +19,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with initial search phrase from "<framework>"
-#    And User is displayed with Framework Lot Recommended: "<frameworkId>"
+    And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
       | ScenarioID | framework | areaSuits | sector            | serviceArea                            | frameworkId   | expirationDate        | details                                 |
@@ -53,7 +53,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with "<budgetRadio>" answer for the question "Do you know your budget?"
     And User is displayed with initial search phrase from "<framework>"
-#    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
+    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
       | ScenarioID | framework | areaSuits |sector              | serviceArea           | budgetRadio | frameworkId   | expirationDate        | details               | recommendation | lots | order |
@@ -84,7 +84,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with "£<enterBudgets>" answer for the question "Do you know your budget?"
     And User is displayed with initial search phrase from "<framework>"
-#    And User is displayed with Framework Lot Recommended: "<frameworkId>"
+    And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
       | ScenarioID | framework | areaSuits |sector             | serviceArea           | budgetRadio | enterBudgets | frameworkId | expirationDate | details |
@@ -117,7 +117,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with "£<enterBudgets>" answer for the question "Do you know your budget?"
     And User is displayed with initial search phrase from "<framework>"
-#    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
+    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
       | ScenarioID | framework | areaSuits |sector                                                     | serviceArea           | budgetRadio | enterBudgets | frameworkId   | expirationDate        | details               | recommendation | lots | order |
@@ -144,7 +144,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with initial search phrase from "<framework>"
-#    And User is displayed with Framework Lot Recommended: "<frameworkId>"
+    And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
       | ScenarioID  | framework | areaSuits |sector           | serviceArea                            | frameworkId | expirationDate | details                                 |
@@ -181,7 +181,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with initial search phrase from "<framework>"
-#    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
+    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
     Examples:
       | ScenarioID | framework | areaSuits |sector           | serviceArea               | frameworkId | expirationDate | details          | recommendation | lots |
       | Scenario 1 | legal     | Legal     |Local Government | Property and construction | RM3788      | 30/09/2021     | wpsLegalServices | wpslot3        | 1    |
@@ -220,7 +220,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
     And User is displayed with "<location>" answer for the question "Where do you need this service?"
     And User is displayed with initial search phrase from "<framework>"
-#    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
+    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
     Examples:
       | ScenarioID | framework | areaSuits |sector           | serviceArea       | location                                   | frameworkId | expirationDate | details          | recommendation   | lots |
       | Scenario 1 | legal     | Legal     |Local Government | Anything else     | England or Wales                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2a | 2    |

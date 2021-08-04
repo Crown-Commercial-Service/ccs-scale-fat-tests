@@ -26,8 +26,8 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
-    And User selects which type of housing is required "<housing>"
-    And User clicks on the "Continue" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which type of housing services is required "<housingServices>"
     And User clicks on the "Continue" button
     And User selects what sector "<sector>"are you buying for radio button
@@ -38,15 +38,15 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User should be displayed with GM Escape page with route to "<frameworkId>"
     And User is displayed with recommendations: "<recommendation>" in the right order
     And User should be displayed with a number of "<lots>" Lot services
-    And User is displayed with "<housing>" answer for the question "What type of housing do you need?"
+    And User is displayed with "<areaSuits>" answer for the question "What type of housing do you need?"
     And User is displayed with "<housingServices>" answer for the question "What type of housing services do you need?"
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with initial search phrase from "<framework>"
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | housing | housingServices                    | sector                                                     | frameworkId | expirationDate | details             | recommendation        | lots |
-      | Scenario 1 | housing   | Housing | Housing maintenance and management | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2b_fmtwolot2a | 2    |
+      | ScenarioID | framework | areaSuits | housingServices                    | sector                                                     | frameworkId | expirationDate | details             | recommendation        | lots |
+      | Scenario 1 | housing   | Housing | Housing maintenance and management | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2a_fmtwolot2b | 2    |
 #      | Scenario 2   | housing   | Housing | Housing maintenance and management | Central Government                                         | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
 #      | Scenario 2.1 | housing   | Housing | Housing maintenance and management | Education                                                  | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
 #      | Scenario 2.2 | housing   | Housing | Housing maintenance and management | Devolved                                                   | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2c            | 1    |
@@ -61,8 +61,8 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
-    And User selects which type of housing is required "<housing>"
-    And User clicks on the "Continue" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which services "<services>" required multi choice checkboxes
     And User clicks on the "Continue" button
     And User selects what sector "<sector>"are you buying for radio button
@@ -73,15 +73,15 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User should be displayed with GM Escape page with route to "<frameworkId>"
     And User is displayed with recommendations: "<recommendation>" in the right order
     And User should be displayed with a number of "<lots>" Lot services
-    And User is displayed with "<housing>" answer for the question "What type of housing do you need?"
+    And User is displayed with "<areaSuits>" answer for the question "What type of housing do you need?"
     And User is displayed with "<services>" answer for the question "Which services do you need?"
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with initial search phrase from "<framework>"
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | housing                    | services                                            | sector                                                     | frameworkId | expirationDate | details             | recommendation | lots |
-      | Scenario 1 | housing   | Facilities Management (FM) | Catering services_Statutory inspections and testing | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
+      | ScenarioID | framework |areaSuits                    | services                                            | sector                                                     | frameworkId | expirationDate | details             | recommendation | lots |
+      | Scenario 1 | housing   |Facilities Management (FM) | Catering services_Statutory inspections and testing | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
 #      | Scenario 1.1 | housing   | Facilities Management | Cleaning services_Reception services                | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
 #      | Scenario 1.2 | housing   | Facilities Management | Cleaning services_Maintenance services              | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot3      | 1    |
 
@@ -91,8 +91,8 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
-    And User selects which type of housing is required "<housing>"
-    And User clicks on the "Continue" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which services "<services>" required multi choice checkboxes
     And User clicks on the "Continue" button
     And User selects what sector "<sector>"are you buying for radio button
@@ -101,14 +101,14 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User should be displayed with recommendations "<frameworkId>" services for lots ""
     And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
     And User should be displayed with GM Escape page with route to FM
-    And User is displayed with "<housing>" answer for the question "What type of housing do you need?"
+    And User is displayed with "<areaSuits>" answer for the question "What type of housing do you need?"
     And User is displayed with "<services>" answer for the question "Which services do you need?"
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
     And User is displayed with initial search phrase from "<framework>"
     And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID | framework | housing                    | services                             | sector             | frameworkId | expirationDate | details    |
+      | ScenarioID | framework | areaSuits                    | services                             | sector             | frameworkId | expirationDate | details    |
       | Scenario 1 | housing   | Facilities Management (FM) | Cleaning services_Reception services | Central Government | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 1.1 | housing   | Facilities Management | Cleaning services_Maintenance services                                              | Education          | RM3830      | 09/07/2022     | fmmDetails |
 #      | Scenario 1.2 | housing   | Facilities Management | Grounds maintenance and horticultural services_Waste services                       | Devolved           | RM3830      | 09/07/2022     | fmmDetails |
@@ -123,21 +123,21 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
-    And User selects which type of housing is required "<housing>"
-    And User clicks on the "Continue" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which services "<services>" required multi choice checkboxes
     And User clicks on the "Continue" button
     And User can successfully expand the details section
     Then User should be displayed with recommendations "<frameworkId>" services for lots ""
     And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
     And User should be displayed with GM Escape page with route to "<frameworkId>"
-    And User is displayed with "<housing>" answer for the question "What type of housing do you need?"
+    And User is displayed with "<areaSuits>" answer for the question "What type of housing do you need?"
     And User is displayed with "<services>" answer for the question "Which services do you need?"
     And User is displayed with initial search phrase from "<framework>"
     And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID | framework | housing                    | services          | frameworkId   | expirationDate        | details                             |
+      | ScenarioID | framework | areaSuits                    | services          | frameworkId   | expirationDate        | details                             |
       | Scenario 1 | housing   | Facilities Management (FM) | Cleaning services | RM3830_RM6130 | 09/07/2022_25/02/2024 | fmmDetails_buildingCleaningServices |
 
    #housing, Facilities -> Services: Anything else
@@ -146,8 +146,8 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
-    And User selects which type of housing is required "<housing>"
-    And User clicks on the "Continue" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which services "<services>" required multi choice checkboxes
     And User clicks on the "Continue" button
     And User can successfully expand the details section
@@ -157,5 +157,5 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     And User is displayed with initial search phrase from "<framework>"
 
     Examples:
-      | ScenarioID | framework | housing                    | services      |
+      | ScenarioID | framework | areaSuits                    | services      |
       | Scenario 1 | housing   | Facilities Management (FM) | Anything else |

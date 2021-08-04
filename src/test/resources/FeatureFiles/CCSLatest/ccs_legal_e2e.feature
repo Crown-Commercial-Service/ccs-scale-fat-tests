@@ -218,8 +218,8 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
-    And User selects which sector are you looking for "<sector>" radio button
-    And User clicks on the "Continue" button
+    And User selects which "<areaSuits>" your requirements
+    And  User clicks on the "Continue" button
     And User selects which services "<serviceArea>" required multi choice checkboxes
     And User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector1>" radio button
@@ -234,7 +234,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID | framework | sector1 | sector                     | serviceArea                        | sector1 |frameworkId | expirationDate | details           |
+      | ScenarioID | framework | sector1                 | areaSuits                     | serviceArea                        | sector1 |frameworkId | expirationDate | details           |
       | Scenario 1 | Statutes  | Central Government	     | Facilities Management (FM) | Statutory inspections and testing | Central Government |RM3830      | 09/07/2022     | costLawyerDetails |
 #      | Scenario 1 | Statutes  | Legal     | Charities | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails |
 
