@@ -271,22 +271,6 @@
                         </configuration>
                     </plugin>
                     <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <version>${maven.surefire.plugin.version}</version>
-                        <configuration>
-                            <parallel>both</parallel>
-                            <threadCount>6</threadCount>
-                            <useUnlimitedThreads>false</useUnlimitedThreads>
-                            <perCoreThreadCount>false</perCoreThreadCount>
-                            <argLine>-Xmx8192m</argLine>
-                            <testFailureIgnore>${testFailureIgnore}</testFailureIgnore>
-                            <includes>
-                                <include>${include}</include>
-                            </includes>
-                        </configuration>
-                    </plugin>
-                    <plugin>
                         <groupId>net.masterthought</groupId>
                         <artifactId>maven-cucumber-reporting</artifactId>
                         <version>4.6.0</version>
