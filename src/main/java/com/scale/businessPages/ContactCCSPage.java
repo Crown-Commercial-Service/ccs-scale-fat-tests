@@ -1,6 +1,5 @@
 package com.scale.businessPages;
 
-import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.Log;
 import cucumber.api.Scenario;
@@ -12,10 +11,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ContactCCSPage extends Actions{
+public class ContactCCSPage {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
     private Logger log = Log.getLogger(ContactCCSPage.class);
+    private Scenario scenario;
+    private WebDriverWait wait;
 
     public ContactCCSPage(WebDriver driver, Scenario scenario) {
         this.driver = driver;

@@ -1,8 +1,8 @@
 package com.scale.businessPages;
 
-import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.Log;
+import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -16,10 +16,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.ArrayList;
 import java.util.Set;
 
-public class GMLandingPage extends Actions {
+public class GMLandingPage {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
     private Logger log = Log.getLogger(GMLandingPage.class);
+    private Scenario scenario;
+    private WebDriverWait wait;
+    private PageObjectManager pageObjectManager;
 
 
     @FindBy(xpath = "//input[@id='framework_q']")
@@ -35,14 +38,16 @@ public class GMLandingPage extends Actions {
         this.driver = driver;
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
+        pageObjectManager = new PageObjectManager(driver, scenario);
         this.wait = new WebDriverWait(this.driver, 30);
+
     }
 
     public void gmPage() {
         WebElement gmPage = driver.findElement(By.xpath("//li[contains(text(),'Guided match')]"));
         if (gmPage.isDisplayed()) {
             gmPage.click();
-            waitForSeconds(2);
+            pageObjectManager.getActions().waitForSeconds(2);
             String gmPageTest = gmPage.getText();
             Assert.assertTrue(gmPageTest.contains("Guided match"));
             log.info("User is on Guided match landing page");
@@ -54,13 +59,13 @@ public class GMLandingPage extends Actions {
     }
 
     public void clickSearchFrameworksCta() {
-        this.clickElement(searchFrameworksCta);
+        pageObjectManager.getActions().clickElement(searchFrameworksCta);
     }
 
     public void isGmJourneyOpenedInTheSameTab(){
         Set<String> allWindowHandles = driver.getWindowHandles();
         ArrayList<String> tabs = new ArrayList<String>(allWindowHandles);
         Assert.assertEquals("The number of the tabs is not equal with 1", 1, tabs.size());
-        this.waitForElementToBeVisible(firstLinenJourneyQuestionHeader);
+        pageObjectManager.getActions().waitForElementToBeVisible(firstLinenJourneyQuestionHeader);
     }
 }

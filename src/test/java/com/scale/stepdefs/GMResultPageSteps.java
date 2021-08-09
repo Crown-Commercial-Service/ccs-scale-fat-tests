@@ -23,7 +23,7 @@ import static java.lang.Integer.parseInt;
 
 public class GMResultPageSteps {
 
-    private Logger log = Log.getLogger(com.scale.stepdefs.GMPageSteps.class);
+    private Logger log = Log.getLogger(GMResultPage.class);
     private WebDriver driver;
     private PageObjectManager objectManager;
     private TestContext testContextObj;
@@ -50,7 +50,6 @@ public class GMResultPageSteps {
         } else {
             gmResultPage.checkTheInitialSearchPhrase(testContextObj.getRandomlyPickedKeyWord());
         }
-        testContextObj.takeSnapShot();
     }
 
     @And("User is displayed with Framework Lot Recommended: \"([^\"]*)\"")
@@ -70,7 +69,6 @@ public class GMResultPageSteps {
         }
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkFrameworksLotsRecommended(expectedResult);
-        testContextObj.takeSnapShot();
     }
 
     @And("User is displayed with \"([^\"]*)\" answer for question number \"([^\"]*)\"")
@@ -80,7 +78,6 @@ public class GMResultPageSteps {
         }
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkTheAnswerForTheQuestion(parseInt(questionNumber), answer);
-        testContextObj.takeSnapShot();
     }
 
     @And("User is displayed with \"([^\"]*)\" answer for the question \"([^\"]*)\"")
@@ -93,19 +90,16 @@ public class GMResultPageSteps {
         }
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkTheAnswerForTheQuestion(question, answer);
-        testContextObj.takeSnapShot();
     }
 
     @Then("User clicks on the Change button adjacent to question number \"([^\"]*)\"")
     public void user_clicks_on_change_button_adjacent_to_question_number(String questionNumber) {
         gmResultPage.clickChangeToTheRelatedQuestion(parseInt(questionNumber));
-        testContextObj.takeSnapShot();
     }
 
     @Then("User clicks on the Change button adjacent to question \"([^\"]*)\"")
     public void user_clicks_on_change_button_adjacent_to_question(String question) {
         gmResultPage.clickChangeToTheRelatedQuestion(question);
-        testContextObj.takeSnapShot();
     }
 
     @Then("User should be displayed with recommendations \"([^\"]*)\" services for lots \"([^\"]*)\"")
@@ -133,7 +127,6 @@ public class GMResultPageSteps {
                 gmResultPage.checkMappedListItems("recommendation title", recommendationTitleXpath, recommendationsCollection, "config//LotsRecommendation.properties");
 
             }
-            testContextObj.takeSnapShot();
         }
     }
 
@@ -141,28 +134,24 @@ public class GMResultPageSteps {
     public void user_should_be_displayed_with_Lot_services(String string) throws InterruptedException {
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkTheLotsNumber(string);
-        testContextObj.takeSnapShot();
     }
 
     @Then("User should be displayed with Contact Us link")
     public void user_should_be_displayed_with_Contact_Us_link() throws InterruptedException {
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkContactUsLinkIsDisplayed();
-        testContextObj.takeSnapShot();
     }
 
     @Then("User should be displayed with Questions and Answers")
     public void user_should_be_displayed_with_Questions_and_Answers() throws InterruptedException {
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkQuestionsListIsDisplayed();
-        testContextObj.takeSnapShot();
     }
 
     @Then("User can successfully expand the details section")
     public void user_can_expand_the_details_section_successfully() throws InterruptedException {
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkTheDetailsCTAIsSuccessfullyExpanding();
-        testContextObj.takeSnapShot();
     }
 
     @Then("User is displayed with Framework Id \"([^\"]*)\" and the expiration date \"([^\"]*)\" and the details \"([^\"]*)\" text")
@@ -175,7 +164,7 @@ public class GMResultPageSteps {
             ConfigurationReader configurationReader = new ConfigurationReader("config//FrameWorkDescription.properties");
             String mappedDetails = configurationReader.returnProperty(detail[i]);
             gmResultPage.checkDetailsFrameworkIdExpirationDate(frameworkId[i], expirationDate[i], mappedDetails, i + 1);
-            testContextObj.takeSnapShot();
+//            testContextObj.takeSnapShot();
         }
     }
 
@@ -199,14 +188,12 @@ public class GMResultPageSteps {
                 String[] indexes = framework[i + 1].split("");
                 gmResultPage = objectManager.getGmSearchResultPageObj();
                 gmResultPage.checkFrameworkLotsAndDetails(recommendations, Integer.parseInt(indexes[i]));
-                testContextObj.takeSnapShot();
             }
         } else {
             for (int i = 0; i < framework.length; i++) {
                 String[] recommendations = framework[i].split("_");
                 gmResultPage = objectManager.getGmSearchResultPageObj();
                 gmResultPage.checkFrameworkLotsAndDetails(recommendations, i + 1);
-                testContextObj.takeSnapShot();
             }
         }
     }
@@ -216,14 +203,12 @@ public class GMResultPageSteps {
         String[] recommendations = recommendation.split("_");
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkAdjacentStartProcurementButton(recommendations);
-        testContextObj.takeSnapShot();
     }
 
     @Then("User should be displayed with GM Escape page with route to FM")
     public void user_is_displayed_with_gm_escape_page_with_route_to_fm() throws InterruptedException {
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkFacilitiesManagementHeader();
-        testContextObj.takeSnapShot();
     }
 
     @Then("User should be displayed with GM Escape page with route to \"([^\"]*)\"")
@@ -235,7 +220,6 @@ public class GMResultPageSteps {
             String fullExpectedResult = configurationReader.returnProperty(recommendation[i]);
             String expectedTitle = StringUtils.getMatchedGroupByIndexFromAString(fullExpectedResult, "(^.*)(\\(" + recommendation[i] + "\\),?)(.*$)", 1).trim();
             gmResultPage.checkEscapeRouteHeaderContent(expectedTitle, i + 1);
-            testContextObj.takeSnapShot();
         }
     }
 
