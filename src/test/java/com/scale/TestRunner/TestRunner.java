@@ -11,8 +11,8 @@ import cucumber.api.junit.Cucumber;
         glue={"com.scale.stepdefs", "com.scale.context"},
         monochrome = false,
         plugin = { "pretty", "html:target/cucumber-html-reports", "json:target/cucumber-html-reports/cucumber.json"},
-//        tags = "@testing",
-        tags =  "@regression-tests, @Prod",
+        tags = "@ci_test",
+//        tags =  "@regression-tests, @Prod",
         dryRun = false
 )
 
