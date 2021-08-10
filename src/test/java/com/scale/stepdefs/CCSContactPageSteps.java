@@ -1,8 +1,8 @@
 package com.scale.stepdefs;
 
 import com.scale.businessPages.ContactCCSPage;
-import com.scale.businessPages.GMLandingPage;
 import com.scale.context.TestContext;
+//import com.scale.context.TestContext;
 import com.scale.framework.utility.Log;
 import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
@@ -13,15 +13,15 @@ import org.openqa.selenium.WebDriver;
 import java.net.MalformedURLException;
 
 public class CCSContactPageSteps {
-    private Logger log = Log.getLogger(com.scale.stepdefs.GMPageSteps.class);
+    private Logger log = Log.getLogger(CCSContactPageSteps.class);
     private WebDriver driver;
     private PageObjectManager objectManager;
-    private TestContext testContextObj;
+    private TestContext testContext;
     private Scenario scenario;
     private ContactCCSPage contactCCSPage;
 
     public CCSContactPageSteps(TestContext testContextObj) {
-        this.testContextObj = testContextObj;
+        this.testContext = testContextObj;
         driver = testContextObj.getDriver();
         objectManager = testContextObj.getObjectManager();
     }

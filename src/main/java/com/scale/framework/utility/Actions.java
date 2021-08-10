@@ -1,6 +1,12 @@
 package com.scale.framework.utility;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.List;
+
+import com.assertthat.selenium_shutterbug.core.PageSnapshot;
+import com.assertthat.selenium_shutterbug.core.Shutterbug;
+import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
 import cucumber.api.Scenario;
 import org.apache.log4j.Logger;
 import org.jboss.aerogear.security.otp.Totp;
@@ -11,6 +17,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.imageio.ImageIO;
+
+import static org.junit.Assert.assertEquals;
+
 
 public class Actions {
 	 private Logger log = Log.getLogger(Actions.class);
@@ -18,9 +28,18 @@ public class Actions {
 	    private WebDriver driver;
 	    protected WebDriverWait wait;
 	    private ConfigurationReader configReader;
+	    private PageObjectManager pageObjectManager;
+
+	public Actions(WebDriver driver, Scenario scenario) {
+		this.driver = driver;
+		this.scenario = scenario;
+		PageFactory.initElements(driver, this);
+		this.wait = new WebDriverWait(this.driver, 30);
+		pageObjectManager = new PageObjectManager(driver, scenario);
+	}
 
 
-	    public void clickElement(WebElement element) {
+	public void clickElement(WebElement element) {
 	        wait.until(ExpectedConditions.elementToBeClickable(element));
 	        element.click();
 	    }
@@ -267,4 +286,38 @@ public class Actions {
 	        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
 	        element.click();
 	    }
+
+		public void headerText(String page) {
+		String pageText = driver.findElement(By.tagName("h1")).getText();
+		assertEquals(pageText, page);
+		log.info("Landed on" + page + "page");
+		}
+
+		public void takeSnapShot(Scenario scenario) {
+			if (scenario.isFailed()) {
+				//Code to take full page screenshot
+				ByteArrayOutputStream imageStream = new ByteArrayOutputStream();
+				scenario.write("URL - " + driver.getCurrentUrl());
+				PageSnapshot snapshot = Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS, true);
+				((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0)");
+
+				try {
+					ImageIO.write(snapshot.getImage(), "png", imageStream);
+					imageStream.flush();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				byte[] source = imageStream.toByteArray();
+				scenario.embed(source, "image/png");
+			}
+		}
+
+		public void launchPage(String url) {
+			driver.navigate().to(url);
+			log.info("Webpage launched" + url);
+		}
+
+		public void quitDriver() {
+			driver.quit();
+		}
 }

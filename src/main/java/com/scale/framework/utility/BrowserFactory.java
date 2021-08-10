@@ -68,15 +68,14 @@ public class BrowserFactory {
                 // copyFiles(actualPath + "/Library/Application Support/Google/Chrome/profile1",destination);
                 // options.addArguments("user-data-dir=" + destination);
 //                options.addArguments("user-data-dir=" + actualPath + "/Library/Application Support/Google/Chrome");
-                options.addArguments("--no-sandbox");
+//                options.addArguments("--no-sandbox");
                 options.addArguments("--headless");
                 options.addArguments("--ignore-ssl-errors=yes", "--ignore-certificate-errors");
-                options.setExperimentalOption("useAutomationExtension", false);
                 // options.addArguments("disable-infobars");
                 // options.addArguments("--disable-extensions");
                 // options.addArguments("--disable-gpu");
-                options.addArguments("--disable-dev-shm-usage");
-                options.addArguments("window-size=1920,1080");
+//                options.addArguments("--disable-dev-shm-usage");
+//                options.addArguments("window-size=1920,1080");
                 driver = new ChromeDriver(options);
                 driver.manage().window().maximize();
                 break;

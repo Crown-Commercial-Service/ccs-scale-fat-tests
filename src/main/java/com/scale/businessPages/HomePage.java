@@ -14,11 +14,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomePage extends Actions {
+public class HomePage{
 
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
     private Logger log = Log.getLogger(HomePage.class);
+    private Scenario scenario;
+    private WebDriverWait wait;
+    private PageObjectManager pageObjectManager;
 
 
     /*@FindBy(how = How.XPATH, using = "//button[@class='homepage-hero__search-button']")
@@ -38,13 +41,14 @@ public class HomePage extends Actions {
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(this.driver, 30);
+        pageObjectManager = new PageObjectManager(driver, scenario);
 
     }
 
     public void homePage1() {
         WebElement homeLogo = driver.findElement(By.xpath("//a[@class='logo']//img"));
         if (homeLogo.isDisplayed()) {
-            waitForSeconds(2);
+            pageObjectManager.getActions().waitForSeconds(2);
             String homeLogoText = homeLogo.getAttribute("alt");
             Assert.assertTrue(homeLogoText.contains("CCS homepage"));
             log.info("User is on CCS home page");
@@ -56,9 +60,9 @@ public class HomePage extends Actions {
     }
 
     public void enterFrameworkDetails(String framework) {
-        waitForSeconds(1);
-        enterText(enterFrameworkDetails, framework);
-        waitForSeconds(2);
+        pageObjectManager.getActions().waitForSeconds(1);
+        pageObjectManager.getActions().enterText(enterFrameworkDetails, framework);
+        pageObjectManager.getActions().waitForSeconds(2);
         searchButton.click();
         //clickButton("search");
     }
@@ -70,7 +74,7 @@ public class HomePage extends Actions {
     }
 
     public void clickButton(String buttonName) {
-        waitForSeconds(3);
+        pageObjectManager.getActions().waitForSeconds(3);
         String XPATH = "//*[contains(text(),'" + buttonName +"')]";
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
@@ -79,28 +83,25 @@ public class HomePage extends Actions {
         //   waitForSeconds(2);
         //element.click();
         log.info("Clicked on " + buttonName + " button");
-        scenario.write(" User Clicked on " + buttonName + " button");
     }
 
     public void clickRadioButton(String radioButtonName) {
-        waitForSeconds(3);
+        pageObjectManager.getActions().waitForSeconds(3);
         String XPATH = "//*[contains(text(),'"+ radioButtonName +"')]//preceding-sibling::input[@type='radio']";
         WebElement element = driver.findElement(By.xpath(XPATH));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
        // element.click();
         log.info("Buyer clicked on " + radioButtonName + " radio button");
-        scenario.write(" Buyer clicked on " + radioButtonName + " radio button");
     }
 
     public void clickCheckBoxButton(String checkboxButtonName) {
-        waitForSeconds(3);
+        pageObjectManager.getActions().waitForSeconds(3);
         String XPATH = "//*[contains(text(),'"+ checkboxButtonName +"')]//preceding-sibling::input[@type='checkbox']";
         WebElement element = driver.findElement(By.xpath(XPATH));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
         // element.click();
         log.info("Buyer clicked on " + checkboxButtonName + " checkbox  button");
-        scenario.write(" Buyer clicked on " + checkboxButtonName + " checkbox button");
     }
 }

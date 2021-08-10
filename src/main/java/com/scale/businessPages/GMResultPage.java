@@ -1,9 +1,6 @@
 package com.scale.businessPages;
 
-import com.scale.framework.utility.Actions;
-import com.scale.framework.utility.ConfigurationReader;
-import com.scale.framework.utility.Log;
-import com.scale.framework.utility.StringUtils;
+import com.scale.framework.utility.*;
 import cucumber.api.Scenario;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -22,10 +19,13 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class GMResultPage extends Actions {
+public class GMResultPage{
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
     private Logger log = Log.getLogger(GMResultPage.class);
+    private Scenario scenario;
+    private WebDriverWait wait;
+    private PageObjectManager pageObjectManager;
 
     @FindBy(id = "definitions")
     private WebElement routesToMarketDefinition;
@@ -101,10 +101,11 @@ public class GMResultPage extends Actions {
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(this.driver, 30);
+        pageObjectManager = new PageObjectManager(driver, scenario);
     }
 
     public void gmResultPage() {
-        waitForSeconds(2);
+        pageObjectManager.getActions().waitForSeconds(2);
         WebElement gmResultPage = driver.findElement(By.xpath("//h2[contains(text(),'Based on your answers, there is')]"));
         if (gmResultPage.isDisplayed()) {
             gmResultPage.click();
@@ -119,17 +120,15 @@ public class GMResultPage extends Actions {
     }
 
     public void gmNeedMoreInformationResultPage() {
-        waitForSeconds(2);
+        pageObjectManager.getActions().waitForSeconds(2);
         WebElement gmResultPage = driver.findElement(By.xpath("//h1[contains(text(),'We need more information to help you')]"));
         if (gmResultPage.isDisplayed()) {
             gmResultPage.click();
             String gmPageTest = gmResultPage.getText();
             Assert.assertTrue(gmPageTest.contains("We need more information to help you"));
             log.info("User is on guided match search results with request for more information");
-            scenario.write("User is on guided match search results with request for more information");
         } else {
             log.info("User is not on guided match search results with request for more information");
-            scenario.write("User is not on guided match search results with request for more information");
         }
     }
 
@@ -282,12 +281,12 @@ public class GMResultPage extends Actions {
     }
 
     public void checkContactUsLinkIsDisplayed() {
-        waitForElementToBeVisible(contactCCSLink);
+        pageObjectManager.getActions().waitForElementToBeVisible(contactCCSLink);
         Assert.assertTrue("The contact link is not displayed", contactCCSLink.isDisplayed());
     }
 
     public void checkQuestionsListIsDisplayed() {
-        waitForElementToBeVisible(questionsList);
+        pageObjectManager.getActions().waitForElementToBeVisible(questionsList);
         Assert.assertTrue("The question list is not displayed", questionsList.isDisplayed());
     }
 
@@ -314,12 +313,11 @@ public class GMResultPage extends Actions {
             WebElement detailsLinkInUse = driver.findElements(By.xpath("//div[@class='govuk-accordion__section-heading']//following-sibling::p")).get(i);
             if (!(detailsLinkInUse.getText().equals("Show details"))) {
                 log.info("The details related to CTA is already expanded");
-                scenario.write("The details related to CTA is already expanded");
             } else {
                 wait.until(ExpectedConditions.elementToBeClickable(detailsLinkInUse));
                 JavascriptExecutor executor = ((JavascriptExecutor) driver);
                 executor.executeScript("arguments[0].click();", detailsLinkInUse);
-                waitForSeconds(2);
+                pageObjectManager.getActions().waitForSeconds(2);
             }
             //Assert.assertTrue("The details section related to CTA are not expanded", detailsLinkInUse.getText().equals("Hide Details"));
         }
