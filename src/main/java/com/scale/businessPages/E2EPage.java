@@ -1,8 +1,8 @@
 package com.scale.businessPages;
 
-import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.Log;
+import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -13,10 +13,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class E2EPage extends Actions {
+public class E2EPage {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
     private Logger log = Log.getLogger(HomePage.class);
+    private Scenario scenario;
+    private WebDriverWait wait;
+    private PageObjectManager pageObjectManager;
 
 
     @FindBy(id = "main-content")
@@ -248,11 +251,12 @@ public class E2EPage extends Actions {
         this.driver = driver;
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
+        pageObjectManager = new PageObjectManager(driver, scenario);
         this.wait = new WebDriverWait(this.driver, 30);
     }
 
     public void lookingFor(String lookingFor) {
-        waitForSeconds(1);
+        pageObjectManager.getActions().waitForSeconds(1);
         if (lookingFor.equalsIgnoreCase("service")) {
             if (serviceRadio.isDisplayed()) {
                 serviceRadio.click();
@@ -264,7 +268,7 @@ public class E2EPage extends Actions {
     }
 
     public void selectBudget(String budgetRadio) {
-        waitForSeconds(1);
+        pageObjectManager.getActions().waitForSeconds(1);
         if (budgetRadio.equalsIgnoreCase("yes")) {
             if (budRadioYes.isDisplayed())
                 budRadioYes.click();
@@ -275,30 +279,30 @@ public class E2EPage extends Actions {
     }
 
     public void enterBudget(String enterBudgets) {
-        waitForSeconds(1);
+        pageObjectManager.getActions().waitForSeconds(1);
         enterBudget.sendKeys(enterBudgets);
-        scenario.write("Buyer entered budget as " + enterBudgets + "");
+        log.info("Buyer entered budget as " + enterBudgets + "");
     }
 
     public void selectContract(String contractRadio) {
-        waitForSeconds(1);
+        pageObjectManager.getActions().waitForSeconds(1);
         if (contractRadio.equalsIgnoreCase("yes")) {
             if (contRadioYes.isDisplayed())
                 contRadioYes.click();
         } else if (contRadioNo.isDisplayed()) {
             contRadioNo.click();
         }
-        scenario.write("Buyer clicked on " + contractRadio + " radio button");
+        log.info("Buyer clicked on " + contractRadio + " radio button");
     }
 
     public void enterContractLength(String contractLength) {
-        waitForSeconds(1);
+        pageObjectManager.getActions().waitForSeconds(1);
         enterContract.sendKeys(contractLength);
-        scenario.write("Buyer entered contract length as " + contractLength + "");
+        log.info("Buyer entered contract length as " + contractLength + "");
     }
 
     public void selectServiceAreaRadio(String serviceArea) {
-        waitForSeconds(1);
+        pageObjectManager.getActions().waitForSeconds(1);
         switch (serviceArea.toUpperCase()) {
             case "CleanRoom":
                 if (serviceArea.equalsIgnoreCase("yes")) {
@@ -482,7 +486,7 @@ public class E2EPage extends Actions {
     }
 
     public void selectAddFacilities(String addFacilities) {
-        waitForSeconds(1);
+        pageObjectManager.getActions().waitForSeconds(1);
         switch (addFacilities.toUpperCase()) {
             case "No":
                 if (addFacilities.equalsIgnoreCase("yes")) {
@@ -534,7 +538,7 @@ public class E2EPage extends Actions {
     }
 
     public void selectSector(String sector){
-        waitForSeconds(1);
+        pageObjectManager.getActions().waitForSeconds(1);
         switch (sector.toUpperCase()) {
             case "CentralGovernment":
                 if (sector.equalsIgnoreCase("yes")) {
@@ -613,7 +617,7 @@ public class E2EPage extends Actions {
     }
 
     public void selectServiceLocation(String location){
-        waitForSeconds(1);
+        pageObjectManager.getActions().waitForSeconds(1);
         switch (location.toUpperCase()) {
             case "EnglandWales":
                 if (location.equalsIgnoreCase("yes")) {
@@ -644,17 +648,17 @@ public class E2EPage extends Actions {
     }
 
     public void checkboxOptions(String sector) {
-        waitForSeconds(2);
+        pageObjectManager.getActions().waitForSeconds(2);
         String[] sectors = sector.split("_");
         for (int i = 0; i < sectors.length - 1; i++) {
-            clickCheckbox(sectors[i]);
+            pageObjectManager.getActions().clickCheckbox(sectors[i]);
         }
 
     }
 
 
     public void selectServiceAreaCheckbox(String serviceAreaCheckbox){
-        waitForSeconds(1);
+        pageObjectManager.getActions().waitForSeconds(1);
         switch (serviceAreaCheckbox.toUpperCase()) {
             case "InformationAssured":
                 if (serviceAreaCheckbox.equalsIgnoreCase("yes")) {
@@ -813,7 +817,7 @@ public class E2EPage extends Actions {
     }
 
     public void clickOnTheBackCTA() {
-        waitForSeconds(3);
+        pageObjectManager.getActions().waitForSeconds(3);
 
         // TODO: code cleanup - common javascript methods needs to be implemented
         JavascriptExecutor executor = (JavascriptExecutor)driver;

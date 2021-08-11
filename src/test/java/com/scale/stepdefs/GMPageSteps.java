@@ -3,6 +3,7 @@ package com.scale.stepdefs;
 import com.scale.businessPages.GMLandingPage;
 import com.scale.businessPages.HomePage;
 import com.scale.context.TestContext;
+import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.Log;
 import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
@@ -14,17 +15,16 @@ import org.openqa.selenium.WebDriver;
 import java.net.MalformedURLException;
 
 public class GMPageSteps {
-    private Logger log = Log.getLogger(com.scale.stepdefs.GMPageSteps.class);
+    private Logger log = Log.getLogger(GMPageSteps.class);
     private WebDriver driver;
     private PageObjectManager objectManager;
-    private TestContext testContextObj;
+    private TestContext testContext;
     private Scenario scenario;
     private GMLandingPage gmLandingPage;
 
     public GMPageSteps(TestContext testContextObj) {
-        this.testContextObj = testContextObj;
-        driver = testContextObj.getDriver();
-        objectManager = testContextObj.getObjectManager();
+        testContext = testContextObj;
+        objectManager = testContext.getObjectManager();
     }
 
     @Then("User is displayed with GM landing page")
@@ -43,6 +43,5 @@ public class GMPageSteps {
     public void the_gm_journey_is_opened_in_the_same_tab() {
         gmLandingPage = objectManager.getGmLandingPageObj();
         gmLandingPage.isGmJourneyOpenedInTheSameTab();
-        testContextObj.takeSnapShot();
     }
 }

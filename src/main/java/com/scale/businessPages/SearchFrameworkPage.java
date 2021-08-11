@@ -1,8 +1,8 @@
 package com.scale.businessPages;
 
-import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.Log;
+import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -13,10 +13,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class SearchFrameworkPage extends Actions {
+public class SearchFrameworkPage {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
     private Logger log = Log.getLogger(HomePage.class);
+    private WebDriverWait wait;
+    private PageObjectManager pageObjectManager;
+    private Scenario scenario;
     private String helpMeFindTheRightFrameworkButtonXpath = "//button[contains(text(),'Help me find the right framework')]";
 
     @FindBy(xpath = "//button[contains(text(),'Help me find the right framework')]")
@@ -36,7 +39,7 @@ public class SearchFrameworkPage extends Actions {
         WebElement searchFrameworksPage = driver.findElement(By.xpath("//h1[contains(text(),'Search frameworks')]"));
         if (searchFrameworksPage.isDisplayed()) {
             searchFrameworksPage.click();
-            waitForSeconds(2);
+            pageObjectManager.getActions().waitForSeconds(2);
             String searchFrameworkPageTitle = searchFrameworksPage.getText();
             Assert.assertTrue(searchFrameworkPageTitle.contains("Search frameworks"));
             log.info("User is on Search Frameworks page");
@@ -48,7 +51,8 @@ public class SearchFrameworkPage extends Actions {
     }
 
     public boolean isHelpMeFindTheRightFrameworkButtonDisplayed() {
-        return this.isElementPresentByXpath(helpMeFindTheRightFrameworkButtonXpath);
+        pageObjectManager.getActions().isElementPresentByXpath(helpMeFindTheRightFrameworkButtonXpath);
+        return false;
     }
 
     public void checkThatHelpMeFindTheRightFrameworkButtonIsNotDisplayed() {
