@@ -3,7 +3,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 
   @TechnicalSecService1 @Regression @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -30,7 +30,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 
   @TechnicalSecService12 @Regression @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -58,7 +58,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 
   @SecurityServices1 @Regression @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -99,7 +99,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 
   @SecurityServices2 @Regression @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -138,7 +138,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 
   @SecurityServices3 @Regression @TechSecurityServices3 @error
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -165,7 +165,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 
   @SecurityServices4 @TechnicalSecurityServices4 @Regression @PreProd @Prod
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -196,7 +196,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 
   @TechSecurityServices1 @Regression @PreProd @Prod @error
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -235,7 +235,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 
   @TechSecurityServices2 @Regression @PreProd @Prod @error
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User select which "<areaSuits>" your requirements
@@ -276,7 +276,7 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
 
   @SecurityServices4 @TechnicalSecurityServices4 @Regression
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements

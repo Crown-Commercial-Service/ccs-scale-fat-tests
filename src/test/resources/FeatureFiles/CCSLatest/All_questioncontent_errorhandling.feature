@@ -4,7 +4,7 @@ Feature: Scenarios for checking all questions and errors handling content for ea
   @linenQuestionContent @LinenErrorHandling @linenRoutesToMarketContent
     @test
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     Then User checks question content for question "linen-qst0"
@@ -52,7 +52,7 @@ Feature: Scenarios for checking all questions and errors handling content for ea
 
   @legalQuestionContent @LegalErrorHandling @LegalRoutesToMarketContent
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     Then User checks question content for question "legal-qst0"
@@ -96,7 +96,7 @@ Feature: Scenarios for checking all questions and errors handling content for ea
   #(BUG): WEB-1651
 #  @Fm2HousingQuestionContent @Fm2HousingErrorHandling @Fm2HousingRoutesToMarketContent
 #  Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
-#    Given User navigates to the CCS homepage
+#    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
 #    When User enters "<framework>" details and click "Start now" button
 #    When User clicks on the "Start now" button
 #    Then User checks question content for question "housing-qst1"

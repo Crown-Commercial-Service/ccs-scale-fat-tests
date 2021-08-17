@@ -3,7 +3,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     #housing, hosing management and maintenance -> Estates
   @FM2Housing1 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -22,7 +22,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
     #housing, hosing management and maintenance -> MOD sector and non Mod sector
   @FM2Housing2 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProdSC @ProdSC @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -57,7 +57,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
         #housing, Facilities -> Services multiple -> MOD sector
   @FM2Housing3 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -87,7 +87,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
    #housing, Facilities -> Services multiple -> non Mod sector
   @FM2Housing4 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @PreProdSC @ProdSC @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -119,7 +119,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
    #housing, Facilities -> Services: cleaning
   @FM2Housing5 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices @SFC1050
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -142,7 +142,7 @@ Feature: GM Journey for FM2 framework (Housing journey branch) -> See FM2 Update
    #housing, Facilities -> Services: Anything else
   @FM2Housing1 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements

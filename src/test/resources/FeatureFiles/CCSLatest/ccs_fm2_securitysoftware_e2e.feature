@@ -2,7 +2,7 @@
 Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
 
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question by selecting what type of security "<secTypeRadio>", looking for "<lookingFor>", selects multiple service areas "<serviceAreaOpt>", Sector buying as "<sectorRadio>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -33,7 +33,7 @@ Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See 
 
   @SecuritySoftware2 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", Sector buying as "<sectorRadio>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
@@ -61,7 +61,7 @@ Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See 
 
   @SecuritySoftware3 @Regression @PreProd @Prod
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", selects multiple service areas "<serviceAreaOpt>", Sector buying as "<sectorRadio>" during the journey
-    Given User navigates to the CCS homepage
+    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements

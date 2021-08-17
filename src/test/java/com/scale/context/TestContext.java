@@ -59,8 +59,36 @@ public class TestContext {
         log.info("Successfully lunched the chrome browser");
     }
 
+    @Given("User open a chrome browser")
+    public void user_open_a_chrome_browser() {
+        log.info("Successfully lunched the chrome browser");
+    }
 
-@After
+    @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
+        scenarioContext.setKeyValue("ScenarioID", ScenarioID);
+        objectManager = new PageObjectManager(driver, scenario);
+        String baseURL = configReader.get("baseURL");
+        log.info("base.url:" + baseURL);
+        if(baseURL.contains("ppd.scale")) {
+            isScenarioViaCSS = false;
+        }
+        if(!isScenarioViaCSS) {
+            if (!(searchedFramework.matches("\\w+\\srandom"))) {
+                browserFactory.launchURL(baseURL, searchedFramework.toLowerCase());
+            } else {
+                String frameworksName = StringUtils.getMatchedGroupByIndexFromAString(searchedFramework, "(\\w+)(\\srandom)", 1);
+                ArrayList<String> keywordsList = StringUtils.getTxtItemsAsList("\\config\\" + frameworksName + "KeywordsSets.txt");
+                int keywordIndex = StringUtils.getRandomIntNumberInRange(0, keywordsList.size() - 1);
+                randomlyPickedKeyWord = keywordsList.get(keywordIndex);
+                browserFactory.launchURL(baseURL, randomlyPickedKeyWord.toLowerCase());
+            }
+        } else {
+            browserFactory.launchURL(baseURL);
+        }
+    }
+
+
     public void cleanUp() throws Exception {
         if(configReader.get("browserName").equalsIgnoreCase("chrome_profile")||configReader.get("browserName").equalsIgnoreCase("CHROME_HEADLESS"))
         {browserFactory.deleteDirectory();}
