@@ -38,7 +38,6 @@ public class TestContext {
     public String allPageScreenshotFlag;
     private String randomlyPickedKeyWord;
     private boolean isScenarioViaCSS = true;
-    public ConfigurationReader configurationReader;
 
 
     @Before
@@ -88,7 +87,7 @@ public class TestContext {
         }
     }
 
-
+@After
     public void cleanUp() throws Exception {
         if(configReader.get("browserName").equalsIgnoreCase("chrome_profile")||configReader.get("browserName").equalsIgnoreCase("CHROME_HEADLESS"))
         {browserFactory.deleteDirectory();}
