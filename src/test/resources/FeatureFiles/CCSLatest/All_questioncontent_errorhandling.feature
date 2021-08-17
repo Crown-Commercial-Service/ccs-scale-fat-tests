@@ -2,6 +2,7 @@
 Feature: Scenarios for checking all questions and errors handling content for each flows and Routes to Market content
 
   @linenQuestionContent @LinenErrorHandling @linenRoutesToMarketContent
+    @test
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -92,39 +93,40 @@ Feature: Scenarios for checking all questions and errors handling content for ea
       | ScenarioID | framework |areaSuits | sectorRadio1       | sectorRadio2 | serviceArea1 | serviceArea2  | location         |
       | Scenario 1 | legal     | Legal    |Central Government | Devolved     | Property     | Anything else | England or Wales |
 
-  @Fm2HousingQuestionContent @Fm2HousingErrorHandling @Fm2HousingRoutesToMarketContent
-  Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
-    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
-    When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
-    Then User checks question content for question "housing-qst1"
-    When User clicks on the "Continue" button
-    Then User checks error handling content for question "housing-qst1"
-    And User selects which sector are you looking for "<sectorRadio1>" radio button
-    And User clicks on the "Continue" button
-    Then User checks question content for question "housing-qst2"
-    When User clicks on the "Continue" button
-    Then User checks error handling content for question "housing-qst2"
-    And User selects which type of housing services is required "<housingServices>"
-    And User clicks on the "Continue" button
-    Then User checks question content for question "housing-qst3"
-    When User clicks on the "Continue" button
-    Then User checks error handling content for question "housing-qst3"
-    And User clicks on the back CTA
-    And User clicks on the back CTA
-    And User selects which sector are you looking for "<sectorRadio2>" radio button
-    And User clicks on the "Continue" button
-    Then User checks question content for question "housing-qst2.1"
-    When User clicks on the "Continue" button
-    Then User checks error handling content for question "housing-qst2.1"
-    And User selects which services "<services>" required multi choice checkboxes
-    And User clicks on the "Continue" button
-    Then User checks question content for question "housing-qst3"
-    When User clicks on the "Continue" button
-    Then User checks error handling content for question "housing-qst3"
-    And User selects what sector "<sector>"are you buying for radio button
-    And User clicks on the "Continue" button
-    Then User checks Routes to Market Definitions content on "routesToMarketContent"
-    Examples:
-      | ScenarioID | framework | sectorRadio1 | sectorRadio2               | housingServices                    | services                         | sector    |
-      | Scenario 1 | housing   | Housing      | Facilities Management (FM) | Housing maintenance and management | Cleaning services_Waste services | Education |
+  #(BUG): WEB-1651
+#  @Fm2HousingQuestionContent @Fm2HousingErrorHandling @Fm2HousingRoutesToMarketContent
+#  Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
+#    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+#    When User enters "<framework>" details and click "Start now" button
+#    When User clicks on the "Start now" button
+#    Then User checks question content for question "housing-qst1"
+#    When User clicks on the "Continue" button
+#    Then User checks error handling content for question "housing-qst1"
+#    And User selects which sector are you looking for "<sectorRadio1>" radio button
+#    And User clicks on the "Continue" button
+#    Then User checks question content for question "housing-qst2"
+#    When User clicks on the "Continue" button
+#    Then User checks error handling content for question "housing-qst2"
+#    And User selects which type of housing services is required "<housingServices>"
+#    And User clicks on the "Continue" button
+#    Then User checks question content for question "housing-qst3"
+#    When User clicks on the "Continue" button
+#    Then User checks error handling content for question "housing-qst3"
+#    And User clicks on the back CTA
+#    And User clicks on the back CTA
+#    And User selects which sector are you looking for "<sectorRadio2>" radio button
+#    And User clicks on the "Continue" button
+#    Then User checks question content for question "housing-qst2.1"
+#    When User clicks on the "Continue" button
+#    Then User checks error handling content for question "housing-qst2.1"
+#    And User selects which services "<services>" required multi choice checkboxes
+#    And User clicks on the "Continue" button
+#    Then User checks question content for question "housing-qst3"
+#    When User clicks on the "Continue" button
+#    Then User checks error handling content for question "housing-qst3"
+#    And User selects what sector "<sector>"are you buying for radio button
+#    And User clicks on the "Continue" button
+#    Then User checks Routes to Market Definitions content on "routesToMarketContent"
+#    Examples:
+#      | ScenarioID | framework | sectorRadio1 | sectorRadio2               | housingServices                    | services                         | sector    |
+#      | Scenario 1 | housing   | Housing      | Facilities Management (FM) | Housing maintenance and management | Cleaning services_Waste services | Education |

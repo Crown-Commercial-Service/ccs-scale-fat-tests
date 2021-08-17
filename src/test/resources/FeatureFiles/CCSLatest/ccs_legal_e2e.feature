@@ -71,9 +71,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User selects which sector are you looking for "<budgetRadio>" radio button
     And User clicks on the "Continue" button
     And User can successfully expand the details section
-    Then User should be displayed with recommendations "<frameworkId><recommendation>" services for lots ""
-    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
-    And User should be displayed with GM Escape page with route to "<frameworkId>"
+    Then User should be displayed with recommendations "<frameworkId>" services for lots ""
+    And User is displayed with Framework Id "<framework_details>" and the expiration date "<expirationDate>" and the details "<details>" text
+    And User should be displayed with GM Escape page with route to "<framework_details>"
     And User is displayed with recommendations: "<recommendation> <order>" in the right order
     And User should be displayed with a number of "<lots>" Lot services
     And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
@@ -83,9 +83,9 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | areaSuits |sector            | serviceArea | budgetRadio | frameworkId   | expirationDate        | details               | recommendation | lots | order |
+      | ScenarioID | framework | areaSuits |sector            | serviceArea | budgetRadio | frameworkId   | expirationDate        | details               | recommendation | lots | order |framework_details|
 #      | Scenario 1 | Finance   | Central Government                                         | Employment litigation | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
-      | Scenario 2 | law       | Legal     |Central Government | Litigation | No          | RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
+      | Scenario 2 | law       | Legal     |Central Government | Litigation | No          | RM3786_RM3788wpslot1 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     | RM3786_RM3788 |
 #      | Scenario 3 | lawyer    | Ministry of Defence or defence infrastructure organisation | Property              | No          | RM3786_RM3788 | 27/12/2021_30/09/2021 | GLAS_wpsLegalServices | wpslot1        | 1    | 2     |
 
     #sector= Central Government, service Area leads budget question with answer >20k
@@ -326,7 +326,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
     Examples:
       | ScenarioID | framework  | areaSuits |sector           | serviceArea       | location         | frameworkId | expirationDate | details          | recommendation   | lots |
-      | Scenario 1 | legal case | Legal     |Local Government | Anything else     | England or Wales | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2a | 2    |
+      | Scenario 1 | legal case | Legal     |Local Government | Anything else     | England or Wales | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2a_wpslot1 | 2    |
 #      | Scenario 2 | IP Exploitation               | Devolved         | Multiple services | England or Wales | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2a | 2    |
 #      | Scenario 3 | government legal advisory     | Education        | Anything else     | Scotland         | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2b_wpslot1 | 2    |
 #      | Scenario 4 | General Legal Advice Services | Blue light       | Multiple services | Scotland         | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2b_wpslot1 | 2    |

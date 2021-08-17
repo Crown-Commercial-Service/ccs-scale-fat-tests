@@ -155,7 +155,7 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
 #      | Scenario 5  | legal     | Health           | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
 #      | Scenario 6  | legal     | Blue light       | eDisclosure and eDiscovery             | RM3717      | 01/06/2021     | eDisclosureandeDiscoveryServicesDetails |
 #      | Scenario 7  | legal     | Housing          | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
-      | Scenario 8  | legal     | Legal     |Charities        | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
+      | Scenario 8  | legal     | Legal     |Charities        | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerInfo                       |
 #      | Scenario 9  | legal     | Local Government | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
 #      | Scenario 10 | legal     | Education        | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
 #      | Scenario 11 | legal     | Devolved         | Costs lawyer and legal costs draftsmen | RM6137      | 18/08/2022     | costLawyerDetails                       |
@@ -223,10 +223,10 @@ Feature: GM Journey for Legal framework -> See Linen schema from https://miro.co
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
     Examples:
       | ScenarioID | framework | areaSuits |sector           | serviceArea       | location                                   | frameworkId | expirationDate | details          | recommendation   | lots |
-      | Scenario 1 | legal     | Legal     |Local Government | Anything else     | England or Wales                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2a | 2    |
-      | Scenario 2 | legal     | Legal     |Devolved         | Multiple services | England or Wales                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2a | 2    |
-      | Scenario 3 | legal     | Legal     |Education        | Anything else     | Scotland                                   | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2b_wpslot1 | 2    |
-      | Scenario 4 | legal     | Legal     |Blue light       | Multiple services | Scotland                                   | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2b_wpslot1 | 2    |
-      | Scenario 5 | legal     | Legal     |Health           | Anything else     | Northern Ireland                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2c | 2    |
-      | Scenario 6 | legal     | Legal     |Charities        | Multiple services | Northern Ireland                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2c | 2    |
+      | Scenario 1 | legal     | Legal     |Local Government | Anything else     | England or Wales                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2a_wpslot1 | 2    |
+      | Scenario 2 | legal     | Legal     |Devolved         | Multiple services | England or Wales                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2a_wpslot1 | 2    |
+      | Scenario 3 | legal     | Legal     |Education        | Anything else     | Scotland                                   | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2b | 2    |
+      | Scenario 4 | legal     | Legal     |Blue light       | Multiple services | Scotland                                   | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1_wpslot2b | 2    |
+      | Scenario 5 | legal     | Legal     |Health           | Anything else     | Northern Ireland                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2c_wpslot1 | 2    |
+      | Scenario 6 | legal     | Legal     |Charities        | Multiple services | Northern Ireland                           | RM3788      | 30/09/2021     | wpsLegalServices | wpslot2c_wpslot1 | 2    |
       | Scenario 6 | legal     | Legal     |Charities        | Multiple services | England or Wales_Northern Ireland_Scotland | RM3788      | 30/09/2021     | wpsLegalServices | wpslot1          | 1    |

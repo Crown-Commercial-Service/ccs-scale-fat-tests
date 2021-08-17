@@ -87,7 +87,7 @@ public class TestContext {
         }
     }
 
-    @After
+@After
     public void cleanUp() throws Exception {
         if(configReader.get("browserName").equalsIgnoreCase("chrome_profile")||configReader.get("browserName").equalsIgnoreCase("CHROME_HEADLESS"))
         {browserFactory.deleteDirectory();}
@@ -152,5 +152,13 @@ public class TestContext {
 
     public boolean isScenarioViaCSS() {
         return isScenarioViaCSS;
+    }
+
+    public BrowserFactory getBrowserFactory(){
+        return browserFactory;
+    }
+
+    public ConfigurationReader getConfigReader() {
+        return configReader;
     }
 }
