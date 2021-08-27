@@ -93,8 +93,20 @@ public class GMResultPage extends Actions {
     @FindBy(linkText = "//p[contains(text(),'Show Details')]")
     private WebElement showDetails;
 
+    @FindBy(xpath = "//div//button//h3")
+    private List<WebElement> agreementResultText;
+
+    @FindBy(xpath = "//*[@class='govuk-summary-list__value']")
+    private List<WebElement> summaryListText;
+
+    @FindBy(xpath = "//*[@id='accordion-default-heading-1']/h3")
+    private WebElement agreementResultTextOne;
+
+    @FindBy(xpath = "//*[@id='accordion-default-heading-2']/h3")
+    private WebElement agreementResultTextTwo;
 
 
+    public String contactCcs = "//*[@class='contact-ccs-btn']/a";
 
     public GMResultPage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
@@ -389,5 +401,31 @@ public class GMResultPage extends Actions {
     public void checkRoutesToMarketContent(String expectedRoutesDefinitionContent) {
         Assert.assertTrue("The routes to market definitions are not displayed in the UI", routesToMarketDefinition.isDisplayed());
         Assert.assertEquals("The expected routes to market definitions content is not the same with the actual", expectedRoutesDefinitionContent, getRoutesToMarketDefinitionContent());
+    }
+    public void clickElementWithJavaScript(String xpath) {
+        WebElement element = driver.findElement(By.xpath(xpath));
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", element);
+        log.info("Clicked on specified element");
+    }
+
+    public List<WebElement> getAgreementResultText(){
+        return agreementResultText;
+    }
+
+    public List<WebElement> getSummaryListText() {
+        return summaryListText;
+    }
+
+    public void clickContactButton(){
+        clickElementWithJavaScript(contactCcs);
+    }
+
+    public String getAgreementResultTextOne(){
+        return agreementResultTextOne.getText();
+    }
+
+    public String getAgreementResultTextTwo(){
+        return agreementResultTextTwo.getText();
     }
 }

@@ -58,9 +58,9 @@ public class TestContext {
         log.info("Successfully lunched the chrome browser");
     }
 
-    @Given("User open a chrome browser")
-    public void user_open_a_chrome_browser() {
-        log.info("Successfully lunched the chrome browser");
+    @Given("I am on the CCS main website page")
+    public void i_am_on_the_ccs_main_website_page() {
+        browserFactory.launchURL(configReader.get("baseURL"));
     }
 
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")

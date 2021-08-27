@@ -10,7 +10,10 @@ import com.scale.framework.utility.StringUtils;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import java.net.MalformedURLException;
@@ -20,6 +23,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import static java.lang.Integer.parseInt;
+import static org.junit.Assert.assertEquals;
 
 public class GMResultPageSteps {
 
@@ -246,5 +250,37 @@ public class GMResultPageSteps {
         ConfigurationReader configurationReader = new ConfigurationReader("config//QuestionTypesContent.properties");
         String expectedResult = configurationReader.returnProperty(routesToMarketDefinitionName);
         gmResultPage.checkRoutesToMarketContent(expectedResult);
+    }
+
+    @Then("I should see the recommended agreements")
+    public void i_should_see_the_recommended_agreements(DataTable results) {
+        List<String> listAllTitles = objectManager.getGmSearchResultPageObj().summaryList
+                (objectManager.getGmSearchResultPageObj().getAgreementResultText());
+        Assert.assertEquals(results.asList(), listAllTitles);
+    }
+
+    @Then("I should see the following summary list values")
+    public void i_should_see_the_following_summary_list_values(DataTable title) {
+        List<String> listAllTitles = objectManager.getGmSearchResultPageObj()
+                .summaryList(objectManager.getGmSearchResultPageObj().getSummaryListText());
+        Assert.assertEquals(title.asList(), listAllTitles);
+    }
+
+    @Then("I should see the first {string} displayed")
+    public void i_should_see_the_first_displayed(String agreement) {
+        assertEquals(objectManager.getGmSearchResultPageObj().getAgreementResultTextOne(), (agreement));
+        log.info("The result text is displayed:" + agreement);
+    }
+
+    @Then("I should see the second {string} displayed")
+    public void i_should_see_the_second_displayed(String agreement) {
+        gmResultPage = objectManager.getGmSearchResultPageObj();
+        assertEquals(objectManager.getGmSearchResultPageObj().getAgreementResultTextTwo(), (agreement));
+        log.info("The result text is displayed:" + agreement);
+    }
+
+    @When("User clicks on the contact CCS button")
+    public void user_clicks_on_the_contact_CCS_button() {
+        objectManager.getGmSearchResultPageObj().clickContactButton();
     }
 }
