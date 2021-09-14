@@ -21,7 +21,7 @@ import static org.junit.Assert.assertEquals;
 public class E2EPage extends Actions {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
-    private Logger log = Log.getLogger(HomePage.class);
+    private Logger log = Log.getLogger(E2EPage.class);
 
 
     @FindBy(id = "main-content")

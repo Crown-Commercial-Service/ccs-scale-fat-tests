@@ -20,7 +20,7 @@ import static org.junit.Assert.assertTrue;
 public class AgreementPage extends Actions {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
-    private Logger log = Log.getLogger(ContactCCSPage.class);
+    private Logger log = Log.getLogger(AgreementPage.class);
 
     public AgreementPage(WebDriver driver, Scenario scenario){
         this.driver = driver;
@@ -28,6 +28,9 @@ public class AgreementPage extends Actions {
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(this.driver, 30);
     }
+
+    private String accordion = "button#accordion-default-heading-2[aria-expanded='true']";
+    private String allAccordionSections = "button.govuk-accordion__open-all[aria-expanded='true']";
 
     @FindBy(xpath = "//*[@class='govuk-accordion__section-heading']/button")
     private List<WebElement> agreementDetailsOverview;
@@ -37,16 +40,6 @@ public class AgreementPage extends Actions {
 
     @FindBy(xpath = "//*[@class='govuk-accordion__open-all']")
     private WebElement openAllAccordion;
-
-
-    //
-//    @FindBy(xpath = "//*[@id='upcoming']")
-//    private WebElement upcomingFilter;
-
-
-    private String accordion = "button#accordion-default-heading-2[aria-expanded='true']";
-    private String allAccordionSections = "button.govuk-accordion__open-all[aria-expanded='true']";
-
 
     public List<WebElement> getKeyFacts(){
         return keyFactsDetails;
@@ -73,7 +66,4 @@ public class AgreementPage extends Actions {
     public void clickOpenAll(){
         clickElement(openAllAccordion);
     }
-
-
-
 }

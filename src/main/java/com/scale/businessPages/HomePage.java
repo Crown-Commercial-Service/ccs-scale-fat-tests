@@ -137,8 +137,8 @@ public class HomePage extends Actions {
         scenario.write(" Buyer clicked on " + buttonName + " checkbox button");
     }
 
-    public void clickAgreementStatusFilter(String elementName){
-        String XPATH = "//*[@id= '"+ elementName +"']";
+    public void clickAgreementStatusFilter(String filterStatusName){
+        String XPATH = "//*[@id= '"+ filterStatusName +"']";
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);

@@ -282,7 +282,7 @@ public class Actions {
 		return element.getText();
 		}
 
-	public List<String> summaryList(List<WebElement> fieldName) {
+	public List<String> getAllListTitles(List<WebElement> fieldName) {
 		try {
 			List<String> agreementResultList = new ArrayList<>();
 			for (WebElement element : fieldName) {

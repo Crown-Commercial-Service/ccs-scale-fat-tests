@@ -28,7 +28,6 @@ public class SearchFrameworksPageSteps {
     public APIBase apibase = new APIBase();
     ConfigurationReader configReader = new ConfigurationReader();
 
-
     public SearchFrameworksPageSteps(TestContext testContextObj) {
         this.testContextObj = testContextObj;
         driver = testContextObj.getDriver();
@@ -65,7 +64,7 @@ public class SearchFrameworksPageSteps {
 
     @When("I should see the search agreements results listed")
     public void i_should_see_the_search_agreements_results_listed() {
-        apibase.getRequest("search-api/frameworks");
+        apibase.getRequest(configReader.get("searchAgreement"));
         int total_results = apibase.getTotalResults();
         Assert.assertEquals(objectManager.getSearchFrameworkPageObj().getsearchAgreementHeaderText(), total_results + " " + "agreements found");
     }
@@ -74,7 +73,7 @@ public class SearchFrameworksPageSteps {
     public void the_agreement_listed_on_page_one_should_match_with_the_api_response() {
         searchFrameworksPageObj = objectManager.getSearchFrameworkPageObj();
         List<String> listAllTitles = searchFrameworksPageObj
-                .summaryList(objectManager.getSearchFrameworkPageObj().getSearchAgreementList());
+                .getAllListTitles(objectManager.getSearchFrameworkPageObj().getSearchAgreementList());
         log.info(listAllTitles);
         Assert.assertEquals(apibase.getAgreementName(), listAllTitles);
     }
@@ -87,7 +86,7 @@ public class SearchFrameworksPageSteps {
     @Then("I should see the following filter facet")
     public void i_should_see_the_following_filter_facet(DataTable agreementStatus) {
         List<String> listAllTitles = objectManager.getSearchFrameworkPageObj()
-                .summaryList(objectManager.getSearchFrameworkPageObj().getFilterFacet());
+                .getAllListTitles(objectManager.getSearchFrameworkPageObj().getFilterFacet());
         Assert.assertEquals(agreementStatus.asList(), listAllTitles);
     }
 
@@ -121,6 +120,4 @@ public class SearchFrameworksPageSteps {
         int total_results = apibase.getTotalResults();
         Assert.assertEquals(objectManager.getSearchFrameworkPageObj().getsearchAgreementHeaderText(), total_results + " " + "agreements found");
     }
-
-
 }

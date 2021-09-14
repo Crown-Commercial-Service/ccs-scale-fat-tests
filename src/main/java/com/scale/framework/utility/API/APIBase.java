@@ -23,7 +23,6 @@ public class APIBase extends ConfigurationReader {
         return requestspec;
     }
 
-
     public Response getRequest(String URL) {
         response=null;
         response = given().spec(setBaseURI()).contentType(ContentType.JSON).get(URL);
@@ -36,15 +35,12 @@ public class APIBase extends ConfigurationReader {
     }
     public int getTotalResults() {
         int size = response.getBody().jsonPath().get("meta.total_results");
-        log.info(size);
+        log.info("The total number returned is" + size);
         return size;
     }
 
     public ArrayList<String> getAgreementName() {
-            ArrayList<String> countries = response.getBody().path("results.title");
-            for (int i = 0; i < countries.size(); i++) {
-                countries.get(i);
-            }
-            return countries;
+        ArrayList<String> countries = response.getBody().path("results.title");
+        return countries;
     }
 }

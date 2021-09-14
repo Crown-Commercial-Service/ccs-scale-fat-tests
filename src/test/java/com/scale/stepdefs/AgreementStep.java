@@ -33,14 +33,14 @@ public class AgreementStep {
     @Then("I should see the details section")
     public void i_should_see_the_details_section(DataTable details) {
         List<String> listAllTitles = agreementPage
-                .summaryList(agreementPage.getAgreementDetails());
+                .getAllListTitles(agreementPage.getAgreementDetails());
         Assert.assertEquals(details.asList(), listAllTitles);
     }
 
     @Then("I should the key facts details")
     public void i_should_the_key_facts_details(DataTable details) {
         List<String> listAllTitles = agreementPage
-                .summaryList(agreementPage.getKeyFacts());
+                .getAllListTitles(agreementPage.getKeyFacts());
         Assert.assertEquals(details.asList(), listAllTitles);
     }
 

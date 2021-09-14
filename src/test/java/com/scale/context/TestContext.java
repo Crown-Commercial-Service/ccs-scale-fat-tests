@@ -58,11 +58,6 @@ public class TestContext {
         log.info("Successfully lunched the chrome browser");
     }
 
-    @Given("I am on the CCS main website page")
-    public void i_am_on_the_ccs_main_website_page() {
-        browserFactory.launchURL(configReader.get("baseURL"));
-    }
-
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
         scenarioContext.setKeyValue("ScenarioID", ScenarioID);

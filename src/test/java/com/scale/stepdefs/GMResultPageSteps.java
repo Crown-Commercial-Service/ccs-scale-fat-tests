@@ -254,7 +254,7 @@ public class GMResultPageSteps {
 
     @Then("I should see the recommended agreements")
     public void i_should_see_the_recommended_agreements(DataTable results) {
-        List<String> listAllTitles = objectManager.getGmSearchResultPageObj().summaryList
+        List<String> listAllTitles = objectManager.getGmSearchResultPageObj().getAllListTitles
                 (objectManager.getGmSearchResultPageObj().getAgreementResultText());
         Assert.assertEquals(results.asList(), listAllTitles);
     }
@@ -262,7 +262,7 @@ public class GMResultPageSteps {
     @Then("I should see the following summary list values")
     public void i_should_see_the_following_summary_list_values(DataTable title) {
         List<String> listAllTitles = objectManager.getGmSearchResultPageObj()
-                .summaryList(objectManager.getGmSearchResultPageObj().getSummaryListText());
+                .getAllListTitles(objectManager.getGmSearchResultPageObj().getSummaryListText());
         Assert.assertEquals(title.asList(), listAllTitles);
     }
 

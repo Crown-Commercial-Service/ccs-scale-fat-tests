@@ -52,7 +52,7 @@ public class GMPageSteps {
     @Then("I should see the following options")
     public void i_should_see_the_following_options(DataTable options) {
         gmLandingPage = objectManager.getGmLandingPageObj();
-        List<String> listAllTitles = gmLandingPage.summaryList(gmLandingPage.getRadioItemText());
+        List<String> listAllTitles = gmLandingPage.getAllListTitles(gmLandingPage.getRadioItemText());
         Assert.assertEquals(options.asList(), listAllTitles);
 
     }

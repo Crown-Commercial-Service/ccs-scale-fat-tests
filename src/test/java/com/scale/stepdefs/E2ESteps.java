@@ -280,7 +280,7 @@ public class E2ESteps {
     @Then("I should the following header")
     public void i_should_the_following_header(DataTable agreementStatus) {
         List<String> listAllTitles = objectManager.getE2EPageObj()
-                .summaryList(objectManager.getE2EPageObj().getHeaderText());
+                .getAllListTitles(objectManager.getE2EPageObj().getHeaderText());
         Assert.assertEquals(agreementStatus.asList(), listAllTitles);
     }
 
