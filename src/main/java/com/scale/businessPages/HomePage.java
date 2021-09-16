@@ -33,6 +33,20 @@ public class HomePage extends Actions {
     @FindBy(partialLinkText = "Start now")
     private WebElement startNowButton;
 
+    @FindBy(xpath = "//h1")
+    private WebElement headerOne;
+
+    @FindBy(xpath = "//h2[@class='govuk-heading-xl page-title']/strong")
+    private WebElement headerTwo;
+
+    @FindBy(xpath = "//div[3]/div/div[2]/form/div/div/input[@id='framework_q']")
+    private WebElement searchFrameworkField;
+
+    @FindBy(xpath = "//div[3]/div/div[2]/form/div/div/button[@class='homepage-hero__search-button']")
+    private WebElement searchAgreementButton;
+
+    private String searchAgreementBtn = "//div[3]/div/div[2]/form/div/div/button[@class='homepage-hero__search-button']";
+
     public HomePage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
         this.scenario = scenario;
@@ -103,4 +117,31 @@ public class HomePage extends Actions {
         log.info("Buyer clicked on " + checkboxButtonName + " checkbox  button");
         scenario.write(" Buyer clicked on " + checkboxButtonName + " checkbox button");
     }
+
+    public String getHeaderTwo() {
+        return headerTwo.getText();
+    }
+
+    public String getHeaderOne() {
+        return headerOne.getText();
+    }
+
+    public void clickContactButton(String buttonName) {
+        waitForSeconds(3);
+        String XPATH = "//p/a[contains(text(),'" + buttonName +"')]";
+        WebElement element = driver.findElement(By.xpath(XPATH));
+        JavascriptExecutor executor = ((JavascriptExecutor) driver);
+        executor.executeScript("arguments[0].click();", element);
+        // element.click();
+        log.info("Buyer clicked on " + buttonName + " checkbox  button");
+        scenario.write(" Buyer clicked on " + buttonName + " checkbox button");
+    }
+
+    public void clickAgreementStatusFilter(String filterStatusName){
+        String XPATH = "//*[@id= '"+ filterStatusName +"']";
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
+        JavascriptExecutor executor = ((JavascriptExecutor) driver);
+        executor.executeScript("arguments[0].click();", element);
+    }
+
 }

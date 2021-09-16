@@ -8,6 +8,7 @@ import com.scale.businessPages.*;
 import com.scale.TestRunner.*;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.apache.log4j.Logger;
@@ -18,6 +19,7 @@ import org.openqa.selenium.support.FindBy;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 
+import static org.junit.Assert.assertEquals;
 
 public class HomeSteps {
     private Logger log = Log.getLogger(HomeSteps.class);
@@ -73,7 +75,6 @@ public class HomeSteps {
         homePageObj = objectManager.getHomePageObj();
         testContextObj.takeSnapShot();
         homePageObj.clickButton(linkName);
-
     }
 
     @And("User selects \"([^\"]*)\" Option")
@@ -83,6 +84,23 @@ public class HomeSteps {
 
     }
 
+    @Given("I am on the {string} page")
+    public void i_am_on_the_page(String header) {
+        assertEquals(objectManager.getHomePageObj().getHeaderOne(), header);
+//        objectManager.getHomePageObj().headerText(header);
+    }
+
+    @When("I am on agreement result title {string} page")
+    public void i_am_on_agreement_result_title_page(String string) {
+        assertEquals(objectManager.getHomePageObj().getHeaderTwo(), string);
+    }
+
+    @And("User clicks on the \"([^\"]*)\" button on the result page")
+    public void user_clicks_on_the_button_on_the_result_Page(String buttonName) throws InterruptedException {
+        homePageObj = objectManager.getHomePageObj();
+        testContextObj.takeSnapShot();
+        homePageObj.clickContactButton(buttonName);
+    }
 
 }
 

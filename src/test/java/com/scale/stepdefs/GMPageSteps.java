@@ -8,10 +8,13 @@ import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import io.cucumber.datatable.DataTable;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import java.net.MalformedURLException;
+import java.util.List;
 
 public class GMPageSteps {
     private Logger log = Log.getLogger(com.scale.stepdefs.GMPageSteps.class);
@@ -44,5 +47,13 @@ public class GMPageSteps {
         gmLandingPage = objectManager.getGmLandingPageObj();
         gmLandingPage.isGmJourneyOpenedInTheSameTab();
         testContextObj.takeSnapShot();
+    }
+
+    @Then("I should see the following options")
+    public void i_should_see_the_following_options(DataTable options) {
+        gmLandingPage = objectManager.getGmLandingPageObj();
+        List<String> listAllTitles = gmLandingPage.getAllListTitles(gmLandingPage.getRadioItemText());
+        Assert.assertEquals(options.asList(), listAllTitles);
+
     }
 }

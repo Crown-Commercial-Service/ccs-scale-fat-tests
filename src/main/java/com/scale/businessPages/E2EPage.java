@@ -11,12 +11,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 public class E2EPage extends Actions {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
-    private Logger log = Log.getLogger(HomePage.class);
+    private Logger log = Log.getLogger(E2EPage.class);
 
 
     @FindBy(id = "main-content")
@@ -243,6 +248,15 @@ public class E2EPage extends Actions {
 
     @FindBy(xpath = "")
     private WebElement lookingQuestionText;
+
+    @FindBy(xpath = "//*[@id='head-error-msg']")
+    private WebElement errorMsg;
+
+    @FindBy(xpath = "//h3")
+    private List<WebElement> headerThree;
+
+    @FindBy(xpath = "//h3//a")
+    private WebElement searchAgreementResultLink;
 
     public E2EPage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
@@ -830,6 +844,18 @@ public class E2EPage extends Actions {
         executor.executeScript("arguments[0].click();", focused);
         Assert.assertTrue("The element is not in focus", firstSelectableElement.isSelected());
         executor.executeScript("arguments[0].click();", focused);
+    }
+
+    public String getErrorMessage() {
+        return getText(errorMsg);
+    }
+
+    public List<WebElement> getHeaderText(){
+        return headerThree;
+    }
+
+    public void clickSearchAgreementResult() {
+        clickElement(searchAgreementResultLink);
     }
 
 }

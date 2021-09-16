@@ -9,12 +9,16 @@ import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 public class E2ESteps {
     private Logger log = Log.getLogger(com.scale.stepdefs.GMPageSteps.class);
@@ -24,8 +28,10 @@ public class E2ESteps {
     private Scenario scenario;
     private E2EPage e2EPageObj;
     private HomePage homePageObj;
+    private ConfigurationReader configReaderObj;
 
     public E2ESteps(TestContext testContextObj) {
+        configReaderObj = new ConfigurationReader();
         this.testContextObj = testContextObj;
         driver = testContextObj.getDriver();
         objectManager = testContextObj.getObjectManager();
@@ -252,4 +258,37 @@ public class E2ESteps {
         homePageObj.clickRadioButton(service);
         testContextObj.takeSnapShot();
     }
+
+    @When("User selects the \"([^\"]*)\" radio button")
+    public void user_selects_the_radio_button(String sectorRadio) {
+        homePageObj = objectManager.getHomePageObj();
+        homePageObj.clickRadioButton(sectorRadio);
+        testContextObj.takeSnapShot();
+    }
+
+    @Then("I should see the error message")
+    public void i_should_see_the_error_message() {
+        e2EPageObj = objectManager.getE2EPageObj();
+        assertEquals((configReaderObj.get("errorMessage")),e2EPageObj.getErrorMessage());
+    }
+
+    @Then("I should see the error message {string}")
+    public void i_should_see_the_error_message(String errMsg) {
+        assertEquals(objectManager.getE2EPageObj().getErrorMessage(), errMsg);
+    }
+
+    @Then("I should the following header")
+    public void i_should_the_following_header(DataTable agreementStatus) {
+        List<String> listAllTitles = objectManager.getE2EPageObj()
+                .getAllListTitles(objectManager.getE2EPageObj().getHeaderText());
+        Assert.assertEquals(agreementStatus.asList(), listAllTitles);
+    }
+
+    @When("I click on the first search results")
+    public void i_click_on_the_first_search_results() {
+        objectManager.getE2EPageObj().clickSearchAgreementResult();
+        log.info("I click on the first search results");
+    }
+
+
 }

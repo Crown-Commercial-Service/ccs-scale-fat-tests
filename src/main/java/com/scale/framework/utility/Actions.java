@@ -1,5 +1,6 @@
 package com.scale.framework.utility;
 
+import java.util.ArrayList;
 import java.util.List;
 import cucumber.api.Scenario;
 import org.apache.log4j.Logger;
@@ -10,6 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static org.junit.Assert.assertEquals;
 
 
 public class Actions {
@@ -267,4 +270,28 @@ public class Actions {
 	        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
 	        element.click();
 	    }
+
+	    public void headerText(String page) {
+		String pageText = driver.findElement(By.tagName("h1")).getText();
+		assertEquals(pageText, page);
+		log.info("Landed on" + page + "page");
+		}
+
+		public String getText(WebElement fieldName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(fieldName));
+		return element.getText();
+		}
+
+	public List<String> getAllListTitles(List<WebElement> fieldName) {
+		try {
+			List<String> agreementResultList = new ArrayList<>();
+			for (WebElement element : fieldName) {
+				agreementResultList.add(element.getText());
+			}
+			return agreementResultList;
+		} catch (Throwable e) {
+			return null;
+		}
+	}
+
 }
