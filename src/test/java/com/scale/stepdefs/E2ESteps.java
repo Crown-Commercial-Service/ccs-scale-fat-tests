@@ -53,6 +53,15 @@ public class E2ESteps {
         // e2EPageObj.selectBudget(budgetRadio);
     }
 
+    @When("User selects do you need \"([^\"]*)\" radio button")
+    public void user_selects_do_you_need_mail_room_equipment_radio_button(String mailRoomEpuip) throws InterruptedException {
+        homePageObj = objectManager.getHomePageObj();
+        homePageObj.clickRadioButton(mailRoomEpuip);
+        testContextObj.takeSnapShot();
+        // e2EPageObj.selectBudget(budgetRadio);
+    }
+
+
     @When("User enters budget amount \"([^\"]*)\" in the budget field")
     public void user_enters_budget_amount_in_the_budget_field(String enterBudgets) throws InterruptedException {
         e2EPageObj = objectManager.getE2EPageObj();
@@ -218,6 +227,14 @@ public class E2ESteps {
         homePageObj.clickRadioButton(areaSuits);
         testContextObj.takeSnapShot();
     }
+
+    @When("User selects which \"([^\"]*)\" is needed for your requirements")
+    public void user_selects_which_is_needed_for_your_requirements(String productType) {
+        homePageObj = objectManager.getHomePageObj();
+        homePageObj.clickRadioButton(productType);
+        testContextObj.takeSnapShot();
+    }
+
 
     @When("User selects additional services \"([^\"]*)\" required outside of tech services")
     public void user_selects_additional_services_required_outside_of_tech_services(String addFacilities) {
