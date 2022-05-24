@@ -1,14 +1,14 @@
 package com.scale.businessPages;
 
 import com.scale.framework.utility.*;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import cucumber.api.Scenario;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,7 +18,7 @@ public class HomePage extends Actions {
 
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
-    private Logger log = Log.getLogger(HomePage.class);
+    private Logger log = LogManager.getLogger(HomePage.class);
 
 
     /*@FindBy(how = How.XPATH, using = "//button[@class='homepage-hero__search-button']")

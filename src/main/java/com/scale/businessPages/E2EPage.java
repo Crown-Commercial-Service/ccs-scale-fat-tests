@@ -2,16 +2,15 @@ package com.scale.businessPages;
 
 import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
-import com.scale.framework.utility.Log;
 import cucumber.api.Scenario;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -21,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 public class E2EPage extends Actions {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
-    private Logger log = Log.getLogger(E2EPage.class);
+    private Logger log = LogManager.getLogger(E2EPage.class);
 
 
     @FindBy(id = "main-content")

@@ -9,8 +9,8 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
@@ -26,7 +26,7 @@ import java.util.List;
 
 public class TestContext {
 
-    private Logger log = Log.getLogger(TestContext.class);
+    private Logger log = LogManager.getLogger(TestContext.class);
     private WebDriver driver;
     private BrowserFactory browserFactory;
     private PageObjectManager objectManager;

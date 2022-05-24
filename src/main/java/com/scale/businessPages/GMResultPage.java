@@ -2,10 +2,10 @@ package com.scale.businessPages;
 
 import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
-import com.scale.framework.utility.Log;
 import com.scale.framework.utility.StringUtils;
 import cucumber.api.Scenario;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -25,7 +25,7 @@ import java.util.stream.IntStream;
 public class GMResultPage extends Actions {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
-    private Logger log = Log.getLogger(GMResultPage.class);
+    private Logger log = LogManager.getLogger(GMResultPage.class);
 
     @FindBy(id = "definitions")
     private WebElement routesToMarketDefinition;
