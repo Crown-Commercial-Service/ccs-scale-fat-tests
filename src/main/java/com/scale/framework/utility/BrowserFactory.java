@@ -2,7 +2,8 @@ package com.scale.framework.utility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,7 +18,7 @@ import java.net.URL;
 
 public class BrowserFactory {
 
-    private Logger log = Log.getLogger(BrowserFactory.class);
+    private Logger log = LogManager.getLogger(BrowserFactory.class);
     private WebDriver driver;
     private ConfigurationReader configReader;
 

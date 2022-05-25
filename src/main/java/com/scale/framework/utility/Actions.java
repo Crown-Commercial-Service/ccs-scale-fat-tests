@@ -3,10 +3,9 @@ package com.scale.framework.utility;
 import java.util.ArrayList;
 import java.util.List;
 import cucumber.api.Scenario;
-import org.apache.log4j.Logger;
-import org.jboss.aerogear.security.otp.Totp;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -16,7 +15,7 @@ import static org.junit.Assert.assertEquals;
 
 
 public class Actions {
-	 private Logger log = Log.getLogger(Actions.class);
+	 private Logger log = LogManager.getLogger(Actions.class);
 	    protected Scenario scenario;
 	    private WebDriver driver;
 	    protected WebDriverWait wait;

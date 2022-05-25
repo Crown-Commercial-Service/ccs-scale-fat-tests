@@ -4,13 +4,13 @@ import com.scale.businessPages.E2EPage;
 import com.scale.businessPages.HomePage;
 import com.scale.context.TestContext;
 import com.scale.framework.utility.ConfigurationReader;
-import com.scale.framework.utility.Log;
 import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
@@ -21,7 +21,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class E2ESteps {
-    private Logger log = Log.getLogger(com.scale.stepdefs.GMPageSteps.class);
+    private Logger log = LogManager.getLogger(com.scale.stepdefs.GMPageSteps.class);
     private WebDriver driver;
     private PageObjectManager objectManager;
     private TestContext testContextObj;

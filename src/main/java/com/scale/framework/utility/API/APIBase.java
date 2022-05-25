@@ -1,12 +1,12 @@
 package com.scale.framework.utility.API;
 
 import com.scale.framework.utility.ConfigurationReader;
-import com.scale.framework.utility.Log;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 
 import static io.restassured.RestAssured.given;
@@ -15,7 +15,7 @@ import static io.restassured.RestAssured.given;
 public class APIBase extends ConfigurationReader {
     public Response response;
     ConfigurationReader configReader = new ConfigurationReader();
-    private Logger log = Log.getLogger(APIBase.class);
+    private Logger log = LogManager.getLogger(APIBase.class);
 
 
     private RequestSpecification setBaseURI(){

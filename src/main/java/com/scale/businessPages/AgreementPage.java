@@ -2,11 +2,10 @@ package com.scale.businessPages;
 
 import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
-import com.scale.framework.utility.Log;
 import cucumber.api.Scenario;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,7 +19,7 @@ import static org.junit.Assert.assertTrue;
 public class AgreementPage extends Actions {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
-    private Logger log = Log.getLogger(AgreementPage.class);
+    private Logger log = LogManager.getLogger(AgreementPage.class);
 
     public AgreementPage(WebDriver driver, Scenario scenario){
         this.driver = driver;

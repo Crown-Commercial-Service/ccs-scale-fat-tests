@@ -1,28 +1,22 @@
 package com.scale.stepdefs;
 
 
-import com.scale.context.ScenarioContext;
 import com.scale.context.TestContext;
 import com.scale.framework.utility.*;
 import com.scale.businessPages.*;
-import com.scale.TestRunner.*;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-
-import java.net.MalformedURLException;
-import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
 public class HomeSteps {
-    private Logger log = Log.getLogger(HomeSteps.class);
+    private Logger log = LogManager.getLogger(HomeSteps.class);
     private WebDriver driver;
     private PageObjectManager objectManager;
     private TestContext testContextObj;

@@ -2,14 +2,13 @@ package com.scale.businessPages;
 
 import com.scale.framework.utility.Actions;
 import com.scale.framework.utility.ConfigurationReader;
-import com.scale.framework.utility.Log;
 import cucumber.api.Scenario;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -20,7 +19,7 @@ import static org.junit.Assert.assertTrue;
 public class SearchFrameworkPage extends Actions {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
-    private Logger log = Log.getLogger(HomePage.class);
+    private Logger log = LogManager.getLogger(HomePage.class);
     private String helpMeFindTheRightFrameworkButtonXpath = "//button[contains(text(),'Help me find the right framework')]";
 
     @FindBy(xpath = "//button[contains(text(),'Help me find the right framework')]")

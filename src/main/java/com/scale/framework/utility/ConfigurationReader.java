@@ -4,14 +4,14 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Properties;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ConfigurationReader {
 
-	 private Logger log = Log.getLogger(ConfigurationReader.class);
+	 private Logger log = LogManager.getLogger(ConfigurationReader.class);
 	    private Properties properties;
 	    private String path = "config//ApplicationConfig.properties";
 	    public ConfigurationReader()
