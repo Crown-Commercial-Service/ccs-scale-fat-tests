@@ -1,8 +1,8 @@
 @regression-tests
-Feature: Error handling scenarios for fm journeys
+Feature: Error handling scenarios for Postal Services GM journeys
 
-@TechnicalErrorHandling
-  Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of technical security journey
+  @TechnicalErrorHandling1
+  Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of postal servics journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
     When User clicks on the "Start now" button
@@ -24,7 +24,7 @@ Feature: Error handling scenarios for fm journeys
     Then User checks Routes to Market Definitions content on "routesToMarketContent"
 
     Examples:
-      | ScenarioID | framework |secTypeRadio       | requirements |techSecurity     |
+      | ScenarioID | framework |secTypeRadio       | requirements      |techSecurity     |
       | Scenario 1 | cctv      |Technical security | Security Services |Risk assessments |
 
   @TSecurityServiceErrorHandling
