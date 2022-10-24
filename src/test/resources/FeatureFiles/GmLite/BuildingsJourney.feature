@@ -19,14 +19,14 @@ Feature: GM Lite Building user Journey
     And I am on agreement result title "2 agreements that match your needs" page
     And User can successfully expand the details section
     Then I should see the recommended agreements
-      |Construction Products Consumables and Materials|
-      |Construction Works and Associated Services|
+      | Construction Products Consumables and Materials |
+      | Construction Works and Associated Services      |
     And User is displayed with initial search phrase from "<search_term>"
     And User is displayed with "Buildings" answer for the question "Which area best matches your needs?"
 
     Examples:
-      | search_term | Answer_1                    | Answer_2     |
-      | carers      | Buildings or construction   | Construction |
+      | search_term | Answer_1                  | Answer_2     |
+      | carers      | Buildings or construction | Construction |
 
   Scenario Outline: Verify that user can navigate to the search results page for the Energy, fuel or water journey
     When User selects the "Energy, fuel or water" radio button
@@ -39,11 +39,11 @@ Feature: GM Lite Building user Journey
     Then I should see the second "<Agreement 2>" displayed
 
     Examples:
-      |ScenarioID|Option             |Agreement 1                                        |Agreement 2                                      |
-      |1         |Electricity        |Utilities Switching Service DPS                    |Supply of Energy and Ancillary Services          |
-      |2         |Energy             |Heat Networks and Electricity Generation Assets DPS|Vehicle Charging Infrastructure Solutions (VCIS) |
-      |3         |Fuels              |National Fuels 2                                   |National Fuels Framework                         |
-      |4         |Water or wastewater|Water, Wastewater and Ancillary Services           |Water, Wastewater and Ancillary Services 2       |
+      | ScenarioID | Option              | Agreement 1                                         | Agreement 2                                      |
+      | 1          | Electricity         | Utilities Switching Service DPS                     | Supply of Energy and Ancillary Services          |
+      | 2          | Energy              | Heat Networks and Electricity Generation Assets DPS | Vehicle Charging Infrastructure Solutions (VCIS) |
+      | 3          | Fuels               | National Fuels 2                                    | National Fuels Framework                         |
+      | 4          | Water or wastewater | Water, Wastewater and Ancillary Services            | Water, Wastewater and Ancillary Services 2       |
 
 
   Scenario Outline: Verify that user can navigate to the search results page for the Facilities, estate or workplace management journey
@@ -56,9 +56,9 @@ Feature: GM Lite Building user Journey
     And I should see the first "<Agreement 1>" displayed
 
     Examples:
-      |ScenarioID|Option             |Agreement 1                  |
-      |1         |Cleaning services  |Building Cleaning Services   |
-      |2         |Estates management |Estates Professional Services|
+      | ScenarioID | Option             | Agreement 1                   |
+      | 1          | Cleaning services  | Building Cleaning Services    |
+      | 2          | Estates management | Estates Professional Services |
 
   Scenario: Verify that user can navigate to the agreement result page when no result is returned
     When User selects the "Facilities, estate or workplace management" radio button

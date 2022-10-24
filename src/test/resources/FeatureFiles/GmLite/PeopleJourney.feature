@@ -12,11 +12,11 @@ Feature: People Journey
     And User clicks on the "Continue" button
     And I am on the "You chose people. Select the area which best matches your needs." page
     Then I should see the following options
-      |Apprenticeship services            |
-      |Employee services or benefits      |
-      |Legal or consultancy services      |
-      |Recruitment or employment services |
-      |Anything else                      |
+      | Apprenticeship services            |
+      | Employee services or benefits      |
+      | Legal or consultancy services      |
+      | Recruitment or employment services |
+      | Anything else                      |
     When User selects the "Anything else" radio button
     When User clicks on the "Continue" button
     And I am on the "You chose Anything else. Select the product or service which best matches your needs." page
@@ -24,7 +24,7 @@ Feature: People Journey
     When User clicks on the "Continue" button
     And I am on agreement result title "1 agreement that matches your needs" page
     Then I should see the recommended agreements
-      |Contact Centre Services|
+      | Contact Centre Services |
 
 
   Scenario: Verify that validation error message is displayed when an option is not selected(People Journey)
