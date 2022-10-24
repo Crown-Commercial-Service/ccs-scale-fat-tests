@@ -41,12 +41,3 @@ Feature:RM6157: Building Materials
     Examples:
       | search_term | recommendation |
       | PPE         | RM6157Lot9     |
-
-
-
-
-
-
-
-
-

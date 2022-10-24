@@ -60,13 +60,3 @@ Feature:RM6119: Furniture & Associated Services
     Examples:
       | search_term   | recommendation |
       | Teacher Chair | RM6119Lot7     |
-
-
-
-
-
-
-
-
-
-
