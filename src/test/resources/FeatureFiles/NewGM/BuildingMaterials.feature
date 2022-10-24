@@ -1,5 +1,6 @@
-Feature:RM6157: Building Materials
 @RM6157
+Feature:RM6157: Building Materials
+
   Background: Navigate to the results page
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "PPE" details and click "Start now" button
