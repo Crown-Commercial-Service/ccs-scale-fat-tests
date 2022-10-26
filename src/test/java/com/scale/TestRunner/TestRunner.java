@@ -12,7 +12,6 @@ import cucumber.api.junit.Cucumber;
         monochrome = true,
         plugin = { "pretty", "html:target/cucumber-html-reports", "json:target/cucumber-html-reports/cucumber.json"},
         tags = ""
-//        tags =  "@regression-tests, @Prod"
 )
 
 public class TestRunner {
