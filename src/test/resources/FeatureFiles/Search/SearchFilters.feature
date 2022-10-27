@@ -1,5 +1,4 @@
 Feature:
-
   Background:
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User clicks on the "Search agreements" link
@@ -38,7 +37,7 @@ Feature:
     And I should see the following filter facet
       | Live       |
       | Technology |
-    When User clicks on the "Digital Future category" link
+    When User clicks on the "Digital Future" link
     Then I am on the "Search agreements for Technology in Digital Future category" page
 
   Scenario: Navigate to DPS agreement page
@@ -60,30 +59,31 @@ Feature:
     Then The accordion should be expanded
 
   Scenario: Navigate to the Gcloud framework type
-    And I enter "Gcloud" in the search agreement field
+    And I enter "GCloud 12" in the search agreement field
+    And I select "View all" filter option
     When User clicks on the "G-Cloud 12" link
-    And I am on the "G-Cloud 12" page
-    When User clicks on the "Products and suppliers" link
-    Then The accordion should be expanded
-
-
+    Then I am on the "G-Cloud 12" page
+    And I should see the details section
+      | Products and suppliers |
+@ignore
   Scenario: Navigate to the Upcoming framework type
     And I clear the filter applied
     When I select "Upcoming" filter option
     And I click on the first search results
-    Then I should the following header
-      | Scope               |
-      | Supplier engagement |
+    Then I should see the details section
+      | Summary             |
+      | Description         |
+      | Benefits            |
+      | Product types       |
       | Customer engagement |
       | Supplier engagement |
       | Important links     |
-      |                     |
+      | Timeline            |
 
-  @demo
-  Scenario: Navigate to the Standard framework type - RM3774
-    And I enter "Campaign solutions" in the search agreement field
-    When User clicks on the "Campaign Solutions" link
-    And I am on the "Campaign Solutions" page
+  Scenario: Navigate to the Standard framework type - RM6157
+    And I enter "Modular Building Solutions" in the search agreement field
+    When I click on the first search results
+    And I am on the "Modular Building Solutions" page
     And I should see the details section
       | Description            |
       | Benefits               |

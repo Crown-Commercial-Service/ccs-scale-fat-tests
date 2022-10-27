@@ -251,7 +251,7 @@ public class E2EPage extends Actions {
     @FindBy(xpath = "//*[@id='head-error-msg']")
     private WebElement errorMsg;
 
-    @FindBy(xpath = "//h3")
+    @FindBy(xpath = "//h2")
     private List<WebElement> headerThree;
 
     @FindBy(xpath = "//h3//a")
