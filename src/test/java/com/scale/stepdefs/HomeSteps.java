@@ -64,10 +64,9 @@ public class HomeSteps {
 
     }
 
-    @And("User clicks on the \"([^\"]*)\" link")
+    @When("User clicks on the \"([^\"]*)\" link")
     public void user_clicks_on_the_link(String linkName) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
-        testContextObj.takeSnapShot();
         homePageObj.clickButton(linkName);
     }
 
@@ -81,7 +80,6 @@ public class HomeSteps {
     @Given("I am on the {string} page")
     public void i_am_on_the_page(String header) {
         assertEquals(objectManager.getHomePageObj().getHeaderOne(), header);
-//        objectManager.getHomePageObj().headerText(header);
     }
 
     @When("I am on agreement result title {string} page")
