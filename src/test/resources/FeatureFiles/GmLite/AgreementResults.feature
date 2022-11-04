@@ -1,3 +1,4 @@
+
 Feature:Agreement Result page
 
   Background: Navigate to the results page
@@ -27,7 +28,7 @@ Feature:Agreement Result page
 
     Examples:
       | search_term | recommendation |
-        | carers      | RM6014RM3741   |
+      | carers      | RM6014RM3741   |
 
 
   Scenario: Verify that user can start again to change answers
