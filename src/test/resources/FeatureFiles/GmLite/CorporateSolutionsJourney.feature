@@ -5,7 +5,7 @@ Feature: Corporate Solutions Journey
     When User enters "carers" details and click "Start now" button
     And I am on the "Find a commercial agreement" page
     When User clicks on the "Start now" button
-    And I am on the "Which area best matches your needs?" page
+    And I am on the "Select which area suits your requirements" page
     When User selects the "Corporate Solutions" radio button
     When User clicks on the "Continue" button
     And I am on the "You chose corporate solutions. Select the area which best matches your needs." page
