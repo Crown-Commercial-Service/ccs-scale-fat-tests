@@ -65,9 +65,9 @@ public class HomeSteps {
     }
 
     @When("User clicks on the \"([^\"]*)\" link")
-    public void user_clicks_on_the_link(String linkName) throws InterruptedException {
+    public void user_clicks_on_the_link(String referenceLink) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
-        homePageObj.clickButton(linkName);
+        homePageObj.clickLink(referenceLink);
     }
 
     @And("User selects \"([^\"]*)\" Option")

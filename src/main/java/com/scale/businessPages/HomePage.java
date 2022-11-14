@@ -93,6 +93,17 @@ public class HomePage extends Actions {
         scenario.write(" User Clicked on " + buttonName + " button");
     }
 
+    public void clickLink(String referenceLink) {
+        waitForSeconds(3);
+        String XPATH = "//*[contains(text(),'" + referenceLink +"')]";
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
+        JavascriptExecutor executor = ((JavascriptExecutor) driver);
+        executor.executeScript("arguments[0].click();", element);
+        log.info("Clicked on " + referenceLink + " link");
+        scenario.write(" User Clicked on " + referenceLink + " link");
+    }
+
+
     public void clickRadioButton(String radioButtonName) {
         waitForSeconds(2);
         String XPATH = "//*[contains(text(),'"+ radioButtonName +"')]//preceding-sibling::input[@type='radio']";
