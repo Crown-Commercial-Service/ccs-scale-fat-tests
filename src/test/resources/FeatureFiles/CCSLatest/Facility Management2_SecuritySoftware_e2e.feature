@@ -28,8 +28,8 @@ Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See 
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | secTypeRadio      | areaSuits |lookingFor    | serviceAreaOpt                      | sectorRadio | frameworkId | expirationDate | details                 | recommendation | lots |
-      | Scenario 1 | cctv      | Security software | Security Services |Both, product and service | Hardware and software ICT solutions | Devolved    | RM6068      | 09/12/2021     | techBothTechDetailsInfo | tech-both-lot1 | 1    |
+      | ScenarioID | framework | areaSuits         | secTypeRadio      | lookingFor                | serviceAreaOpt                      | sectorRadio | frameworkId | expirationDate | details                 | recommendation | lots |
+      | Scenario 1 | cctv      | Security Services | Security software | Both, product and service | Hardware and software ICT solutions | Devolved    | RM6068      | 09/12/2021     | techBothTechDetailsInfo | tech-both-lot1 | 1    |
 
   @SecuritySoftware2 @Regression
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", Sector buying as "<sectorRadio>" during the journey
@@ -55,8 +55,8 @@ Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See 
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | secTypeRadio      | areaSuits |lookingFor | sectorRadio | frameworkId | expirationDate | details            | recommendation | lots |
-      | Scenario 1 | cctv      | Security software | Security Services |Product    | Education   | RM6103      | 10/06/2022     | techProdEduDetails | lot5_lot4      | 2    |
+      | ScenarioID | framework | secTypeRadio      | areaSuits         | lookingFor | sectorRadio | frameworkId | expirationDate | details            | recommendation | lots |
+      | Scenario 1 | cctv      | Security software | Security Services | Product    | Education   | RM6103      | 10/06/2022     | techProdEduDetails | lot5_lot4      | 2    |
 #      | Scenario 1 | cctv      | Security Services | Security Services    | Education   | RM6103      | 10/06/2022     | techProdEduDetails | lot4_lot5      | 2    |
 
   @SecuritySoftware3 @Regression @PreProd @Prod
@@ -88,5 +88,5 @@ Feature: GM Journey for FM2 framework (Secuirty Software journey branch) -> See 
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID   | framework | areaSuits  | secTypeRadio                     | technology            |lookingFor | serviceArea                    | sectorRadio | frameworkId | expirationDate | details           | recommendation | lots |
-      | Scenario 1   | Risk      | Technology | Technology products and services | Hardware and software |Service    | Broadband fibre infrastructure | Education   | RM6103      | 10/06/2022     | techSerEduDetails | lot2-tech      | 1    |
+      | ScenarioID | framework | areaSuits  | secTypeRadio                     | technology            | lookingFor | serviceArea                    | sectorRadio | frameworkId | expirationDate | details           | recommendation | lots |
+      | Scenario 1 | Risk      | Technology | Technology products and services | Hardware and software | Service    | Broadband fibre infrastructure | Education   | RM6103      | 10/06/2022     | techSerEduDetails | lot2-tech      | 1    |

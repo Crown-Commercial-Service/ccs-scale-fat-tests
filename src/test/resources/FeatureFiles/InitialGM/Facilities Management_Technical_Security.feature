@@ -1,6 +1,5 @@
-Feature: GM Journey for FM2 framework (Technical and Security journey branch) -> See FM2 Updated schema from https://miro.com/app/board/o9J_kuCrpYQ=/ design link
-
-  @TechnicalSecServiceTest @IntSecurityServices @PreProdSC @ProdSC @SFC1050
+Feature: GM Journey for FM2 framework-Technical and Security journey branch
+  @RM6089
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -25,9 +24,6 @@ Feature: GM Journey for FM2 framework (Technical and Security journey branch) ->
     Examples:
       | ScenarioID | framework | areaSuits         | secTypeRadio      | techSecurity     | frameworkId | expirationDate | details | recommendation | lots |
       | Scenario 1 | cctv      | Security Services |Technical security | Risk assessments | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
-#      | Scenario 2 | cctv      | Technical security | Design and installation of electronic security | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
-#      | Scenario 3 | cctv      | Technical security | Design and installation of physical security   | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
-#      | Scenario 4 | cctv      | Technical security | Anything else                                  | RM6089      | 24/01/2023     | wpsfm2  | techlot1b      | 1    |
 
 
   @SecurityServices1 @IntSecurityServices @PreProdSC @ProdSC @SFC1050

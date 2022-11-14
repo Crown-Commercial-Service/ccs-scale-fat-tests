@@ -1,4 +1,5 @@
 Feature: GM Journey for FM2 framework -Housing journey branch
+
   @RM6089
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
@@ -42,7 +43,6 @@ Feature: GM Journey for FM2 framework -Housing journey branch
     Examples:
       | ScenarioID | framework | areaSuits | housingServices                    | sector                                                     | frameworkId | expirationDate | details             | recommendation        | lots |
       | Scenario 1 | housing   | Housing   | Housing maintenance and management | Ministry of Defence or defence infrastructure organisation | RM6089      | 24/01/2023     | fmMarketPlacePhase2 | fmtwolot2a_fmtwolot2b | 2    |
-
 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
@@ -88,11 +88,10 @@ Feature: GM Journey for FM2 framework -Housing journey branch
     And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID | framework | areaSuits             | housingAns                 | services          | frameworkId   | expirationDate        | details                             |
-      | Scenario 1 | housing   | Facilities Management | Facilities Management (FM) | Cleaning services | RM3830_RM6130 | 09/07/2022_25/02/2024 | fmmDetails_buildingCleaningServices |
+      | ScenarioID | framework | areaSuits                  | housingAns                 | services          | frameworkId   | expirationDate        | details                             |
+      | Scenario 1 | housing   | Facilities Management (FM) | Facilities Management (FM) | Cleaning services | RM3830_RM6130 | 09/07/2022_25/02/2024 | fmmDetails_buildingCleaningServices |
 
    #housing, Facilities -> Services: Anything else
-  @FM2Housing1 @FM2_Regression @FM2_Housing @FM2HousingIntTest @IntHousingServices
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -108,5 +107,5 @@ Feature: GM Journey for FM2 framework -Housing journey branch
     And User is displayed with initial search phrase from "<framework>"
 
     Examples:
-      | ScenarioID | framework | areaSuits             | housingAns                 | services      |
-      | Scenario 1 | housing   | Facilities Management | Facilities Management (FM) | Anything else |
+      | ScenarioID | framework | areaSuits                  | housingAns                 | services      |
+      | Scenario 1 | housing   | Facilities Management (FM) | Facilities Management (FM) | Anything else |

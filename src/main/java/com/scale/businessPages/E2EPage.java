@@ -23,7 +23,7 @@ public class E2EPage extends Actions {
     private Logger log = LogManager.getLogger(E2EPage.class);
 
 
-    @FindBy(id = "main-content")
+    @FindBy(id = "changed-name-hint")
     private WebElement questionPageContent;
 
     @FindBy(id = "no-selection")

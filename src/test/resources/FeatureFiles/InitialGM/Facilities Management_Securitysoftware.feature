@@ -1,6 +1,6 @@
 Feature: GM Journey for FM2 framework-Security Software journey branch
 
-  @RM6068 @RM6103
+  @RM6068
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question by selecting what type of security "<secTypeRadio>", looking for "<lookingFor>", selects multiple service areas "<serviceAreaOpt>", Sector buying as "<sectorRadio>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -44,8 +44,8 @@ Feature: GM Journey for FM2 framework-Security Software journey branch
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | areaSuits         | secTypeRadio      | lookingFor | sectorRadio | frameworkId | recommendation | lots |
-      | Scenario 1 | cctv      | Security Services | Security software | Product    | Education   | RM6103      | lot5_lot4      | 2    |
+      | ScenarioID | framework | areaSuits         | secTypeRadio      | lookingFor | sectorRadio | frameworkId | recommendation |
+      | Scenario 1 | cctv      | Security Services | Security software | Product    | Education   | RM6103      | lot4_lot5      |
 
 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", selects multiple service areas "<serviceAreaOpt>", Sector buying as "<sectorRadio>" during the journey
