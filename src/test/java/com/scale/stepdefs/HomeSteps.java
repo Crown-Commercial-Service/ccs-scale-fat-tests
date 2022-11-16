@@ -63,13 +63,13 @@ public class HomeSteps {
         homePageObj.clickButton(buttonName);
 
     }
-
-    @When("User clicks on the \"([^\"]*)\" link")
-    public void user_clicks_on_the_link(String referenceLink) throws InterruptedException {
+    @And("User clicks on the \"([^\"]*)\" link")
+    public void user_clicks_on_the_link(String linkName) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
-        homePageObj.clickLink(referenceLink);
-    }
+        testContextObj.takeSnapShot();
+        homePageObj.clickButton(linkName);
 
+    }
     @And("User selects \"([^\"]*)\" Option")
     public void user_selects_Option(String linkName) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
