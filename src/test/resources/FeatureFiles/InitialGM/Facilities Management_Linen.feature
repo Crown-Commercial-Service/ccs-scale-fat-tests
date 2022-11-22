@@ -361,7 +361,6 @@ Feature: GM Journey for Linen framework
       | Scenario 4 | linen     | Linen     | Service    | No          | Yes           | 18             | Standard wash                 | No, I have everything I need | RM6154      | lot1b          |
 
    #budget: don't know/not sure, months: >12, addFacilities: answer Other, Security, Grounds maintenance, Catering, Pest Control
-  @runME
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -380,9 +379,6 @@ Feature: GM Journey for Linen framework
     And User selects which services "<addFacilities>" required multi choice checkboxes
     And User clicks on the "Continue" button
     And User clicks on the "Show details" link
-    Then User can successfully expand the details section
-    And User should be displayed with recommendations "<frameworkId>" services for lots ""
-    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
     And User should be displayed with GM Escape page with route to FM
     And User is displayed with "<lookingFor>" answer for the question "Are you looking for a product, service or both?"
     And User is displayed with "<budgetRadio>" answer for the question "Do you know your budget?"
@@ -393,11 +389,11 @@ Feature: GM Journey for Linen framework
     And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID | framework | areaSuits | lookingFor | budgetRadio | contractRadio | contractLength | serviceArea                   | addFacilities | frameworkId | expirationDate | details    |
-      | Scenario 1 | linen     | Linen     | Service    | No          | Yes           | 28             | Theatre pack and gowns        | Anything else | RM3830      | 09/07/2022     | fmmDetails |
-      | Scenario 2 | linen     | Linen     | Service    | No          | Yes           | 25             | Cleanroom services            | Anything else | RM3830      | 09/07/2022     | fmmDetails |
-      | Scenario 3 | linen     | Linen     | Service    | No          | Yes           | 25             | Linen hire with standard wash | Anything else | RM3830      | 09/07/2022     | fmmDetails |
-      | Scenario 4 | linen     | Linen     | Service    | No          | Yes           | 25             | Standard wash                 | Anything else | RM3830      | 09/07/2022     | fmmDetails |
+      | ScenarioID | framework | areaSuits | lookingFor | budgetRadio | contractRadio | contractLength | serviceArea                   | addFacilities | frameworkId |
+      | Scenario 1 | linen     | Linen     | Service    | No          | Yes           | 28             | Theatre pack and gowns        | Anything else | RM3830      |
+      | Scenario 2 | linen     | Linen     | Service    | No          | Yes           | 25             | Cleanroom services            | Anything else | RM3830      |
+      | Scenario 3 | linen     | Linen     | Service    | No          | Yes           | 25             | Linen hire with standard wash | Anything else | RM3830      |
+      | Scenario 4 | linen     | Linen     | Service    | No          | Yes           | 25             | Standard wash                 | Anything else | RM3830      |
 
    #budget: don't know/not sure, months: don't know/not sure, addFacilities: answer No
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>", Contract radio as "<contractRadio>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
