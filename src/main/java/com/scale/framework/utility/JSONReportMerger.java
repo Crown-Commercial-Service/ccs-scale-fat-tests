@@ -87,8 +87,6 @@ public class JSONReportMerger {
             parsedTargetJSON.writeJSONString(writer);
             // and save the pretty version to disk
             FileUtils.writeStringToFile(target, writer.toString());
-        } catch (ParseException pe) {
-            pe.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -121,8 +119,6 @@ public class JSONReportMerger {
             parsedJSON.writeJSONString(writer);
             // and save the pretty version to disk
             FileUtils.writeStringToFile(reportFile, writer.toString());
-        } catch (ParseException pe) {
-            pe.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
