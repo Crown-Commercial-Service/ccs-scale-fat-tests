@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CCS Suite" data-provider-thread-count="5">
+    <test name="CCS Test 1" parallel="methods">
+        <parameter name="config" value="browserstack.config.json"/>
+        <parameter name="environment" value="env1"/>
+        <classes>
+            <class name="com.scale.TestRunner.TestRunner"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="CCS Test 2" parallel="methods">
+        <parameter name="config" value="browserstack.config.json"/>
+        <parameter name="environment" value="env2"/>
+        <classes>
+            <class name="com.scale.TestRunner.TestRunner"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="CCS Test 3" parallel="methods">
+        <parameter name="config" value="browserstack.config.json"/>
+        <parameter name="environment" value="env3"/>
+        <classes>
+            <class name="com.scale.TestRunner.TestRunner"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="CCS Test 4" parallel="methods">
+        <parameter name="config" value="browserstack.config.json"/>
+        <parameter name="environment" value="env4"/>
+        <classes>
+            <class name="com.scale.TestRunner.TestRunner"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="CCS Test 5" parallel="methods">
+        <parameter name="config" value="browserstack.config.json"/>
+        <parameter name="environment" value="env5"/>
+        <classes>
+            <class name="com.scale.TestRunner.TestRunner"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
