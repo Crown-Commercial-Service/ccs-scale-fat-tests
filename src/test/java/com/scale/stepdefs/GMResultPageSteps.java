@@ -64,7 +64,7 @@ public class GMResultPageSteps {
         if (frameworksLotsRecommended.matches("([A-Z]+[0-9]+)([a-z]+[0-9]+[a-z]{0,5})(?:_[a-z]+[0-9]+[a-z]{0,5})*")) {
             frameworkId.add(frameworksLotsRecommended);
         } else {
-            String[] temporaryFrameworkId = frameworksLotsRecommended.split("_");
+            String[] temporaryFrameworkId = frameworksLotsRecommended.split("\n");
             frameworkId = Arrays.asList(temporaryFrameworkId);
         }
         ConfigurationReader configurationReader = new ConfigurationReader("config//RecommendationList.properties");
