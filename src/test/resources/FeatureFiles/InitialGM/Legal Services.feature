@@ -73,7 +73,7 @@ Feature: GM Journey for Legal framework
       | ScenarioID | framework | areaSuits | sector             | serviceArea           | budgetRadio | enterBudgets | frameworkId | expirationDate | details |
       | Scenario 1 | legal     | Legal     | Central Government | Employment litigation | Yes         | 20000        | RM6179      | 30/11/2024     | GLAS    |
 
-
+  @runME
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -120,25 +120,6 @@ Feature: GM Journey for Legal framework
     Examples:
       | ScenarioID | framework | areaSuits | sector           | serviceArea                | frameworkId | expirationDate | details                                 |
       | Scenario 1 | legal     | Legal     | Local Government | eDisclosure and eDiscovery | RM6203      | 14/06/2024     | eDisclosureandeDiscoveryServicesDetails |
-
-  Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
-    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
-    When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
-    And User selects which "<areaSuits>" your requirements
-    And  User clicks on the "Continue" button
-    And User selects which sector are you looking for "<sector>" radio button
-    And User clicks on the "Continue" button
-    And User selects which services required "<serviceArea>"
-    And User clicks on the "Continue" button
-    And User can successfully expand the details section
-    And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
-    And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
-    And User is displayed with initial search phrase from "<framework>"
-    And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
-    Examples:
-      | ScenarioID | framework | areaSuits | sector           | serviceArea               | frameworkId | recommendation |
-      | Scenario 1 | legal     | Legal     | Local Government | Property and construction | RM3788      | wpslot3        |
 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
