@@ -245,28 +245,28 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.6.0</version>
-                        <executions>
-                            <execution>
-                                <id>test-execution-summary</id>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <classpathScope>test</classpathScope>
-                                    <mainClass>com.scale.framework.utility.ExecutionSummary</mainClass>
-                                    <arguments>
-                                        <argument>${project.build.directory}/cucumber-html-reports
-                                        </argument>
-                                    </arguments>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>org.codehaus.mojo</groupId>-->
+<!--                        <artifactId>exec-maven-plugin</artifactId>-->
+<!--                        <version>1.6.0</version>-->
+<!--                        <executions>-->
+<!--                            <execution>-->
+<!--                                <id>test-execution-summary</id>-->
+<!--                                <phase>test</phase>-->
+<!--                                <goals>-->
+<!--                                    <goal>java</goal>-->
+<!--                                </goals>-->
+<!--                                <configuration>-->
+<!--                                    <classpathScope>test</classpathScope>-->
+<!--                                    <mainClass>com.scale.framework.utility.ExecutionSummary</mainClass>-->
+<!--                                    <arguments>-->
+<!--                                        <argument>${project.build.directory}/cucumber-html-reports/cucumber.json-->
+<!--                                        </argument>-->
+<!--                                    </arguments>-->
+<!--                                </configuration>-->
+<!--                            </execution>-->
+<!--                        </executions>-->
+<!--                    </plugin>-->
                     <plugin>
                         <groupId>org.sonarsource.scanner.maven</groupId>
                         <artifactId>sonar-maven-plugin</artifactId>
