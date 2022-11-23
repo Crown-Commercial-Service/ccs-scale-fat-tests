@@ -259,10 +259,6 @@
                                 <configuration>
                                     <classpathScope>test</classpathScope>
                                     <mainClass>com.scale.framework.utility.ExecutionSummary</mainClass>
-                                    <arguments>
-                                        <argument>${project.build.directory}/cucumber-html-reports/cucumber.json
-                                        </argument>
-                                    </arguments>
                                 </configuration>
                             </execution>
                         </executions>
