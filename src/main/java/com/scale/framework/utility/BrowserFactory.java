@@ -47,7 +47,6 @@ public class BrowserFactory {
 //                option.addArguments("--incognito");
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--no-sandbox");
-                options.addArguments("--headless");
                 options.addArguments("--ignore-ssl-errors=yes", "--ignore-certificate-errors");
                 driver = new ChromeDriver(options);
                 driver.manage().window().maximize();
