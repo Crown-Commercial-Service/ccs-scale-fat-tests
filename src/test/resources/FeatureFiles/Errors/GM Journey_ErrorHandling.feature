@@ -1,5 +1,4 @@
 Feature: Scenarios for checking all questions and errors handling content for each flows and Routes to Market content
-  @runME
 @linen
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
