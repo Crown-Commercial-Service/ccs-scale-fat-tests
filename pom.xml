@@ -238,8 +238,7 @@
                                 <configuration>
                                     <projectName>scale</projectName>
                                     <skip>false</skip>
-                                    <outputDirectory>Reports/${timestamp}</outputDirectory>
-                                    <inputDirectory>${project.build.directory}/cucumber-html-reports</inputDirectory>
+                                    <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
                                     <jsonFiles>**/*.json</jsonFiles>
                                     <checkBuildResult>false</checkBuildResult>
                                 </configuration>
