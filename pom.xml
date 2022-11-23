@@ -113,7 +113,7 @@
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>6.1.0</version>
+            <version>8.2.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.browserstack/browserstack-java-sdk -->
         <dependency>
@@ -137,7 +137,7 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.17.1</version>
+            <version>2.19.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.junit.vintage</groupId>
@@ -152,7 +152,7 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>4.0.1</version>
+            <version>5.2.2</version>
             <scope>compile</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.json/json -->
@@ -171,27 +171,27 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.10.0.pr1</version>
+            <version>2.14.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>3.6.2</version>
+            <version>5.3.1</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
-            <version>1.1</version>
+            <version>1.1.1</version>
         </dependency>
         <dependency>
             <groupId>com.assertthat</groupId>
             <artifactId>selenium-shutterbug</artifactId>
-            <version>0.8</version>
+            <version>1.6</version>
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>4.3.0</version>
+            <version>5.3.0</version>
         </dependency>
     </dependencies>
     <profiles>
@@ -313,50 +313,6 @@
                                 <include>${include}</include>
                             </includes>
                         </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>net.masterthought</groupId>
-                        <artifactId>maven-cucumber-reporting</artifactId>
-                        <version>4.6.0</version>
-                        <executions>
-                            <execution>
-                                <id>execution</id>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>generate</goal>
-                                </goals>
-                                <configuration>
-                                    <projectName>Scale</projectName>
-                                    <skip>false</skip>
-                                    <outputDirectory>Reports/${timestamp}</outputDirectory>
-                                    <inputDirectory>${project.build.directory}/cucumber-html-reports</inputDirectory>
-                                    <jsonFiles>**/*.json</jsonFiles>
-                                    <checkBuildResult>false</checkBuildResult>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.6.0</version>
-                        <executions>
-                            <execution>
-                                <id>test-execution-summary</id>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <classpathScope>test</classpathScope>
-                                    <mainClass>com.scale.scaleautomation.framework.utility.ExecutionSummary</mainClass>
-                                    <arguments>
-                                        <argument>${project.build.directory}/cucumber-html-reports/cucumber.json
-                                        </argument>
-                                    </arguments>
-                                </configuration>
-                            </execution>
-                        </executions>
                     </plugin>
                     <plugin>
                         <groupId>org.sonarsource.scanner.maven</groupId>
