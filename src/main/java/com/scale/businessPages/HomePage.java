@@ -70,9 +70,9 @@ public class HomePage extends Actions {
     }
 
     public void enterFrameworkDetails(String framework) {
-        waitForSeconds(1);
+        waitForSeconds(5);
         enterText(enterFrameworkDetails, framework);
-        waitForSeconds(2);
+        waitForSeconds(3);
         searchButton.click();
         //clickButton("search");
     }
