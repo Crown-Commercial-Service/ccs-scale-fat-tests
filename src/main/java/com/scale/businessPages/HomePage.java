@@ -14,6 +14,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class HomePage extends Actions {
 
     private WebDriver driver;
@@ -51,7 +53,7 @@ public class HomePage extends Actions {
         this.driver = driver;
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
-        this.wait = new WebDriverWait(this.driver, 30);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
     }
 

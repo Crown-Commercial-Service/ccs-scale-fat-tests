@@ -13,6 +13,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -39,7 +40,7 @@ public class GMLandingPage extends Actions {
         this.driver = driver;
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
-        this.wait = new WebDriverWait(this.driver, 30);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     public void gmPage() {

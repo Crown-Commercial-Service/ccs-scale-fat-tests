@@ -55,14 +55,6 @@ public class BrowserFactory {
                 driver = new SafariDriver();
                 driver.manage().window().maximize();
                 break;
-            case "GRID_FIREFOX":
-                caps = DesiredCapabilities.firefox();
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps);
-                break;
-            case "GRID_CHROME":
-                caps = DesiredCapabilities.chrome();
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps);
-                break;
             case "CHROME_HEADLESS":
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions ChromeOptions = new ChromeOptions();
