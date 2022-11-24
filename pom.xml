@@ -127,7 +127,6 @@
             <artifactId>browserstack-java-sdk</artifactId>
             <version>1.1.1</version>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -172,6 +171,13 @@
             <groupId>org.jboss.aerogear</groupId>
             <artifactId>aerogear-otp-java</artifactId>
             <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-jvm-deps</artifactId>
+            <version>1.0.6</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -269,10 +275,6 @@
                                 <configuration>
                                     <classpathScope>test</classpathScope>
                                     <mainClass>com.scale.framework.utility.ExecutionSummary</mainClass>
-                                    <arguments>
-                                        <argument>${project.build.directory}/cucumber-html-reports/cucumber.json
-                                        </argument>
-                                    </arguments>
                                 </configuration>
                             </execution>
                         </executions>
