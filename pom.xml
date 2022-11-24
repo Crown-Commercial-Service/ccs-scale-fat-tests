@@ -100,6 +100,7 @@
             <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>gherkin</artifactId>
@@ -245,8 +246,10 @@
                                     <projectName>scale</projectName>
                                     <skip>false</skip>
                                     <outputDirectory>Reports/${timestamp}</outputDirectory>
-                                    <inputDirectory>${project.build.directory}/cucumber-html-reports</inputDirectory>
-                                    <jsonFiles>**/*.json</jsonFiles>
+                                    <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
+                                    <jsonFiles>
+                                        <param>**/*.json</param>
+                                    </jsonFiles>
                                     <checkBuildResult>false</checkBuildResult>
                                 </configuration>
                             </execution>
