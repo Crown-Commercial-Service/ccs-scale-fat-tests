@@ -65,7 +65,7 @@ Feature:
     When User clicks on the "G-Cloud 12" link
     Then I am on the "G-Cloud 12" page
     And I should see the details section
-      | Products and suppliers |
+      | Updates, Documents |
 @ignore
   Scenario: Navigate to the Upcoming framework type
     And I clear the filter applied
@@ -96,6 +96,5 @@ Feature:
       | Start date   |
       | End date     |
       | Lots         |
-      | Suppliers    |
     When User clicks on the open all link
     Then All the sections are expanded

@@ -1,4 +1,5 @@
 @RM6147
+
 Feature: GM Journey for Courier and Specialist Movements
 
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", Sector buying as "<sectorRadio>" during the journey
