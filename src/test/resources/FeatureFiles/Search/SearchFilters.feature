@@ -1,4 +1,5 @@
 Feature:
+  @runME
   Background:
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User clicks on the "Search agreements" link

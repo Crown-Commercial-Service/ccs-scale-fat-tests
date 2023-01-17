@@ -14,6 +14,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class HomePage extends Actions {
 
     private WebDriver driver;
@@ -51,7 +53,7 @@ public class HomePage extends Actions {
         this.driver = driver;
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
-        this.wait = new WebDriverWait(this.driver, 30);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
     }
 
@@ -70,9 +72,9 @@ public class HomePage extends Actions {
     }
 
     public void enterFrameworkDetails(String framework) {
-        waitForSeconds(1);
+        waitForSeconds(5);
         enterText(enterFrameworkDetails, framework);
-        waitForSeconds(2);
+        waitForSeconds(3);
         searchButton.click();
         //clickButton("search");
     }
@@ -93,15 +95,7 @@ public class HomePage extends Actions {
         scenario.write(" User Clicked on " + buttonName + " button");
     }
 
-    public void clickLink(String referenceLink) {
-        waitForSeconds(3);
-        String XPATH = "//*[contains(text(),'" + referenceLink +"')]";
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
-        JavascriptExecutor executor = ((JavascriptExecutor) driver);
-        executor.executeScript("arguments[0].click();", element);
-        log.info("Clicked on " + referenceLink + " link");
-        scenario.write(" User Clicked on " + referenceLink + " link");
-    }
+
 
 
     public void clickRadioButton(String radioButtonName) {

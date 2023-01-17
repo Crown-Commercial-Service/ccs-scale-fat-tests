@@ -45,40 +45,33 @@ public class BrowserFactory {
                 //Uncomment below lines if you would like to run it in incognito mode
 //                ChromeOptions option = new ChromeOptions();
 //                option.addArguments("--incognito");
-                ChromeOptions option = new ChromeOptions();
-                option.addArguments("--ignore-ssl-errors=yes", "--ignore-certificate-errors");
-                driver = new ChromeDriver(option);
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--no-sandbox");
+                options.addArguments("--ignore-ssl-errors=yes", "--ignore-certificate-errors");
+                driver = new ChromeDriver(options);
                 driver.manage().window().maximize();
                 break;
             case "SAFARI":
                 driver = new SafariDriver();
                 driver.manage().window().maximize();
                 break;
-            case "GRID_FIREFOX":
-                caps = DesiredCapabilities.firefox();
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps);
-                break;
-            case "GRID_CHROME":
-                caps = DesiredCapabilities.chrome();
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps);
-                break;
             case "CHROME_HEADLESS":
                 WebDriverManager.chromedriver().setup();
-                ChromeOptions options = new ChromeOptions();
+                ChromeOptions ChromeOptions = new ChromeOptions();
                 // destination = actualPath + "/Library/Application Support/Google/Chrome/"+randomString(8);
                 // copyFiles(actualPath + "/Library/Application Support/Google/Chrome/profile1",destination);
                 // options.addArguments("user-data-dir=" + destination);
 //                options.addArguments("user-data-dir=" + actualPath + "/Library/Application Support/Google/Chrome");
-                options.addArguments("--no-sandbox");
-                options.addArguments("--headless");
-                options.addArguments("--ignore-ssl-errors=yes", "--ignore-certificate-errors");
-                options.setExperimentalOption("useAutomationExtension", false);
+                ChromeOptions.addArguments("--no-sandbox");
+                ChromeOptions.addArguments("--headless");
+                ChromeOptions.addArguments("--ignore-ssl-errors=yes", "--ignore-certificate-errors");
+                ChromeOptions.setExperimentalOption("useAutomationExtension", false);
                 // options.addArguments("disable-infobars");
                 // options.addArguments("--disable-extensions");
                 // options.addArguments("--disable-gpu");
-                options.addArguments("--disable-dev-shm-usage");
-                options.addArguments("window-size=1920,1080");
-                driver = new ChromeDriver(options);
+                ChromeOptions.addArguments("--disable-dev-shm-usage");
+                ChromeOptions.addArguments("window-size=1920,1080");
+                driver = new ChromeDriver(ChromeOptions);
                 driver.manage().window().maximize();
                 break;
         }

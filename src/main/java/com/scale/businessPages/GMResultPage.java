@@ -16,6 +16,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -35,6 +36,9 @@ public class GMResultPage extends Actions {
 
     @FindBy(xpath = "//div[@class='govuk-summary-list__row']")
     private WebElement questionsList;
+
+    @FindBy(xpath = "//p[contains(text(),'Show details')]")
+    private WebElement btnShowDetails;
 
     @FindBy(xpath = "//h2[@class='govuk-heading-xl page-title']")
     private WebElement gmResultHeader;
@@ -105,14 +109,13 @@ public class GMResultPage extends Actions {
     @FindBy(xpath = "//*[@id='accordion-default-heading-2']/h3")
     private WebElement agreementResultTextTwo;
 
-
     public String contactCcs = "//*[@class='contact-ccs-btn']/a";
 
     public GMResultPage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
-        this.wait = new WebDriverWait(this.driver, 30);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     public void gmResultPage() {
@@ -402,6 +405,9 @@ public class GMResultPage extends Actions {
         Assert.assertTrue("The routes to market definitions are not displayed in the UI", routesToMarketDefinition.isDisplayed());
         Assert.assertEquals("The expected routes to market definitions content is not the same with the actual", expectedRoutesDefinitionContent, getRoutesToMarketDefinitionContent());
     }
+    public void clickShowDetails() {
+        btnShowDetails.click();
+    }
     public void clickElementWithJavaScript(String xpath) {
         WebElement element = driver.findElement(By.xpath(xpath));
         JavascriptExecutor executor = (JavascriptExecutor) driver;
@@ -429,3 +435,4 @@ public class GMResultPage extends Actions {
         return agreementResultTextTwo.getText();
     }
 }
+

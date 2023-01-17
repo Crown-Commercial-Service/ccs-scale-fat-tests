@@ -1,5 +1,5 @@
 Feature: GM Journey for Linen framework
-  @RM3830
+  @RM6154
   Scenario Outline: To verify Buyer has initiated GM journey for framework "<framework>" and is provided with GM Escape page on selection of Product during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
