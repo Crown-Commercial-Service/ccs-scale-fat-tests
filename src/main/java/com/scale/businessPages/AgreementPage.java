@@ -26,7 +26,7 @@ public class AgreementPage extends Actions {
         this.driver = driver;
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        this.wait = new WebDriverWait(this.driver, 30);
     }
 
     private String accordion = "button#accordion-default-heading-2[aria-expanded='true']";
