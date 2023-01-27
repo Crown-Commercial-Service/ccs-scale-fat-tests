@@ -47,7 +47,6 @@ public class BrowserFactory {
 //                option.addArguments("--incognito");
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--no-sandbox");
-                options.addArguments("--headless");
                 options.addArguments("--ignore-ssl-errors=yes", "--ignore-certificate-errors");
                 options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
                 driver = new ChromeDriver(options);
