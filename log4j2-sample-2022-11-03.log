@@ -1,0 +1,158 @@
+[INFO ] 2022-11-03 15:51:00.209 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "1", service details "GLAS_wpsLegalServices" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution starts===================
+[INFO ] 2022-11-03 15:51:00.227 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-03 15:51:09.836 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-03 15:51:09.838 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-03 15:51:21.313 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-03 15:51:30.956 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 15:51:34.714 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 15:51:36.789 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2022-11-03 15:51:40.059 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 15:51:42.110 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2022-11-03 15:51:44.869 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 15:51:46.909 [main] HomePage - Buyer clicked on Employment litigation radio button
+[INFO ] 2022-11-03 15:51:49.692 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 15:51:51.759 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2022-11-03 15:51:55.715 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 15:51:57.852 [main] GMResultPage - The details related to CTA is already expanded
+[INFO ] 2022-11-03 15:52:04.332 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "1", service details "GLAS_wpsLegalServices" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution ends===================
+[INFO ] 2022-11-03 16:55:53.488 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "1", service details "GLAS_wpsLegalServices" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution starts===================
+[INFO ] 2022-11-03 16:55:53.492 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-03 16:56:00.877 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-03 16:56:00.879 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-03 16:56:13.145 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-03 16:56:22.440 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 16:56:25.921 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 16:56:28.003 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2022-11-03 16:56:31.040 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 16:56:33.083 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2022-11-03 16:56:35.762 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 16:56:37.803 [main] HomePage - Buyer clicked on Employment litigation radio button
+[INFO ] 2022-11-03 16:56:40.444 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 16:56:42.504 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2022-11-03 16:56:46.337 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 16:56:48.469 [main] GMResultPage - The details related to CTA is already expanded
+[INFO ] 2022-11-03 16:56:54.748 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "1", service details "GLAS_wpsLegalServices" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution ends===================
+[INFO ] 2022-11-03 16:58:14.697 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "1", service details "GLAS_wpsLegalServices" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution starts===================
+[INFO ] 2022-11-03 16:58:14.702 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-03 16:58:23.104 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-03 16:58:23.106 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-03 16:58:31.996 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-03 16:58:41.192 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 16:58:44.376 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 16:58:46.460 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2022-11-03 16:58:49.674 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 16:58:51.717 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2022-11-03 16:58:54.336 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 16:58:56.383 [main] HomePage - Buyer clicked on Employment litigation radio button
+[INFO ] 2022-11-03 16:58:58.978 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 16:59:01.021 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2022-11-03 16:59:05.129 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 16:59:07.259 [main] GMResultPage - The details related to CTA is already expanded
+[INFO ] 2022-11-03 16:59:13.673 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "1", service details "GLAS_wpsLegalServices" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution ends===================
+[INFO ] 2022-11-03 17:04:06.201 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "1", service details "GLAS_wpsLegalServices" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution starts===================
+[INFO ] 2022-11-03 17:04:06.206 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-03 17:04:16.050 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-03 17:04:16.053 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-03 17:04:23.463 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-03 17:04:33.192 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:04:36.523 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:04:38.606 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2022-11-03 17:04:41.779 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:04:43.821 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2022-11-03 17:04:46.521 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:04:48.578 [main] HomePage - Buyer clicked on Employment litigation radio button
+[INFO ] 2022-11-03 17:04:51.439 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:04:53.507 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2022-11-03 17:04:57.146 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:04:59.287 [main] GMResultPage - The details related to CTA is already expanded
+[INFO ] 2022-11-03 17:05:05.607 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "1", service details "GLAS_wpsLegalServices" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution ends===================
+[INFO ] 2022-11-03 17:09:07.857 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "1", service details "GLAS_wpsLegalServices" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution starts===================
+[INFO ] 2022-11-03 17:09:07.861 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-03 17:09:15.530 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-03 17:09:15.531 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-03 17:09:24.774 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-03 17:09:34.742 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:09:38.569 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:09:40.638 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2022-11-03 17:09:43.505 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:09:45.545 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2022-11-03 17:09:48.219 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:09:50.267 [main] HomePage - Buyer clicked on Employment litigation radio button
+[INFO ] 2022-11-03 17:09:52.824 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:09:54.875 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2022-11-03 17:09:58.891 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:10:01.015 [main] GMResultPage - The details related to CTA is already expanded
+[INFO ] 2022-11-03 17:10:07.245 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "1", service details "GLAS_wpsLegalServices" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution ends===================
+[INFO ] 2022-11-03 17:12:36.273 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "railLegalDetails" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Rail" during the journey execution starts===================
+[INFO ] 2022-11-03 17:12:36.277 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-03 17:12:43.629 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-03 17:12:43.631 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-03 17:12:52.148 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-03 17:13:01.686 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:13:05.384 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:13:07.455 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2022-11-03 17:13:10.336 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:13:12.378 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2022-11-03 17:13:15.027 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:13:17.070 [main] HomePage - Buyer clicked on Rail radio button
+[INFO ] 2022-11-03 17:13:20.122 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:13:27.666 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "railLegalDetails" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Rail" during the journey execution ends===================
+[INFO ] 2022-11-03 17:15:07.617 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "railLegalDetails" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Rail" during the journey execution starts===================
+[INFO ] 2022-11-03 17:15:07.621 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-03 17:15:19.147 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-03 17:15:19.150 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-03 17:15:26.213 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-03 17:15:35.658 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:15:38.911 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:15:40.995 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2022-11-03 17:15:44.034 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:15:46.074 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2022-11-03 17:15:48.844 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:15:50.887 [main] HomePage - Buyer clicked on Rail radio button
+[INFO ] 2022-11-03 17:15:53.978 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:16:01.466 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "railLegalDetails" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Rail" during the journey execution ends===================
+[INFO ] 2022-11-03 17:16:35.693 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "railLegalDetails" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Rail" during the journey execution starts===================
+[INFO ] 2022-11-03 17:16:35.697 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-03 17:16:45.736 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-03 17:16:45.738 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-03 17:16:53.225 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-03 17:17:02.697 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:17:05.886 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:17:07.966 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2022-11-03 17:17:11.084 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:17:13.129 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2022-11-03 17:17:15.996 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:17:18.039 [main] HomePage - Buyer clicked on Rail radio button
+[INFO ] 2022-11-03 17:17:21.069 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:17:28.863 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "railLegalDetails" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Rail" during the journey execution ends===================
+[INFO ] 2022-11-03 17:17:59.892 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "railLegalDetails" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Rail" during the journey execution starts===================
+[INFO ] 2022-11-03 17:17:59.896 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-03 17:18:09.637 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-03 17:18:09.639 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-03 17:18:16.956 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-03 17:18:26.592 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:18:30.119 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:18:32.205 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2022-11-03 17:18:35.137 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:18:37.175 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2022-11-03 17:18:39.858 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:18:41.902 [main] HomePage - Buyer clicked on Rail radio button
+[INFO ] 2022-11-03 17:18:44.939 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:18:48.806 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "railLegalDetails" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Rail" during the journey execution ends===================
+[INFO ] 2022-11-03 17:19:54.843 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution starts===================
+[INFO ] 2022-11-03 17:19:54.847 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-03 17:20:02.892 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-03 17:20:02.893 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-03 17:20:12.583 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-03 17:20:21.547 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:20:24.179 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-03 17:20:26.249 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2022-11-03 17:20:29.309 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:20:31.353 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2022-11-03 17:20:33.999 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:20:36.103 [main] HomePage - Buyer clicked on Employment litigation radio button
+[INFO ] 2022-11-03 17:20:38.798 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:20:40.842 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2022-11-03 17:20:44.569 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-03 17:20:46.700 [main] GMResultPage - The details related to CTA is already expanded
+[INFO ] 2022-11-03 17:20:48.968 [main] TestContext - =================To verify Buyer has provided with different recommendations "wpslot1", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution ends===================

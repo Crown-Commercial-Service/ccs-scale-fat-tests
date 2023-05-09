@@ -1,0 +1,230 @@
+14:50:03.298 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:50:03.302 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:47:51.266 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:47:51.283 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:50:26.663 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:50:26.668 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:51:01.489 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:51:01.491 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:44:12.954 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:44:12.959 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:44:26.403 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:44:26.407 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:47:58.836 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:47:58.842 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:48:46.692 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:48:46.697 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:50:47.236 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:50:47.244 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:52:19.477 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:52:19.481 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:52:30.920 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:52:30.925 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:52:50.339 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:52:50.344 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:53:38.852 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:53:38.856 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:56:01.409 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:56:01.414 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:58:14.607 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:58:14.612 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:58:53.386 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:58:53.390 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:00:06.701 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:00:06.708 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:00:07.507 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:00:07.513 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:03:52.647 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:03:52.652 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:04:28.807 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:04:28.812 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:05:33.265 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:05:33.269 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:05:58.214 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:05:58.218 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:30:20.185 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:30:20.190 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:42:46.827 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:42:46.832 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:51:15.415 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:51:15.420 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:53:43.531 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:53:43.536 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:53:59.479 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:53:59.483 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:58:11.611 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:58:11.616 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+17:00:21.880 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:00:21.885 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+17:05:16.406 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:05:16.411 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+17:06:22.414 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:06:22.419 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+17:07:34.050 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+17:07:34.058 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+08:59:36.141 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+08:59:36.147 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+09:08:17.515 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:08:17.520 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+09:09:04.233 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:09:04.238 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+09:11:34.517 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:11:34.521 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+09:13:09.295 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:13:09.300 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+09:14:25.748 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:14:25.752 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+13:56:27.295 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:56:27.300 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+13:57:52.140 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:57:52.144 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:03:55.447 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:03:55.451 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:49:22.216 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:49:22.222 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:55:29.523 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:55:29.527 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:59:40.718 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:59:40.722 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:02:39.940 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:02:39.945 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:16:21.385 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:16:21.391 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:18:23.928 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:18:23.932 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:18:33.637 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:18:33.644 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:19:11.251 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:19:11.256 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:19:50.399 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:19:50.404 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:20:03.352 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:20:03.356 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:20:43.507 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:20:43.512 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:33:20.470 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:33:20.475 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:41:17.135 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:41:17.140 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:41:26.048 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:41:26.053 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:42:03.508 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:42:03.513 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:42:19.533 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:42:19.538 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:40:33.453 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:40:33.458 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:55:18.080 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:55:18.085 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:58:02.712 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:58:02.717 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+09:50:58.221 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:50:58.226 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+09:52:20.876 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:52:20.881 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:04:14.929 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:04:14.934 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:07:53.385 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:07:53.390 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:09:57.329 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:09:57.337 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:20:21.553 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:20:21.558 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:24:51.322 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:24:51.327 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:26:32.094 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:26:32.099 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:27:00.345 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:27:00.350 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:37:20.341 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:37:20.346 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:48:31.180 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:48:31.185 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:50:52.429 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:50:52.434 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:54:15.635 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:54:15.640 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+10:55:00.048 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:55:00.053 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:06:15.950 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:06:15.954 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:06:43.665 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:06:43.669 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:08:58.223 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:08:58.228 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:10:48.069 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:10:48.074 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:11:13.111 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:11:13.118 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:21:20.061 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:21:20.065 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:21:30.701 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:21:30.705 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:21:39.345 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:21:39.350 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:21:47.910 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:21:47.915 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:22:23.891 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:22:23.896 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:29:04.883 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:29:04.887 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:37:25.106 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:37:25.111 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:39:23.591 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:39:23.595 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+11:40:09.947 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:40:09.951 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+12:30:31.447 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:30:31.453 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+12:31:29.552 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:31:29.557 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+12:32:01.919 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:32:01.923 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+12:32:12.746 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:32:12.751 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+12:33:05.112 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:33:05.117 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+12:33:19.110 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:33:19.114 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+12:34:50.218 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:34:50.222 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:24:37.361 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:24:37.365 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:27:37.637 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:27:37.642 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:29:44.810 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:29:44.814 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:34:55.039 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:34:55.044 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:37:53.216 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:37:53.220 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:38:52.965 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:38:52.969 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:48:44.132 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:48:44.136 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:17:29.593 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:17:29.598 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:23:32.109 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:23:32.114 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:25:29.716 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:25:29.722 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+15:26:10.853 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:26:10.858 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+20:34:38.669 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+20:34:38.672 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+20:42:18.917 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+20:42:18.919 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+20:45:59.754 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+20:45:59.757 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+20:46:56.817 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+20:46:56.820 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+20:47:34.030 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+20:47:34.035 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+13:11:31.223 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:11:31.227 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+14:10:47.156 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:10:47.161 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:07:43.133 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:07:43.138 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)
+16:10:36.664 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:10:36.669 [main] INFO  c.b.config.BrowserStackConfig - parallelsPerPlatform was not defined and has been set to 1 (Default)

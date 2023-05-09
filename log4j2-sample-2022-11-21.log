@@ -1,0 +1,829 @@
+[INFO ] 2022-11-21 11:58:08.431 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2022-11-21 11:58:08.441 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 11:58:19.271 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 11:58:19.275 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 11:58:28.898 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 11:58:39.140 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 11:58:43.299 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 11:58:45.390 [main] HomePage - Buyer clicked on Courier radio button
+[INFO ] 2022-11-21 11:58:49.042 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 11:58:51.086 [main] HomePage - Buyer clicked on Secure collection and delivery services radio button
+[INFO ] 2022-11-21 11:58:56.707 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 11:58:58.560 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2022-11-21 11:58:58.740 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot6", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Asset recovery, disposal and destruction", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2022-11-21 11:58:58.742 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 11:59:06.658 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 11:59:06.659 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 11:59:18.037 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 11:59:26.716 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 11:59:29.711 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 11:59:31.797 [main] HomePage - Buyer clicked on Courier radio button
+[INFO ] 2022-11-21 11:59:34.766 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 11:59:36.807 [main] HomePage - Buyer clicked on Asset recovery, disposal and destruction radio button
+[INFO ] 2022-11-21 11:59:40.595 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 11:59:41.572 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot6", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Asset recovery, disposal and destruction", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2022-11-21 13:37:10.422 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 13:37:10.428 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 13:37:18.337 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 13:37:18.343 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 13:37:26.748 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 13:37:36.224 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 13:37:39.450 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 13:37:41.534 [main] HomePage - Buyer clicked on Housing radio button
+[INFO ] 2022-11-21 13:37:44.399 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 13:37:46.429 [main] HomePage - Buyer clicked on Estate services radio button
+[INFO ] 2022-11-21 13:37:49.375 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 13:37:51.524 [main] GMResultPage - User is on guided match search results with request for more information
+[INFO ] 2022-11-21 13:37:53.154 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 13:37:53.330 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 13:37:53.332 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 13:38:01.052 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 13:38:01.053 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 13:38:09.371 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 13:38:18.277 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 13:38:21.559 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 13:38:23.645 [main] HomePage - Buyer clicked on Housing radio button
+[INFO ] 2022-11-21 13:38:26.597 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 13:38:28.641 [main] HomePage - Buyer clicked on Housing maintenance and management radio button
+[INFO ] 2022-11-21 13:38:31.163 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 13:38:33.205 [main] HomePage - Buyer clicked on Ministry of Defence or defence infrastructure organisation radio button
+[INFO ] 2022-11-21 13:38:36.713 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 13:38:45.719 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 13:38:45.988 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 13:38:45.990 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 13:38:54.354 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 13:38:54.369 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 13:39:01.828 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 13:39:10.942 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 13:39:14.218 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 13:39:16.299 [main] HomePage - Buyer clicked on Facilities Management (FM) radio button
+[INFO ] 2022-11-21 13:39:19.295 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 13:39:26.197 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 13:39:26.357 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails_buildingCleaningServices" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 13:39:26.358 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 13:39:32.559 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 13:39:32.561 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 13:39:40.411 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 13:39:49.544 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 13:39:52.696 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 13:39:54.779 [main] HomePage - Buyer clicked on Facilities Management (FM) radio button
+[INFO ] 2022-11-21 13:39:57.708 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 13:40:04.602 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails_buildingCleaningServices" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 13:40:04.740 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 13:40:04.742 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 13:40:11.931 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 13:40:11.932 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 13:40:18.997 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 13:40:28.050 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 13:40:31.490 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 13:40:33.583 [main] HomePage - Buyer clicked on Facilities Management (FM) radio button
+[INFO ] 2022-11-21 13:40:36.422 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 13:40:43.338 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 14:11:32.011 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 14:11:32.016 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 14:11:42.425 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 14:11:42.434 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 14:11:51.247 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 14:12:00.928 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:12:04.400 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:12:06.493 [main] HomePage - Buyer clicked on Housing radio button
+[INFO ] 2022-11-21 14:12:09.454 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 14:12:11.499 [main] HomePage - Buyer clicked on Estate services radio button
+[INFO ] 2022-11-21 14:12:14.492 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 14:12:16.628 [main] GMResultPage - User is on guided match search results with request for more information
+[INFO ] 2022-11-21 14:12:17.353 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 14:12:17.562 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "cleaning" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 14:12:17.564 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 14:12:25.714 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 14:12:25.715 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 14:12:32.863 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 14:12:41.750 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:12:44.963 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:12:51.601 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "cleaning" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 14:12:51.800 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "cleaning" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 14:12:51.802 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 14:12:59.508 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 14:12:59.509 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 14:13:07.574 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 14:13:16.614 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:13:19.804 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:13:21.883 [main] HomePage - Buyer clicked on Facilities Management (FM) radio button
+[INFO ] 2022-11-21 14:13:24.803 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 14:13:31.703 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "cleaning" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 14:13:31.853 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails_buildingCleaningServices" on GM results page after initiating GM journey for framework "cleaning" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 14:13:31.868 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 14:13:39.426 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 14:13:39.427 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 14:13:46.530 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 14:14:07.835 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 14:14:07.840 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 14:14:20.628 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 14:14:20.632 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 14:14:28.494 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 14:14:37.604 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:14:40.813 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:14:42.909 [main] HomePage - Buyer clicked on Housing radio button
+[INFO ] 2022-11-21 14:14:46.567 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 14:14:48.612 [main] HomePage - Buyer clicked on Estate services radio button
+[INFO ] 2022-11-21 14:14:51.370 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 14:14:54.316 [main] GMResultPage - User is on guided match search results with request for more information
+[INFO ] 2022-11-21 14:14:55.049 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 14:14:55.208 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "cleaning" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 14:14:55.210 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 14:15:03.018 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 14:15:03.019 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 14:15:10.554 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 14:15:19.565 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:15:22.980 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:15:29.734 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "cleaning" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 14:15:29.893 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "cleaning" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 14:15:29.894 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 14:15:37.895 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 14:15:37.897 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 14:15:45.557 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 14:15:54.813 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:15:58.037 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 14:16:00.156 [main] HomePage - Buyer clicked on Facilities Management (FM) radio button
+[INFO ] 2022-11-21 14:16:03.122 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 14:16:10.133 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "cleaning" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 14:16:10.295 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails_buildingCleaningServices" on GM results page after initiating GM journey for framework "cleaning" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 14:16:10.296 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:25:20.439 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 15:25:20.443 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:25:29.674 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:25:29.677 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:25:38.752 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:25:47.694 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:25:50.910 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:25:52.986 [main] HomePage - Buyer clicked on Housing radio button
+[INFO ] 2022-11-21 15:25:55.903 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:25:57.948 [main] HomePage - Buyer clicked on Estate services radio button
+[INFO ] 2022-11-21 15:26:00.728 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:26:02.888 [main] GMResultPage - User is on guided match search results with request for more information
+[INFO ] 2022-11-21 15:26:04.551 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 15:26:04.693 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 15:26:04.694 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:26:11.601 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:26:11.602 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:26:21.567 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:26:30.872 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:26:34.404 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:26:40.657 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 15:26:40.883 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 15:26:40.885 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:26:48.467 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:26:48.468 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:27:08.037 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 15:27:08.041 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:27:15.669 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:27:15.673 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:27:24.288 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:27:33.536 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:27:36.907 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:27:38.998 [main] HomePage - Buyer clicked on Housing radio button
+[INFO ] 2022-11-21 15:27:51.175 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 15:27:51.180 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:27:58.770 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:27:58.774 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:28:07.602 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:28:16.855 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:28:20.091 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:28:22.168 [main] HomePage - Buyer clicked on Housing radio button
+[INFO ] 2022-11-21 15:28:25.054 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:28:27.099 [main] HomePage - Buyer clicked on Estate services radio button
+[INFO ] 2022-11-21 15:28:29.890 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:28:32.020 [main] GMResultPage - User is on guided match search results with request for more information
+[INFO ] 2022-11-21 15:28:32.773 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 15:28:32.960 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 15:28:32.961 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:28:41.679 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:28:41.680 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:28:48.872 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:28:57.950 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:29:01.489 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:29:07.853 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 15:29:08.130 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 15:29:08.132 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:29:15.789 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:29:15.790 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:29:24.763 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:29:33.757 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:29:37.502 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:29:39.571 [main] HomePage - Buyer clicked on Facilities Management (FM) radio button
+[INFO ] 2022-11-21 15:29:42.559 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:29:49.572 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmMarketPlacePhase2" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "Ministry of Defence or defence infrastructure organisation", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 15:29:49.793 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails_buildingCleaningServices" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 15:29:49.794 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:29:56.954 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:29:56.958 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:30:05.440 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:30:14.715 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:30:18.047 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:30:20.146 [main] HomePage - Buyer clicked on Facilities Management (FM) radio button
+[INFO ] 2022-11-21 15:30:23.018 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:30:30.014 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "fmmDetails_buildingCleaningServices" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 15:30:30.188 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2022-11-21 15:30:30.190 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:30:37.403 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:30:37.405 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:30:46.662 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:30:55.774 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:30:59.652 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:31:01.747 [main] HomePage - Buyer clicked on Facilities Management (FM) radio button
+[INFO ] 2022-11-21 15:31:04.783 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:31:12.679 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "Statutory inspections" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2022-11-21 15:37:24.465 [main] TestContext - =================To verify Buyer has initiated GM journey for framework "linen random" and is provided with GM Escape page on selection of Product during the journey execution starts===================
+[INFO ] 2022-11-21 15:37:24.470 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:37:33.434 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:37:33.440 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:37:43.155 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:37:52.545 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:37:55.884 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:37:57.980 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 15:38:00.948 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:38:03.002 [main] HomePage - Buyer clicked on Product radio button
+[INFO ] 2022-11-21 15:38:05.894 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:38:08.042 [main] GMResultPage - User is on guided match search results with request for more information
+[INFO ] 2022-11-21 15:38:13.414 [main] TestContext - =================To verify Buyer has initiated GM journey for framework "linen random" and is provided with GM Escape page on selection of Product during the journey execution ends===================
+[INFO ] 2022-11-21 15:38:13.781 [main] TestContext - =================To verify Buyer has initiated GM journey for framework "linen" and is provided with GM Escape page on selection of Product during the journey execution starts===================
+[INFO ] 2022-11-21 15:38:13.783 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:38:22.385 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:38:22.387 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:38:32.008 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:38:41.282 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:38:44.709 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:38:46.804 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 15:38:49.748 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:38:51.787 [main] HomePage - Buyer clicked on Product radio button
+[INFO ] 2022-11-21 15:38:54.593 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:38:56.742 [main] GMResultPage - User is on guided match search results with request for more information
+[INFO ] 2022-11-21 15:39:00.500 [main] HomePage - Clicked on Start again to change your answers button
+[INFO ] 2022-11-21 15:39:02.535 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 15:39:05.055 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:39:07.097 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 15:39:09.489 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:39:11.572 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2022-11-21 15:39:14.100 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:39:16.161 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2022-11-21 15:39:18.742 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:39:20.778 [main] HomePage - Buyer clicked on Theatre pack and gowns radio button
+[INFO ] 2022-11-21 15:39:23.353 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:39:26.412 [main] HomePage - Buyer clicked on Anything else checkbox  button
+[INFO ] 2022-11-21 15:39:29.458 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:39:35.652 [main] TestContext - =================To verify Buyer has initiated GM journey for framework "linen" and is provided with GM Escape page on selection of Product during the journey execution ends===================
+[INFO ] 2022-11-21 15:39:35.883 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "10" , selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 15:39:35.884 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:39:43.468 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:39:43.472 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:39:53.172 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:40:03.060 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:40:06.664 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:40:08.774 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 15:40:11.657 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:40:13.697 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 15:40:16.248 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:40:18.562 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 15:40:22.161 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:40:24.235 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 15:40:27.761 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:40:29.802 [main] HomePage - Buyer clicked on Theatre pack and gowns radio button
+[INFO ] 2022-11-21 15:40:32.266 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:40:35.308 [main] HomePage - Buyer clicked on No, I have everything I need checkbox  button
+[INFO ] 2022-11-21 15:40:38.637 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:40:42.465 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "10" , selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 15:40:42.753 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "11" , selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 15:40:42.756 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:40:50.194 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:40:50.196 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:40:59.692 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:41:08.847 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:41:12.029 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:41:14.116 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 15:41:16.979 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:41:19.020 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 15:41:21.525 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:41:23.803 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 15:41:28.146 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:41:30.186 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 15:41:33.729 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:41:35.768 [main] HomePage - Buyer clicked on Cleanroom services radio button
+[INFO ] 2022-11-21 15:41:38.194 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:41:41.234 [main] HomePage - Buyer clicked on No, I have everything I need checkbox  button
+[INFO ] 2022-11-21 15:41:44.457 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:41:48.359 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "11" , selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 15:41:48.580 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "11" , selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 15:41:48.581 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:41:57.942 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:41:57.946 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:42:07.534 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:42:16.534 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:42:19.725 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:42:21.820 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 15:42:24.747 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:42:26.788 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 15:42:29.297 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:42:31.577 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 15:42:35.872 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:42:37.928 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 15:42:41.382 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:42:43.422 [main] HomePage - Buyer clicked on Linen hire with standard wash radio button
+[INFO ] 2022-11-21 15:42:45.829 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:42:48.869 [main] HomePage - Buyer clicked on No, I have everything I need checkbox  button
+[INFO ] 2022-11-21 15:42:52.237 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:42:56.063 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "11" , selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 15:42:56.361 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "7" , selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 15:42:56.363 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 15:43:03.865 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 15:43:03.872 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 15:43:13.042 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 15:43:22.174 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:43:25.264 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 15:43:27.352 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 15:43:30.242 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:43:32.279 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 15:43:35.892 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 15:43:37.960 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 15:43:42.257 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:04:37.602 [main] TestContext - =================To verify Buyer has initiated GM journey for framework "linen random" and is provided with GM Escape page on selection of Product during the journey execution starts===================
+[INFO ] 2022-11-21 16:04:37.606 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 16:04:47.785 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 16:04:47.788 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 16:04:56.426 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 16:05:06.376 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:05:09.580 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:05:11.674 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 16:05:14.526 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:05:16.576 [main] HomePage - Buyer clicked on Product radio button
+[INFO ] 2022-11-21 16:05:19.343 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:05:21.480 [main] GMResultPage - User is on guided match search results with request for more information
+[INFO ] 2022-11-21 16:05:25.655 [main] TestContext - =================To verify Buyer has initiated GM journey for framework "linen random" and is provided with GM Escape page on selection of Product during the journey execution ends===================
+[INFO ] 2022-11-21 16:05:25.869 [main] TestContext - =================To verify Buyer has initiated GM journey for framework "linen" and is provided with GM Escape page on selection of Product during the journey execution starts===================
+[INFO ] 2022-11-21 16:05:25.870 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 16:05:32.766 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 16:05:32.768 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 16:05:41.979 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 16:05:51.352 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:05:55.117 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:05:57.221 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 16:06:00.245 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:06:02.315 [main] HomePage - Buyer clicked on Product radio button
+[INFO ] 2022-11-21 16:06:05.070 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:06:07.221 [main] GMResultPage - User is on guided match search results with request for more information
+[INFO ] 2022-11-21 16:06:10.145 [main] HomePage - Clicked on Start again to change your answers button
+[INFO ] 2022-11-21 16:06:12.179 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 16:06:14.757 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:06:16.801 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 16:06:19.215 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:06:21.310 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2022-11-21 16:06:23.950 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:06:25.989 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2022-11-21 16:06:28.423 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:06:30.461 [main] HomePage - Buyer clicked on Theatre pack and gowns radio button
+[INFO ] 2022-11-21 16:06:32.836 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:06:35.886 [main] HomePage - Buyer clicked on Anything else checkbox  button
+[INFO ] 2022-11-21 16:06:38.955 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:06:45.111 [main] TestContext - =================To verify Buyer has initiated GM journey for framework "linen" and is provided with GM Escape page on selection of Product during the journey execution ends===================
+[INFO ] 2022-11-21 16:06:45.289 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "10" , selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 16:06:45.291 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 16:06:52.664 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 16:06:52.669 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 16:07:02.266 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 16:07:11.466 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:07:14.622 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:07:16.708 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 16:07:19.668 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:07:21.711 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 16:07:24.241 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:07:26.542 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:07:30.191 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:07:32.254 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:07:35.817 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:07:37.858 [main] HomePage - Buyer clicked on Theatre pack and gowns radio button
+[INFO ] 2022-11-21 16:07:40.283 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:07:43.324 [main] HomePage - Buyer clicked on No, I have everything I need checkbox  button
+[INFO ] 2022-11-21 16:07:46.839 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:07:50.713 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "10" , selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 16:07:50.951 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "11" , selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 16:07:50.953 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 16:07:58.514 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 16:07:58.515 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 16:08:07.732 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 16:08:16.796 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:08:19.995 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:08:22.092 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 16:08:25.025 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:08:27.068 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 16:08:29.565 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:08:31.840 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:08:36.407 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:08:38.445 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:08:41.979 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:08:44.021 [main] HomePage - Buyer clicked on Cleanroom services radio button
+[INFO ] 2022-11-21 16:08:46.427 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:08:49.465 [main] HomePage - Buyer clicked on No, I have everything I need checkbox  button
+[INFO ] 2022-11-21 16:08:52.750 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:08:56.612 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "11" , selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 16:08:56.833 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "11" , selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 16:08:56.834 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 16:09:05.159 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 16:09:05.162 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 16:09:14.253 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 16:09:23.344 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:09:26.503 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:09:28.591 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 16:09:31.469 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:09:33.541 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 16:09:36.131 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:09:38.418 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:09:42.029 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:09:44.085 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:09:47.695 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:09:49.743 [main] HomePage - Buyer clicked on Linen hire with standard wash radio button
+[INFO ] 2022-11-21 16:09:52.118 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:09:55.176 [main] HomePage - Buyer clicked on No, I have everything I need checkbox  button
+[INFO ] 2022-11-21 16:09:58.528 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:10:02.316 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "11" , selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 16:10:02.532 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "7" , selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 16:10:02.534 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 16:10:11.911 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 16:10:11.913 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 16:10:20.837 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 16:10:30.120 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:10:33.337 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:10:35.424 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 16:10:38.266 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:10:40.290 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 16:10:42.809 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:10:45.090 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:10:49.463 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:10:51.512 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:10:55.005 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:10:57.047 [main] HomePage - Buyer clicked on Standard wash radio button
+[INFO ] 2022-11-21 16:10:59.531 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:42:04.908 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "8" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 16:42:04.954 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 16:42:12.562 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 16:42:12.566 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 16:42:19.803 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 16:42:29.585 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:42:33.000 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:42:35.089 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 16:42:37.995 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:42:40.041 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 16:42:42.822 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:42:45.131 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:42:49.878 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:42:51.919 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:42:55.409 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:42:57.448 [main] HomePage - Buyer clicked on Theatre pack and gowns radio button
+[INFO ] 2022-11-21 16:42:59.862 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:43:02.927 [main] HomePage - Buyer clicked on Anything else checkbox  button
+[INFO ] 2022-11-21 16:43:05.927 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:43:11.840 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "8" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 16:43:12.021 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345000", selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 16:43:12.022 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 16:43:19.005 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 16:43:19.006 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 16:43:31.015 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 16:43:40.036 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:43:43.370 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:43:45.447 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 16:43:48.337 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:43:50.371 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 16:43:52.954 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:43:55.228 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:43:59.878 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:44:01.952 [main] HomePage - Buyer clicked on Theatre pack and gowns radio button
+[INFO ] 2022-11-21 16:44:04.466 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:44:07.515 [main] HomePage - Buyer clicked on No, I have everything I need checkbox  button
+[INFO ] 2022-11-21 16:44:10.771 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:44:13.751 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345000", selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 16:44:13.914 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345000", selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 16:44:13.916 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 16:44:21.220 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 16:44:21.221 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 16:44:30.215 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 16:44:38.987 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:44:42.304 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 16:44:44.391 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 16:44:47.357 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:44:49.413 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 16:44:51.976 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:44:54.254 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 16:44:57.938 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:44:59.980 [main] HomePage - Buyer clicked on Cleanroom services radio button
+[INFO ] 2022-11-21 16:45:02.439 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:45:05.481 [main] HomePage - Buyer clicked on No, I have everything I need checkbox  button
+[INFO ] 2022-11-21 16:45:08.644 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 16:45:11.625 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345000", selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 16:45:11.807 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345000", selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 16:45:11.809 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 16:45:20.550 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 16:45:20.552 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 16:45:31.544 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 17:15:13.867 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345000", selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 17:15:13.930 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 17:16:46.958 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 17:16:46.999 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 17:16:56.859 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 17:17:08.520 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 17:17:12.178 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 17:17:14.259 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 17:17:17.089 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:17:19.135 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 17:17:21.792 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:17:24.076 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 17:17:27.814 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:17:29.892 [main] HomePage - Buyer clicked on Standard wash radio button
+[INFO ] 2022-11-21 17:17:32.432 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:17:35.481 [main] HomePage - Buyer clicked on No, I have everything I need checkbox  button
+[INFO ] 2022-11-21 17:17:38.649 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:17:41.570 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345000", selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 17:17:41.770 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "7654321", selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 17:17:41.772 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 17:17:49.334 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 17:17:49.335 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 17:17:57.902 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 17:18:07.068 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 17:18:10.291 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 17:18:12.387 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 17:18:15.274 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:18:17.322 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 17:18:19.824 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:18:22.125 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 17:18:26.434 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:18:28.499 [main] HomePage - Buyer clicked on Theatre pack and gowns radio button
+[INFO ] 2022-11-21 17:18:30.882 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:18:33.924 [main] HomePage - Buyer clicked on Anything else checkbox  button
+[INFO ] 2022-11-21 17:18:37.024 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:18:42.294 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "7654321", selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 17:18:42.434 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "7654321", selects Service area as "Cleanroom services" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 17:18:42.435 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 17:18:49.046 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 17:18:49.047 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 17:18:57.238 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 17:19:06.251 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 17:19:09.410 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 17:19:11.518 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 17:19:14.416 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:19:16.467 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 17:19:18.967 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:19:21.242 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 17:19:25.780 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:19:27.841 [main] HomePage - Buyer clicked on Cleanroom services radio button
+[INFO ] 2022-11-21 17:19:30.274 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:19:33.322 [main] HomePage - Buyer clicked on Anything else checkbox  button
+[INFO ] 2022-11-21 17:19:36.326 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:19:41.554 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "7654321", selects Service area as "Cleanroom services" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 17:19:41.692 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "7654321", selects Service area as "Linen hire with standard wash" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 17:19:41.693 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 17:19:51.303 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 17:19:51.304 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 17:19:57.891 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 17:20:06.876 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 17:20:10.204 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 17:20:12.304 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 17:20:15.132 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:20:17.182 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 17:20:19.710 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:20:21.982 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 17:20:26.660 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:20:28.727 [main] HomePage - Buyer clicked on Linen hire with standard wash radio button
+[INFO ] 2022-11-21 17:20:31.193 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:20:34.242 [main] HomePage - Buyer clicked on Anything else checkbox  button
+[INFO ] 2022-11-21 17:20:37.185 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:20:42.474 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "7654321", selects Service area as "Linen hire with standard wash" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 17:20:42.625 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "7654321", selects Service area as "Standard wash" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 17:20:42.626 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 17:20:49.094 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 17:20:49.096 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 17:20:58.041 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 17:21:07.179 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 17:21:10.434 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 17:21:12.535 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2022-11-21 17:21:15.367 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:21:17.417 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2022-11-21 17:21:19.907 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:21:22.181 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2022-11-21 17:21:26.689 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:21:28.771 [main] HomePage - Buyer clicked on Standard wash radio button
+[INFO ] 2022-11-21 17:21:31.230 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:21:34.283 [main] HomePage - Buyer clicked on Anything else checkbox  button
+[INFO ] 2022-11-21 17:21:37.205 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-11-21 17:21:42.345 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "7654321", selects Service area as "Standard wash" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 17:21:42.493 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "13" , selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 17:21:42.494 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 17:21:49.654 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 17:21:49.660 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 17:21:59.188 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 17:22:08.157 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-11-21 21:03:56.291 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "14" , selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:03:56.296 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:04:12.397 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:04:12.401 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:04:43.240 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:05:16.340 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "14" , selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:05:16.503 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "21" , selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:05:16.504 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:05:25.896 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:05:25.898 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:05:56.647 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:06:29.636 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "21" , selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:06:29.791 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "30" , selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:06:29.792 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:06:39.431 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:06:39.433 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:07:10.203 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:07:42.913 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "30" , selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:07:43.087 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "18" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:07:43.089 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:07:52.511 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:07:52.514 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:08:23.269 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:08:56.037 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "18" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:08:56.185 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "20" , selects Service area as "Cleanroom services" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:08:56.187 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:09:03.616 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:09:03.629 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:09:34.388 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:10:07.127 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "20" , selects Service area as "Cleanroom services" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:10:07.256 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "25" , selects Service area as "Linen hire with standard wash" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:10:07.258 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:10:16.720 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:10:16.721 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:10:47.487 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:11:20.243 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "25" , selects Service area as "Linen hire with standard wash" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:11:20.367 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "35" , selects Service area as "Standard wash" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:11:20.368 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:11:30.569 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:11:30.571 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:12:01.325 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:12:34.059 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "35" , selects Service area as "Standard wash" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:12:34.220 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "3" , selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:12:34.222 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:12:44.696 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:12:44.701 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:13:15.769 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:13:48.480 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "3" , selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:13:48.645 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "4" , selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:13:48.646 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:13:57.620 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:13:57.623 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:14:28.420 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:15:01.165 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "4" , selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:15:01.345 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "1" , selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:15:01.346 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:15:11.095 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:15:11.096 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:15:41.841 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:16:14.589 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "1" , selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:16:14.752 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "8" , selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:16:14.753 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:16:23.262 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:16:23.263 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:16:53.978 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:17:26.672 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "8" , selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:17:26.811 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "8" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:17:26.813 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:17:35.219 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:17:35.220 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:18:05.938 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:18:38.761 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "8" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:18:38.886 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "5" , selects Service area as "Cleanroom services" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:18:38.887 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:18:46.629 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:18:46.643 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:19:17.359 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:19:50.096 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "5" , selects Service area as "Cleanroom services" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:19:50.238 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "5" , selects Service area as "Linen hire with standard wash" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:19:50.239 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:19:58.207 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:19:58.207 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:20:28.919 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:21:01.669 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "5" , selects Service area as "Linen hire with standard wash" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:21:01.832 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "5" , selects Service area as "Standard wash" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:21:01.834 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:21:09.818 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:21:09.820 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:21:40.526 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:22:13.342 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "5" , selects Service area as "Standard wash" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:22:13.507 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "13" , selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:22:13.508 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:22:22.069 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:22:22.069 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:22:52.789 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:23:25.495 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "13" , selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:23:25.641 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "14" , selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:23:25.644 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:23:33.814 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:23:33.814 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:24:05.103 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:24:37.851 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "14" , selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:24:38.018 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "17" , selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:24:38.021 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:24:46.956 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:24:46.957 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:25:17.706 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:25:50.443 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "17" , selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:25:50.576 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "18" , selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:25:50.578 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:25:59.526 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:25:59.526 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:26:30.278 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:27:02.973 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "18" , selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:27:03.115 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "28" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:27:03.117 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:27:11.694 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:27:11.695 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:27:42.406 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:28:15.153 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "28" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:28:15.306 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "25" , selects Service area as "Cleanroom services" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:28:15.307 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:28:23.755 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:28:23.755 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:28:54.463 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:29:27.262 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "25" , selects Service area as "Cleanroom services" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:29:27.439 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "25" , selects Service area as "Linen hire with standard wash" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:29:27.441 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:29:35.746 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:29:35.747 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:30:07.996 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:30:40.691 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "25" , selects Service area as "Linen hire with standard wash" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:30:40.839 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "25" , selects Service area as "Standard wash" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:30:40.841 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:30:49.953 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:30:49.954 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:31:20.696 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:31:53.447 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "Yes" and enters contract length "25" , selects Service area as "Standard wash" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:31:53.591 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:31:53.592 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:32:02.261 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:32:02.262 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:32:32.999 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:33:05.739 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:33:05.891 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:33:05.892 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:33:14.783 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:33:14.784 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:33:45.504 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:34:18.227 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot3" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Cleanroom services" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:34:18.387 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:34:18.388 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:34:27.059 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:34:27.060 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:34:57.771 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:35:30.484 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1a" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Linen hire with standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:35:30.643 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution starts===================
+[INFO ] 2022-11-21 21:35:30.644 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:35:38.952 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:35:38.953 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:36:09.670 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:36:42.568 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot1b" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Standard wash" and Additional facilities as "No, I have everything I need" during the journey execution ends===================
+[INFO ] 2022-11-21 21:36:42.820 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:36:42.823 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:36:49.211 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:36:49.212 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:37:20.059 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:37:52.847 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:37:53.005 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Cleanroom services" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:37:53.006 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:38:02.138 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:38:02.140 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:38:33.093 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:39:05.833 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Cleanroom services" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:39:05.978 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Linen hire with standard wash" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:39:05.979 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:39:13.820 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:39:13.835 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:39:45.123 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:40:18.233 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Linen hire with standard wash" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:40:18.368 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Standard wash" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2022-11-21 21:40:18.369 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:40:26.270 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:40:26.286 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:40:57.079 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:41:29.827 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Standard wash" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2022-11-21 21:41:29.969 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "Catering_Security" during the journey execution starts===================
+[INFO ] 2022-11-21 21:41:29.970 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:41:37.644 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:41:37.645 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:42:08.918 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:42:41.664 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "Catering_Security" during the journey execution ends===================
+[INFO ] 2022-11-21 21:42:41.805 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "Catering_Pest control" during the journey execution starts===================
+[INFO ] 2022-11-21 21:42:41.806 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:42:52.208 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:42:52.209 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 21:43:22.983 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 21:59:34.337 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "Catering_Pest control" during the journey execution ends===================
+[INFO ] 2022-11-21 21:59:34.599 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "Catering_Grounds maintenance_Security" during the journey execution starts===================
+[INFO ] 2022-11-21 21:59:34.602 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 21:59:41.829 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 21:59:41.831 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 22:08:40.491 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 22:09:13.273 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "Catering_Grounds maintenance_Security" during the journey execution ends===================
+[INFO ] 2022-11-21 22:09:13.522 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "Catering_Grounds maintenance_Pest control_Security" during the journey execution starts===================
+[INFO ] 2022-11-21 22:09:13.523 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-11-21 22:09:20.243 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-11-21 22:09:20.258 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-11-21 22:09:51.029 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-11-21 22:10:23.772 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "No", Contract radio as "No", selects Service area as "Theatre pack and gowns" and Additional facilities as "Catering_Grounds maintenance_Pest control_Security" during the journey execution ends===================

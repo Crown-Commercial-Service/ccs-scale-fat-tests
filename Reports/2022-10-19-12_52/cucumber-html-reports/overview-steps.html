@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>scale</td>
+              <td>1</td>
+            <td>19 Oct 2022, 13:53</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">AgreementStep.all_the_sections_are_expanded()</td>
+              <td>1</td>
+              <td class="duration" data-value="13333">0.000</td>
+              <td class="duration" data-value="13333">0.000</td>
+              <td class="duration" data-value="13333">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AgreementStep.i_should_see_the_details_section(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="13542">0.000</td>
+              <td class="duration" data-value="13542">0.000</td>
+              <td class="duration" data-value="13542">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AgreementStep.i_should_the_key_facts_details(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="13125">0.000</td>
+              <td class="duration" data-value="13125">0.000</td>
+              <td class="duration" data-value="13125">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AgreementStep.user_clicks_on_the_open_all_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="13208">0.000</td>
+              <td class="duration" data-value="13208">0.000</td>
+              <td class="duration" data-value="13208">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomeSteps.i_am_on_the_page(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="20445271">0.020</td>
+              <td class="duration" data-value="20445271">0.040</td>
+              <td class="duration" data-value="40890542">0.040</td>
+              <td class="failed">50.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomeSteps.user_clicks_on_the_link(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="18809210104">18.809</td>
+              <td class="duration" data-value="18809210104">33.163</td>
+              <td class="duration" data-value="37618420209">37.618</td>
+              <td class="failed">50.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SearchFrameworksPageSteps.i_enter_in_the_search_agreement_field(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4859020375">4.859</td>
+              <td class="duration" data-value="4859020375">4.859</td>
+              <td class="duration" data-value="4859020375">4.859</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestContext.cleanUp()</td>
+              <td>1</td>
+              <td class="duration" data-value="7887154000">7.887</td>
+              <td class="duration" data-value="7887154000">7.887</td>
+              <td class="duration" data-value="7887154000">7.887</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestContext.setUp(Scenario)</td>
+              <td>1</td>
+              <td class="duration" data-value="5877230250">5.877</td>
+              <td class="duration" data-value="5877230250">5.877</td>
+              <td class="duration" data-value="5877230250">5.877</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestContext.user_reaches_the_landing_page_after_the_search(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4305306042">4.305</td>
+              <td class="duration" data-value="4305306042">4.305</td>
+              <td class="duration" data-value="4305306042">4.305</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>10</td>
+            <td>12</td>
+            <td class="duration">5.049</td>
+            <td class="duration">37.618</td>
+            <td class="duration">1:0.588</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

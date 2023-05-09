@@ -1,0 +1,14 @@
+[INFO ] 2023-03-13 20:50:17.857 [main] TestContext - =================RM6188 Audit & Assurance Services-Lot1 execution starts===================
+[INFO ] 2023-03-13 20:50:17.869 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-03-13 20:50:52.334 [main] TestContext - =================RM6188 Audit & Assurance Services-Lot4 execution starts===================
+[INFO ] 2023-03-13 20:50:52.337 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-03-13 20:51:27.189 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-03-13 20:51:27.189 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-03-13 20:51:34.233 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-03-13 20:51:48.742 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-03-13 20:51:51.860 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-03-13 20:51:54.030 [main] HomePage - Buyer clicked on Audit and Assurance radio button
+[INFO ] 2023-03-13 20:51:56.864 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-03-13 20:51:58.944 [main] HomePage - Buyer clicked on Other independent assurance services radio button
+[INFO ] 2023-03-13 20:52:03.635 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-03-13 20:52:06.747 [main] TestContext - =================RM6188 Audit & Assurance Services-Lot4 execution ends===================

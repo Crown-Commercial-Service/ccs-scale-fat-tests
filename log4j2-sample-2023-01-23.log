@@ -1,0 +1,138 @@
+[INFO ] 2023-01-23 10:13:04.229 [main] TestContext - =================RM6145:Learning And Development-Lot6 execution starts===================
+[INFO ] 2023-01-23 10:13:04.240 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 10:13:15.368 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 10:13:15.373 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 10:13:22.522 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 10:13:36.683 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:13:39.839 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:13:41.998 [main] HomePage - Buyer clicked on Learning & Development radio button
+[INFO ] 2023-01-23 10:13:44.984 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:13:47.052 [main] HomePage - Buyer clicked on Learning and Development radio button
+[INFO ] 2023-01-23 10:13:49.687 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:13:51.746 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2023-01-23 10:13:54.284 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:13:59.897 [main] TestContext - =================RM6145:Learning And Development-Lot6 execution ends===================
+[INFO ] 2023-01-23 10:14:46.282 [main] TestContext - =================RM6145:Learning And Development-Lot6 execution starts===================
+[INFO ] 2023-01-23 10:14:46.286 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 10:14:54.573 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 10:14:54.576 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 10:15:01.887 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 10:15:15.943 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:15:19.200 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:15:21.377 [main] HomePage - Buyer clicked on Learning & Development radio button
+[INFO ] 2023-01-23 10:15:24.397 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:15:26.467 [main] HomePage - Buyer clicked on Learning and Development radio button
+[INFO ] 2023-01-23 10:15:29.155 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:15:31.215 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2023-01-23 10:15:33.745 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:15:39.353 [main] TestContext - =================RM6145:Learning And Development-Lot6 execution ends===================
+[INFO ] 2023-01-23 10:16:10.366 [main] TestContext - =================RM6145:Learning And Development-Lot6 execution starts===================
+[INFO ] 2023-01-23 10:16:10.370 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 10:16:19.072 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 10:16:19.074 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 10:16:26.401 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 10:16:40.467 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:16:43.663 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:16:45.890 [main] HomePage - Buyer clicked on Learning & Development radio button
+[INFO ] 2023-01-23 10:16:48.817 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:16:50.906 [main] HomePage - Buyer clicked on Learning and Development radio button
+[INFO ] 2023-01-23 10:16:54.244 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:16:56.315 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2023-01-23 10:16:58.842 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:17:00.878 [main] HomePage - Buyer clicked on Learning Design and Delivery and Subject Matter Expertise and Coaching radio button
+[INFO ] 2023-01-23 10:17:04.096 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:17:07.609 [main] TestContext - =================RM6145:Learning And Development-Lot6 execution ends===================
+[INFO ] 2023-01-23 10:22:44.022 [main] TestContext - =================RM6219:Learning And Development execution starts===================
+[INFO ] 2023-01-23 10:22:44.026 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 10:22:53.134 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 10:22:53.136 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 10:23:00.440 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 10:23:14.434 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:23:17.594 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:23:19.760 [main] HomePage - Buyer clicked on Learning & Development radio button
+[INFO ] 2023-01-23 10:23:22.721 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:23:24.781 [main] HomePage - Buyer clicked on Learning and Development radio button
+[INFO ] 2023-01-23 10:23:27.420 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:23:29.480 [main] HomePage - Buyer clicked on No radio button
+[INFO ] 2023-01-23 10:23:32.532 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:23:35.845 [main] TestContext - =================RM6219:Learning And Development execution ends===================
+[INFO ] 2023-01-23 10:54:33.877 [main] TestContext - =================RM6181:Contact Centre Services execution starts===================
+[INFO ] 2023-01-23 10:54:33.882 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 10:54:43.822 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 10:54:43.830 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 10:54:54.058 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 10:55:07.949 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:55:11.180 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:55:13.347 [main] HomePage - Buyer clicked on Business Services radio button
+[INFO ] 2023-01-23 10:55:16.356 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:55:21.022 [main] TestContext - =================RM6181:Contact Centre Services execution ends===================
+[INFO ] 2023-01-23 10:56:03.215 [main] TestContext - =================RM6181:Contact Centre Services execution starts===================
+[INFO ] 2023-01-23 10:56:03.219 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 10:56:11.127 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 10:56:11.130 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 10:56:18.525 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 10:56:32.454 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:56:35.686 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:56:37.944 [main] HomePage - Buyer clicked on Business Services radio button
+[INFO ] 2023-01-23 10:56:40.952 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:56:45.460 [main] TestContext - =================RM6181:Contact Centre Services execution ends===================
+[INFO ] 2023-01-23 10:57:46.834 [main] TestContext - =================RM6181:Contact Centre Services execution starts===================
+[INFO ] 2023-01-23 10:57:46.839 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 10:57:54.726 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 10:57:54.728 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 10:58:02.246 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 10:58:16.364 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:58:19.571 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 10:58:21.740 [main] HomePage - Buyer clicked on Business Services radio button
+[INFO ] 2023-01-23 10:58:24.788 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:58:26.854 [main] HomePage - Buyer clicked on Contact centre services radio button
+[INFO ] 2023-01-23 10:58:30.184 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 10:58:33.360 [main] TestContext - =================RM6181:Contact Centre Services execution ends===================
+[INFO ] 2023-01-23 11:16:23.563 [main] TestContext - =================RM6181:Business Services-Lot2 execution starts===================
+[INFO ] 2023-01-23 11:16:23.569 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 11:16:33.262 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 11:16:33.267 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 11:16:40.463 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 11:16:54.483 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 11:16:57.606 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 11:16:59.817 [main] HomePage - Buyer clicked on Business Services radio button
+[INFO ] 2023-01-23 11:17:02.794 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 11:17:04.856 [main] HomePage - Buyer clicked on Financial accounting radio button
+[INFO ] 2023-01-23 11:17:08.206 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 11:17:15.647 [main] TestContext - =================RM6181:Business Services-Lot2 execution ends===================
+[INFO ] 2023-01-23 11:18:08.150 [main] TestContext - =================RM6181:Business Services-Lot2 execution starts===================
+[INFO ] 2023-01-23 11:18:08.154 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 11:18:16.359 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 11:18:16.362 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 11:18:23.694 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 11:18:37.574 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 11:18:40.752 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 11:18:42.945 [main] HomePage - Buyer clicked on Business Services radio button
+[INFO ] 2023-01-23 11:18:46.025 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 11:18:48.090 [main] HomePage - Buyer clicked on Financial accounting radio button
+[INFO ] 2023-01-23 11:18:51.509 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 11:18:54.572 [main] TestContext - =================RM6181:Business Services-Lot2 execution ends===================
+[INFO ] 2023-01-23 11:19:18.327 [main] TestContext - =================RM6181:Contact Centre Services-Lot1 execution starts===================
+[INFO ] 2023-01-23 11:19:18.331 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 11:19:25.712 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 11:19:25.715 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 11:19:32.698 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 11:19:46.638 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 11:19:49.788 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 11:19:51.961 [main] HomePage - Buyer clicked on Contact Centre radio button
+[INFO ] 2023-01-23 11:19:54.954 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 11:19:57.033 [main] HomePage - Buyer clicked on Contact centre services radio button
+[INFO ] 2023-01-23 11:20:01.846 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 11:20:04.893 [main] TestContext - =================RM6181:Contact Centre Services-Lot1 execution ends===================
+[INFO ] 2023-01-23 11:20:05.070 [main] TestContext - =================RM6181:Business Services-Lot2 execution starts===================
+[INFO ] 2023-01-23 11:20:05.072 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-01-23 11:20:11.620 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-01-23 11:20:11.621 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-01-23 11:20:18.801 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-01-23 11:20:32.528 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 11:20:35.735 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-01-23 11:20:37.927 [main] HomePage - Buyer clicked on Business Services radio button
+[INFO ] 2023-01-23 11:20:40.968 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 11:20:43.033 [main] HomePage - Buyer clicked on Financial accounting radio button
+[INFO ] 2023-01-23 11:20:46.311 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-01-23 11:20:49.349 [main] TestContext - =================RM6181:Business Services-Lot2 execution ends===================

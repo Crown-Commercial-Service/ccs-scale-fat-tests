@@ -1,0 +1,62 @@
+[INFO ] 2022-12-07 14:54:37.575 [pool-1-thread-2] TestContext - =================To verify Buyer has provided with different recommendations "seclot1a_techlot1b", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and answering different set of question as selects type of security "Security services" and which technical services "<techserviceAreaOpt>" during the journey execution starts===================
+[INFO ] 2022-12-07 14:54:37.587 [pool-1-thread-2] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-12-07 14:54:48.726 [pool-1-thread-2] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-12-07 14:54:48.728 [pool-1-thread-2] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-12-07 14:54:57.685 [pool-1-thread-2] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-12-07 14:55:07.160 [pool-1-thread-2] HomePage - Clicked on Start now button
+[INFO ] 2022-12-07 14:55:10.965 [pool-1-thread-2] HomePage - Clicked on Start now button
+[INFO ] 2022-12-07 14:55:13.043 [pool-1-thread-2] HomePage - Buyer clicked on Security Services radio button
+[INFO ] 2022-12-07 14:55:16.757 [pool-1-thread-2] HomePage - Clicked on Continue button
+[INFO ] 2022-12-07 14:55:18.808 [pool-1-thread-2] HomePage - Buyer clicked on Security services radio button
+[INFO ] 2022-12-07 14:55:21.472 [pool-1-thread-2] HomePage - Clicked on Continue button
+[INFO ] 2022-12-07 14:55:24.515 [pool-1-thread-2] HomePage - Buyer clicked on Anything else checkbox  button
+[INFO ] 2022-12-07 14:55:27.954 [pool-1-thread-2] HomePage - Clicked on Continue button
+[INFO ] 2022-12-07 14:55:35.614 [pool-1-thread-2] TestContext - =================To verify Buyer has provided with different recommendations "seclot1a_techlot1b", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and answering different set of question as selects type of security "Security services" and which technical services "<techserviceAreaOpt>" during the journey execution ends===================
+[INFO ] 2022-12-07 14:55:35.841 [pool-1-thread-2] TestContext - =================To verify Buyer has provided with different recommendations "seclot1a_techlot1b", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and answering different set of question as selects type of security "Security services and technical security" and which technical services "<techserviceAreaOpt>" during the journey execution starts===================
+[INFO ] 2022-12-07 14:55:35.842 [pool-1-thread-2] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-12-07 14:55:44.036 [pool-1-thread-2] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-12-07 14:55:44.037 [pool-1-thread-2] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-12-07 14:55:50.735 [pool-1-thread-2] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-12-07 14:55:59.401 [pool-1-thread-2] HomePage - Clicked on Start now button
+[INFO ] 2022-12-07 14:56:02.407 [pool-1-thread-2] HomePage - Clicked on Start now button
+[INFO ] 2022-12-07 14:56:04.463 [pool-1-thread-2] HomePage - Buyer clicked on Security Services radio button
+[INFO ] 2022-12-07 14:56:07.305 [pool-1-thread-2] HomePage - Clicked on Continue button
+[INFO ] 2022-12-07 14:56:09.353 [pool-1-thread-2] HomePage - Buyer clicked on Security services and technical security radio button
+[INFO ] 2022-12-07 14:56:11.847 [pool-1-thread-2] HomePage - Clicked on Continue button
+[INFO ] 2022-12-07 14:56:14.885 [pool-1-thread-2] HomePage - Buyer clicked on Anything else checkbox  button
+[INFO ] 2022-12-07 14:56:18.983 [pool-1-thread-2] HomePage - Clicked on Continue button
+[INFO ] 2022-12-07 14:56:25.706 [pool-1-thread-2] TestContext - =================To verify Buyer has provided with different recommendations "seclot1a_techlot1b", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and answering different set of question as selects type of security "Security services and technical security" and which technical services "<techserviceAreaOpt>" during the journey execution ends===================
+[INFO ] 2022-12-07 14:57:05.351 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2022-12-07 14:57:05.355 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-12-07 14:57:19.665 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-12-07 14:57:19.669 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-12-07 14:57:26.117 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-12-07 14:57:35.311 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-12-07 14:57:38.285 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-12-07 14:57:40.373 [main] HomePage - Buyer clicked on Courier radio button
+[INFO ] 2022-12-07 14:57:43.163 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-12-07 14:57:45.238 [main] HomePage - Buyer clicked on Secure collection and delivery services radio button
+[INFO ] 2022-12-07 14:57:48.652 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-12-07 14:57:50.350 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2022-12-07 14:57:50.588 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot6", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Asset recovery, disposal and destruction", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2022-12-07 14:57:50.590 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-12-07 14:57:58.302 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-12-07 14:57:58.303 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-12-07 14:58:04.561 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-12-07 14:58:13.420 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-12-07 14:58:16.423 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-12-07 14:58:18.505 [main] HomePage - Buyer clicked on Courier radio button
+[INFO ] 2022-12-07 14:58:21.246 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-12-07 14:58:23.293 [main] HomePage - Buyer clicked on Asset recovery, disposal and destruction radio button
+[INFO ] 2022-12-07 14:58:26.697 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-12-07 14:58:28.379 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot6", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Asset recovery, disposal and destruction", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2022-12-07 16:07:31.954 [pool-1-thread-2] TestContext - =================To verify Buyer has provided with different recommendations "seclot1a_techlot1b", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and answering different set of question as selects type of security "Security services" and which technical services "<techserviceAreaOpt>" during the journey execution starts===================
+[INFO ] 2022-12-07 16:07:31.964 [pool-1-thread-2] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-12-07 16:07:40.753 [pool-1-thread-2] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-12-07 16:07:40.756 [pool-1-thread-2] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-12-07 16:07:42.289 [pool-1-thread-2] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-12-07 16:08:14.474 [pool-1-thread-2] TestContext - =================To verify Buyer has provided with different recommendations "seclot1a_techlot1b", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and answering different set of question as selects type of security "Security services and technical security" and which technical services "<techserviceAreaOpt>" during the journey execution starts===================
+[INFO ] 2022-12-07 16:08:14.479 [pool-1-thread-2] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-12-07 16:08:20.611 [pool-1-thread-2] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-12-07 16:08:20.625 [pool-1-thread-2] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-12-07 16:08:23.053 [pool-1-thread-2] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched

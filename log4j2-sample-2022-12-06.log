@@ -1,0 +1,11 @@
+[INFO ] 2022-12-06 13:12:10.070 [pool-1-thread-2] TestContext - =================To verify Buyer has provided with different recommendations "seclot1a_techlot1b", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and answering different set of question as selects type of security "Security services" and which technical services "<techserviceAreaOpt>" during the journey execution starts===================
+[INFO ] 2022-12-06 13:12:10.082 [pool-1-thread-2] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-12-06 13:12:42.068 [pool-1-thread-2] TestContext - =================To verify Buyer has provided with different recommendations "seclot1a_techlot1b", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and answering different set of question as selects type of security "Security services and technical security" and which technical services "<techserviceAreaOpt>" during the journey execution starts===================
+[INFO ] 2022-12-06 13:12:42.087 [pool-1-thread-2] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-12-06 13:13:15.226 [pool-1-thread-2] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-12-06 13:13:15.228 [pool-1-thread-2] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-12-06 13:13:21.705 [pool-1-thread-2] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-12-06 13:13:31.244 [pool-1-thread-2] HomePage - Clicked on Start now button
+[INFO ] 2022-12-06 13:13:34.607 [pool-1-thread-2] HomePage - Clicked on Start now button
+[INFO ] 2022-12-06 13:13:36.649 [pool-1-thread-2] HomePage - Buyer clicked on Security Services radio button
+[INFO ] 2022-12-06 13:13:40.358 [pool-1-thread-2] HomePage - Clicked on Continue button

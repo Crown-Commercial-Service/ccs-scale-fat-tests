@@ -1,0 +1,50 @@
+[INFO ] 2022-10-26 17:32:00.396 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-26 17:32:00.414 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-26 17:33:46.849 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-26 17:33:46.853 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-26 17:34:44.859 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-26 17:34:44.864 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-26 17:35:33.907 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-26 17:35:33.909 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-26 17:35:38.728 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-26 17:35:49.593 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-26 17:35:54.104 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-26 17:35:57.323 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-26 17:36:01.180 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-26 17:36:10.150 [main] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2022-10-26 17:42:49.574 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-26 17:42:49.579 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-26 17:42:53.902 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-26 17:42:53.904 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-26 17:43:01.858 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-26 17:43:13.032 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-26 17:43:17.410 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-26 17:43:20.592 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-26 17:43:24.376 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-26 17:43:27.448 [main] HomePage - Buyer clicked on Multifunctional devices (MFDs) and basic print management software radio button
+[INFO ] 2022-10-26 17:43:32.106 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-26 17:43:35.759 [main] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2022-10-26 17:45:36.056 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-26 17:45:36.063 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-26 17:45:43.600 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-26 17:45:43.602 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-26 17:45:49.408 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-26 17:45:59.920 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-26 17:46:04.473 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-26 17:46:07.679 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-26 17:46:11.635 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-26 17:46:14.701 [main] HomePage - Buyer clicked on Multifunctional devices (MFDs) and basic print management software radio button
+[INFO ] 2022-10-26 17:46:19.142 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-26 17:46:22.250 [main] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2022-10-26 17:46:22.405 [main] TestContext - =================RM6174: MFD - LOT4 execution starts===================
+[INFO ] 2022-10-26 17:46:22.406 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-26 17:46:25.911 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-26 17:46:25.926 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-26 17:46:31.379 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-26 17:46:41.928 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-26 17:46:46.169 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-26 17:46:49.365 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-26 17:46:53.262 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-26 17:46:56.342 [main] HomePage - Buyer clicked on Print consultancy radio button
+[INFO ] 2022-10-26 17:47:00.977 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-26 17:47:09.124 [main] TestContext - =================RM6174: MFD - LOT4 execution ends===================

@@ -1,0 +1,761 @@
+[INFO ] 2022-10-27 09:00:49.956 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-27 09:00:49.968 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 09:00:55.464 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 09:00:55.465 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 09:01:02.023 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 09:01:13.779 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:01:18.482 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:01:21.621 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 09:01:27.498 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:01:30.560 [main] HomePage - Buyer clicked on Multifunctional devices (MFDs) and basic print management software radio button
+[INFO ] 2022-10-27 09:01:35.378 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:01:36.748 [main] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2022-10-27 09:01:36.911 [main] TestContext - =================RM6174: MFD - LOT4 execution starts===================
+[INFO ] 2022-10-27 09:01:36.913 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 09:01:39.202 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 09:01:39.202 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 09:01:44.707 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 09:01:55.466 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:01:59.887 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:02:03.076 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 09:02:07.060 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:02:10.137 [main] HomePage - Buyer clicked on Print consultancy radio button
+[INFO ] 2022-10-27 09:02:14.217 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:02:14.836 [main] TestContext - =================RM6174: MFD - LOT4 execution ends===================
+[INFO ] 2022-10-27 09:02:42.394 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-27 09:02:42.402 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 09:02:47.952 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 09:02:47.953 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 09:02:52.526 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 09:03:03.629 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:03:08.176 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:03:11.375 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 09:03:15.686 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:03:18.750 [main] HomePage - Buyer clicked on Multifunctional devices (MFDs) and basic print management software radio button
+[INFO ] 2022-10-27 09:03:22.924 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:03:23.864 [main] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2022-10-27 09:03:24.024 [main] TestContext - =================RM6174: MFD - LOT4 execution starts===================
+[INFO ] 2022-10-27 09:03:24.026 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 09:03:26.621 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 09:03:26.621 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 09:03:31.266 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 09:03:42.580 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:03:47.226 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:03:50.367 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 09:03:54.454 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:03:57.512 [main] HomePage - Buyer clicked on Print consultancy radio button
+[INFO ] 2022-10-27 09:04:01.843 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:04:02.452 [main] TestContext - =================RM6174: MFD - LOT4 execution ends===================
+[INFO ] 2022-10-27 09:16:34.752 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-27 09:16:34.762 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 09:16:42.022 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 09:16:42.023 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 09:16:47.617 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 09:16:58.130 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:17:02.471 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:17:05.656 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 09:17:09.937 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:17:13.007 [main] HomePage - Buyer clicked on Multifunctional devices (MFDs) and basic print management software radio button
+[INFO ] 2022-10-27 09:17:17.193 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:17:18.229 [main] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2022-10-27 09:17:18.404 [main] TestContext - =================RM6174: MFD - LOT4 execution starts===================
+[INFO ] 2022-10-27 09:17:18.405 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 09:17:20.882 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 09:17:20.882 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 09:17:30.170 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 09:17:40.424 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:17:44.983 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:17:48.163 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 09:17:52.186 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:17:55.254 [main] HomePage - Buyer clicked on Print consultancy radio button
+[INFO ] 2022-10-27 09:17:59.366 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:18:00.032 [main] TestContext - =================RM6174: MFD - LOT4 execution ends===================
+[INFO ] 2022-10-27 09:18:28.489 [main] TestContext - =================RM6119: Furniture & Associated Services - LOT2 execution starts===================
+[INFO ] 2022-10-27 09:18:28.493 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 09:18:37.389 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 09:18:37.408 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 09:18:47.417 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 09:18:57.940 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:19:02.556 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 09:19:05.819 [main] HomePage - Buyer clicked on Furniture and Associated Services radio button
+[INFO ] 2022-10-27 09:19:09.936 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:19:12.996 [main] HomePage - Buyer clicked on Product radio button
+[INFO ] 2022-10-27 09:19:17.285 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 09:19:21.369 [main] TestContext - =================RM6119: Furniture & Associated Services - LOT2 execution ends===================
+[INFO ] 2022-10-27 09:19:21.523 [main] TestContext - =================RM6119: Furniture & Associated Services - LOT4 execution starts===================
+[INFO ] 2022-10-27 09:19:21.525 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 09:19:23.717 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 09:19:23.718 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 09:19:31.231 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 10:23:12.436 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-27 10:23:12.443 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 10:23:16.869 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 10:23:16.870 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 10:23:23.425 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 10:23:34.225 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:23:38.819 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:23:42.010 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 10:23:46.249 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 10:23:49.610 [main] HomePage - Buyer clicked on Multifunctional devices (MFDs) and basic print management software radio button
+[INFO ] 2022-10-27 10:23:53.707 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 10:23:54.791 [main] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2022-10-27 10:23:54.988 [main] TestContext - =================RM6174: MFD - LOT4 execution starts===================
+[INFO ] 2022-10-27 10:23:54.989 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 10:23:57.876 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 10:23:57.876 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 10:24:07.323 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 10:24:17.302 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:24:22.737 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:24:25.963 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 10:24:30.329 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 10:24:33.497 [main] HomePage - Buyer clicked on Print consultancy radio button
+[INFO ] 2022-10-27 10:24:37.964 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 10:24:41.134 [main] TestContext - =================RM6174: MFD - LOT4 execution ends===================
+[INFO ] 2022-10-27 10:29:52.242 [pool-1-thread-2] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-27 10:29:52.246 [pool-1-thread-2] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 10:29:59.558 [pool-1-thread-2] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 10:29:59.561 [pool-1-thread-2] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 10:30:04.230 [pool-1-thread-2] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 10:30:14.637 [pool-1-thread-2] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:30:19.180 [pool-1-thread-2] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:30:22.360 [pool-1-thread-2] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 10:30:26.534 [pool-1-thread-2] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 10:30:29.602 [pool-1-thread-2] HomePage - Buyer clicked on Multifunctional devices (MFDs) and basic print management software radio button
+[INFO ] 2022-10-27 10:30:33.992 [pool-1-thread-2] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 10:30:35.469 [pool-1-thread-2] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2022-10-27 10:30:35.640 [pool-1-thread-2] TestContext - =================RM6174: MFD - LOT4 execution starts===================
+[INFO ] 2022-10-27 10:30:35.642 [pool-1-thread-2] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 10:30:38.373 [pool-1-thread-2] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 10:30:38.374 [pool-1-thread-2] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 10:30:43.635 [pool-1-thread-2] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 10:30:53.745 [pool-1-thread-2] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:30:58.207 [pool-1-thread-2] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:30:58.937 [pool-1-thread-2] TestContext - =================RM6174: MFD - LOT4 execution ends===================
+[INFO ] 2022-10-27 10:34:36.155 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-27 10:34:36.159 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 10:34:42.979 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 10:34:42.981 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 10:34:47.461 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 10:34:57.798 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:35:32.237 [main] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2022-10-27 10:35:32.386 [main] TestContext - =================RM6174: MFD - LOT4 execution starts===================
+[INFO ] 2022-10-27 10:35:32.388 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 10:35:35.178 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 10:35:35.179 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 10:35:39.531 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 10:35:49.460 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:35:54.124 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 10:35:57.293 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 10:36:02.301 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 10:36:02.880 [main] TestContext - =================RM6174: MFD - LOT4 execution ends===================
+[INFO ] 2022-10-27 11:01:18.244 [main] TestContext - =================Verify the agreements results returned execution starts===================
+[INFO ] 2022-10-27 11:01:18.251 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:01:21.880 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:01:21.881 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:01:28.501 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:01:33.001 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:01:34.393 [main] APIBase - The total number returned is91
+[INFO ] 2022-10-27 11:01:34.661 [main] SearchFrameworksPageSteps - [2nd Test US1150, Apprenticeship Training Dynamic Marketplace DPS, Artificial Intelligence (AI), Audio Visual Technical Consultancy & Commissioning, Audit & Assurance Services (A&AS), Automation Marketplace DPS, Back Office Software, Building Cleaning Services, Building Materials and Equipment, Communication Performance Audit and Analysis, Construction Professional Services, Construction Works and Associated Services, Corporate Finance Services 2, Costs Lawyer Services, Courier and Specialist Movements, Crown Hosting, Cyber Security Services 3, Data and Application Solutions, Debt Management Services, Digital Inclusion and Support DPS]
+[INFO ] 2022-10-27 11:01:34.683 [main] TestContext - =================Verify the agreements results returned execution ends===================
+[INFO ] 2022-10-27 11:01:34.841 [main] TestContext - =================Apply upcoming filter status execution starts===================
+[INFO ] 2022-10-27 11:01:34.842 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:01:37.460 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:01:37.477 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:01:42.842 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:01:47.981 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:01:48.511 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:01:48.885 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:01:50.890 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 11:01:51.168 [main] APIBase - The total number returned is7
+[INFO ] 2022-10-27 11:01:51.227 [main] TestContext - =================Apply upcoming filter status execution ends===================
+[INFO ] 2022-10-27 11:01:51.384 [main] TestContext - =================Apply expired filter status execution starts===================
+[INFO ] 2022-10-27 11:01:51.386 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:01:53.331 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:01:53.332 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:01:57.719 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:02:02.749 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:02:03.381 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:02:05.392 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 11:02:06.068 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:02:08.073 [main] HomePage - Clicked on Expired filter option
+[INFO ] 2022-10-27 11:02:08.372 [main] APIBase - The total number returned is75
+[INFO ] 2022-10-27 11:02:08.442 [main] TestContext - =================Apply expired filter status execution ends===================
+[INFO ] 2022-10-27 11:02:08.596 [main] TestContext - =================Apply View all filter status execution starts===================
+[INFO ] 2022-10-27 11:02:08.597 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:02:10.426 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:02:10.426 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:02:15.868 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:02:20.282 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:02:20.809 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:02:22.814 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 11:02:23.145 [main] APIBase - The total number returned is173
+[INFO ] 2022-10-27 11:02:23.201 [main] TestContext - =================Apply View all filter status execution ends===================
+[INFO ] 2022-10-27 11:02:23.359 [main] TestContext - =================Filter by Agreement status execution starts===================
+[INFO ] 2022-10-27 11:02:23.360 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:02:27.277 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:02:27.278 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:02:32.533 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:02:36.935 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:02:42.753 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:02:44.758 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 11:02:48.583 [main] HomePage - Clicked on Clear filters button
+[INFO ] 2022-10-27 11:03:29.437 [main] TestContext - =================Filter by Agreement status execution ends===================
+[INFO ] 2022-10-27 11:03:29.607 [main] TestContext - =================Navigate to DPS agreement page execution starts===================
+[INFO ] 2022-10-27 11:03:29.610 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:03:35.095 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:03:35.096 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:03:44.797 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:03:49.013 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:03:57.474 [main] HomePage - Clicked on Apprenticeship Training Dynamic Marketplace DPS button
+[INFO ] 2022-10-27 11:04:00.672 [main] HomePage - Clicked on Description button
+[INFO ] 2022-10-27 11:04:00.697 [main] TestContext - =================Navigate to DPS agreement page execution ends===================
+[INFO ] 2022-10-27 11:04:00.839 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 11:04:00.841 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:04:03.230 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:04:03.230 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:04:08.282 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:04:12.558 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:04:55.546 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 11:04:55.705 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 11:04:55.707 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:05:00.078 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:05:00.078 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:05:05.200 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:05:09.429 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:05:09.940 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:05:10.517 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:05:12.522 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 11:05:13.171 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 11:05:15.803 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 11:05:15.943 [main] TestContext - =================Navigate to the Standard framework type - RM3774 execution starts===================
+[INFO ] 2022-10-27 11:05:15.944 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:05:18.532 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:05:18.532 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:05:23.013 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:05:27.516 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:06:13.543 [main] TestContext - =================Navigate to the Standard framework type - RM3774 execution ends===================
+[INFO ] 2022-10-27 11:37:19.480 [main] TestContext - =================Filter by Agreement status execution starts===================
+[INFO ] 2022-10-27 11:37:19.486 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:37:24.504 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:37:24.505 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:37:30.369 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:37:34.480 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:37:39.976 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:37:41.981 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 11:37:45.619 [main] HomePage - Clicked on Clear filters button
+[INFO ] 2022-10-27 11:37:49.182 [main] HomePage - Clicked on Digital Future button
+[INFO ] 2022-10-27 11:37:49.227 [main] TestContext - =================Filter by Agreement status execution ends===================
+[INFO ] 2022-10-27 11:38:50.170 [main] TestContext - =================Navigate to DPS agreement page execution starts===================
+[INFO ] 2022-10-27 11:38:50.176 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:38:55.402 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:38:55.404 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:38:59.839 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:39:04.767 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:39:13.357 [main] HomePage - Clicked on Apprenticeship Training Dynamic Marketplace DPS button
+[INFO ] 2022-10-27 11:39:16.565 [main] HomePage - Clicked on Description button
+[INFO ] 2022-10-27 11:39:16.591 [main] TestContext - =================Navigate to DPS agreement page execution ends===================
+[INFO ] 2022-10-27 11:39:46.098 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 11:39:46.102 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:39:49.950 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:39:49.951 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:39:54.421 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:39:58.876 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:40:42.150 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 11:45:02.597 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 11:45:02.602 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:45:09.035 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:45:09.037 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:45:18.375 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:45:22.442 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:45:22.976 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:45:23.488 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:45:25.494 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 11:45:26.702 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 11:45:29.736 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 11:50:02.939 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 11:50:02.944 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 11:50:06.902 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 11:50:06.903 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 11:50:13.989 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 11:50:18.380 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 11:50:18.842 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:50:19.268 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 11:50:21.273 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 11:50:21.943 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 11:50:24.997 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 13:09:25.314 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 13:09:25.322 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 13:09:30.641 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 13:09:30.643 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 13:09:36.972 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 13:09:41.820 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 13:09:43.405 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 13:09:43.976 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 13:09:45.981 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 13:09:46.547 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 13:09:50.003 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 13:13:41.499 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 13:13:41.503 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 13:13:47.115 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 13:13:47.116 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 13:13:57.440 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 13:14:01.518 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 13:14:02.169 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 13:14:02.823 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 13:14:04.828 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 13:14:05.317 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 13:14:08.433 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 13:15:08.419 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 13:15:08.424 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 13:15:15.062 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 13:15:15.065 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 13:15:20.369 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 13:15:24.935 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 13:16:08.170 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 13:16:56.966 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 13:16:56.970 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 13:17:03.278 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 13:17:03.280 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 13:17:07.922 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 13:17:12.583 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 13:17:55.670 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 13:21:56.896 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 13:21:56.901 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 13:22:04.351 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 13:22:04.352 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 13:22:09.762 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 13:22:13.907 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 13:22:19.258 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 13:22:21.263 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 13:22:24.863 [main] HomePage - Clicked on G-Cloud 13 button
+[INFO ] 2022-10-27 13:23:01.406 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 13:26:07.953 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 13:26:07.957 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 13:26:14.610 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 13:26:14.613 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 13:26:19.735 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 13:26:24.413 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 13:26:24.874 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 13:26:25.444 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 13:26:27.449 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 13:26:28.114 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 13:26:31.168 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 13:51:23.413 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 13:51:23.417 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 13:51:28.206 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 13:51:28.208 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 13:51:35.847 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 13:51:40.022 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 13:51:47.975 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 13:51:56.239 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 13:55:12.904 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 13:55:12.908 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 13:55:19.676 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 13:55:19.678 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 13:55:24.329 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 13:55:29.055 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 13:55:37.005 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 13:55:44.837 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 14:02:20.871 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 14:02:20.876 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 14:02:24.950 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 14:02:24.952 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 14:02:32.653 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 14:02:37.275 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 14:02:45.517 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 14:02:53.312 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 14:20:34.487 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 14:20:34.491 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 14:20:38.681 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 14:20:38.683 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 14:20:46.521 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 14:20:50.965 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 14:20:58.925 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 14:21:06.945 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 14:27:41.740 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 14:27:41.744 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 14:27:45.513 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 14:27:45.514 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 14:27:52.479 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 14:27:56.612 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 14:28:05.030 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 14:28:12.925 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 14:31:31.021 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 14:31:31.026 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 14:31:37.919 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 14:31:37.922 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 14:31:43.535 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 14:31:47.686 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 14:31:55.679 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 14:32:03.566 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 14:32:30.463 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 14:32:30.468 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 14:32:36.993 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 14:32:36.998 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 14:32:41.719 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 14:33:27.193 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 14:33:27.199 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 14:33:32.623 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 14:33:32.628 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 14:33:38.062 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 14:34:51.422 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 14:34:51.426 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 14:34:58.311 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 14:34:58.329 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 14:35:07.717 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 14:36:02.875 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:21:27.026 [main] TestContext - =================Navigate to DPS agreement page execution starts===================
+[INFO ] 2022-10-27 15:21:27.030 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:21:30.912 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:21:30.916 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:21:37.961 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:34:03.994 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 15:34:04.002 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:34:10.116 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:34:10.125 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:34:16.779 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:34:35.274 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:34:52.187 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 15:35:01.502 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 15:45:35.841 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 15:45:35.847 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:45:39.272 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:45:39.280 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:45:45.758 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:45:50.156 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:45:50.663 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:45:51.186 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:45:53.191 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 15:45:53.962 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 15:45:57.051 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 15:47:31.537 [main] TestContext - =================Verify the agreements results returned execution starts===================
+[INFO ] 2022-10-27 15:47:31.542 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:47:36.325 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:47:36.332 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:47:41.629 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:47:45.012 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:47:46.395 [main] APIBase - The total number returned is91
+[INFO ] 2022-10-27 15:47:46.671 [main] SearchFrameworksPageSteps - [2nd Test US1150, Apprenticeship Training Dynamic Marketplace DPS, Artificial Intelligence (AI), Audio Visual Technical Consultancy & Commissioning, Audit & Assurance Services (A&AS), Automation Marketplace DPS, Back Office Software, Building Cleaning Services, Building Materials and Equipment, Communication Performance Audit and Analysis, Construction Professional Services, Construction Works and Associated Services, Corporate Finance Services 2, Costs Lawyer Services, Courier and Specialist Movements, Crown Hosting, Cyber Security Services 3, Data and Application Solutions, Debt Management Services, Digital Inclusion and Support DPS]
+[INFO ] 2022-10-27 15:47:46.696 [main] TestContext - =================Verify the agreements results returned execution ends===================
+[INFO ] 2022-10-27 15:47:46.851 [main] TestContext - =================Apply upcoming filter status execution starts===================
+[INFO ] 2022-10-27 15:47:46.852 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:47:49.397 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:47:49.400 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:47:54.710 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:47:57.932 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:47:58.415 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:47:58.980 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:48:00.985 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 15:48:01.256 [main] APIBase - The total number returned is7
+[INFO ] 2022-10-27 15:48:01.313 [main] TestContext - =================Apply upcoming filter status execution ends===================
+[INFO ] 2022-10-27 15:48:01.459 [main] TestContext - =================Apply expired filter status execution starts===================
+[INFO ] 2022-10-27 15:48:01.460 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:48:03.244 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:48:03.254 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:48:07.756 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:48:12.017 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:48:12.595 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:48:14.600 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 15:48:15.142 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:48:17.148 [main] HomePage - Clicked on Expired filter option
+[INFO ] 2022-10-27 15:48:17.453 [main] APIBase - The total number returned is75
+[INFO ] 2022-10-27 15:48:17.519 [main] TestContext - =================Apply expired filter status execution ends===================
+[INFO ] 2022-10-27 15:48:17.664 [main] TestContext - =================Apply View all filter status execution starts===================
+[INFO ] 2022-10-27 15:48:17.665 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:48:19.730 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:48:19.751 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:48:24.444 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:48:28.487 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:48:29.488 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:48:31.493 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 15:48:31.791 [main] APIBase - The total number returned is173
+[INFO ] 2022-10-27 15:48:31.902 [main] TestContext - =================Apply View all filter status execution ends===================
+[INFO ] 2022-10-27 15:48:32.059 [main] TestContext - =================Filter by Agreement status execution starts===================
+[INFO ] 2022-10-27 15:48:32.061 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:48:34.024 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:48:34.036 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:48:39.196 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:48:43.351 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:48:49.168 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:48:51.169 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 15:48:53.813 [main] HomePage - Clicked on Clear filters button
+[INFO ] 2022-10-27 15:48:56.331 [main] HomePage - Clicked on Digital Future button
+[INFO ] 2022-10-27 15:48:56.353 [main] TestContext - =================Filter by Agreement status execution ends===================
+[INFO ] 2022-10-27 15:48:56.497 [main] TestContext - =================Navigate to DPS agreement page execution starts===================
+[INFO ] 2022-10-27 15:48:56.498 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:49:01.650 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:49:01.676 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:49:11.529 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:49:14.543 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:49:22.170 [main] HomePage - Clicked on Apprenticeship Training Dynamic Marketplace DPS button
+[INFO ] 2022-10-27 15:49:24.381 [main] HomePage - Clicked on Description button
+[INFO ] 2022-10-27 15:49:24.409 [main] TestContext - =================Navigate to DPS agreement page execution ends===================
+[INFO ] 2022-10-27 15:49:24.550 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 15:49:24.552 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:49:27.026 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:49:27.028 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:49:31.533 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:49:35.290 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:49:40.773 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:49:42.778 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 15:49:45.262 [main] HomePage - Clicked on G-Cloud 13 button
+[INFO ] 2022-10-27 15:49:45.284 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 15:49:45.444 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 15:49:45.446 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:49:47.468 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:49:47.471 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:49:52.735 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:49:56.438 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:49:57.024 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:49:57.593 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:49:59.598 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 15:50:00.167 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 15:50:03.345 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 15:50:03.486 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 15:50:03.487 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:50:08.103 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:50:08.105 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:50:13.351 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:50:17.926 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:50:25.084 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 15:50:32.669 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 15:58:05.991 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 15:58:05.995 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:58:13.306 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:58:13.310 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:58:17.794 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:58:22.082 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:58:27.732 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:58:29.735 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 15:58:32.149 [main] HomePage - Clicked on G-Cloud 12 button
+[INFO ] 2022-10-27 15:59:08.271 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 15:59:31.086 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 15:59:31.090 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 15:59:35.836 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 15:59:35.897 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 15:59:43.813 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 15:59:47.027 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 15:59:52.583 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 15:59:54.588 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 15:59:57.189 [main] HomePage - Clicked on G-Cloud 12 button
+[INFO ] 2022-10-27 16:00:00.967 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 16:02:55.237 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 16:02:55.240 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:03:02.183 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:03:02.188 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:03:07.656 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:03:11.607 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:03:17.060 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:03:19.065 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 16:03:21.577 [main] HomePage - Clicked on G-Cloud 12 button
+[INFO ] 2022-10-27 16:03:25.766 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 16:04:59.268 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 16:04:59.272 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:05:03.613 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:05:03.638 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:05:09.074 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:05:13.742 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:05:19.264 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:05:21.269 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 16:05:23.706 [main] HomePage - Clicked on G-Cloud 12 button
+[INFO ] 2022-10-27 16:05:23.766 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 16:06:38.380 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 16:06:38.383 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:06:42.266 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:06:42.281 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:06:48.179 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:06:52.454 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:06:59.470 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 16:07:07.552 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 16:07:25.794 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 16:07:25.799 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:07:29.584 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:07:29.587 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:07:34.880 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:07:39.040 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:07:39.681 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:07:40.215 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:07:42.221 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 16:07:42.870 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 16:07:45.830 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 16:08:17.911 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 16:08:17.914 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:08:22.917 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:08:22.924 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:08:28.399 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:08:32.408 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:08:32.871 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:08:33.348 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:08:35.353 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 16:08:35.977 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 16:08:38.907 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 16:11:00.577 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 16:11:00.581 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:11:06.739 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:11:06.743 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:11:12.397 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:11:15.848 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:14:03.890 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 16:14:03.894 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:14:10.614 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:14:10.619 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:14:15.337 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:14:19.660 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:14:26.594 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 16:14:34.678 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 16:15:15.355 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 16:15:15.359 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:15:22.110 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:15:22.115 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:15:27.489 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:15:34.773 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:16:17.204 [main] HomePage - Clicked on Building Materials and Equipment button
+[INFO ] 2022-10-27 16:16:25.468 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 16:18:32.347 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 16:18:32.352 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:18:37.169 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:18:37.173 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:18:43.770 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:18:48.230 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:18:53.784 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 16:18:57.924 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 16:19:30.363 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 16:19:30.368 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:19:33.535 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:19:33.538 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:19:38.609 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:19:42.601 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:19:48.353 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 16:20:34.011 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 16:21:13.690 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 16:21:13.695 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:21:17.814 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:21:17.829 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:21:28.874 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:21:32.211 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:21:38.379 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 16:21:38.637 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 16:22:02.766 [main] TestContext - =================Verify the agreements results returned execution starts===================
+[INFO ] 2022-10-27 16:22:02.771 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:22:10.121 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:22:10.127 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:22:14.730 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:22:19.346 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:22:20.770 [main] APIBase - The total number returned is91
+[INFO ] 2022-10-27 16:22:21.037 [main] SearchFrameworksPageSteps - [2nd Test US1150, Apprenticeship Training Dynamic Marketplace DPS, Artificial Intelligence (AI), Audio Visual Technical Consultancy & Commissioning, Audit & Assurance Services (A&AS), Automation Marketplace DPS, Back Office Software, Building Cleaning Services, Building Materials and Equipment, Communication Performance Audit and Analysis, Construction Professional Services, Construction Works and Associated Services, Corporate Finance Services 2, Costs Lawyer Services, Courier and Specialist Movements, Crown Hosting, Cyber Security Services 3, Data and Application Solutions, Debt Management Services, Digital Inclusion and Support DPS]
+[INFO ] 2022-10-27 16:22:21.062 [main] TestContext - =================Verify the agreements results returned execution ends===================
+[INFO ] 2022-10-27 16:22:21.222 [main] TestContext - =================Apply upcoming filter status execution starts===================
+[INFO ] 2022-10-27 16:22:21.223 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:22:23.975 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:22:23.977 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:22:29.214 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:22:32.689 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:22:33.112 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:22:33.517 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:22:35.522 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 16:22:35.798 [main] APIBase - The total number returned is7
+[INFO ] 2022-10-27 16:22:35.862 [main] TestContext - =================Apply upcoming filter status execution ends===================
+[INFO ] 2022-10-27 16:22:36.013 [main] TestContext - =================Apply expired filter status execution starts===================
+[INFO ] 2022-10-27 16:22:36.014 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:22:38.025 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:22:38.027 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:22:42.174 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:22:46.672 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:22:47.344 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:22:49.349 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 16:22:49.819 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:22:51.824 [main] HomePage - Clicked on Expired filter option
+[INFO ] 2022-10-27 16:22:52.130 [main] APIBase - The total number returned is75
+[INFO ] 2022-10-27 16:22:52.282 [main] TestContext - =================Apply expired filter status execution ends===================
+[INFO ] 2022-10-27 16:22:52.427 [main] TestContext - =================Apply View all filter status execution starts===================
+[INFO ] 2022-10-27 16:22:52.429 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:22:54.423 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:22:54.445 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:22:59.737 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:23:03.426 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:23:03.967 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:23:05.972 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 16:23:06.274 [main] APIBase - The total number returned is173
+[INFO ] 2022-10-27 16:23:06.341 [main] TestContext - =================Apply View all filter status execution ends===================
+[INFO ] 2022-10-27 16:23:06.499 [main] TestContext - =================Filter by Agreement status execution starts===================
+[INFO ] 2022-10-27 16:23:06.500 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:23:11.763 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:23:11.766 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:23:16.996 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:23:20.365 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:23:25.883 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:23:27.888 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 16:23:30.534 [main] HomePage - Clicked on Clear filters button
+[INFO ] 2022-10-27 16:23:33.134 [main] HomePage - Clicked on Digital Future button
+[INFO ] 2022-10-27 16:23:33.155 [main] TestContext - =================Filter by Agreement status execution ends===================
+[INFO ] 2022-10-27 16:23:33.300 [main] TestContext - =================Navigate to DPS agreement page execution starts===================
+[INFO ] 2022-10-27 16:23:33.301 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:23:36.154 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:23:36.168 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:23:41.317 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:23:45.217 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:23:52.756 [main] HomePage - Clicked on Apprenticeship Training Dynamic Marketplace DPS button
+[INFO ] 2022-10-27 16:23:54.966 [main] HomePage - Clicked on Description button
+[INFO ] 2022-10-27 16:23:54.994 [main] TestContext - =================Navigate to DPS agreement page execution ends===================
+[INFO ] 2022-10-27 16:23:55.138 [main] TestContext - =================Navigate to the Gcloud framework type execution starts===================
+[INFO ] 2022-10-27 16:23:55.139 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:23:57.227 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:23:57.229 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:24:01.436 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:24:05.950 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:24:11.521 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:24:13.526 [main] HomePage - Clicked on View all
+[INFO ] 2022-10-27 16:24:16.247 [main] HomePage - Clicked on G-Cloud 12 button
+[INFO ] 2022-10-27 16:24:16.292 [main] TestContext - =================Navigate to the Gcloud framework type execution ends===================
+[INFO ] 2022-10-27 16:24:16.669 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 16:24:16.671 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:24:20.918 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:24:20.923 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:24:26.341 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:24:29.835 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:24:30.472 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:24:30.915 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:24:32.920 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 16:24:33.561 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 16:24:36.677 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 16:24:36.814 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution starts===================
+[INFO ] 2022-10-27 16:24:36.815 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:24:39.413 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:24:39.415 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:24:44.768 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:24:49.046 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:24:54.491 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 16:24:54.836 [main] TestContext - =================Navigate to the Standard framework type - RM6157 execution ends===================
+[INFO ] 2022-10-27 16:26:26.263 [main] TestContext - =================Navigate to the Upcoming framework type execution starts===================
+[INFO ] 2022-10-27 16:26:26.268 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:26:32.369 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:26:32.373 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:26:40.345 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:26:43.553 [main] HomePage - Clicked on Search agreements button
+[INFO ] 2022-10-27 16:26:44.076 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:26:44.451 [main] HomePage - Clicked on specified element
+[INFO ] 2022-10-27 16:26:46.457 [main] HomePage - Clicked on Upcoming filter option
+[INFO ] 2022-10-27 16:26:46.911 [main] GMPageSteps - I click on the first search results
+[INFO ] 2022-10-27 16:26:49.815 [main] TestContext - =================Navigate to the Upcoming framework type execution ends===================
+[INFO ] 2022-10-27 16:31:47.407 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2022-10-27 16:31:47.412 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:31:54.948 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:31:54.952 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:31:59.705 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:32:10.103 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 16:32:13.513 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 16:32:15.608 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 16:32:18.855 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 16:32:20.917 [main] HomePage - Buyer clicked on Multifunctional devices (MFDs) and basic print management software radio button
+[INFO ] 2022-10-27 16:32:24.047 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 16:32:25.001 [main] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2022-10-27 16:32:25.160 [main] TestContext - =================RM6174: MFD - LOT4 execution starts===================
+[INFO ] 2022-10-27 16:32:25.161 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2022-10-27 16:32:27.757 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2022-10-27 16:32:27.759 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2022-10-27 16:32:32.390 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2022-10-27 16:32:41.369 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 16:32:45.125 [main] HomePage - Clicked on Start now button
+[INFO ] 2022-10-27 16:32:47.254 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2022-10-27 16:32:50.976 [main] HomePage - Clicked on Continue button
+[INFO ] 2022-10-27 16:32:51.648 [main] TestContext - =================RM6174: MFD - LOT4 execution ends===================

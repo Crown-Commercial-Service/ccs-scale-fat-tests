@@ -1,0 +1,25 @@
+[INFO ] 2023-05-02 11:05:01.706 [main] TestContext - =================To verify question content and error handling content for framework "linen" for each question of the journey execution starts===================
+[INFO ] 2023-05-02 11:05:01.724 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-02 11:05:37.938 [main] TestContext - =================To verify question content and error handling content for framework "legal" for each question of the journey execution starts===================
+[INFO ] 2023-05-02 11:05:37.954 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-02 11:06:19.716 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-02 11:06:19.717 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-02 11:06:26.214 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-02 11:06:40.574 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-02 11:06:43.178 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-02 11:06:45.387 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-02 11:06:48.261 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2023-05-02 11:06:50.982 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-02 11:06:53.446 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-02 11:06:55.710 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2023-05-02 11:06:58.104 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-02 11:07:00.445 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-02 11:07:02.658 [main] HomePage - Buyer clicked on Property radio button
+[INFO ] 2023-05-02 11:07:05.280 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-02 11:07:07.694 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-02 11:07:18.213 [main] TestContext - =================To verify question content and error handling content for framework "legal" for each question of the journey execution ends===================
+[INFO ] 2023-05-02 11:07:18.540 [main] TestContext - =================To verify question content and error handling content for framework "cctv" for each question of technical security journey execution starts===================
+[INFO ] 2023-05-02 11:07:18.543 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-02 11:07:25.429 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-02 11:07:25.430 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-02 11:07:32.291 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
