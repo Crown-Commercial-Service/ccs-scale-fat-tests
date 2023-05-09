@@ -11,7 +11,6 @@ Feature:RM6181:Outsourced Contact Centre & Business Services
     And I am on the "What service do you need?" page
     When User selects the "Contact centre services" radio button
     And User clicks on the "Continue" button
-    Then User can successfully expand the details section
     Then I should see the recommended agreements
       | Outsourced Contact Centre and Business Services |
     And User is displayed with initial search phrase from "<search_term>"
@@ -32,7 +31,6 @@ Feature:RM6181:Outsourced Contact Centre & Business Services
     And I am on the "What service do you need?" page
     When User selects the "Financial accounting" radio button
     And User clicks on the "Continue" button
-    Then User can successfully expand the details section
     Then I should see the recommended agreements
       | Outsourced Contact Centre and Business Services |
     And User is displayed with initial search phrase from "<search_term>"

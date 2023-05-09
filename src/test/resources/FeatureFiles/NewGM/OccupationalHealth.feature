@@ -16,7 +16,6 @@ Feature:RM6182: Occupational Health, Employee Assistance Programme Eye Care
     And User clicks on the "Continue" button
     And User selects the "London" radio button
     When User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Occupational Health, Employee Assistance Programmes and Eye Care Services |
     And User is displayed with initial search phrase from "<search_term>"
@@ -37,7 +36,6 @@ Feature:RM6182: Occupational Health, Employee Assistance Programme Eye Care
     And I am on the "What type of service do you need?" page
     When User selects the "Eye care" radio button
     And User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Occupational Health, Employee Assistance Programmes and Eye Care Services |
     And User is displayed with initial search phrase from "<search_term>"

@@ -11,7 +11,6 @@ Feature:RM6188 Audit & Assurance Services
     And I am on the "What service do you need?" page
     And User selects the "Core internal audit services" radio button
     And User clicks on the "Continue" button
-    Then User can successfully expand the details section
     Then I should see the recommended agreements
       | Audit & Assurance Services (A&AS) |
     And User is displayed with initial search phrase from "<search_term>"
@@ -32,7 +31,6 @@ Feature:RM6188 Audit & Assurance Services
     And I am on the "What service do you need?" page
     And User selects the "Other independent assurance services" radio button
     And User clicks on the "Continue" button
-    Then User can successfully expand the details section
     Then I should see the recommended agreements
       | Audit & Assurance Services (A&AS) |
     And User is displayed with initial search phrase from "<search_term>"

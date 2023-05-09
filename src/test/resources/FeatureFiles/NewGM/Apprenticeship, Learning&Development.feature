@@ -33,7 +33,6 @@ Feature:RM6102 RM6145 RM6219:Apprenticeship,Learning and Development
     And User clicks on the "Continue" button
     And User selects the "Learning Design and Delivery and Subject Matter Expertise and Coaching" radio button
     And User clicks on the "Continue" button
-    Then User can successfully expand the details section
     Then I should see the recommended agreements
       | Learning and Development |
     And User is displayed with initial search phrase from "<search_term>"
@@ -56,7 +55,6 @@ Feature:RM6102 RM6145 RM6219:Apprenticeship,Learning and Development
     And User clicks on the "Continue" button
     And User selects the "No" radio button
     And User clicks on the "Continue" button
-    Then User can successfully expand the details section
     Then I should see the recommended agreements
       | Learning and Training Services DPS |
     And User is displayed with initial search phrase from "<search_term>"

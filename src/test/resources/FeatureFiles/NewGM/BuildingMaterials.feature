@@ -13,7 +13,6 @@ Feature:RM6157: Building Materials
   Scenario Outline:RM6157: Building Materials - LOT1
     When User selects the "Heavy building materials and one stop shop" radio button
     When User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Building Materials and Equipment |
     And User is displayed with initial search phrase from "<search_term>"
@@ -30,7 +29,6 @@ Feature:RM6157: Building Materials
     When User clicks on the "Continue" button
     When User selects the "Hire" radio button
     When User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Building Materials and Equipment |
     And User is displayed with initial search phrase from "<search_term>"

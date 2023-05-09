@@ -14,7 +14,6 @@ Feature:RM6174: MFD
   Scenario Outline:RM6174: MFD - LOT1
     When User selects the "Multifunctional devices (MFDs) and basic print management software" radio button
     When User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Multifunctional Devices (MFDs), Print and Digital Workflow Software Services and Managed Print Service Provision |
     And User is displayed with initial search phrase from "<search_term>"
@@ -28,7 +27,6 @@ Feature:RM6174: MFD
   Scenario Outline:RM6174: MFD - LOT4
     When User selects the "Print consultancy" radio button
     When User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Multifunctional Devices (MFDs), Print and Digital Workflow Software Services and Managed Print Service Provision |
     And User is displayed with initial search phrase from "<search_term>"

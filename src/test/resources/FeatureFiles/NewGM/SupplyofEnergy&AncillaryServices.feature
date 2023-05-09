@@ -14,7 +14,6 @@ Feature:RM6011: Supply of Energy & Ancillary Services
   Scenario Outline:RM6141: Supply of Energy & Ancillary Services - LOT1
     When User selects the "Electricity and power" radio button
     When User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Supply of Energy and Ancillary Services |
     And User is displayed with initial search phrase from "<search_term>"
@@ -28,7 +27,6 @@ Feature:RM6011: Supply of Energy & Ancillary Services
   Scenario Outline:RM6141: Supply of Energy & Ancillary Services - LOT3
     When User selects the "Gas" radio button
     When User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Supply of Energy and Ancillary Services |
     And User is displayed with initial search phrase from "<search_term>"

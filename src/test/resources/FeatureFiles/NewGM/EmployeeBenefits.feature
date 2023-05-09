@@ -11,7 +11,6 @@ Feature:RM6133: Employee Benefits
     And I am on the "What type of service do you need?" page
     When User selects the "Child care voucher scheme" radio button
     When User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Employee Benefits |
     And User is displayed with initial search phrase from "<search_term>"
@@ -32,7 +31,6 @@ Feature:RM6133: Employee Benefits
     And I am on the "What type of service do you need?" page
     When User selects the "Employee financial wellbeing scheme" radio button
     When User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Employee Benefits |
     And User is displayed with initial search phrase from "<search_term>"

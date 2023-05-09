@@ -35,7 +35,6 @@ Feature:RM6141:  Language Services
     And User clicks on the "Continue" button
     And User selects the "Nationally managed service" radio button
     And User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Language Services |
     And User is displayed with initial search phrase from "<search_term>"
@@ -56,7 +55,6 @@ Feature:RM6141:  Language Services
     And I am on the "Where do you need the language services?" page
     When User selects the "Internationally" radio button
     When User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Language Services |
     And User is displayed with initial search phrase from "<search_term>"

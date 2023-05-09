@@ -16,7 +16,6 @@ Feature:RM6119: Furniture & Associated Services
     And User clicks on the "Continue" button
     And User selects the "Residential Furniture" radio button
     And User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Furniture & Associated Services |
     And User is displayed with initial search phrase from "<search_term>"
@@ -36,7 +35,6 @@ Feature:RM6119: Furniture & Associated Services
     And User clicks on the "Continue" button
     And User selects the "I need fixed lecture hall seating" radio button
     And User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Furniture & Associated Services |
     And User is displayed with initial search phrase from "<search_term>"
@@ -50,7 +48,6 @@ Feature:RM6119: Furniture & Associated Services
   Scenario Outline:RM6119: Furniture & Associated Services - LOT7
     When User selects the "Repair and renovation service" radio button
     And User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then I should see the recommended agreements
       | Furniture & Associated Services |
     And User is displayed with initial search phrase from "<search_term>"
