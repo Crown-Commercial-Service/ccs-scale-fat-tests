@@ -1,0 +1,32 @@
+[INFO ] 2023-06-02 14:28:29.538 [main] TestContext - =================RM6145:Learning And Development-Lot6 execution starts===================
+[INFO ] 2023-06-02 14:28:29.546 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-06-02 14:28:42.518 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-06-02 14:28:42.521 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-06-02 14:28:51.690 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-06-02 14:29:07.445 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-06-02 14:29:12.911 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-06-02 14:29:15.122 [main] HomePage - Buyer clicked on Learning & Development radio button
+[INFO ] 2023-06-02 14:29:18.160 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-06-02 14:29:20.625 [main] HomePage - Buyer clicked on Learning and Development radio button
+[INFO ] 2023-06-02 14:29:25.343 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-06-02 14:29:27.405 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2023-06-02 14:29:30.012 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-06-02 14:29:32.063 [main] HomePage - Buyer clicked on Learning Design and Delivery and Subject Matter Expertise and Coaching radio button
+[INFO ] 2023-06-02 14:29:35.704 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-06-02 14:29:37.652 [main] TestContext - =================RM6145:Learning And Development-Lot6 execution ends===================
+[INFO ] 2023-06-02 14:29:37.962 [main] TestContext - =================RM6188 Audit & Assurance Services-Lot1 execution starts===================
+[INFO ] 2023-06-02 14:29:37.965 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-06-02 14:29:44.298 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-06-02 14:29:44.299 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-06-02 14:29:52.164 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-06-02 14:30:09.033 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-06-02 14:30:14.284 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-06-02 14:30:16.455 [main] HomePage - Buyer clicked on Audit and Assurance radio button
+[INFO ] 2023-06-02 14:30:19.261 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-06-02 14:30:21.598 [main] HomePage - Buyer clicked on Core internal audit services radio button
+[INFO ] 2023-06-02 14:30:26.524 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-06-02 14:30:27.786 [main] TestContext - =================RM6188 Audit & Assurance Services-Lot1 execution ends===================
+[INFO ] 2023-06-02 14:30:27.967 [main] TestContext - =================RM6157: Building Materials - LOT1 execution starts===================
+[INFO ] 2023-06-02 14:30:27.968 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-06-02 14:30:33.903 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-06-02 14:30:33.904 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/

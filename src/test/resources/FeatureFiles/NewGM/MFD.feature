@@ -10,7 +10,7 @@ Feature:RM6174: MFD
     When User clicks on the "Continue" button
     And I am on the "What service do you need?" page
 
-
+  @NewGM
   Scenario Outline:RM6174: MFD - LOT1
     When User selects the "Multifunctional devices (MFDs) and basic print management software" radio button
     When User clicks on the "Continue" button
@@ -23,7 +23,7 @@ Feature:RM6174: MFD
     Examples:
       | search_term | recommendation |
       | Faxing      | RM6174Lot1     |
-
+  @NewGM
   Scenario Outline:RM6174: MFD - LOT4
     When User selects the "Print consultancy" radio button
     When User clicks on the "Continue" button

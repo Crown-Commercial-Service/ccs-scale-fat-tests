@@ -1,0 +1,396 @@
+[INFO ] 2023-05-10 11:41:17.709 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 11:41:17.722 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 11:41:28.015 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 11:41:28.017 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 11:41:36.155 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 11:41:50.437 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:41:53.051 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:41:57.951 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2023-05-10 11:41:58.241 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2023-05-10 11:41:58.243 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 11:42:04.096 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 11:42:04.097 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 11:42:13.528 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 11:42:28.078 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:42:30.679 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:42:32.749 [main] HomePage - Buyer clicked on Facilities Management (FM) radio button
+[INFO ] 2023-05-10 11:42:35.305 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:42:41.229 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2023-05-10 11:42:41.430 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "8" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2023-05-10 11:42:41.431 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 11:42:47.941 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 11:42:47.946 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 11:42:58.031 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 11:46:29.635 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 11:46:29.639 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 11:46:38.576 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 11:46:38.580 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 11:46:44.807 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 11:46:59.625 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:47:02.268 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:47:07.085 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2023-05-10 11:47:07.377 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution starts===================
+[INFO ] 2023-05-10 11:47:07.379 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 11:47:14.155 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 11:47:14.158 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 11:47:21.152 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 11:47:36.935 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:47:39.546 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:47:41.602 [main] HomePage - Buyer clicked on Facilities Management (FM) radio button
+[INFO ] 2023-05-10 11:47:44.174 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:47:49.956 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "housing" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey execution ends===================
+[INFO ] 2023-05-10 11:47:50.156 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "8" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution starts===================
+[INFO ] 2023-05-10 11:47:50.157 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 11:47:55.716 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 11:47:55.716 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 11:48:02.821 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 11:48:16.772 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:48:19.300 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:48:21.350 [main] HomePage - Buyer clicked on Linen radio button
+[INFO ] 2023-05-10 11:48:23.886 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:48:25.924 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2023-05-10 11:48:28.549 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:48:30.612 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2023-05-10 11:48:33.026 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "Service", Budget radio as "Yes" and enters budget as "12345", Contract radio as "Yes" and enters contract length "8" , selects Service area as "Theatre pack and gowns" and Additional facilities as "Anything else" during the journey execution ends===================
+[INFO ] 2023-05-10 11:48:33.206 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2-tech", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and after answering different set of question as looking for "Service", selects multiple service areas "<serviceAreaOpt>", Sector buying as "Education" during the journey execution starts===================
+[INFO ] 2023-05-10 11:48:33.207 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 11:48:38.764 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 11:48:38.765 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 11:48:47.409 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 11:49:02.545 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:49:06.491 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:49:08.546 [main] HomePage - Buyer clicked on Security Services radio button
+[INFO ] 2023-05-10 11:49:12.192 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:49:14.419 [main] HomePage - Buyer clicked on Security software radio button
+[INFO ] 2023-05-10 11:49:17.989 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:49:20.130 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2023-05-10 11:49:23.513 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:49:25.570 [main] HomePage - Buyer clicked on Broadband fibre infrastructure radio button
+[INFO ] 2023-05-10 11:49:28.036 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:49:30.326 [main] HomePage - Buyer clicked on Education radio button
+[INFO ] 2023-05-10 11:49:34.395 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:49:37.341 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2-tech", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and after answering different set of question as looking for "Service", selects multiple service areas "<serviceAreaOpt>", Sector buying as "Education" during the journey execution ends===================
+[INFO ] 2023-05-10 11:49:37.655 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "fmmDetails" on GM results page after initiating GM journey for framework "cctv" and answering different set of question as selects type of security "Security services" and which technical services "<techserviceAreaOpt>" during the journey execution starts===================
+[INFO ] 2023-05-10 11:49:37.657 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 11:49:45.683 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 11:49:45.689 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 11:49:55.922 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 11:50:10.607 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:50:14.100 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:50:16.151 [main] HomePage - Buyer clicked on Security Services radio button
+[INFO ] 2023-05-10 11:50:18.850 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:50:20.904 [main] HomePage - Buyer clicked on Security services radio button
+[INFO ] 2023-05-10 11:50:23.524 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:50:26.589 [main] HomePage - Buyer clicked on Helpdesk services checkbox  button
+[INFO ] 2023-05-10 11:50:29.659 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:50:32.697 [main] HomePage - Buyer clicked on Grounds maintenance and horticultural services checkbox  button
+[INFO ] 2023-05-10 11:50:35.050 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:50:37.083 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2023-05-10 11:50:40.407 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:50:45.315 [main] TestContext - =================To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "fmmDetails" on GM results page after initiating GM journey for framework "cctv" and answering different set of question as selects type of security "Security services" and which technical services "<techserviceAreaOpt>" during the journey execution ends===================
+[INFO ] 2023-05-10 11:50:45.648 [main] TestContext - =================To verify Buyer has provided with different service details "GLAS" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution starts===================
+[INFO ] 2023-05-10 11:50:45.649 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 11:50:52.149 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 11:50:52.150 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 11:50:59.618 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 11:51:14.234 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:51:16.935 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:51:18.985 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2023-05-10 11:51:21.460 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:51:23.493 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2023-05-10 11:51:25.951 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:51:27.988 [main] HomePage - Buyer clicked on Employment litigation radio button
+[INFO ] 2023-05-10 11:51:31.894 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:51:33.956 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2023-05-10 11:51:36.396 [main] TestContext - =================To verify Buyer has provided with different service details "GLAS" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution ends===================
+[INFO ] 2023-05-10 11:51:36.581 [main] TestContext - =================To verify Buyer has provided with different recommendations "tech-both-lot4", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "laptop" and after answering different set of question as looking for "Both, product and service", selects multiple service areas "Information assured services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 11:51:36.582 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 11:51:43.534 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 11:51:43.536 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 11:51:55.608 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 11:52:08.973 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:52:11.597 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 11:52:13.650 [main] HomePage - Buyer clicked on Technology radio button
+[INFO ] 2023-05-10 11:52:17.481 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:52:19.546 [main] HomePage - Buyer clicked on Both, product and service radio button
+[INFO ] 2023-05-10 11:52:22.064 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:52:25.114 [main] HomePage - Buyer clicked on Information assured services checkbox  button
+[INFO ] 2023-05-10 11:52:29.599 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 11:52:31.085 [main] TestContext - =================To verify Buyer has provided with different recommendations "tech-both-lot4", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "laptop" and after answering different set of question as looking for "Both, product and service", selects multiple service areas "Information assured services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2023-05-10 12:06:40.437 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "Courier" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 12:06:40.440 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 12:06:47.623 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "Courier" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 12:06:47.625 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 12:06:57.699 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 12:06:57.705 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 12:07:04.484 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 12:07:18.762 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:07:21.367 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:07:23.437 [main] HomePage - Buyer clicked on Courier radio button
+[INFO ] 2023-05-10 12:07:26.049 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:07:28.089 [main] HomePage - Buyer clicked on Secure collection and delivery services radio button
+[INFO ] 2023-05-10 12:07:31.999 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:07:33.469 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "Courier" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2023-05-10 12:07:33.762 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot6", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Asset recovery, disposal and destruction", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 12:07:33.764 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 12:07:40.640 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 12:07:40.643 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 12:07:50.759 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 12:08:06.274 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:08:08.830 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:08:14.811 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot6", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "detection" and after answering different set of question as looking for "Asset recovery, disposal and destruction", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2023-05-10 12:09:01.734 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "Courier" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 12:09:01.737 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 12:09:09.051 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 12:09:09.053 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 12:09:16.806 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 12:09:31.932 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:09:34.526 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:09:36.620 [main] HomePage - Buyer clicked on Courier radio button
+[INFO ] 2023-05-10 12:09:39.329 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:09:41.370 [main] HomePage - Buyer clicked on Secure collection and delivery services radio button
+[INFO ] 2023-05-10 12:09:45.280 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:09:46.737 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "Courier" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2023-05-10 12:15:15.927 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "Courier" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 12:15:15.931 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 12:15:25.720 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 12:15:25.721 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 12:15:33.072 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 12:15:47.253 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:15:49.890 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:15:51.960 [main] HomePage - Buyer clicked on Courier radio button
+[INFO ] 2023-05-10 12:15:56.238 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:15:58.320 [main] HomePage - Buyer clicked on Secure collection and delivery services radio button
+[INFO ] 2023-05-10 12:16:02.390 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:16:03.980 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "Courier" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2023-05-10 12:16:04.254 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2-tech", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and after answering different set of question as looking for "Service", selects multiple service areas "<serviceAreaOpt>", Sector buying as "Education" during the journey execution starts===================
+[INFO ] 2023-05-10 12:16:04.257 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 12:16:11.314 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 12:16:11.331 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 12:16:26.509 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 12:16:40.383 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:16:43.441 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:16:45.492 [main] HomePage - Buyer clicked on Security Services radio button
+[INFO ] 2023-05-10 12:16:49.251 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:16:51.298 [main] HomePage - Buyer clicked on Security software radio button
+[INFO ] 2023-05-10 12:16:53.980 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:16:56.019 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2023-05-10 12:16:58.463 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:17:00.502 [main] HomePage - Buyer clicked on Broadband fibre infrastructure radio button
+[INFO ] 2023-05-10 12:17:03.526 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:17:05.562 [main] HomePage - Buyer clicked on Education radio button
+[INFO ] 2023-05-10 12:17:09.292 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:17:11.944 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2-tech", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and after answering different set of question as looking for "Service", selects multiple service areas "<serviceAreaOpt>", Sector buying as "Education" during the journey execution ends===================
+[INFO ] 2023-05-10 12:17:12.129 [main] TestContext - =================To verify Buyer has provided with different service details "GLAS" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution starts===================
+[INFO ] 2023-05-10 12:17:12.131 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 12:17:18.315 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 12:17:18.316 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 12:17:27.886 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 12:17:42.100 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:17:44.712 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:17:46.763 [main] HomePage - Buyer clicked on Legal radio button
+[INFO ] 2023-05-10 12:17:50.566 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:17:52.614 [main] HomePage - Buyer clicked on Central Government radio button
+[INFO ] 2023-05-10 12:17:55.098 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:17:57.135 [main] HomePage - Buyer clicked on Employment litigation radio button
+[INFO ] 2023-05-10 12:17:59.720 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:18:01.760 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2023-05-10 12:18:05.208 [main] TestContext - =================To verify Buyer has provided with different service details "GLAS" on GM results page after initiating GM journey for framework "legal" and after answering different set of question as sector looking for "Central Government", selects Service area as "Employment litigation" during the journey execution ends===================
+[INFO ] 2023-05-10 12:18:05.556 [main] TestContext - =================To verify Buyer has provided with different recommendations "tech-both-lot4", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "laptop" and after answering different set of question as looking for "Both, product and service", selects multiple service areas "Information assured services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 12:18:05.558 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 12:18:13.514 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 12:18:13.515 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 12:18:22.704 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 12:18:36.261 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:18:38.769 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 12:18:40.821 [main] HomePage - Buyer clicked on Technology radio button
+[INFO ] 2023-05-10 12:18:44.608 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:18:46.654 [main] HomePage - Buyer clicked on Both, product and service radio button
+[INFO ] 2023-05-10 12:18:49.163 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:18:52.338 [main] HomePage - Buyer clicked on Information assured services checkbox  button
+[INFO ] 2023-05-10 12:18:57.036 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 12:18:58.451 [main] TestContext - =================To verify Buyer has provided with different recommendations "tech-both-lot4", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "laptop" and after answering different set of question as looking for "Both, product and service", selects multiple service areas "Information assured services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2023-05-10 13:12:39.844 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "Courier" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 13:12:39.847 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:12:50.085 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:12:50.087 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:12:57.728 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:13:12.194 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:13:14.814 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:13:16.869 [main] HomePage - Buyer clicked on Courier radio button
+[INFO ] 2023-05-10 13:13:19.590 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:13:21.633 [main] HomePage - Buyer clicked on Secure collection and delivery services radio button
+[INFO ] 2023-05-10 13:13:26.131 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:13:27.569 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "Courier" and after answering different set of question as looking for "Secure collection and delivery services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2023-05-10 13:13:27.797 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2-tech", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and after answering different set of question as looking for "Service", selects multiple service areas "<serviceAreaOpt>", Sector buying as "Education" during the journey execution starts===================
+[INFO ] 2023-05-10 13:13:27.799 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:13:34.389 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:13:34.390 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:13:41.832 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:13:56.503 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:13:59.263 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:14:01.332 [main] HomePage - Buyer clicked on Security Services radio button
+[INFO ] 2023-05-10 13:14:03.906 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:14:05.937 [main] HomePage - Buyer clicked on Security software radio button
+[INFO ] 2023-05-10 13:14:09.050 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:14:11.095 [main] HomePage - Buyer clicked on Service radio button
+[INFO ] 2023-05-10 13:14:13.520 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:14:15.561 [main] HomePage - Buyer clicked on Broadband fibre infrastructure radio button
+[INFO ] 2023-05-10 13:14:18.096 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:14:20.166 [main] HomePage - Buyer clicked on Education radio button
+[INFO ] 2023-05-10 13:14:24.748 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:14:27.338 [main] TestContext - =================To verify Buyer has provided with different recommendations "lot2-tech", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "cctv" and after answering different set of question as looking for "Service", selects multiple service areas "<serviceAreaOpt>", Sector buying as "Education" during the journey execution ends===================
+[INFO ] 2023-05-10 13:14:27.601 [main] TestContext - =================To verify Buyer has provided with different recommendations "tech-both-lot4", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "laptop" and after answering different set of question as looking for "Both, product and service", selects multiple service areas "Information assured services", Sector buying as "<sectorRadio>" during the journey execution starts===================
+[INFO ] 2023-05-10 13:14:27.602 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:14:35.605 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:14:35.617 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:14:45.419 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:14:59.403 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:15:02.399 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:15:04.452 [main] HomePage - Buyer clicked on Technology radio button
+[INFO ] 2023-05-10 13:15:07.193 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:15:09.235 [main] HomePage - Buyer clicked on Both, product and service radio button
+[INFO ] 2023-05-10 13:15:11.838 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:15:14.887 [main] HomePage - Buyer clicked on Information assured services checkbox  button
+[INFO ] 2023-05-10 13:15:19.829 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:15:21.268 [main] TestContext - =================To verify Buyer has provided with different recommendations "tech-both-lot4", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "laptop" and after answering different set of question as looking for "Both, product and service", selects multiple service areas "Information assured services", Sector buying as "<sectorRadio>" during the journey execution ends===================
+[INFO ] 2023-05-10 13:19:59.388 [main] TestContext - =================RM6145:Learning And Development-Lot6 execution starts===================
+[INFO ] 2023-05-10 13:19:59.393 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:20:09.447 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:20:09.449 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:20:17.947 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:20:32.273 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:20:34.831 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:20:36.953 [main] HomePage - Buyer clicked on Learning & Development radio button
+[INFO ] 2023-05-10 13:20:39.455 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:20:41.520 [main] HomePage - Buyer clicked on Learning and Development radio button
+[INFO ] 2023-05-10 13:20:44.003 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:20:46.053 [main] HomePage - Buyer clicked on Yes radio button
+[INFO ] 2023-05-10 13:20:49.482 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:20:51.521 [main] HomePage - Buyer clicked on Learning Design and Delivery and Subject Matter Expertise and Coaching radio button
+[INFO ] 2023-05-10 13:20:56.118 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:20:57.846 [main] TestContext - =================RM6145:Learning And Development-Lot6 execution ends===================
+[INFO ] 2023-05-10 13:20:58.145 [main] TestContext - =================RM6188 Audit & Assurance Services-Lot1 execution starts===================
+[INFO ] 2023-05-10 13:20:58.147 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:21:06.837 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:21:06.839 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:21:14.568 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:21:30.326 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:21:33.004 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:21:35.109 [main] HomePage - Buyer clicked on Audit and Assurance radio button
+[INFO ] 2023-05-10 13:21:38.227 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:21:40.397 [main] HomePage - Buyer clicked on Core internal audit services radio button
+[INFO ] 2023-05-10 13:21:45.269 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:21:46.837 [main] TestContext - =================RM6188 Audit & Assurance Services-Lot1 execution ends===================
+[INFO ] 2023-05-10 13:21:47.100 [main] TestContext - =================RM6157: Building Materials - LOT1 execution starts===================
+[INFO ] 2023-05-10 13:21:47.102 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:21:54.028 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:21:54.029 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:22:02.976 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:22:18.938 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:22:21.508 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:22:23.591 [main] HomePage - Buyer clicked on Building Materials and Equipment radio button
+[INFO ] 2023-05-10 13:22:27.180 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:22:29.244 [main] HomePage - Buyer clicked on Heavy building materials and one stop shop radio button
+[INFO ] 2023-05-10 13:22:33.656 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:22:34.867 [main] TestContext - =================RM6157: Building Materials - LOT1 execution ends===================
+[INFO ] 2023-05-10 13:22:35.100 [main] TestContext - =================RM6262  Crown Hosting II execution starts===================
+[INFO ] 2023-05-10 13:22:35.103 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:22:41.716 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:22:41.718 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:22:49.313 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:23:04.770 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:23:08.543 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:23:10.638 [main] HomePage - Buyer clicked on Hosting service radio button
+[INFO ] 2023-05-10 13:23:13.793 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:23:15.856 [main] HomePage - Buyer clicked on ICT relocation radio button
+[INFO ] 2023-05-10 13:23:20.174 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:23:21.607 [main] TestContext - =================RM6262  Crown Hosting II execution ends===================
+[INFO ] 2023-05-10 13:23:21.870 [main] TestContext - =================RM6133: Employee Benefits execution starts===================
+[INFO ] 2023-05-10 13:23:21.872 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:23:28.632 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:23:28.633 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:23:35.608 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:23:51.341 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:23:54.088 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:23:56.175 [main] HomePage - Buyer clicked on Employee Benefits radio button
+[INFO ] 2023-05-10 13:23:58.836 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:24:00.898 [main] HomePage - Buyer clicked on Child care voucher scheme radio button
+[INFO ] 2023-05-10 13:24:04.174 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:24:05.052 [main] TestContext - =================RM6133: Employee Benefits execution ends===================
+[INFO ] 2023-05-10 13:24:05.405 [main] TestContext - =================RM6119: Furniture & Associated Services - LOT7 execution starts===================
+[INFO ] 2023-05-10 13:24:05.408 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:24:11.622 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:24:11.623 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:24:22.793 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:24:37.053 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:24:39.747 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:24:41.823 [main] HomePage - Buyer clicked on Furniture and Associated Services radio button
+[INFO ] 2023-05-10 13:24:44.965 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:24:47.035 [main] HomePage - Buyer clicked on Repair and renovation service radio button
+[INFO ] 2023-05-10 13:24:52.005 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:24:53.398 [main] TestContext - =================RM6119: Furniture & Associated Services - LOT7 execution ends===================
+[INFO ] 2023-05-10 13:24:54.224 [main] TestContext - =================RM6174: MFD - LOT1 execution starts===================
+[INFO ] 2023-05-10 13:24:54.233 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:25:00.545 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:25:00.546 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:25:08.022 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:25:21.940 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:25:24.576 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:25:26.658 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2023-05-10 13:25:31.016 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:25:33.093 [main] HomePage - Buyer clicked on Multifunctional devices (MFDs) and basic print management software radio button
+[INFO ] 2023-05-10 13:25:37.984 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:25:38.949 [main] TestContext - =================RM6174: MFD - LOT1 execution ends===================
+[INFO ] 2023-05-10 13:25:39.166 [main] TestContext - =================RM6174: MFD - LOT4 execution starts===================
+[INFO ] 2023-05-10 13:25:39.167 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:25:44.962 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:25:44.963 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:25:52.186 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:26:07.281 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:26:09.837 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:26:11.917 [main] HomePage - Buyer clicked on Print and Digital radio button
+[INFO ] 2023-05-10 13:26:15.996 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:26:18.094 [main] HomePage - Buyer clicked on Print consultancy radio button
+[INFO ] 2023-05-10 13:26:21.729 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:26:22.929 [main] TestContext - =================RM6174: MFD - LOT4 execution ends===================
+[INFO ] 2023-05-10 13:26:23.142 [main] TestContext - =================RM6182: EOccupational Health, Employee Assistance Programme Eye Care-Lot4.1 execution starts===================
+[INFO ] 2023-05-10 13:26:23.144 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:26:29.242 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:26:29.245 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:26:39.713 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:26:55.250 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:26:58.339 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:27:00.423 [main] HomePage - Buyer clicked on Occupational Health, Employee Assistance, Eye Care radio button
+[INFO ] 2023-05-10 13:27:03.152 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:27:05.220 [main] HomePage - Buyer clicked on Occupational Health (OH) radio button
+[INFO ] 2023-05-10 13:27:07.924 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:27:09.967 [main] HomePage - Buyer clicked on Regional radio button
+[INFO ] 2023-05-10 13:27:12.596 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:27:14.634 [main] HomePage - Buyer clicked on London radio button
+[INFO ] 2023-05-10 13:27:18.707 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:27:20.022 [main] TestContext - =================RM6182: EOccupational Health, Employee Assistance Programme Eye Care-Lot4.1 execution ends===================
+[INFO ] 2023-05-10 13:27:20.309 [main] TestContext - =================RM6181:Contact Centre Services-Lot1 execution starts===================
+[INFO ] 2023-05-10 13:27:20.310 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:27:26.889 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:27:26.890 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:27:33.166 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:27:48.714 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:27:51.493 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:27:53.628 [main] HomePage - Buyer clicked on Contact Centre radio button
+[INFO ] 2023-05-10 13:27:59.160 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:28:01.234 [main] HomePage - Buyer clicked on Contact centre services radio button
+[INFO ] 2023-05-10 13:28:46.742 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:28:47.767 [main] TestContext - =================RM6181:Contact Centre Services-Lot1 execution ends===================
+[INFO ] 2023-05-10 13:28:48.085 [main] TestContext - =================RM6141: Supply of Energy & Ancillary Services - LOT1 execution starts===================
+[INFO ] 2023-05-10 13:28:48.087 [main] BrowserFactory - Opening CHROMEbrowser
+[INFO ] 2023-05-10 13:28:56.625 [main] TestContext - Successfully lunched the chrome browser
+[INFO ] 2023-05-10 13:28:56.629 [main] TestContext - base.url:https://webuat.crowncommercial.gov.uk/
+[INFO ] 2023-05-10 13:29:06.977 [main] BrowserFactory - https://webuat.crowncommercial.gov.uk/ is launched
+[INFO ] 2023-05-10 13:29:21.053 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:29:24.180 [main] HomePage - Clicked on Start now button
+[INFO ] 2023-05-10 13:29:26.270 [main] HomePage - Buyer clicked on Energy radio button
+[INFO ] 2023-05-10 13:29:29.181 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:29:31.250 [main] HomePage - Buyer clicked on Electricity and power radio button
+[INFO ] 2023-05-10 13:29:36.114 [main] HomePage - Clicked on Continue button
+[INFO ] 2023-05-10 13:29:36.961 [main] TestContext - =================RM6141: Supply of Energy & Ancillary Services - LOT1 execution ends===================

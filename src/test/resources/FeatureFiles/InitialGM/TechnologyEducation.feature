@@ -88,7 +88,7 @@ Feature: GM Journey for Technology /Education Technology framework
       | ScenarioID | framework | areaSuits  | lookingFor | serviceArea                            | frameworkId | expirationDate | details            |
       | Scenario 1 | laptop    | Technology | Service    | Technology strategy and service design | RM6100      | 15/06/2025     | techSerTechDetails |
       | Scenario 2 | laptop    | Technology | Service    | Transition and transformation          | RM6100      | 15/06/2025     | techSerTechDetails |
-
+  @InitialGM
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", selects multiple service areas "<serviceAreaOpt>", Sector buying as "<sectorRadio>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button

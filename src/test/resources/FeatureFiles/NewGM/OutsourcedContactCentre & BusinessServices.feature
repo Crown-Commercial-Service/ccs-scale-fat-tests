@@ -1,6 +1,6 @@
 @RM6181
 Feature:RM6181:Outsourced Contact Centre & Business Services
-
+  @NewGM
   Scenario Outline:RM6181:Contact Centre Services-Lot1
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Integrated voice/call recording and storing" details and click "Start now" button

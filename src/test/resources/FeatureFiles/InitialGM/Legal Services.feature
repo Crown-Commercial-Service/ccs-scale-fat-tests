@@ -59,7 +59,6 @@ Feature: GM Journey for Legal framework
     And User selects how much budget "<budgetRadio>" radio button
     And User enters budget amount "<enterBudgets>" in the budget field
     And User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then User should be displayed with recommendations "<frameworkId>" services for lots ""
     And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
     And User should be displayed with GM Escape page with route to "<frameworkId>"

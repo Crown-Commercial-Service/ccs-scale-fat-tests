@@ -1,6 +1,6 @@
 @RM6133
 Feature:RM6133: Employee Benefits
-
+  @NewGM
   Scenario Outline:RM6133: Employee Benefits
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Gift card" details and click "Start now" button

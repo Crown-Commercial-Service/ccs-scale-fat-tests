@@ -1,6 +1,6 @@
 @RM6188
 Feature:RM6188 Audit & Assurance Services
-
+  @NewGM
   Scenario Outline:RM6188 Audit & Assurance Services-Lot1
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Governance reviews" details and click "Start now" button

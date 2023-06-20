@@ -1,7 +1,7 @@
 
 @RM6262
 Feature:RM6262  Crown Hosting II
-
+  @NewGM
   Scenario Outline:RM6262  Crown Hosting II
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "REGO" details and click "Start now" button

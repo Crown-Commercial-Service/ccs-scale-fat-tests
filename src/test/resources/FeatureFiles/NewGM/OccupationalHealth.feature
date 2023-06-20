@@ -1,7 +1,7 @@
 @RM6182
 Feature:RM6182: Occupational Health, Employee Assistance Programme Eye Care
 
-
+  @NewGM
   Scenario Outline:RM6182: EOccupational Health, Employee Assistance Programme Eye Care-Lot4.1
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "eye health" details and click "Start now" button

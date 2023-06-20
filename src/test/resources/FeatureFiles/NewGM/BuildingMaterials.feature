@@ -9,7 +9,7 @@ Feature:RM6157: Building Materials
     When User clicks on the "Continue" button
     And I am on the "What product are you looking for?" page
 
-
+  @NewGM
   Scenario Outline:RM6157: Building Materials - LOT1
     When User selects the "Heavy building materials and one stop shop" radio button
     When User clicks on the "Continue" button

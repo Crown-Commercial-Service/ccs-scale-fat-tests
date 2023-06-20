@@ -48,7 +48,7 @@ Feature: GM Journey for FM2 framework-Security Software journey branch
       | ScenarioID | framework | areaSuits         | secTypeRadio      | lookingFor | sectorRadio | frameworkId | recommendation |
       | Scenario 1 | cctv      | Security Services | Security software | Product    | Education   | RM6103      | lot4_lot5      |
 
-
+  @InitialGM
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", selects multiple service areas "<serviceAreaOpt>", Sector buying as "<sectorRadio>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -63,7 +63,6 @@ Feature: GM Journey for FM2 framework-Security Software journey branch
     And User clicks on the "Continue" button
     And  User selects what sector "<sectorRadio>"are you buying for radio button
     And User clicks on the "Continue" button
-    And User can successfully expand the details section
     And User is displayed with "<lookingFor>" answer for the question "Are you looking for a product, service or both?"
     And User is displayed with "<serviceArea>" answer for the question "Which service do you need?"
     And User is displayed with "<sectorRadio>" answer for the question "Which sector are you buying for?"

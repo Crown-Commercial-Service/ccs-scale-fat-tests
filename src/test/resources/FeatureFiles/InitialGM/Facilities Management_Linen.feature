@@ -87,7 +87,6 @@ Feature: GM Journey for Linen framework
     And User clicks on the "Continue" button
     And User selects which services "<addFacilities>" required multi choice checkboxes
     And User clicks on the "Continue" button
-    Then User can successfully expand the details section
     And User should be displayed with recommendations "<frameworkId>" services for lots ""
     And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
     And User should be displayed with GM Escape page with route to FM

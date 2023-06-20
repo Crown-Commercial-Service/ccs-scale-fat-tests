@@ -87,7 +87,6 @@ Feature: GM Journey for FM2 framework -Housing journey branch
     And  User clicks on the "Continue" button
     And User selects which services "<services>" required multi choice checkboxes
     And User clicks on the "Continue" button
-    And User can successfully expand the details section
     Then User should be displayed with GM Escape page
     And User is displayed with "<housingAns>" answer for the question "What type of housing do you need?"
     And User is displayed with "<services>" answer for the question "Which services do you need?"

@@ -10,7 +10,7 @@ Feature:RM6011: Supply of Energy & Ancillary Services
     When User clicks on the "Continue" button
     And I am on the "What service are you looking for?" page
 
-
+  @NewGM
   Scenario Outline:RM6141: Supply of Energy & Ancillary Services - LOT1
     When User selects the "Electricity and power" radio button
     When User clicks on the "Continue" button
