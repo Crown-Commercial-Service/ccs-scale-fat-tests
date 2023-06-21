@@ -23,7 +23,7 @@ Feature:RM6011: Supply of Energy & Ancillary Services
     Examples:
       | search_term | recommendation |
       | green       | RM6011Lot1     |
-
+  @NewGM
   Scenario Outline:RM6141: Supply of Energy & Ancillary Services - LOT3
     When User selects the "Gas" radio button
     When User clicks on the "Continue" button

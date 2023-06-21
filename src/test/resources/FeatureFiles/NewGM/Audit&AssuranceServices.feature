@@ -20,7 +20,7 @@ Feature:RM6188 Audit & Assurance Services
     Examples:
       | search_term        | recommendation |
       | Governance reviews | RM6188Lot1     |
-
+  @NewGM
   Scenario Outline:RM6188 Audit & Assurance Services-Lot4
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Fraud prevention advice" details and click "Start now" button

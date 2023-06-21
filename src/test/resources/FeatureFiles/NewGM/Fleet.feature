@@ -1,6 +1,6 @@
+@NewGM
 @RM6213 @RM6244 @RM6096 @RM6142 @RM6143 @RM6013
 Feature:Fleet
-
   Scenario Outline:RM6213:Vehicle Charging Infrastructure Solutions
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "4x4" details and click "Start now" button

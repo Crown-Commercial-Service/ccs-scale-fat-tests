@@ -20,7 +20,7 @@ Feature:RM6133: Employee Benefits
     Examples:
       | search_term | recommendation |
       | Gift card   | RM6133         |
-
+  @NewGM
   Scenario Outline:RM6133: Employee Benefits
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "vouchers" details and click "Start now" button

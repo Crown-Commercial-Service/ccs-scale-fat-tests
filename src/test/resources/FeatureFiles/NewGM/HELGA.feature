@@ -1,6 +1,6 @@
 @RM3824
 Feature:RM3824:Heat Networks and Electricity Generation Assets DPS
-
+  @NewGM
   Scenario Outline:RM3824:Heat Networks and Electricity Generation Assets DPS
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Carbon Net Zero" details and click "Start now" button

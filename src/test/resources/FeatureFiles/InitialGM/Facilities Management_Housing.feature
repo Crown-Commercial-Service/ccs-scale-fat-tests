@@ -56,7 +56,6 @@ Feature: GM Journey for FM2 framework -Housing journey branch
     Examples:
       | ScenarioID | framework | areaSuits                  | services             | sector                                                     | frameworkId | recommendation |
       | Scenario 1 | housing   | Facilities Management (FM) | Maintenance services | Ministry of Defence or defence infrastructure organisation | RM6089      | fmtwolot3      |
-
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button

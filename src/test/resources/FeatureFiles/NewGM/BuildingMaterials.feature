@@ -22,7 +22,7 @@ Feature:RM6157: Building Materials
     Examples:
       | search_term | recommendation |
       | PPE         | RM6157Lot1     |
-
+  @NewGM
 
   Scenario Outline:RM6157: Building Materials - LOT9
     When User selects the "Building and Construction tools & Equipment" radio button

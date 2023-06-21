@@ -1,6 +1,6 @@
 @RM6102 @RM6145 @RM6219
 Feature:RM6102 RM6145 RM6219:Apprenticeship,Learning and Development
-
+  @NewGM
   Scenario Outline:RM6102:Apprenticeship Training
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Apprenticeship Levy" details and click "Start now" button

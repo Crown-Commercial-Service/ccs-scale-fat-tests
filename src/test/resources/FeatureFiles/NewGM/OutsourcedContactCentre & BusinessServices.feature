@@ -20,7 +20,7 @@ Feature:RM6181:Outsourced Contact Centre & Business Services
     Examples:
       | search_term                                | recommendation |
       | Integrated voicecall recording and storing | RM6181Lot1     |
-
+  @NewGM
   Scenario Outline:RM6181:Business Services-Lot2
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "procurement" details and click "Start now" button

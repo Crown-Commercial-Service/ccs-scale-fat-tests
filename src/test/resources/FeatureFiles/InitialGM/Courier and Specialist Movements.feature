@@ -18,7 +18,7 @@ Feature: GM Journey for Courier and Specialist Movements
     Examples:
       | ScenarioID | framework | areaSuits | lookingFor                              | frameworkId | recommendation |
       | Scenario 1 | Courier   | Courier   | Secure collection and delivery services | RM6171      | lot2           |
-
+  @InitialGM
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", Sector buying as "<sectorRadio>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button

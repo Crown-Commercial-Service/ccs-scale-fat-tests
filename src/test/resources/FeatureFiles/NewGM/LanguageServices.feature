@@ -1,6 +1,6 @@
 @RM6141
 Feature:RM6141:  Language Services
-
+  @NewGM
   Scenario Outline:RM6141:  Language Services-Escape Page
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Video Relay Service" details and click "Start now" button
@@ -44,7 +44,7 @@ Feature:RM6141:  Language Services
     Examples:
       | search_term | recommendation |
       | VRS         | RM6141Lot1     |
-
+  @NewGM
   Scenario Outline:RM6141:  Language Services-Lot5
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "sign language" details and click "Start now" button
