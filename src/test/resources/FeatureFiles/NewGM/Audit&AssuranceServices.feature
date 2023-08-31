@@ -4,7 +4,7 @@ Feature:RM6188 Audit & Assurance Services
   Scenario Outline:RM6188 Audit & Assurance Services-Lot1
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Governance reviews" details and click "Start now" button
-    And User clicks on the "Start now" button
+    #And User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     And User selects the "Audit and Assurance" radio button
     And User clicks on the "Continue" button
@@ -24,7 +24,7 @@ Feature:RM6188 Audit & Assurance Services
   Scenario Outline:RM6188 Audit & Assurance Services-Lot4
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Fraud prevention advice" details and click "Start now" button
-    And User clicks on the "Start now" button
+    #And User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     And User selects the "Audit and Assurance" radio button
     And User clicks on the "Continue" button

@@ -21,7 +21,7 @@
     <properties>
         <rest.assured.version>3.2.0</rest.assured.version>
         <cucumber.version>4.2.5</cucumber.version>
-        <selenium.webdriver.version>3.141.59</selenium.webdriver.version>
+        <selenium.webdriver.version>4.11.0</selenium.webdriver.version>
         <junit.version>4.12</junit.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <surefire.fork.count>6</surefire.fork.count>
@@ -166,11 +166,6 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.10.0.pr1</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.3.2</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>

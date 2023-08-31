@@ -5,7 +5,7 @@ Feature:RM6262  Crown Hosting II
   Scenario Outline:RM6262  Crown Hosting II
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "REGO" details and click "Start now" button
-    And User clicks on the "Start now" button
+    #And User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     And User selects the "Hosting service" radio button
     And User clicks on the "Continue" button

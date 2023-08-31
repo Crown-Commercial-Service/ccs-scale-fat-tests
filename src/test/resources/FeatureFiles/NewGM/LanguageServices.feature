@@ -4,7 +4,7 @@ Feature:RM6141:  Language Services
   Scenario Outline:RM6141:  Language Services-Escape Page
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Video Relay Service" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Language Services" radio button
     When User clicks on the "Continue" button
@@ -26,7 +26,7 @@ Feature:RM6141:  Language Services
   Scenario Outline:RM6141:  Language Services-Lot1
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "VRS" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Language Services" radio button
     When User clicks on the "Continue" button
@@ -48,7 +48,7 @@ Feature:RM6141:  Language Services
   Scenario Outline:RM6141:  Language Services-Lot5
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "sign language" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Language Services" radio button
     When User clicks on the "Continue" button

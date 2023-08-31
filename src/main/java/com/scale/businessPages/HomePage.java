@@ -53,7 +53,7 @@ public class HomePage extends Actions {
         this.driver = driver;
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
-        this.wait = new WebDriverWait(this.driver, 50);
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(50));
 
     }
 

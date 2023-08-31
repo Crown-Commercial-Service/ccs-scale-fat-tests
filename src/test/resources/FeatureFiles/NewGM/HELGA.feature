@@ -4,7 +4,7 @@ Feature:RM3824:Heat Networks and Electricity Generation Assets DPS
   Scenario Outline:RM3824:Heat Networks and Electricity Generation Assets DPS
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Carbon Net Zero" details and click "Start now" button
-    And User clicks on the "Start now" button
+    #And User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     And User selects the "Energy Demand Management / Generation Services" radio button
     And User clicks on the "Continue" button

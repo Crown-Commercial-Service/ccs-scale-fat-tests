@@ -4,7 +4,7 @@ Feature:RM6133: Employee Benefits
   Scenario Outline:RM6133: Employee Benefits
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Gift card" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Employee Benefits" radio button
     When User clicks on the "Continue" button
@@ -24,7 +24,7 @@ Feature:RM6133: Employee Benefits
   Scenario Outline:RM6133: Employee Benefits
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "vouchers" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Employee Benefits" radio button
     When User clicks on the "Continue" button

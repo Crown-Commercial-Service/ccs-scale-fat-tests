@@ -4,7 +4,7 @@ Feature:RM6102 RM6145 RM6219:Apprenticeship,Learning and Development
   Scenario Outline:RM6102:Apprenticeship Training
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Apprenticeship Levy" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Apprenticeship Training" radio button
     When User clicks on the "Continue" button
@@ -22,7 +22,7 @@ Feature:RM6102 RM6145 RM6219:Apprenticeship,Learning and Development
   Scenario Outline:RM6145:Learning And Development-Lot6
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Bespoke Training" details and click "Start now" button
-    And User clicks on the "Start now" button
+    #And User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     And User selects the "Learning & Development" radio button
     And User clicks on the "Continue" button
@@ -46,7 +46,7 @@ Feature:RM6102 RM6145 RM6219:Apprenticeship,Learning and Development
   Scenario Outline:RM6219:Learning And Development
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "CSHR" details and click "Start now" button
-    And User clicks on the "Start now" button
+    #And User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     And User selects the "Learning & Development" radio button
     And User clicks on the "Continue" button

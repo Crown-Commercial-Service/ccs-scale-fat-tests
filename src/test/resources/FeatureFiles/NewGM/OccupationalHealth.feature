@@ -5,7 +5,7 @@ Feature:RM6182: Occupational Health, Employee Assistance Programme Eye Care
   Scenario Outline:RM6182: EOccupational Health, Employee Assistance Programme Eye Care-Lot4.1
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "eye health" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Occupational Health, Employee Assistance, Eye Care" radio button
     When User clicks on the "Continue" button
@@ -29,7 +29,7 @@ Feature:RM6182: Occupational Health, Employee Assistance Programme Eye Care
   Scenario Outline:RM6182: EOccupational Health, Employee Assistance Programme Eye Care-Lot5
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "ECG" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Occupational Health, Employee Assistance, Eye Care" radio button
     When User clicks on the "Continue" button

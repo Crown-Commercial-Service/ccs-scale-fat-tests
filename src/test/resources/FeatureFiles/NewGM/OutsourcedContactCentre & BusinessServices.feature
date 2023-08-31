@@ -4,7 +4,7 @@ Feature:RM6181:Outsourced Contact Centre & Business Services
   Scenario Outline:RM6181:Contact Centre Services-Lot1
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Integrated voice/call recording and storing" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Contact Centre" radio button
     When User clicks on the "Continue" button
@@ -24,7 +24,7 @@ Feature:RM6181:Outsourced Contact Centre & Business Services
   Scenario Outline:RM6181:Business Services-Lot2
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "procurement" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Business Services" radio button
     When User clicks on the "Continue" button

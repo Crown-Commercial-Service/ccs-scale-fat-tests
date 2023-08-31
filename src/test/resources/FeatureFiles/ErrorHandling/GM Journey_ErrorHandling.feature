@@ -3,7 +3,7 @@ Feature: Scenarios for checking all questions and errors handling content for ea
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     Then User checks question content for question "linen-qst0"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "linen-qst0"
@@ -50,7 +50,7 @@ Feature: Scenarios for checking all questions and errors handling content for ea
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     Then User checks question content for question "legal-qst0"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "legal-qst0"
@@ -93,7 +93,7 @@ Feature: Scenarios for checking all questions and errors handling content for ea
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of technical security journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     Then User checks question content for question "technical-qa0"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "technical-qa0"
@@ -119,7 +119,7 @@ Feature: Scenarios for checking all questions and errors handling content for ea
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of security services journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     Then User checks question content for question "technical-qa0"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "technical-qa0"
@@ -155,7 +155,7 @@ Feature: Scenarios for checking all questions and errors handling content for ea
   Scenario Outline: To verify question content and error handling content for framework "<framework>" for each question of security services journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     Then User checks question content for question "technical-qa0"
     When User clicks on the "Continue" button
     Then User checks error handling content for question "technical-qa0"

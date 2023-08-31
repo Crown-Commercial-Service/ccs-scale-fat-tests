@@ -23,7 +23,7 @@ public class ContactCCSPage extends Actions{
         this.driver = driver;
         this.scenario = scenario;
         PageFactory.initElements(driver, this);
-        this.wait = new WebDriverWait(this.driver, 30);
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(30));
     }
 
     @FindBy(xpath = "//h1[@class='govuk-heading-xl page-title'][contains(text(),'Contact CCS')]")

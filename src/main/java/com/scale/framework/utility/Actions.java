@@ -1,5 +1,6 @@
 package com.scale.framework.utility;
 
+
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -104,7 +105,7 @@ public class Actions {
 
 	    public void waitForLoad() {
 	        ExpectedCondition<Boolean> pageLoadCondition = driver -> ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
-			this.wait = new WebDriverWait(this.driver, 10);
+			this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
 	        wait.until(pageLoadCondition);
 	    }
 
@@ -254,13 +255,13 @@ public class Actions {
 
 	public void clickActionsLinkOfCustomer(String customerCIN, String linkName, WebDriver webDriver) {
 		waitForSeconds(5);
-		WebElement linkElement = (new WebDriverWait(webDriver, 50))
+		WebElement linkElement = (new WebDriverWait(webDriver,  Duration.ofSeconds(50)))
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'" + customerCIN + "')]/following::div/a[contains(@title,'" + linkName + "')]")));
 		linkElement.click();
 	}
 
 	public void clickActionsLinkOfUser(String CPID, String linkIcon, WebDriver webDriver) {
-		WebElement linkElement = (new WebDriverWait(webDriver, 50))
+		WebElement linkElement = (new WebDriverWait(webDriver, Duration.ofSeconds(50)))
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'" + CPID + "')]/following::div/a[contains(@title,'" + linkIcon + "')]")));
 		linkElement.click();
 	}

@@ -3,7 +3,7 @@ Feature:RM6157: Building Materials
   Background: Navigate to the results page
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "PPE" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And I am on the "Select which area suits your requirements" page
     When User selects the "Building Materials and Equipment" radio button
     When User clicks on the "Continue" button

@@ -4,7 +4,7 @@ Feature: GM Journey for FM2 framework-Technical and Security journey branch
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
@@ -24,7 +24,7 @@ Feature: GM Journey for FM2 framework-Technical and Security journey branch
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
@@ -51,7 +51,7 @@ Feature: GM Journey for FM2 framework-Technical and Security journey branch
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
@@ -80,7 +80,7 @@ Feature: GM Journey for FM2 framework-Technical and Security journey branch
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
@@ -106,7 +106,7 @@ Feature: GM Journey for FM2 framework-Technical and Security journey branch
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
@@ -130,7 +130,7 @@ Feature: GM Journey for FM2 framework-Technical and Security journey branch
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button
@@ -157,7 +157,7 @@ Feature: GM Journey for FM2 framework-Technical and Security journey branch
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And  User selects what type of security "<secTypeRadio>" is needed radio button

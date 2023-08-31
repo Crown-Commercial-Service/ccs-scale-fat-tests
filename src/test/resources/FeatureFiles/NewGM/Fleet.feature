@@ -4,7 +4,7 @@ Feature:Fleet
   Scenario Outline:RM6213:Vehicle Charging Infrastructure Solutions
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "4x4" details and click "Start now" button
-    And User clicks on the "Start now" button
+    #And User clicks on the "Start now" button
     And User selects the "Fleet" radio button
     And User clicks on the "Continue" button
     And I am on the "What service do you need?" page
@@ -23,7 +23,7 @@ Feature:Fleet
   Scenario Outline:RM6244:Purchase of Standard and Specialist Vehicles
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Crew Bus" details and click "Start now" button
-    And User clicks on the "Start now" button
+    #And User clicks on the "Start now" button
     And User selects the "Fleet" radio button
     And User clicks on the "Continue" button
     And I am on the "What service do you need?" page
@@ -46,7 +46,7 @@ Feature:Fleet
   Scenario Outline:RM6096:Vehicle Lease, Fleet Management & Flexible Rental Solutions
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Crew Bus" details and click "Start now" button
-    And User clicks on the "Start now" button
+    #And User clicks on the "Start now" button
     And User selects the "Fleet" radio button
     And User clicks on the "Continue" button
     And I am on the "What service do you need?" page
@@ -67,7 +67,7 @@ Feature:Fleet
   Scenario Outline:RM6142:Supply of tyres, glass and fast fit solutions
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "fire truck" details and click "Start now" button
-    And User clicks on the "Start now" button
+    #And User clicks on the "Start now" button
     And User selects the "Fleet" radio button
     And User clicks on the "Continue" button
     And I am on the "What service do you need?" page

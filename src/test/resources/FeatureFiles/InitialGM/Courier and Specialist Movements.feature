@@ -6,7 +6,7 @@ Feature: GM Journey for Courier and Specialist Movements
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", Sector buying as "<sectorRadio>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"
@@ -22,7 +22,7 @@ Feature: GM Journey for Courier and Specialist Movements
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as looking for "<lookingFor>", Sector buying as "<sectorRadio>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"

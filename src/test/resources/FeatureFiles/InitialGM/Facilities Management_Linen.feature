@@ -3,7 +3,7 @@ Feature: GM Journey for Linen framework
   Scenario Outline: To verify Buyer has initiated GM journey for framework "<framework>" and is provided with GM Escape page on selection of Product during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"
@@ -39,7 +39,7 @@ Feature: GM Journey for Linen framework
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"
@@ -72,7 +72,7 @@ Feature: GM Journey for Linen framework
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"
@@ -105,7 +105,7 @@ Feature: GM Journey for Linen framework
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"
@@ -134,7 +134,7 @@ Feature: GM Journey for Linen framework
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"
@@ -168,7 +168,7 @@ Feature: GM Journey for Linen framework
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"
@@ -201,7 +201,7 @@ Feature: GM Journey for Linen framework
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>" and after answering different set of question as looking for "<lookingFor>", Budget radio as "<budgetRadio>" and enters budget as "<enterBudgets>", Contract radio as "<contractRadio>" and enters contract length "<contractLength>" , selects Service area as "<serviceArea>" and Additional facilities as "<addFacilities>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    When User clicks on the "Start now" button
+    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And User clicks on the "Continue" button
     And User selects response of looking for "<lookingFor>"

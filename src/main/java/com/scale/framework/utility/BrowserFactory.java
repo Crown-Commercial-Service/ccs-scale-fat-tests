@@ -1,6 +1,5 @@
 package com.scale.framework.utility;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -34,14 +33,14 @@ public class BrowserFactory {
         log.info("Opening " + browserName + "browser");
         switch (browserName.toUpperCase()){
             case "FIREFOX":
-                WebDriverManager.firefoxdriver().setup();
+                //WebDriverManager.firefoxdriver().setup();
                 System.setProperty("webdriver.gecko.driver", configReader.getGeckoDriverPath());
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
                 break;
             case "CHROME":
                 //System.setProperty("webdriver.chrome.driver", configReader.getChromeDriverPath());
-                WebDriverManager.chromedriver().setup();
+               // WebDriverManager.chromedriver().setup();
                 //Uncomment below lines if you would like to run it in incognito mode
 //                ChromeOptions option = new ChromeOptions();
 //                option.addArguments("--incognito");
@@ -57,7 +56,7 @@ public class BrowserFactory {
                 driver.manage().window().maximize();
                 break;
             case "CHROME_HEADLESS":
-                WebDriverManager.chromedriver().setup();
+                //WebDriverManager.chromedriver().setup();
                 ChromeOptions ChromeOptions = new ChromeOptions();
                 // destination = actualPath + "/Library/Application Support/Google/Chrome/"+randomString(8);
                 // copyFiles(actualPath + "/Library/Application Support/Google/Chrome/profile1",destination);
