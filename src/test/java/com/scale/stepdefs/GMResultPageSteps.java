@@ -61,7 +61,7 @@ public class GMResultPageSteps {
     public void user_is_displayed_with_frameworks_lots_recommended(String frameworksLotsRecommended) {
         List<String> frameworkId = new ArrayList<String>();
         ;
-        if (frameworksLotsRecommended.matches("([A-Z]+[0-9]+)([a-z]+[0-9]+[a-z]{0,5})(?:_[a-z]+[0-9]+[a-z]{0,5})*")) {
+        if (frameworksLotsRecommended.matches("([A-Z]+[0-9])([a-z]+[0-9]+[a-z]{0,5})(?:_[a-z]+[0-9]+[a-z]{0,5})*")) {
             frameworkId.add(frameworksLotsRecommended);
         } else {
             String[] temporaryFrameworkId = frameworksLotsRecommended.split("\n");
@@ -120,8 +120,8 @@ public class GMResultPageSteps {
             String fullExpectedResult = configurationReader.returnProperty(frameworkId[i] + frameworksLotsRecommended);
             String framework = frameworkId[i];
             //if (frameworkId[i].matches("\\D+\\d+[a-zA-Z]+\\d+"))
-            if (frameworkId[i].matches("\\D+\\d+[a-zA-Z]+\\d+\\D?")) {
-                framework = StringUtils.getMatchedGroupByIndexFromAString(frameworkId[i], "(^\\D+\\d+)([a-zA-Z]+.*$)", 1).trim();
+            if (frameworkId[i].matches("\\D+\\d+\\w+\\W+[a-zA-Z]+\\d+\\D?")) {
+                framework = StringUtils.getMatchedGroupByIndexFromAString(frameworkId[i], "(^\\D+\\d+\\w+\\W+)([a-zA-Z]+.*$)", 1).trim();
             }
             gmResultPage = objectManager.getGmSearchResultPageObj();
             String expectedTitle = StringUtils.getMatchedGroupByIndexFromAString(fullExpectedResult, "(^.*)(\\(" + framework + "\\),?)(.*$)", 1).trim();

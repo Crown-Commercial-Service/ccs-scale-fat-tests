@@ -16,12 +16,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+import java.text.NumberFormat;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import static java.lang.Integer.parseInt;
 
 public class GMResultPage extends Actions {
     private WebDriver driver;
@@ -195,13 +200,15 @@ public class GMResultPage extends Actions {
                 frameworkLotsRecommendedIndex = entry.getKey();
             }
         }
+        String finalReturnedSearchPhrase = null;
         if (frameworkLotsRecommendedIndex == -1) {
             log.info("The <" + frameworkLotsRecommendedText + "> was not found in the question list");
             scenario.write("The <" + frameworkLotsRecommendedText + "> was not found in the question list");
         } else {
             returnedSearchPhrase = (getQuestionsRowsText().get(frameworkLotsRecommendedIndex).replace(frameworkLotsRecommendedText, "")).trim();
+            finalReturnedSearchPhrase = returnedSearchPhrase.replace("£", "");
         }
-        return returnedSearchPhrase;
+        return finalReturnedSearchPhrase;
     }
 
     private int getIndexOfQuestionByText(String expectedQuestionOrAnswer) {
