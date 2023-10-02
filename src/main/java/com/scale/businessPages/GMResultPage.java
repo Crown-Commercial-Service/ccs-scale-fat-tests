@@ -114,6 +114,10 @@ public class GMResultPage extends Actions {
     @FindBy(xpath = "//*[@id='accordion-default-heading-2']/h3")
     private WebElement agreementResultTextTwo;
 
+    @FindBy(xpath = "(//h3)[1]")
+    private WebElement lblEnergySolution;
+
+
     public String contactCcs = "//*[@class='contact-ccs-btn']/a";
 
     public GMResultPage(WebDriver driver, Scenario scenario) {
@@ -440,6 +444,11 @@ public class GMResultPage extends Actions {
 
     public String getAgreementResultTextTwo(){
         return agreementResultTextTwo.getText();
+    }
+    public void assertEnergyResult(String energySolution) {
+        waitForSeconds(1);
+        String expectedEnergySolution = lblEnergySolution.getText();
+        Assert.assertEquals(expectedEnergySolution, energySolution);
     }
 }
 

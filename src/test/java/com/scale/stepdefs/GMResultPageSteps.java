@@ -99,6 +99,11 @@ public class GMResultPageSteps {
         gmResultPage.checkTheAnswerForTheQuestion(question, answer);
         testContextObj.takeSnapShot();
     }
+    @Then("I should see {string} Energy Solution Results")
+    public void i_should_see_Energy_Solution_Results(String energySolution) {
+        gmResultPage = objectManager.getGmSearchResultPageObj();
+        gmResultPage.assertEnergyResult(energySolution);
+    }
 
     @Then("User clicks on the Change button adjacent to question number \"([^\"]*)\"")
     public void user_clicks_on_change_button_adjacent_to_question_number(String questionNumber) {
