@@ -55,7 +55,7 @@ public class TestContext {
         long threadId = Thread.currentThread().getId();
         String processName = ManagementFactory.getRuntimeMXBean().getName();
         System.out.println("Started in thread: " + threadId + ", in JVM: " + processName);
-        log.info("Successfully lunched the chrome browser");
+        log.info("Successfully launched the chrome browser");
     }
 
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
