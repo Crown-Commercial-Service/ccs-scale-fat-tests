@@ -1,6 +1,7 @@
 Feature: GM Journey for FM2 framework-Technical and Security journey branch
 
-  @RM6089
+  @InitialGM
+    @RM6089
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -99,9 +100,9 @@ Feature: GM Journey for FM2 framework-Technical and Security journey branch
     And User is displayed with Framework Lot Recommended: "<frameworkId><recommendation>"
 
     Examples:
-      | ScenarioID | framework | areaSuits         |secTypeRadio                             | secserviceAreaOpt | frameworkId | expirationDate | details | recommendation     | lots |
-      | Scenario 1 | cctv      | Security Services |Security services                        | Anything else     | RM6089      | 24/01/2023     | wpsfm2  | techlot1b_seclot1a | 2    |
-      | Scenario 2 | cctv      | Security Services |Security services and technical security | Anything else     | RM6089      | 24/01/2023     | wpsfm2  | seclot1a_techlot1b | 2    |
+      | ScenarioID | framework | areaSuits         | secTypeRadio                             | secserviceAreaOpt | frameworkId | expirationDate | details | recommendation     | lots |
+      | Scenario 1 | cctv      | Security Services | Security services                        | Anything else     | RM6089      | 24/01/2023     | wpsfm2  | techlot1b_seclot1a | 2    |
+      | Scenario 2 | cctv      | Security Services | Security services and technical security | Anything else     | RM6089      | 24/01/2023     | wpsfm2  | seclot1a_techlot1b | 2    |
 
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and answering different set of question as selects type of security "<secTypeRadio>" and which technical services "<techserviceAreaOpt>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"

@@ -35,6 +35,12 @@ public class AgreementStep {
                 .getAllListTitles(agreementPage.getAgreementDetails());
         Assert.assertEquals(details.asList(), listAllTitles);
     }
+    @Then("I should see the below section")
+    public void i_should_see_the_below_section(DataTable details) {
+        List<String> listAllTitles = agreementPage
+                .getAllListTitles(agreementPage.getAgreementDetailsforUpcomingAgreement());
+        Assert.assertEquals(details.asList(), listAllTitles);
+    }
 
     @Then("I should the key facts details")
     public void i_should_the_key_facts_details(DataTable details) {

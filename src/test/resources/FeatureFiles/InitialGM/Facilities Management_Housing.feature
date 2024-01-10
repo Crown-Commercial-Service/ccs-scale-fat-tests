@@ -1,5 +1,5 @@
 Feature: GM Journey for FM2 framework -Housing journey branch
-
+  @InitialGM
   @RM6089
   Scenario Outline:To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"

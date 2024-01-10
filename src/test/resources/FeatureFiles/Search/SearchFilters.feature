@@ -1,4 +1,5 @@
 Feature:
+
   Background:
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User clicks on the "Search agreements" link
@@ -37,8 +38,8 @@ Feature:
     And I should see the following filter facet
       | Live       |
       | Technology |
-    When User clicks on the "Digital Future" link
-    Then I am on the "Search agreements for Technology in Digital Future category" page
+    When User clicks on the "Digital Specialists" link
+    Then I am on the "Search agreements for Technology in Digital Specialists category" page
 
   Scenario: Navigate to DPS agreement page
     And I enter "RM6102" in the search agreement field
@@ -64,13 +65,15 @@ Feature:
     When User clicks on the "G-Cloud 12" link
     Then I am on the "G-Cloud 12" page
     And I should see the details section
-      | Updates, Documents |
-@ignore
+      | Updates   |
+      | Documents |
+
+
   Scenario: Navigate to the Upcoming framework type
     And I clear the filter applied
     When I select "Upcoming" filter option
     And I click on the first search results
-    Then I should see the details section
+    Then I should see the below section
       | Summary             |
       | Description         |
       | Benefits            |
@@ -83,8 +86,9 @@ Feature:
   Scenario: Navigate to the Standard framework type - RM6157
     And I enter "Modular Building Solutions" in the search agreement field
     When I click on the first search results
-    And I am on the "Modular Building Solutions" page
+    And I am on the "Building Materials and Equipment" page
     And I should see the details section
+      | Updates                |
       | Description            |
       | Benefits               |
       | Products and suppliers |
@@ -95,5 +99,6 @@ Feature:
       | Start date   |
       | End date     |
       | Lots         |
+      | Suppliers    |
     When User clicks on the open all link
     Then All the sections are expanded

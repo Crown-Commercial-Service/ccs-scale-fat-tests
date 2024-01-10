@@ -1,28 +1,24 @@
 Feature: GM Journey for Legal framework
-
+@RM3788 is replaced by @RM6240 which is covered in NewGM
+  @InitialGM
+@RM6240
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommServices>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
-    #When User clicks on the "Start now" button
     And User selects which "<areaSuits>" your requirements
     And  User clicks on the "Continue" button
     And User selects which sector are you looking for "<sector>" radio button
     And User clicks on the "Continue" button
     And User selects which services required "<serviceArea>"
     And User clicks on the "Continue" button
-    Then User should be displayed with recommendations "<frameworkId>" services for lots ""
-    And User can successfully expand the details section
-    And User is displayed with Framework Id "<frameworkId>" and the expiration date "<expirationDate>" and the details "<details>" text
-    And User should be displayed with GM Escape page with route to "<frameworkId>"
-    And User is displayed with "<sector>" answer for the question "Which sector are you buying for?"
-    And User is displayed with "<serviceArea>" answer for the question "Which service area do you need?"
+    And User is displayed with "<serviceArea>" answer for the question "What service do you need?"
     And User is displayed with initial search phrase from "<framework>"
     And User is displayed with Framework Lot Recommended: "<frameworkId>"
 
     Examples:
-      | ScenarioID | framework | areaSuits | sector             | serviceArea | frameworkId | expirationDate | details          |
-      | Scenario 1 | legal     | Legal     | Central Government | Rail        | RM6204      | 21/02/2025     | railLegalDetails |
-
+      | ScenarioID | framework | areaSuits | sector             | serviceArea         | frameworkId |
+      | Scenario 1 | legal     | Legal     | Central government | Rail legal services | RM6204      |
+  @ExpiredGM
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -44,8 +40,8 @@ Feature: GM Journey for Legal framework
 
     Examples:
       | ScenarioID | framework | areaSuits | sector             | serviceArea           | budgetRadio | recommendation   |
-      | Scenario 1 | legal     | Legal     | Central Government | Employment litigation | No          | RM6179RM3788lot1 |
-
+      | Scenario 1 | legal     | Legal     | Central government | Employment litigation | No          | RM6179RM3788lot1 |
+  @ExpiredGM
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -70,8 +66,8 @@ Feature: GM Journey for Legal framework
 
     Examples:
       | ScenarioID | framework | areaSuits | sector             | serviceArea           | budgetRadio | enterBudgets | frameworkId | expirationDate | details |
-      | Scenario 1 | legal     | Legal     | Central Government | Employment litigation | Yes         | 20000        | RM6179      | 30/11/2024     | GLAS    |
-
+      | Scenario 1 | legal     | Legal     | Central government | Employment litigation | Yes         | 20000        | RM6179      | 30/11/2024     | GLAS    |
+  @ExpiredGM
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -95,7 +91,7 @@ Feature: GM Journey for Legal framework
     Examples:
       | ScenarioID | framework | areaSuits | sector                                                     | serviceArea           | budgetRadio | enterBudgets | recommendation   |
       | Scenario 1 | legal     | Legal     | Ministry of Defence or defence infrastructure organisation | Employment litigation | Yes         | 5000         | RM6179RM3788lot1 |
-
+  @ExpiredGM
   Scenario Outline: To verify Buyer has provided with different service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button
@@ -117,8 +113,8 @@ Feature: GM Journey for Legal framework
 
     Examples:
       | ScenarioID | framework | areaSuits | sector           | serviceArea                | frameworkId | expirationDate | details                                 |
-      | Scenario 1 | legal     | Legal     | Local Government | eDisclosure and eDiscovery | RM6203      | 14/06/2024     | eDisclosureandeDiscoveryServicesDetails |
-
+      | Scenario 1 | legal     | Legal     | Local government | eDisclosure and eDiscovery | RM6203      | 14/06/2024     | eDisclosureandeDiscoveryServicesDetails |
+  @ExpiredGM
   Scenario Outline: To verify Buyer has provided with different recommendations "<recommendation>", lots "<lots>", service details "<details>" on GM results page after initiating GM journey for framework "<framework>" and after answering different set of question as sector looking for "<sector>", selects Service area as "<serviceArea>" during the journey
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "<framework>" details and click "Start now" button

@@ -29,16 +29,17 @@ public class AgreementPage extends Actions {
         this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(30));
     }
 
-    private String accordion = "button#accordion-default-heading-2[aria-expanded='true']";
-    private String allAccordionSections = "button.govuk-accordion__open-all[aria-expanded='true']";
+    private String accordion = "//button[@aria-controls='accordion-default-content-1' and @aria-expanded='true']";
+    private String allAccordionSections = "//button[@class='govuk-accordion__show-all' and @aria-expanded='true']";
 
-    @FindBy(xpath = "//*[@class='govuk-accordion__section-heading']/button")
+    @FindBy(xpath = "//*[@class='govuk-accordion__section-heading-text']")
     private List<WebElement> agreementDetailsOverview;
-
+    @FindBy(xpath = "//h3")
+    private List<WebElement> agreementDetailsOverviewForUpcomingAgreement;
     @FindBy(xpath = "//*[@class='apollo-enclosure']/dl/dt")
     private List<WebElement> keyFactsDetails;
 
-    @FindBy(xpath = "//*[@class='govuk-accordion__open-all']")
+    @FindBy(xpath = "//*[contains(text(),'Show all sections')]")
     private WebElement openAllAccordion;
 
     public List<WebElement> getKeyFacts(){
@@ -48,10 +49,13 @@ public class AgreementPage extends Actions {
     public List<WebElement> getAgreementDetails(){
         return agreementDetailsOverview;
     }
+    public List<WebElement> getAgreementDetailsforUpcomingAgreement(){
+        return agreementDetailsOverviewForUpcomingAgreement;
+    }
 
 
     public void expandAccordion(String element) {
-        WebElement searchFrameworksPage = driver.findElement(By.cssSelector(element));
+        WebElement searchFrameworksPage = driver.findElement(By.xpath(element));
         assertTrue(searchFrameworksPage.isDisplayed());
     }
 
