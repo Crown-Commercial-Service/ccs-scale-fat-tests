@@ -5,6 +5,7 @@ import com.scale.context.TestContext;
 import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -30,4 +31,7 @@ public class CCSContactPageSteps {
         contactCCSPage = objectManager.getContactCCSPageObj();
         contactCCSPage.contactCCSPage();
     }
+
+
+
 }

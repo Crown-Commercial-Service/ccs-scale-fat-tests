@@ -6,6 +6,7 @@ import com.scale.context.TestContext;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
@@ -289,6 +290,7 @@ public class E2ESteps {
         objectManager.getE2EPageObj().clickSearchAgreementResult();
         log.info("I click on the first search results");
     }
+
 
 
 }

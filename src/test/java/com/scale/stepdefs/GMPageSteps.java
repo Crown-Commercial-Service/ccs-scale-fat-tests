@@ -6,6 +6,7 @@ import com.scale.framework.utility.PageObjectManager;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -55,4 +56,7 @@ public class GMPageSteps {
         Assert.assertEquals(options.asList(), listAllTitles);
 
     }
+
+
+
 }

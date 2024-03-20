@@ -1,3 +1,4 @@
+@SearchFeature
 Feature:
 
   Background:

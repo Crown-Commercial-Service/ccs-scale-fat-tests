@@ -11,7 +11,7 @@ import cucumber.api.CucumberOptions;
         glue={"com.scale.stepdefs", "com.scale.context"},
         monochrome = true,
         plugin = { "pretty", "html:target/cucumber-html-reports", "json:target/cucumber-html-reports/cucumber.json"},
-        tags = "@NewGM")
+        tags = "")
 
 public class TestRunner {
 }
