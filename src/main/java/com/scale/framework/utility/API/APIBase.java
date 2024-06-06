@@ -48,7 +48,7 @@ public class APIBase extends ConfigurationReader {
         RestAssured.baseURI = configReader.get("getAgreementsURI");
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "8qSZUyZRMe9A62PExocz38pJdwJJcelX2WJxpPUG");
+        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
         Response response = httpRequest.get();
         String body = response.getBody().asString();
         System.out.println(body);
@@ -62,7 +62,7 @@ public class APIBase extends ConfigurationReader {
         RestAssured.baseURI = configReader.get("getAgreementURI");
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "8qSZUyZRMe9A62PExocz38pJdwJJcelX2WJxpPUG");
+        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
         Response response = httpRequest.get();
         String body = response.getBody().asString();
         System.out.println(body);
@@ -75,7 +75,7 @@ public class APIBase extends ConfigurationReader {
         RestAssured.baseURI = configReader.get("getAgreementDocumentsURI");
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "8qSZUyZRMe9A62PExocz38pJdwJJcelX2WJxpPUG");
+        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
         Response response = httpRequest.get();
         String body = response.getBody().asString();
         System.out.println(body);
@@ -88,7 +88,7 @@ public class APIBase extends ConfigurationReader {
         RestAssured.baseURI = configReader.get("getAgreementUpdatesURI");
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "8qSZUyZRMe9A62PExocz38pJdwJJcelX2WJxpPUG");
+        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
         Response response = httpRequest.get();
         String body = response.getBody().asString();
         System.out.println(body);
@@ -101,7 +101,7 @@ public class APIBase extends ConfigurationReader {
         RestAssured.baseURI = configReader.get("getAgreementLotsURI");
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "8qSZUyZRMe9A62PExocz38pJdwJJcelX2WJxpPUG");
+        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
         Response response = httpRequest.get();
         String body = response.getBody().asString();
         System.out.println(body);
@@ -114,7 +114,7 @@ public class APIBase extends ConfigurationReader {
         RestAssured.baseURI = configReader.get("getAgreementLotURI");
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "8qSZUyZRMe9A62PExocz38pJdwJJcelX2WJxpPUG");
+        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
         Response response = httpRequest.get();
         String body = response.getBody().asString();
         System.out.println(body);
@@ -127,7 +127,7 @@ public class APIBase extends ConfigurationReader {
         RestAssured.baseURI = configReader.get("getAgreementLotSupplierURI");
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "8qSZUyZRMe9A62PExocz38pJdwJJcelX2WJxpPUG");
+        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
         Response response = httpRequest.get();
         String body = response.getBody().asString();
         System.out.println(body);
@@ -140,7 +140,7 @@ public class APIBase extends ConfigurationReader {
         RestAssured.baseURI = configReader.get("getAgreementLotEventTypesURI");
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "8qSZUyZRMe9A62PExocz38pJdwJJcelX2WJxpPUG");
+        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
         Response response = httpRequest.get();
         String body = response.getBody().asString();
         System.out.println(body);
@@ -153,7 +153,7 @@ public class APIBase extends ConfigurationReader {
         RestAssured.baseURI = configReader.get("getAgreementLotDataTemplatesURI");
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "8qSZUyZRMe9A62PExocz38pJdwJJcelX2WJxpPUG");
+        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
         Response response = httpRequest.get();
         String body = response.getBody().asString();
         System.out.println(body);
@@ -166,7 +166,7 @@ public class APIBase extends ConfigurationReader {
         RestAssured.baseURI = configReader.get("getAgreementLotDocumentTemplatesURI");
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "8qSZUyZRMe9A62PExocz38pJdwJJcelX2WJxpPUG");
+        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
         Response response = httpRequest.get();
         String body = response.getBody().asString();
         System.out.println(body);

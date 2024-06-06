@@ -1,6 +1,5 @@
-@NewGM
 Feature:RM6186: Fuel Cards and Associated Services VI
-
+  @NewGM
   @RM6186
   Scenario Outline:RM6186: Fuel Cards and Associated Services VI
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
@@ -23,7 +22,7 @@ Feature:RM6186: Fuel Cards and Associated Services VI
     Examples:
       | search_term | recommendation |
       | gpc         | RM6186         |
-
+  @NewGM
   @RM6248
   Scenario Outline:RM6248: Payment Solutions 2-Lot1
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
@@ -47,7 +46,7 @@ Feature:RM6186: Fuel Cards and Associated Services VI
       | search_term               | recommendation |
       | Finance Conduct Authority | RM6248Lot1     |
 
-  @RM6118
+  @Expired
   Scenario Outline:RM6118: Payment Acceptance-Lot1
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "pan-government" details and click "Start now" button

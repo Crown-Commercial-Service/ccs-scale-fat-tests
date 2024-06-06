@@ -1,4 +1,4 @@
-@RM6119
+@Deleted
 Feature:RM6119: Furniture & Associated Services
 
   Background: Navigate to the results page
@@ -10,7 +10,7 @@ Feature:RM6119: Furniture & Associated Services
     When User clicks on the "Continue" button
     And I am on the "Do you need a service or product?" page
 
-  @NewGM
+
   Scenario Outline:RM6119: Furniture & Associated Services - LOT2
     When User selects the "Product" radio button
     And User clicks on the "Continue" button
@@ -44,7 +44,7 @@ Feature:RM6119: Furniture & Associated Services
     Examples:
       | search_term   | recommendation |
       | Teacher Chair | RM6119Lot4     |
-  @NewGM
+
   Scenario Outline:RM6119: Furniture & Associated Services - LOT7
     When User selects the "Repair and renovation service" radio button
     And User clicks on the "Continue" button
