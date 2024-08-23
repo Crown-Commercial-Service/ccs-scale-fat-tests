@@ -46,4 +46,24 @@ public class CommonAPISteps {
     public void iFireGETAgreementLotDocumentsTemplatesCallAndAssertTheStatus() {
         apibase.getAgreementLotDocumentTemplates();
     }
+    @When("I fire PUT Agreement endpoint and assert the status")
+    public void iFirePUTAgreementEndpointAndAssertTheStatus() {
+        apibase.getOAUTH2Grant();
+        apibase.putAgreement();
+    }
+    @When("I fire PUT Lot endpoint and assert the status")
+    public void iFirePUTLotEndpointAndAssertTheStatus() {
+        apibase.getOAUTH2Grant();
+        apibase.putLot();
+    }
+    @When("I fire PUT Lots endpoint and assert the status")
+    public void iFirePUTLotsEndpointAndAssertTheStatus() {
+        apibase.getOAUTH2Grant();
+        apibase.putLots();
+    }
+    @When("I fire PUT Lot supplier endpoint and assert the status")
+    public void iFirePUTLotSupplierEndpointAndAssertTheStatus() {
+        apibase.getOAUTH2Grant();
+        apibase.putLotSupplier();
+    }
 }

@@ -41,3 +41,19 @@ Feature: Agreement Service API tests
   @APITests
   Scenario:Get Agreement lot Documents Templates call
     When I fire GET Agreement lot documents Templates call and assert the status
+
+  @APITests
+  Scenario:Put Agreement
+    When I fire PUT Agreement endpoint and assert the status
+
+  @APITests
+  Scenario:Put Lot
+    When I fire PUT Lot endpoint and assert the status
+
+  @APITests
+  Scenario:Put Lots
+    When I fire PUT Lots endpoint and assert the status
+
+  @APITests
+  Scenario:Put Lots Supplier
+    When I fire PUT Lot supplier endpoint and assert the status
