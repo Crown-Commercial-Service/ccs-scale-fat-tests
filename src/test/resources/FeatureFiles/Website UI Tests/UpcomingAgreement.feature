@@ -1,5 +1,5 @@
 @RegressionTest
-Feature: SearchAgreement Verification
+Feature:Upcoming Agreement Verification
 
   Background:
     Given I am on a CCS website HomePage
