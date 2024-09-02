@@ -3,9 +3,12 @@ package com.scale.stepdefs;
 import com.scale.businessPages.E2EPage;
 import com.scale.businessPages.HomePage;
 import com.scale.context.TestContext;
+import com.scale.framework.utility.BrowserFactory;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.PageObjectManager;
+import com.scale.framework.utility.StringUtils;
 import cucumber.api.Scenario;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -15,6 +18,9 @@ import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,14 +28,16 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class E2ESteps {
+    private PageObjectManager objectManager;
     private Logger log = LogManager.getLogger(com.scale.stepdefs.GMPageSteps.class);
     private WebDriver driver;
-    private PageObjectManager objectManager;
+    private BrowserFactory browserFactory;
     private TestContext testContextObj;
     private Scenario scenario;
     private E2EPage e2EPageObj;
     private HomePage homePageObj;
     private ConfigurationReader configReaderObj;
+
 
     public E2ESteps(TestContext testContextObj) {
         configReaderObj = new ConfigurationReader();
@@ -270,7 +278,7 @@ public class E2ESteps {
     @Then("I should see the error message")
     public void i_should_see_the_error_message() {
         e2EPageObj = objectManager.getE2EPageObj();
-        assertEquals((configReaderObj.get("errorMessage")),e2EPageObj.getErrorMessage());
+        assertEquals((configReaderObj.get("errorMessage")), e2EPageObj.getErrorMessage());
     }
 
     @Then("I should see the error message {string}")
@@ -292,5 +300,157 @@ public class E2ESteps {
     }
 
 
+    @Then("I should see the PPG related components")
+    public void iShouldSeeThePPGRelatedComponents() {
+        objectManager.getE2EPageObj().assertPPGComponents();
+        log.info("PPG components are present");
+    }
+
+    @And("I should see Primary Menu list")
+    public void iShouldSeePrimaryMenuList() {
+        objectManager.getE2EPageObj().assertPrimaryMenuList();
+        log.info("PrimaryMenuList is as expected");
+    }
+
+    @And("I should see Secondary Menu list")
+    public void iShouldSeeSecondaryMenuList() {
+        objectManager.getE2EPageObj().assertSecondaryMenuList();
+        log.info("SecondaryMenuList is as expected");
+    }
+
+    @And("I should see search components")
+    public void iShouldSeeSearchComponents() {
+        objectManager.getE2EPageObj().assertSearchComponents();
+        log.info("Search Component is present");
+    }
+
+    @And("I verify homepage cardslist")
+    public void iVerifyHomepageCardslist() {
+        objectManager.getE2EPageObj().verifyHomePageCards();
+        log.info("3 cards are available");
+    }
+
+    @And("I verify latest news article")
+    public void iVerifyLatestNewsArticle() {
+        objectManager.getE2EPageObj().verifyLatestNews();
+        log.info("2 latest news articles are displayed");
+    }
+
+    @And("I should see campaignbox components")
+    public void iShouldSeeCampaignboxComponents() {
+        objectManager.getE2EPageObj().assertCampaignBoxComponents();
+        log.info("CampaignBox components is present");
+    }
+
+    @And("I should see Glossary components")
+    public void iShouldSeeGlossaryComponents() {
+        objectManager.getE2EPageObj().assertGlossaryComponents();
+        log.info("Glossary components is present");
+
+    }
+
+    @When("I click on BacktoTop button")
+    public void iClickOnBacktoTopButton() {
+        objectManager.getE2EPageObj().clickonBackToTop();
+    }
+
+    @Then("I should be on the top of the page")
+    public void iShouldBeOnTheTopOfThePage() {
+        objectManager.getE2EPageObj().assertTopOfThePage();
+    }
+
+    @When("I click on Browse all news articles link")
+    public void iClickOnBrowseAllNewsArticlesLink() {
+        objectManager.getE2EPageObj().clickonBrowseAllNewsArticlesLink();
+    }
+
+    @Then("I should be on News page")
+    public void iShouldBeOnNewsPage() {
+        objectManager.getE2EPageObj().assertNewspage();
+    }
+
+    @When("I click on footer {string} link verify the navigation")
+    public void iClickOnFooterLinkVerifyTheNavigation(String BuyAndSupply) {
+        objectManager.getE2EPageObj().clickOnFooterLinks(BuyAndSupply);
+    }
+
+    @And("I navigate to contact us form")
+    public void iNavigateToContactUsForm() {
+        objectManager.getE2EPageObj().clickOnContacts();
+    }
+
+    @When("I fill the contact form and submit")
+    public void iFillTheContactFormAndSubmit() {
+        objectManager.getE2EPageObj().fillContactForm();
+    }
+
+    @Then("I should see the success message")
+    public void iShouldSeeTheSuccessMessage() {
+        objectManager.getE2EPageObj().assertSuccessMessage();
+    }
+
+    @Then("I should see Helpful Links component")
+    public void iShouldSeeHelpfulLinksComponent() {
+        objectManager.getE2EPageObj().assertHelpfulLinksComponent();
+    }
+
+    @And("I should see agreement pricing component")
+    public void iShouldSeeAgreementPricingComponent() {
+        objectManager.getE2EPageObj().agreementPricingComponent();
+    }
+
+    @And("I should see Talk to us component")
+    public void iShouldSeeTalkToUsComponent() {
+        objectManager.getE2EPageObj().TalkToUsComponent();
+    }
+
+    @And("I navigate to Search agreement")
+    public void iNavigateToSearchAgreement() {
+        objectManager.getE2EPageObj().clickOnSearchAgreement();
+    }
+
+    @And("I navigate to Upcoming agreement")
+    public void iNavigateToUpcomingAgreement() {
+        objectManager.getE2EPageObj().clickOnUpcomingAgreement();
+    }
+
+    @Then("I should verify Live filter is defaulted")
+    public void iShouldVerifyLiveFilterIsDefaulted() {
+        objectManager.getE2EPageObj().VerifyLiveFilterIsDefaulted();
+    }
+
+    @When("I select Expired Option")
+    public void iSelectExpiredOption() {
+        objectManager.getE2EPageObj().selectExpiredOption();
+    }
+
+    @And("I verify the filter summary")
+    public void iVerifyTheFilterSummary() {
+        objectManager.getE2EPageObj().verifyFilterSummary();
+    }
+
+    @Then("I should see page component on search Agreement page")
+    public void iShouldSeePageComponentOnSearchAgreementPage() {
+        objectManager.getE2EPageObj().UpcomingAgreementComponent();
+        objectManager.getE2EPageObj().assertHelpfulLinksComponent();
+        objectManager.getE2EPageObj().agreementPricingComponent();
+    }
+
+    @And("I should verify View All filter is defaulted")
+    public void iShouldVerifyViewAllFilterIsDefaulted() {
+        objectManager.getE2EPageObj().VerifyViewAllFilterIsDefaulted();
+    }
+
+
+    @Then("I should see page component on Upcoming Agreement")
+    public void iShouldSeePageComponentOnUpcomingAgreement() {
+        objectManager.getE2EPageObj().contactUsComponent();
+        objectManager.getE2EPageObj().downloadPieplineReportComponent();
+        objectManager.getE2EPageObj().assertHelpfulLinksComponent();
+    }
+
+
 
 }
+
+

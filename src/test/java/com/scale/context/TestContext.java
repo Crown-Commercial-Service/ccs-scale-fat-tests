@@ -57,7 +57,6 @@ public class TestContext {
         System.out.println("Started in thread: " + threadId + ", in JVM: " + processName);
         log.info("Successfully launched the chrome browser");
     }
-
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
         scenarioContext.setKeyValue("ScenarioID", ScenarioID);
@@ -155,5 +154,14 @@ public class TestContext {
 
     public ConfigurationReader getConfigReader() {
         return configReader;
+    }
+    @Given("I am on a CCS website HomePage")
+    public void iAmOnACCSWebsiteHomePage() {
+        {
+            objectManager = new PageObjectManager(driver, scenario);
+            String baseURL = configReader.get("baseURL");
+            log.info("base.url:" + baseURL);
+            browserFactory.launchURL(baseURL);
+        }
     }
 }

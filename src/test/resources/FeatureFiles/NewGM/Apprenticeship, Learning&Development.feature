@@ -18,7 +18,7 @@ Feature:RM6102 RM6145 RM6219:Apprenticeship,Learning and Development
     Examples:
       | search_term         |
       | Apprenticeship Levy |
-@NewGM
+
   Scenario Outline:RM6145:Learning And Development-Lot6
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Bespoke Training" details and click "Start now" button
@@ -42,7 +42,7 @@ Feature:RM6102 RM6145 RM6219:Apprenticeship,Learning and Development
     Examples:
       | search_term      | recommendation |
       | Bespoke Training | RM6145Lot6     |
-
+  @NewGM
   Scenario Outline:RM6219:Learning And Development
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "CSHR" details and click "Start now" button
