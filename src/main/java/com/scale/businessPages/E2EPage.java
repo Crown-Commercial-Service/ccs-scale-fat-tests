@@ -266,7 +266,11 @@ public class E2EPage extends Actions {
     @FindBy(xpath = "//*[@class='govuk-grid-column-one-half homepage-campaign-box']")
     private WebElement campaignBoxComponents;
     @FindBy(xpath = "//*[@class='glossary-box-container']")
+    private WebElement homepageGlossaryComponents;
+    @FindBy(xpath = "//*[@class='apollo-call-to-action apollo-call-to-action--help']")
     private WebElement glossaryComponents;
+    @FindBy(xpath = "//*[@class='apollo-call-to-action apollo-call-to-action--aggregation']")
+    private WebElement informationforBuyerAndSupplierComponent;
     @FindBy(id = "BackToTopButton")
     private WebElement btnBackToTop;
     @FindBy(xpath = "//*[contains(text(),'Browse all news articles')]")
@@ -283,6 +287,9 @@ public class E2EPage extends Actions {
 
     @FindBy(xpath = "(//*[contains(text(),'Contact')])[1]")
     private WebElement menuContact;
+    @FindBy(xpath = "(//*[contains(text(),'About')])[1]")
+    private WebElement menuAbout;
+
     @FindBy(xpath = "(//*[contains(text(),'Search agreements')])[1]")
     private WebElement menuSearchAgreement;
     @FindBy(xpath = "//*[contains(text(),'Upcoming agreements')]")
@@ -993,8 +1000,15 @@ public class E2EPage extends Actions {
     }
 
     public void assertGlossaryComponents() {
+        homepageGlossaryComponents.isDisplayed();
+    }
+    public void informationforBuyerAndSupplierComponent() {
+        informationforBuyerAndSupplierComponent.isDisplayed();
+    }
+    public void glossaryComponents() {
         glossaryComponents.isDisplayed();
     }
+
 
     public void clickonBackToTop() {
         waitForSeconds(5);
@@ -1056,6 +1070,10 @@ public class E2EPage extends Actions {
     public void clickOnContacts() {
         menuContact.click();
     }
+    public void clickOnAbout() {
+        menuAbout.click();
+    }
+
 
     public void fillContactForm() {
         fldName.sendKeys("WebsiteAutomationUser");

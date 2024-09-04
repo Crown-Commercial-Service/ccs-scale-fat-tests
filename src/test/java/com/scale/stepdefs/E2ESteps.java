@@ -1,15 +1,14 @@
 package com.scale.stepdefs;
 
+import com.scale.businessPages.AboutCCSPage;
 import com.scale.businessPages.E2EPage;
 import com.scale.businessPages.HomePage;
 import com.scale.context.TestContext;
 import com.scale.framework.utility.BrowserFactory;
 import com.scale.framework.utility.ConfigurationReader;
 import com.scale.framework.utility.PageObjectManager;
-import com.scale.framework.utility.StringUtils;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
@@ -18,9 +17,6 @@ import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -38,7 +34,7 @@ public class E2ESteps {
     private HomePage homePageObj;
     private ConfigurationReader configReaderObj;
 
-
+    private AboutCCSPage aboutCCSPage;
     public E2ESteps(TestContext testContextObj) {
         configReaderObj = new ConfigurationReader();
         this.testContextObj = testContextObj;
@@ -378,6 +374,10 @@ public class E2ESteps {
     public void iNavigateToContactUsForm() {
         objectManager.getE2EPageObj().clickOnContacts();
     }
+    @And("I navigate to About")
+    public void iNavigateToAbout() {
+        objectManager.getE2EPageObj().clickOnAbout();
+    }
 
     @When("I fill the contact form and submit")
     public void iFillTheContactFormAndSubmit() {
@@ -449,6 +449,12 @@ public class E2ESteps {
         objectManager.getE2EPageObj().assertHelpfulLinksComponent();
     }
 
+
+    @Then("I should see About page component")
+    public void iShouldSeeAboutPageComponent() {
+        objectManager.getE2EPageObj().informationforBuyerAndSupplierComponent();
+        objectManager.getE2EPageObj().glossaryComponents();
+    }
 
 
 }

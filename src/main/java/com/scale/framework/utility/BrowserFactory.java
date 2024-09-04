@@ -1,5 +1,6 @@
 package com.scale.framework.utility;
 
+import io.percy.selenium.Percy;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,6 +20,7 @@ public class BrowserFactory {
 
     private Logger log = LogManager.getLogger(BrowserFactory.class);
     private WebDriver driver;
+    private static Percy percy;
     private ConfigurationReader configReader;
 
     public static final String URL = "";
@@ -73,6 +75,8 @@ public class BrowserFactory {
                 ChromeOptions.addArguments("window-size=1920,1080");
                 driver = new ChromeDriver(ChromeOptions);
                 driver.manage().window().maximize();
+                percy = new Percy(driver);
+                percy.snapshot("Java example");
                 break;
         }
 
