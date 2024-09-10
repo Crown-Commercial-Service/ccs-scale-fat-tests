@@ -26,6 +26,8 @@ testng.xml
 *.iws
 *.iml
 *.ipr
+*.log
+*.html
 
 ### NetBeans ###
 /nbproject/private/
@@ -36,3 +38,4 @@ testng.xml
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+logs/

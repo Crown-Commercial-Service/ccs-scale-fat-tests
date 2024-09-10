@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
@@ -16,6 +15,18 @@
                     <target>8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <id>getClasspathFilenames</id>
+                        <goals>
+                            <goal>properties</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
     <properties>
@@ -26,10 +37,13 @@
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <surefire.fork.count>6</surefire.fork.count>
         <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
         <maven.surefire.plugin.version>2.22.0</maven.surefire.plugin.version>
         <testFailureIgnore>true</testFailureIgnore>
+        <surefire.plugin.version>3.0.0-M5</surefire.plugin.version>
         <!-- <include>**/*Test.class</include> -->
         <include>**/*FailedRun.class</include>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <generateHarReport>false</generateHarReport>
         <sauce.onedemand.driver>1.2</sauce.onedemand.driver>
         <!--<build.number>1.1</build.number> -->
@@ -109,11 +123,6 @@
             <version>${cucumber.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.14.3</version>
-        </dependency>
-        <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>6.1.0</version>
@@ -121,7 +130,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.4</version>
+            <version>1.18.34</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -129,6 +138,12 @@
             <artifactId>log4j</artifactId>
             <version>2.17.2</version>
             <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.22.1</version>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -202,6 +217,12 @@
             <artifactId>extentreports-cucumber4-adapter</artifactId>
             <version>1.2.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.browserstack</groupId>
+            <artifactId>browserstack-java-sdk</artifactId>
+            <version>LATEST</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <profiles>
         <profile>
@@ -229,9 +250,18 @@
                             <threadCount>6</threadCount>
                             <useUnlimitedThreads>false</useUnlimitedThreads>
                             <perCoreThreadCount>false</perCoreThreadCount>
-                            <argLine>-Xmx8192m</argLine>
+                            <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"
+                                -Xmx8192m
+                            </argLine>
                             <testFailureIgnore>${testFailureIgnore}</testFailureIgnore>
                         </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.apache.maven.surefire</groupId>
+                                <artifactId>surefire-junit47</artifactId>
+                                <version>${maven.surefire.plugin.version}</version>
+                            </dependency>
+                        </dependencies>
                     </plugin>
                     <plugin>
                         <groupId>net.masterthought</groupId>
@@ -272,7 +302,8 @@
                                     <classpathScope>test</classpathScope>
                                     <mainClass>com.scale.framework.utility.ExecutionSummary</mainClass>
                                     <arguments>
-                                        <argument>${project.build.directory}/cucumber-html-reports/cucumber.json</argument>
+                                        <argument>${project.build.directory}/cucumber-html-reports/cucumber.json
+                                        </argument>
                                     </arguments>
                                 </configuration>
                             </execution>
@@ -288,7 +319,17 @@
                     <plugins>
                         <plugin>
                             <artifactId>maven-surefire-plugin</artifactId>
+                            <configuration>
+                                <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"</argLine>
+                            </configuration>
                             <version>${maven.surefire.plugin.version}</version>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>org.apache.maven.surefire</groupId>
+                                    <artifactId>surefire-junit47</artifactId>
+                                    <version>${maven.surefire.plugin.version}</version>
+                                </dependency>
+                            </dependencies>
                         </plugin>
                     </plugins>
                 </pluginManagement>
@@ -301,7 +342,7 @@
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-compiler-plugin</artifactId>
+                        <artifactId>maven-compiler-plugin</artifactId>
                         <version>${maven.compiler.version}</version>
                         <configuration>
                             <source>${java.version}</source>
@@ -317,12 +358,21 @@
                             <threadCount>6</threadCount>
                             <useUnlimitedThreads>false</useUnlimitedThreads>
                             <perCoreThreadCount>false</perCoreThreadCount>
-                            <argLine>-Xmx8192m</argLine>
+                            <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"
+                                -Xmx8192m
+                            </argLine>
                             <testFailureIgnore>${testFailureIgnore}</testFailureIgnore>
                             <includes>
                                 <include>${include}</include>
                             </includes>
                         </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.apache.maven.surefire</groupId>
+                                <artifactId>surefire-junit47</artifactId>
+                                <version>${maven.surefire.plugin.version}</version>
+                            </dependency>
+                        </dependencies>
                     </plugin>
                     <plugin>
                         <groupId>org.sonarsource.scanner.maven</groupId>
@@ -334,7 +384,17 @@
                     <plugins>
                         <plugin>
                             <artifactId>maven-surefire-plugin</artifactId>
+                            <configuration>
+                                <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"</argLine>
+                            </configuration>
                             <version>${maven.surefire.plugin.version}</version>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>org.apache.maven.surefire</groupId>
+                                    <artifactId>surefire-junit47</artifactId>
+                                    <version>${maven.surefire.plugin.version}</version>
+                                </dependency>
+                            </dependencies>
                         </plugin>
                     </plugins>
                 </pluginManagement>
@@ -348,9 +408,7 @@
             </activation>
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                <sonar.host.url>
-                    http://localhost:9000
-                </sonar.host.url>
+                <sonar.host.url>http://localhost:9000</sonar.host.url>
             </properties>
         </profile>
     </profiles>
