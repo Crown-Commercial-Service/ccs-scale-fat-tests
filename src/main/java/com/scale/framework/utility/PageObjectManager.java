@@ -18,6 +18,7 @@ public class PageObjectManager {
     private ContactCCSPage contactCCSPage;
     private AgreementPage agreementPage;
 
+    private AboutCCSPage aboutCCSPage;
 
     public PageObjectManager(WebDriver driver, Scenario scenario) {
         this.driver = driver;
@@ -40,6 +41,9 @@ public class PageObjectManager {
         return e2EPage == null ? e2EPage = new E2EPage(driver, scenario) : e2EPage;
     }
 
+    public AboutCCSPage getAboutCCSPageObj() {
+        return aboutCCSPage == null ? aboutCCSPage = new AboutCCSPage(driver, scenario) : aboutCCSPage;
+    }
     public GMResultPage getGmSearchResultPageObj() { return gmResultPage == null ? gmResultPage = new GMResultPage(driver, scenario) : gmResultPage; }
 
     public ContactCCSPage getContactCCSPageObj() { return contactCCSPage == null ? contactCCSPage = new ContactCCSPage(driver, scenario) : contactCCSPage; }

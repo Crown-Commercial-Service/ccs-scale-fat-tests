@@ -1,7 +1,5 @@
 Feature: Agreement Service API tests
 
-  Background:
-
   @APITests
   Scenario:Get Agreements call
     When I fire GET Agreements call and assert the status

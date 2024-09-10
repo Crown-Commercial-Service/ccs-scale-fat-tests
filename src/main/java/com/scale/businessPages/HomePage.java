@@ -145,5 +145,8 @@ public class HomePage extends Actions {
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
     }
+    public void naviagteToPage(String url) {
+        driver.navigate().to(url);
+    }
 
 }
