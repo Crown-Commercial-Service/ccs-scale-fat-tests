@@ -19,7 +19,6 @@ import static org.junit.Assert.assertTrue;
 
 public class AgreementPage extends Actions {
     private WebDriver driver;
-    private ConfigurationReader configReaderObj;
     private Logger log = LogManager.getLogger(AgreementPage.class);
 
     public AgreementPage(WebDriver driver, Scenario scenario){

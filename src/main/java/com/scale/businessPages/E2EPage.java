@@ -14,11 +14,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.sql.SQLOutput;
 import java.time.Duration;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
 
 public class E2EPage extends Actions {
     public static WebDriver driver;
@@ -267,6 +265,11 @@ public class E2EPage extends Actions {
     private WebElement campaignBoxComponents;
     @FindBy(xpath = "//*[@class='glossary-box-container']")
     private WebElement homepageGlossaryComponents;
+    @FindBy(xpath = "//*[@class='govuk-heading-m'][text() ='Information for buyers and suppliers']")
+    private WebElement informationForBuyerAndSupplierHeading;
+    @FindBy(xpath = "//*[@class='govuk-heading-m'][text() ='Glossary']")
+    private WebElement glossaryHeading;
+
     @FindBy(xpath = "//*[@class='apollo-call-to-action apollo-call-to-action--help']")
     private WebElement glossaryComponents;
     @FindBy(xpath = "//*[@class='apollo-call-to-action apollo-call-to-action--aggregation']")
@@ -289,6 +292,17 @@ public class E2EPage extends Actions {
     private WebElement menuContact;
     @FindBy(xpath = "(//*[contains(text(),'About')])[1]")
     private WebElement menuAbout;
+    @FindBy(xpath = "(//*[contains(text(),'Events')])[1]")
+    private WebElement menuEvents;
+    @FindBy(xpath = "(//*[contains(text(),'News')])[1]")
+    private WebElement menuNews;
+    @FindBy(xpath = "(//*[contains(text(),'Search suppliers')])[1]")
+    private WebElement menuSearchSuppliers;
+    @FindBy(xpath = "//*[contains(text(),'Products and Services')]")
+    private WebElement menuProductAndServices;
+
+    @FindBy(xpath = "//h1")
+    private WebElement headingText;
 
     @FindBy(xpath = "(//*[contains(text(),'Search agreements')])[1]")
     private WebElement menuSearchAgreement;
@@ -333,6 +347,18 @@ public class E2EPage extends Actions {
     private WebElement contactUsComponent;
     @FindBy(xpath = "//h2[contains(text(),'Download Pipeline report')]")
     private WebElement downloadPieplineReportComponent;
+    @FindBy(xpath = "//*[@class='aside__heading'][text() ='Contact']")
+    private WebElement contactHeading;
+    @FindBy(xpath = "//*[@class='aside__heading'][text() ='Download Pipeline report']")
+    private WebElement reportHeading;
+    @FindBy(xpath = "//*[@class='aside__heading'][text() ='Helpful Links']")
+    private WebElement helpfulLinkHeading;
+    @FindBy(xpath = "//*[@class='aside__heading'][text() ='Upcoming agreements']")
+    private WebElement upcomingAgreementHeading;
+    @FindBy(xpath = "//*[@class='aside__heading'][text() ='Do you need help requesting agreement pricing?']")
+    private WebElement agreementPricingHeading;
+    @FindBy(xpath = "//*[@class='govuk-heading-m'][text() ='Talk to us']")
+    private WebElement talkToUsHeading;
 
 
     public E2EPage(WebDriver driver, Scenario scenario) {
@@ -984,7 +1010,7 @@ public class E2EPage extends Actions {
     }
 
     public void verifyHomePageCards() {
-        int cardCount = driver.findElements(By.xpath("//*[@class='govuk-grid-row homepage-card-wrapper']/div")).size();
+        int cardCount = driver.findElements(By.xpath("//*[@class='homepage-card-wrapper']/div")).size();
         Assert.assertEquals(3, cardCount);
 
     }
@@ -1002,11 +1028,19 @@ public class E2EPage extends Actions {
     public void assertGlossaryComponents() {
         homepageGlossaryComponents.isDisplayed();
     }
+
     public void informationforBuyerAndSupplierComponent() {
         informationforBuyerAndSupplierComponent.isDisplayed();
+        waitForSeconds(2);
+        String expectedInformationforBuyerAndSupplierHeading = informationForBuyerAndSupplierHeading.getText();
+        Assert.assertEquals(expectedInformationforBuyerAndSupplierHeading, "Information for buyers and suppliers");
+
     }
+
     public void glossaryComponents() {
         glossaryComponents.isDisplayed();
+        String expectedGlossaryHeading = glossaryHeading.getText();
+        Assert.assertEquals(expectedGlossaryHeading, "Glossary");
     }
 
 
@@ -1069,16 +1103,52 @@ public class E2EPage extends Actions {
 
     public void clickOnContacts() {
         menuContact.click();
-    }
-    public void clickOnAbout() {
-        menuAbout.click();
+        waitForSeconds(3);
+        String expectedHeading = headingText.getText();
+        Assert.assertEquals(expectedHeading, "Contact CCS");
     }
 
+    public void clickOnAbout() {
+        menuAbout.click();
+        waitForSeconds(3);
+        String expectedHeading = headingText.getText();
+        Assert.assertEquals(expectedHeading, "About Crown Commercial Service (CCS)");
+    }
+
+    public void clickOnEvents() {
+        menuEvents.click();
+        waitForSeconds(3);
+        String expectedHeading = headingText.getText();
+        Assert.assertEquals(expectedHeading, "Events");
+    }
+
+    public void clickOnNews() {
+        menuNews.click();
+    }
+
+    public void clickOnSearchSuppliers() {
+        menuSearchSuppliers.click();
+        waitForSeconds(3);
+        String expectedHeading = headingText.getText();
+        Assert.assertEquals(expectedHeading, "Search suppliers");
+    }
+
+    public void clickOnProductAndServices() {
+        menuProductAndServices.click();
+        waitForSeconds(3);
+        String expectedHeading = headingText.getText();
+        Assert.assertEquals(expectedHeading, "Products and Servicess");
+    }
 
     public void fillContactForm() {
         fldName.sendKeys("WebsiteAutomationUser");
         fldEmail.sendKeys("WebsiteAutomation@hotmail.com");
-        fldJobTitle.sendKeys("AutomationAccount");
+        if (fldJobTitle.isDisplayed()) {
+            fldJobTitle.sendKeys("AutomationAccount");
+        } else {
+
+        }
+
         fldCompany.sendKeys("WebsiteAutomation");
         fldComment.sendKeys("This is a QA Automation comment");
         waitForSeconds(3);
@@ -1095,26 +1165,41 @@ public class E2EPage extends Actions {
 
     public void assertHelpfulLinksComponent() {
         HelpfulLinksComponent.isDisplayed();
+        waitForSeconds(2);
+        String expectedHelpfulLinkHeading = helpfulLinkHeading.getText();
+        Assert.assertEquals(expectedHelpfulLinkHeading, "Helpful Links");
 
     }
 
     public void agreementPricingComponent() {
         agreementPricingComponent.isDisplayed();
+        waitForSeconds(3);
+        String expectedAgreementPricingHeading = agreementPricingHeading.getText();
+        Assert.assertEquals(expectedAgreementPricingHeading, "Do you need help requesting agreement pricing?");
     }
 
 
     public void TalkToUsComponent() {
         TalkToUsComponent.isDisplayed();
+        waitForSeconds(3);
+        String expectedTalkToUsHeading = talkToUsHeading.getText();
+        Assert.assertEquals(expectedTalkToUsHeading, "Talk to us");
 
     }
 
     public void clickOnSearchAgreement() {
         menuSearchAgreement.click();
+        waitForSeconds(3);
+        String expectedHeading = headingText.getText();
+        Assert.assertEquals(expectedHeading, "Search agreements");
 
     }
 
     public void clickOnUpcomingAgreement() {
         menuUpcomingAgreement.click();
+        waitForSeconds(3);
+        String expectedHeading = headingText.getText();
+        Assert.assertEquals(expectedHeading, "Upcoming agreements");
 
     }
 
@@ -1136,15 +1221,25 @@ public class E2EPage extends Actions {
 
     public void contactUsComponent() {
         contactUsComponent.isDisplayed();
+        waitForSeconds(2);
+        String expectedContactHeading = contactHeading.getText();
+        Assert.assertEquals(expectedContactHeading, "Contact");
+
     }
 
     public void downloadPieplineReportComponent() {
         downloadPieplineReportComponent.isDisplayed();
+        waitForSeconds(2);
+        String expectedReportHeading = reportHeading.getText();
+        Assert.assertEquals(expectedReportHeading, "Download Pipeline report");
     }
 
 
     public void UpcomingAgreementComponent() {
         upcomingAgreementComponent.isDisplayed();
+        waitForSeconds(3);
+        String expectedUpcomingAgreementHeading = upcomingAgreementHeading.getText();
+        Assert.assertEquals(expectedUpcomingAgreementHeading, "Upcoming agreements");
 
     }
 

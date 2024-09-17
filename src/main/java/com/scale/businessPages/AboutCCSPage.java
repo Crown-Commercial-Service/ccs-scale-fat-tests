@@ -5,7 +5,6 @@ import com.scale.framework.utility.ConfigurationReader;
 import cucumber.api.Scenario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,7 +18,7 @@ public class AboutCCSPage extends Actions {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
     private Logger log = LogManager.getLogger(AboutCCSPage.class);
-    @FindBy(xpath = "//*[@class='wysiwyg-content']/h2")
+    @FindBy(xpath = "//*[@class='govuk-heading-m intro__heading']")
     private List<WebElement> aboutPageSubheading;
 
     public AboutCCSPage(WebDriver driver, Scenario scenario) {

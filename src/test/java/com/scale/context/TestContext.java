@@ -40,7 +40,7 @@ public class TestContext {
     private boolean isScenarioViaCSS = true;
 
 
-    @Before
+    @Before()
     public void setUp(Scenario scenario) throws MalformedURLException {
          log.info("=================" + scenario.getName() + " execution starts" + "===================");
          this.scenario = scenario;

@@ -20,7 +20,7 @@ public class BrowserFactory {
 
     private Logger log = LogManager.getLogger(BrowserFactory.class);
     private WebDriver driver;
-    private static Percy percy;
+    public static Percy percy;
     private ConfigurationReader configReader;
 
     public static final String URL = "";
@@ -76,7 +76,6 @@ public class BrowserFactory {
                 driver = new ChromeDriver(ChromeOptions);
                 driver.manage().window().maximize();
                 percy = new Percy(driver);
-                percy.snapshot("Java example");
                 break;
         }
 

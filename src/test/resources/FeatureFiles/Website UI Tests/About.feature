@@ -12,7 +12,5 @@ Feature: About Verification
   @AboutCCS
   Scenario: About CCS
     Then I assert the page heading as expected
-      | Why buy through CCS                 |
-      | How buying through CCS is organised |
-      | Advantages of buying through CCS    |
-      | Partnerships at CCS                 |
+      | Who we are                       |
+      | What we do                       |

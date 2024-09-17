@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.scale.framework.utility.BrowserFactory.percy;
 import static org.junit.Assert.assertEquals;
 
 public class E2ESteps {
@@ -299,6 +300,7 @@ public class E2ESteps {
     @Then("I should see the PPG related components")
     public void iShouldSeeThePPGRelatedComponents() {
         objectManager.getE2EPageObj().assertPPGComponents();
+
         log.info("PPG components are present");
     }
 
@@ -374,11 +376,27 @@ public class E2ESteps {
     public void iNavigateToContactUsForm() {
         objectManager.getE2EPageObj().clickOnContacts();
     }
+
     @And("I navigate to About")
     public void iNavigateToAbout() {
         objectManager.getE2EPageObj().clickOnAbout();
     }
-
+    @When("I navigate to Events")
+    public void iNavigateToEvents() {
+        objectManager.getE2EPageObj().clickOnEvents();
+    }
+    @When("I navigate to News")
+    public void iNavigateToNews() {
+        objectManager.getE2EPageObj().clickOnNews();
+    }
+    @When("I navigate to Search supplier")
+    public void iNavigateToSearchSupplier() {
+        objectManager.getE2EPageObj().clickOnSearchSuppliers();
+    }
+    @When("I navigate to Product And Services")
+    public void iNavigateToProductAndServices() {
+        objectManager.getE2EPageObj().clickOnProductAndServices();
+    }
     @When("I fill the contact form and submit")
     public void iFillTheContactFormAndSubmit() {
         objectManager.getE2EPageObj().fillContactForm();
@@ -455,6 +473,7 @@ public class E2ESteps {
         objectManager.getE2EPageObj().informationforBuyerAndSupplierComponent();
         objectManager.getE2EPageObj().glossaryComponents();
     }
+
 
 
 }

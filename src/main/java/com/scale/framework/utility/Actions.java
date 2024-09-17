@@ -285,7 +285,7 @@ public class Actions {
 
 	public List<String> getAllListTitles(List<WebElement> fieldName) {
 		try {
-			List<String> agreementResultList = new ArrayList<>();
+			List<String> agreementResultList = new ArrayList<>(50);
 			for (WebElement element : fieldName) {
 				agreementResultList.add(element.getText());
 			}
@@ -293,6 +293,7 @@ public class Actions {
 		} catch (Throwable e) {
 			return null;
 		}
+
 	}
 
 }

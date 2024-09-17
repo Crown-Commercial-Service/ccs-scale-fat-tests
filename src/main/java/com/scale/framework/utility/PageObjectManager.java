@@ -19,7 +19,10 @@ public class PageObjectManager {
     private AgreementPage agreementPage;
 
     private AboutCCSPage aboutCCSPage;
-
+    private EventsPage eventsPage;
+    private NewsPage newsPage;
+    private SearchSuppliersPage searchSuppliersPage;
+    private ProductAndServicesPage productAndServicesPage;
     public PageObjectManager(WebDriver driver, Scenario scenario) {
         this.driver = driver;
         this.scenario = scenario;
@@ -44,6 +47,20 @@ public class PageObjectManager {
     public AboutCCSPage getAboutCCSPageObj() {
         return aboutCCSPage == null ? aboutCCSPage = new AboutCCSPage(driver, scenario) : aboutCCSPage;
     }
+    public EventsPage getEventPageObj() {
+        return eventsPage == null ? eventsPage = new EventsPage(driver, scenario) : eventsPage;
+    }
+    public NewsPage getNewsPageObj() {
+        return newsPage == null ? newsPage = new NewsPage(driver, scenario) : newsPage;
+    }
+    public SearchSuppliersPage getsearchSuppliersPageObj() {
+        return searchSuppliersPage == null ? searchSuppliersPage = new SearchSuppliersPage(driver, scenario) : searchSuppliersPage;
+    }
+    public ProductAndServicesPage getproductAndServicesPageObj() {
+        return productAndServicesPage == null ? productAndServicesPage = new ProductAndServicesPage(driver, scenario) : productAndServicesPage;
+    }
+
+
     public GMResultPage getGmSearchResultPageObj() { return gmResultPage == null ? gmResultPage = new GMResultPage(driver, scenario) : gmResultPage; }
 
     public ContactCCSPage getContactCCSPageObj() { return contactCCSPage == null ? contactCCSPage = new ContactCCSPage(driver, scenario) : contactCCSPage; }
