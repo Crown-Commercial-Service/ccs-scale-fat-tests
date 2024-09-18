@@ -10,7 +10,7 @@ import cucumber.api.CucumberOptions;
         glue={"com.scale.stepdefs", "com.scale.context"},
         monochrome = true,
         plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-        tags = "@ProductAndService")
+        tags = "@APITests")
 
 public class TestRunner {
 }
