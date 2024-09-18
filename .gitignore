@@ -27,7 +27,7 @@ testng.xml
 *.iml
 *.ipr
 *.log
-
+*.html
 
 ### NetBeans ###
 /nbproject/private/
