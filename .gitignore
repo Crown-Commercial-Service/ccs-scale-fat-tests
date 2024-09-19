@@ -10,9 +10,7 @@ mvnw.cmd
 Reports
 log4j2
 testng.xml
-
-
-### STS ###
+*.html
 .apt_generated
 .classpath
 .factorypath
