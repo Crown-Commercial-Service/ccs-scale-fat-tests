@@ -1,21 +1,33 @@
 userName: saralraj_5JwgO6
 accessKey: SnqGYnimTwaPQqbysUsF
+
+projectName: CCS-Website-UI-Tests
+buildName: website-ui-regression
+buildIdentifier: ${BUILD_NUMBER}
+framework: cucumber-junit4
+
 platforms:
   - os: Windows
     osVersion: 11
     browserName: Chrome
     browserVersion: 103.0
-  - os: Windows
-    osVersion: 10
-    browserName: Firefox
-    browserVersion: 102.0
-  - os: OS X
-    osVersion: Big Sur
-    browserName: Safari
-    browserVersion: 14.1
-browserstackLocal: true
-buildName: ccs-scale-website-tests
-projectName: Website Automation
+#  - os: Windows
+#    osVersion: 10
+#    browserName: Firefox
+#    browserVersion: 102.0
+#  - os: OS X
+#    osVersion: Big Sur
+#    browserName: Safari
+#    browserVersion: 14.1
+
 debug: true
 networkLogs: true
 consoleLogs: info
+accessibility: true
+parallelsPerPlatform: 3
+browserstackLocal: true
+browserStackLocalOptions:
+  forceLocal: true
+selfHeal: true
+acceptInsecureCerts: true
+
