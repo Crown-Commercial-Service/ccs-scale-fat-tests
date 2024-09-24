@@ -1,4 +1,4 @@
-package com.scale.framework.utility;
+package com.scale.utility;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,16 +1,17 @@
 package com.scale.TestRunner;
 
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-import cucumber.api.CucumberOptions;
+
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/resources/FeatureFiles"},
-        glue={"com.scale.stepdefs", "com.scale.context"},
+        glue="com.scale",
         monochrome = true,
         plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-        tags = "@NewGM")
+        tags = "@APITests")
 
 public class TestRunner {
 }

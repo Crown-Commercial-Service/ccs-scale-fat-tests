@@ -1,6 +1,6 @@
-package com.scale.framework.utility.API;
+package com.scale.utility.API;
 
-import com.scale.framework.utility.ConfigurationReader;
+import com.scale.utility.ConfigurationReader;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;

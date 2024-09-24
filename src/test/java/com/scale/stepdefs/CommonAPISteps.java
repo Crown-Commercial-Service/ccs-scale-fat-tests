@@ -1,9 +1,8 @@
 package com.scale.stepdefs;
-import com.scale.framework.utility.API.APIBase;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import com.scale.utility.API.APIBase;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class CommonAPISteps {
     public APIBase apibase = new APIBase();

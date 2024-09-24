@@ -1,8 +1,9 @@
 package com.scale.businessPages;
 
-import com.scale.framework.utility.Actions;
-import com.scale.framework.utility.ConfigurationReader;
-import cucumber.api.Scenario;
+import com.scale.utility.Actions;
+import com.scale.utility.ConfigurationReader;
+
+import io.cucumber.java.Scenario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -38,7 +39,7 @@ public class GMLandingPage extends Actions {
 
     public GMLandingPage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
-        this.scenario = scenario;
+     
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(30));
     }
@@ -51,10 +52,10 @@ public class GMLandingPage extends Actions {
             String gmPageTest = gmPage.getText();
             Assert.assertTrue(gmPageTest.contains("Guided match"));
             log.info("User is on Guided match landing page");
-            scenario.write("User is on Guided match landing page");
+            //scenario.write("User is on Guided match landing page");
         } else {
             log.info("User is not on Guided match landing page");
-            scenario.write("User is not on Guided match landing page");
+            //scenario.write("User is not on Guided match landing page");
         }
     }
 

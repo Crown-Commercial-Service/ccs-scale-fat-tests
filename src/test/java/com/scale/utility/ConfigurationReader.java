@@ -1,4 +1,4 @@
-package com.scale.framework.utility;
+package com.scale.utility;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

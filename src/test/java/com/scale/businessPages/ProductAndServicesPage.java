@@ -1,8 +1,8 @@
 package com.scale.businessPages;
 
-import com.scale.framework.utility.Actions;
-import com.scale.framework.utility.ConfigurationReader;
-import cucumber.api.Scenario;
+import com.scale.utility.Actions;
+import com.scale.utility.ConfigurationReader;
+import io.cucumber.java.Scenario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -39,7 +39,7 @@ public class ProductAndServicesPage extends Actions {
 
     public ProductAndServicesPage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
-        this.scenario = scenario;
+     
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(30));
     }
@@ -48,9 +48,11 @@ public class ProductAndServicesPage extends Actions {
         int cardCount = driver.findElements(By.xpath("//*[@class='card-list govuk-!-margin-top-6 card-pillars card-list--four-on-large']/li")).size();
         Assert.assertEquals(3, cardCount);
     }
+
     public void verifyNewsAndGuidanceComponent() {
-      componentNewsAndGuidance.isDisplayed();
+        componentNewsAndGuidance.isDisplayed();
     }
+
     public void verifyCardsInNewsAndGuidance() {
         int cardCount = driver.findElements(By.xpath("//*[@class='featured-news news-listing']/li")).size();
         Assert.assertEquals(3, cardCount);
@@ -59,6 +61,7 @@ public class ProductAndServicesPage extends Actions {
     public void clickOnBrowseAllProductsAndServicesNewsArticles() {
         linkBrowseAllProductsAndServicesNewsArticles.click();
     }
+
     public void clickOnviewAll() {
         linkviewAll.click();
     }
@@ -66,6 +69,7 @@ public class ProductAndServicesPage extends Actions {
     public void verifyUpcomingEventsAndWebinarsComponent() {
         componentEvent.isDisplayed();
     }
+
     public void verifyDigitalBrochureComponent() {
         componentDigitalBrochure.isDisplayed();
     }

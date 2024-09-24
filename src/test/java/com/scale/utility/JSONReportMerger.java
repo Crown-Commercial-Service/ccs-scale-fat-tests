@@ -1,4 +1,4 @@
-package com.scale.framework.utility;
+package com.scale.utility;
 
 import java.io.File;
 import java.io.Writer;
@@ -12,7 +12,6 @@ import org.apache.commons.io.FileUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 public class JSONReportMerger {
 

@@ -1,10 +1,11 @@
-package com.scale.framework.utility;
+package com.scale.utility;
 
 
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-import cucumber.api.Scenario;
+
+import io.cucumber.java.Scenario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
@@ -114,7 +115,7 @@ public class Actions {
 	        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
 	        element.click();
 	        log.info("Clicked on " + elementName + " element");
-	        scenario.write("User Clicked on " + elementName + " option");
+	        //scenario.write("User Clicked on " + elementName + " option");
 
 	    }
 
@@ -128,7 +129,7 @@ public class Actions {
 	     //   waitForSeconds(2);
 			//element.click();
 	        log.info("Clicked on " + buttonName + " button");
-	        scenario.write(" User Clicked on " + buttonName + " button");
+	        //scenario.write(" User Clicked on " + buttonName + " button");
 	    }
 
 	public void clickRadioButton(String radioButtonName) {
@@ -137,7 +138,7 @@ public class Actions {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
 		element.click();
 		log.info("Buyer clicked on " + radioButtonName + " radio button");
-		scenario.write(" Buyer clicked on " + radioButtonName + " radio button");
+		//scenario.write(" Buyer clicked on " + radioButtonName + " radio button");
 	}
 
 	public void clickCheckbox(String checkboxName) {
@@ -146,7 +147,7 @@ public class Actions {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
 		element.click();
 		log.info("Buyer clicked on " + checkboxName + " checkbox");
-		scenario.write(" Buyer clicked on " + checkboxName + " checkbox");
+		//scenario.write(" Buyer clicked on " + checkboxName + " checkbox");
 	}
 
 

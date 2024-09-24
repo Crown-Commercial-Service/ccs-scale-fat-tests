@@ -1,12 +1,9 @@
 package com.scale.businessPages;
 
-import com.scale.framework.utility.Actions;
-import cucumber.api.Scenario;
+import com.scale.utility.Actions;
+import io.cucumber.java.Scenario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,7 +26,7 @@ public class NewsPage extends Actions {
 
     public NewsPage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
-        this.scenario = scenario;
+     
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(30));
     }

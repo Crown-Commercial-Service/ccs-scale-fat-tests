@@ -2,10 +2,10 @@ package com.scale.stepdefs;
 
 import com.scale.businessPages.AgreementPage;
 import com.scale.context.TestContext;
-import com.scale.framework.utility.PageObjectManager;
-import cucumber.api.Scenario;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.cucumber.datatable.DataTable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,7 +17,7 @@ import java.util.List;
 public class AgreementStep {
     private Logger log = LogManager.getLogger(com.scale.stepdefs.GMPageSteps.class);
     private WebDriver driver;
-    private PageObjectManager objectManager;
+
     private TestContext testContextObj;
     private Scenario scenario;
     private AgreementPage agreementPage;
@@ -25,8 +25,7 @@ public class AgreementStep {
     public AgreementStep(TestContext testContextObj){
         this.testContextObj = testContextObj;
         driver = testContextObj.getDriver();
-        objectManager = testContextObj.getObjectManager();
-        agreementPage =objectManager.getAgreementPageObj();
+
     }
 
     @Then("I should see the details section")
@@ -51,17 +50,17 @@ public class AgreementStep {
 
     @Then("The accordion should be expanded")
     public void the_accordion_should_be_expanded() {
-        objectManager.getAgreementPageObj().expandAccordion(objectManager.getAgreementPageObj().getAccordion());
+        agreementPage.expandAccordion(agreementPage.getAccordion());
     }
 
     @Then("All the sections are expanded")
     public void all_the_sections_are_expanded() {
-        objectManager.getAgreementPageObj().expandAccordion(objectManager.getAgreementPageObj().getAllAccordionSections());
+        agreementPage.expandAccordion(agreementPage.getAllAccordionSections());
     }
 
     @When("User clicks on the open all link")
     public void user_clicks_on_the_open_all_link() {
-        objectManager.getAgreementPageObj().clickOpenAll();
+        agreementPage.clickOpenAll();
     }
 
 

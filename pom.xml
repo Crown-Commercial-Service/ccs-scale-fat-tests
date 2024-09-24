@@ -33,10 +33,10 @@
         <rest.assured.version>3.2.0</rest.assured.version>
         <cucumber.version>7.18.1</cucumber.version>
         <selenium.webdriver.version>4.11.0</selenium.webdriver.version>
-        <junit.version>5.10.0</junit.version>
+        <junit.version>5.11.0</junit.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <surefire.fork.count>6</surefire.fork.count>
-        <java.version>1.8</java.version>
+        <java.version>15</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.surefire.plugin.version>2.22.0</maven.surefire.plugin.version>
         <testFailureIgnore>true</testFailureIgnore>
@@ -86,7 +86,7 @@
             <artifactId>selenium-support</artifactId>
             <version>${selenium.webdriver.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -94,33 +94,32 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>net.masterthought</groupId>
-            <artifactId>cucumber-reporting</artifactId>
-            <version>4.6.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${cucumber.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>gherkin</artifactId>
-            <version>5.1.0</version>
+            <version>6.0.14</version>
+        </dependency>
+        <dependency>
+            <groupId>com.epam.reportportal</groupId>
+            <artifactId>agent-java-cucumber</artifactId>
+            <version>5.2.3</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
             <version>${cucumber.version}</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
             <groupId>io.appium</groupId>
@@ -180,11 +179,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.10.0.pr1</version>
-        </dependency>
-        <dependency>
             <groupId>io.percy</groupId>
             <artifactId>percy-java-selenium</artifactId>
             <version>1.3.0</version>
@@ -205,23 +199,36 @@
             <artifactId>rest-assured</artifactId>
             <version>4.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.14.1</version>
+            <scope>compile</scope>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>5.0.9</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter -->
+        <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
         <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports-cucumber4-adapter</artifactId>
-            <version>1.2.1</version>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.10.1</version>
         </dependency>
         <dependency>
             <groupId>com.browserstack</groupId>
             <artifactId>browserstack-java-sdk</artifactId>
             <version>LATEST</version>
             <scope>compile</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.11.0</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <profiles>
@@ -266,7 +273,7 @@
                     <plugin>
                         <groupId>net.masterthought</groupId>
                         <artifactId>maven-cucumber-reporting</artifactId>
-                        <version>4.6.0</version>
+                        <version>5.8.2</version>
                         <executions>
                             <execution>
                                 <id>execution</id>
@@ -300,7 +307,7 @@
                                 </goals>
                                 <configuration>
                                     <classpathScope>test</classpathScope>
-                                    <mainClass>com.scale.framework.utility.ExecutionSummary</mainClass>
+                                    <mainClass>com.scale.utility.ExecutionSummary</mainClass>
                                     <arguments>
                                         <argument>${project.build.directory}/cucumber-html-reports/cucumber.json
                                         </argument>

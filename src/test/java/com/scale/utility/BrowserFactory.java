@@ -1,4 +1,4 @@
-package com.scale.framework.utility;
+package com.scale.utility;
 
 import io.percy.selenium.Percy;
 import org.apache.commons.io.FileUtils;
@@ -9,12 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URL;
 
 public class BrowserFactory {
 

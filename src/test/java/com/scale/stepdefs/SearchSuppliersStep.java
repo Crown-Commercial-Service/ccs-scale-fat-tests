@@ -2,11 +2,11 @@ package com.scale.stepdefs;
 
 import com.scale.businessPages.SearchSuppliersPage;
 import com.scale.context.TestContext;
-import com.scale.framework.utility.PageObjectManager;
-import cucumber.api.Scenario;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.cucumber.datatable.DataTable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,7 +18,6 @@ import java.util.List;
 public class SearchSuppliersStep {
     private Logger log = LogManager.getLogger(GMPageSteps.class);
     private WebDriver driver;
-    private PageObjectManager objectManager;
     private TestContext testContextObj;
     private Scenario scenario;
     private SearchSuppliersPage searchSuppliersPage;
@@ -26,14 +25,13 @@ public class SearchSuppliersStep {
     public SearchSuppliersStep(TestContext testContextObj) {
         this.testContextObj = testContextObj;
         driver = testContextObj.getDriver();
-        objectManager = testContextObj.getObjectManager();
-        searchSuppliersPage = objectManager.getsearchSuppliersPageObj();
+
     }
 
 
     @When("I enter \"([^\"]*)\" in the search supplier field")
     public void iEnterInTheSearchSupplierField(String supplierName) {
-        objectManager.getsearchSuppliersPageObj().searchSupplierByName(supplierName);
+        searchSuppliersPage.searchSupplierByName(supplierName);
 
     }
 
@@ -53,7 +51,7 @@ public class SearchSuppliersStep {
 
     @Then("I should see warning message displayed on the top")
     public void iShouldSeeWarningMessageDisplayedOnTheTop() {
-        objectManager.getsearchSuppliersPageObj().assertWarningMessage();
+        searchSuppliersPage.assertWarningMessage();
     }
 
     @Then("I assert the supplier FilterCategory as expected")
@@ -65,7 +63,7 @@ public class SearchSuppliersStep {
 
     @And("I select \"([^\"]*)\" from filter option")
     public void iSelectFromFilteroption(String filterOption) {
-        objectManager.getsearchSuppliersPageObj().selectFilterOption(filterOption);
+        searchSuppliersPage.selectFilterOption(filterOption);
     }
 
 

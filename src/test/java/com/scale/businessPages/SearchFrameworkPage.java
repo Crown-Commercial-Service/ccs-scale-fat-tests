@@ -1,8 +1,9 @@
 package com.scale.businessPages;
 
-import com.scale.framework.utility.Actions;
-import com.scale.framework.utility.ConfigurationReader;
-import cucumber.api.Scenario;
+import com.scale.utility.Actions;
+import com.scale.utility.ConfigurationReader;
+
+import io.cucumber.java.Scenario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -49,7 +50,7 @@ public class SearchFrameworkPage extends Actions {
 
     public SearchFrameworkPage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
-        this.scenario = scenario;
+     
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(50));
     }
@@ -62,10 +63,10 @@ public class SearchFrameworkPage extends Actions {
             String searchFrameworkPageTitle = searchFrameworksPage.getText();
             Assert.assertTrue(searchFrameworkPageTitle.contains("Search frameworks"));
             log.info("User is on Search Frameworks page");
-            scenario.write("User is on Search Frameworks page");
+            //scenario.write("User is on Search Frameworks page");
         } else {
             log.info("User is not on Search Frameworks  page");
-            scenario.write("User is not on Search Frameworks  page");
+            //scenario.write("User is not on Search Frameworks  page");
         }
     }
 

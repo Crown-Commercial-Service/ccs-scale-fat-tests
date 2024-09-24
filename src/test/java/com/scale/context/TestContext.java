@@ -4,11 +4,15 @@ package com.scale.context;
 import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
-import com.scale.framework.utility.*;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
+import com.scale.utility.*;
+import com.scale.utility.BrowserFactory;
+import com.scale.utility.ConfigurationReader;
+import com.scale.utility.JSONUtility;
+import com.scale.utility.StringUtils;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.Given;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
@@ -32,7 +36,6 @@ public class TestContext {
     private Logger log = LogManager.getLogger(TestContext.class);
     private WebDriver driver;
     private BrowserFactory browserFactory;
-    private PageObjectManager objectManager;
     private JSONUtility jsonUtilityObj;
     private ConfigurationReader configReader;
     private String randomlyPickedKeyWord;
@@ -42,7 +45,7 @@ public class TestContext {
     @Before("@RegressionTest or @NewGM")
     public void setUp(Scenario scenario) throws MalformedURLException {
         log.info("=================" + scenario.getName() + " execution starts" + "===================");
-        this.scenario = scenario;
+     
         // jsonUtilityObj = new JSONUtility();
         scenarioContext = new ScenarioContext();
         configReader = new ConfigurationReader();
@@ -61,7 +64,6 @@ public class TestContext {
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
         scenarioContext.setKeyValue("ScenarioID", ScenarioID);
-        objectManager = new PageObjectManager(driver, scenario);
         String baseURL = configReader.get("baseURL");
         log.info("base.url:" + baseURL);
         if (baseURL.contains("ppd.scale")) {
@@ -108,9 +110,6 @@ public class TestContext {
     }
 
 
-    public PageObjectManager getObjectManager() {
-        return objectManager;
-    }
 
     public WebDriver getDriver() {
         return driver;
@@ -120,7 +119,7 @@ public class TestContext {
         if (scenario.isFailed()) {
             //Code to take full page screenshot
             ByteArrayOutputStream imageStream = new ByteArrayOutputStream();
-            scenario.write("URL - " + driver.getCurrentUrl());
+            //scenario.write("URL - " + driver.getCurrentUrl());
             PageSnapshot snapshot = Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS, 5);
             ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0)");
 
@@ -131,7 +130,7 @@ public class TestContext {
                 e.printStackTrace();
             }
             byte[] source = imageStream.toByteArray();
-            scenario.embed(source, "image/png");
+            //scenario.embed(source, "image/png","");
         }
     }
 
@@ -162,7 +161,6 @@ public class TestContext {
     @Given("I am on a CCS website HomePage")
     public void iAmOnACCSWebsiteHomePage() {
         {
-            objectManager = new PageObjectManager(driver, scenario);
             String baseURL = configReader.get("baseURL");
             log.info("base.url:" + baseURL);
             browserFactory.launchURL(baseURL);

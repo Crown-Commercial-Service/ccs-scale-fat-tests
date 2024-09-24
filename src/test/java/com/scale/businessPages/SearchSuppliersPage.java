@@ -1,7 +1,8 @@
 package com.scale.businessPages;
 
-import com.scale.framework.utility.Actions;
-import cucumber.api.Scenario;
+import com.scale.utility.Actions;
+
+import io.cucumber.java.Scenario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -38,7 +39,7 @@ public class SearchSuppliersPage extends Actions {
 
     public SearchSuppliersPage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
-        this.scenario = scenario;
+     
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(30));
     }
