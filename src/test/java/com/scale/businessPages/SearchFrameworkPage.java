@@ -63,10 +63,10 @@ public class SearchFrameworkPage extends Actions {
             String searchFrameworkPageTitle = searchFrameworksPage.getText();
             Assert.assertTrue(searchFrameworkPageTitle.contains("Search frameworks"));
             log.info("User is on Search Frameworks page");
-            //scenario.write("User is on Search Frameworks page");
+            scenario.log("User is on Search Frameworks page");
         } else {
             log.info("User is not on Search Frameworks  page");
-            //scenario.write("User is not on Search Frameworks  page");
+            scenario.log("User is not on Search Frameworks  page");
         }
     }
 

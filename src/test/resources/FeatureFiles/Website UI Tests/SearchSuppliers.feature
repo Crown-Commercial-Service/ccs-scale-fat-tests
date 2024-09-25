@@ -5,7 +5,7 @@ Feature: SearchSupplier Verification
     Given I am on a CCS website HomePage
     When I navigate to Search supplier
 
-  @SearchSuppliers
+  @SearchSuppliers1
   Scenario: Verify Warning message Display
     Then I should see warning message displayed on the top
 
@@ -31,7 +31,7 @@ Feature: SearchSupplier Verification
   @SearchSuppliers
   Scenario: Verify Search feature
     When I enter "KPMG" in the search supplier field
-    And User clicks on the "KPMG LLP" link
+    And User clicks on the "KPMG LLP" supplier link
     And I should see Agreements and lots supplied to section
       | Audit & Assurance Services (A&AS)                   |
       | Cloud Compute 2                                     |

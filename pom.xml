@@ -26,6 +26,7 @@
                         </goals>
                     </execution>
                 </executions>
+
             </plugin>
         </plugins>
     </build>
@@ -104,12 +105,12 @@
             <artifactId>cucumber-core</artifactId>
             <version>${cucumber.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>gherkin</artifactId>
-            <version>6.0.14</version>
-        </dependency>
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.cucumber/gherkin &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>io.cucumber</groupId>-->
+        <!--            <artifactId>gherkin</artifactId>-->
+        <!--            <version>6.0.14</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>com.epam.reportportal</groupId>
             <artifactId>agent-java-cucumber</artifactId>
@@ -230,7 +231,19 @@
             <version>5.11.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.hectorclient</groupId>
+            <artifactId>hector-core</artifactId>
+            <version>1.1-4</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
+
     <profiles>
         <profile>
             <id>TestRunner</id>
@@ -270,57 +283,57 @@
                             </dependency>
                         </dependencies>
                     </plugin>
-                    <plugin>
-                        <groupId>net.masterthought</groupId>
-                        <artifactId>maven-cucumber-reporting</artifactId>
-                        <version>5.8.2</version>
-                        <executions>
-                            <execution>
-                                <id>execution</id>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>generate</goal>
-                                </goals>
-                                <configuration>
-                                    <projectName>scale</projectName>
-                                    <skip>false</skip>
-                                    <outputDirectory>Reports/${timestamp}</outputDirectory>
-                                    <inputDirectory>${project.build.directory}/cucumber-html-reports</inputDirectory>
-                                    <jsonFiles>
-                                        <params>**/*.json</params>
-                                    </jsonFiles>
-                                    <checkBuildResult>false</checkBuildResult>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.6.0</version>
-                        <executions>
-                            <execution>
-                                <id>test-execution-summary</id>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <classpathScope>test</classpathScope>
-                                    <mainClass>com.scale.utility.ExecutionSummary</mainClass>
-                                    <arguments>
-                                        <argument>${project.build.directory}/cucumber-html-reports/cucumber.json
-                                        </argument>
-                                    </arguments>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.sonarsource.scanner.maven</groupId>
-                        <artifactId>sonar-maven-plugin</artifactId>
-                        <version>${sonar.maven.version}</version>
-                    </plugin>
+                    <!--                    <plugin>-->
+                    <!--                        <groupId>net.masterthought</groupId>-->
+                    <!--                        <artifactId>maven-cucumber-reporting</artifactId>-->
+                    <!--                        <version>5.8.2</version>-->
+                    <!--                        <executions>-->
+                    <!--                            <execution>-->
+                    <!--                                <id>execution</id>-->
+                    <!--                                <phase>test</phase>-->
+                    <!--                                <goals>-->
+                    <!--                                    <goal>generate</goal>-->
+                    <!--                                </goals>-->
+                    <!--                                <configuration>-->
+                    <!--                                    <projectName>scale</projectName>-->
+                    <!--                                    <skip>false</skip>-->
+                    <!--                                    <outputDirectory>Reports/${timestamp}</outputDirectory>-->
+                    <!--                                    <inputDirectory>${project.build.directory}/cucumber-html-reports</inputDirectory>-->
+                    <!--                                    <jsonFiles>-->
+                    <!--                                        <params>**/*.json</params>-->
+                    <!--                                    </jsonFiles>-->
+                    <!--                                    <checkBuildResult>false</checkBuildResult>-->
+                    <!--                                </configuration>-->
+                    <!--                            </execution>-->
+                    <!--                        </executions>-->
+                    <!--                    </plugin>-->
+                    <!--                    <plugin>-->
+                    <!--                        <groupId>org.codehaus.mojo</groupId>-->
+                    <!--                        <artifactId>exec-maven-plugin</artifactId>-->
+                    <!--                        <version>1.6.0</version>-->
+                    <!--                        <executions>-->
+                    <!--                            <execution>-->
+                    <!--                                <id>test-execution-summary</id>-->
+                    <!--                                <phase>test</phase>-->
+                    <!--                                <goals>-->
+                    <!--                                    <goal>java</goal>-->
+                    <!--                                </goals>-->
+                    <!--                                <configuration>-->
+                    <!--                                    <classpathScope>test</classpathScope>-->
+                    <!--                                    <mainClass>com.scale.utility.ExecutionSummary</mainClass>-->
+                    <!--                                    <arguments>-->
+                    <!--                                        <argument>${project.build.directory}/cucumber-html-reports/cucumber.json-->
+                    <!--                                        </argument>-->
+                    <!--                                    </arguments>-->
+                    <!--                                </configuration>-->
+                    <!--                            </execution>-->
+                    <!--                        </executions>-->
+                    <!--                    </plugin>-->
+                    <!--                    <plugin>-->
+                    <!--                        <groupId>org.sonarsource.scanner.maven</groupId>-->
+                    <!--                        <artifactId>sonar-maven-plugin</artifactId>-->
+                    <!--                        <version>${sonar.maven.version}</version>-->
+                    <!--                    </plugin>-->
                 </plugins>
                 <pluginManagement>
                     <plugins>
@@ -381,11 +394,11 @@
                             </dependency>
                         </dependencies>
                     </plugin>
-                    <plugin>
-                        <groupId>org.sonarsource.scanner.maven</groupId>
-                        <artifactId>sonar-maven-plugin</artifactId>
-                        <version>${sonar.maven.version}</version>
-                    </plugin>
+                    <!--                    <plugin>-->
+                    <!--                        <groupId>org.sonarsource.scanner.maven</groupId>-->
+                    <!--                        <artifactId>sonar-maven-plugin</artifactId>-->
+                    <!--                        <version>${sonar.maven.version}</version>-->
+                    <!--                    </plugin>-->
                 </plugins>
                 <pluginManagement>
                     <plugins>
@@ -408,15 +421,15 @@
             </build>
         </profile>
 
-        <profile>
-            <id>sonar</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                <sonar.host.url>http://localhost:9000</sonar.host.url>
-            </properties>
-        </profile>
+        <!--        <profile>-->
+        <!--            <id>sonar</id>-->
+        <!--            <activation>-->
+        <!--                <activeByDefault>true</activeByDefault>-->
+        <!--            </activation>-->
+        <!--            <properties>-->
+        <!--                &lt;!&ndash; Optional URL to server. Default value is http://localhost:9000 &ndash;&gt;-->
+        <!--                <sonar.host.url>http://localhost:9000</sonar.host.url>-->
+        <!--            </properties>-->
+        <!--        </profile>-->
     </profiles>
 </project>

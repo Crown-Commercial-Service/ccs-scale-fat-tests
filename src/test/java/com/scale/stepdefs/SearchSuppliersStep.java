@@ -2,12 +2,10 @@ package com.scale.stepdefs;
 
 import com.scale.businessPages.SearchSuppliersPage;
 import com.scale.context.TestContext;
-
-import io.cucumber.java.Scenario;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import com.scale.utility.PageObjectManager;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -18,6 +16,7 @@ import java.util.List;
 public class SearchSuppliersStep {
     private Logger log = LogManager.getLogger(GMPageSteps.class);
     private WebDriver driver;
+    private PageObjectManager objectManager;
     private TestContext testContextObj;
     private Scenario scenario;
     private SearchSuppliersPage searchSuppliersPage;
@@ -25,13 +24,14 @@ public class SearchSuppliersStep {
     public SearchSuppliersStep(TestContext testContextObj) {
         this.testContextObj = testContextObj;
         driver = testContextObj.getDriver();
-
+        objectManager = testContextObj.getObjectManager();
+        searchSuppliersPage = objectManager.getsearchSuppliersPageObj();
     }
 
 
-    @When("I enter \"([^\"]*)\" in the search supplier field")
+    @When("I enter {string} in the search supplier field")
     public void iEnterInTheSearchSupplierField(String supplierName) {
-        searchSuppliersPage.searchSupplierByName(supplierName);
+        objectManager.getsearchSuppliersPageObj().searchSupplierByName(supplierName);
 
     }
 
@@ -51,7 +51,7 @@ public class SearchSuppliersStep {
 
     @Then("I should see warning message displayed on the top")
     public void iShouldSeeWarningMessageDisplayedOnTheTop() {
-        searchSuppliersPage.assertWarningMessage();
+        objectManager.getsearchSuppliersPageObj().assertWarningMessage();
     }
 
     @Then("I assert the supplier FilterCategory as expected")
@@ -61,9 +61,9 @@ public class SearchSuppliersStep {
         Assert.assertEquals(filterCategory.asList(), listAllTitles);
     }
 
-    @And("I select \"([^\"]*)\" from filter option")
-    public void iSelectFromFilteroption(String filterOption) {
-        searchSuppliersPage.selectFilterOption(filterOption);
+    @And("User clicks on the {string} supplier link")
+    public void userClicksOnTheSupplierLink(String filterOption) {
+        objectManager.getsearchSuppliersPageObj().selectFilterOption(filterOption);
     }
 
 

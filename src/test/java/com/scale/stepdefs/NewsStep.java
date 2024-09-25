@@ -2,10 +2,10 @@ package com.scale.stepdefs;
 
 import com.scale.businessPages.NewsPage;
 import com.scale.context.TestContext;
-
-import io.cucumber.java.Scenario;
-import io.cucumber.java.en.Then;
+import com.scale.utility.PageObjectManager;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -16,6 +16,7 @@ import java.util.List;
 public class NewsStep {
     private Logger log = LogManager.getLogger(GMPageSteps.class);
     private WebDriver driver;
+    private PageObjectManager objectManager;
     private TestContext testContextObj;
     private Scenario scenario;
     private NewsPage newsPage;
@@ -23,6 +24,8 @@ public class NewsStep {
     public NewsStep(TestContext testContextObj) {
         this.testContextObj = testContextObj;
         driver = testContextObj.getDriver();
+        objectManager = testContextObj.getObjectManager();
+        newsPage = objectManager.getNewsPageObj();
     }
 
     @Then("I assert the Type of article filter options as expected")

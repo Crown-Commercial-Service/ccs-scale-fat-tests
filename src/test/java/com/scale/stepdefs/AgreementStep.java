@@ -2,7 +2,7 @@ package com.scale.stepdefs;
 
 import com.scale.businessPages.AgreementPage;
 import com.scale.context.TestContext;
-
+import com.scale.utility.PageObjectManager;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,7 +17,7 @@ import java.util.List;
 public class AgreementStep {
     private Logger log = LogManager.getLogger(com.scale.stepdefs.GMPageSteps.class);
     private WebDriver driver;
-
+    private PageObjectManager objectManager;
     private TestContext testContextObj;
     private Scenario scenario;
     private AgreementPage agreementPage;
@@ -25,6 +25,8 @@ public class AgreementStep {
     public AgreementStep(TestContext testContextObj){
         this.testContextObj = testContextObj;
         driver = testContextObj.getDriver();
+        objectManager = testContextObj.getObjectManager();
+        agreementPage =objectManager.getAgreementPageObj();
 
     }
 
@@ -50,17 +52,17 @@ public class AgreementStep {
 
     @Then("The accordion should be expanded")
     public void the_accordion_should_be_expanded() {
-        agreementPage.expandAccordion(agreementPage.getAccordion());
+        objectManager.getAgreementPageObj().expandAccordion(objectManager.getAgreementPageObj().getAccordion());
     }
 
     @Then("All the sections are expanded")
     public void all_the_sections_are_expanded() {
-        agreementPage.expandAccordion(agreementPage.getAllAccordionSections());
+        objectManager.getAgreementPageObj().expandAccordion(objectManager.getAgreementPageObj().getAllAccordionSections());
     }
 
     @When("User clicks on the open all link")
     public void user_clicks_on_the_open_all_link() {
-        agreementPage.clickOpenAll();
+        objectManager.getAgreementPageObj().clickOpenAll();;
     }
 
 

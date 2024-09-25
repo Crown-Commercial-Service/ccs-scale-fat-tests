@@ -1,8 +1,6 @@
 package com.scale.businessPages;
 
 import com.scale.utility.*;
-import com.scale.utility.Actions;
-import com.scale.utility.ConfigurationReader;
 import io.cucumber.java.Scenario;
 import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
@@ -12,7 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.apache.logging.log4j.Logger;
-
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -54,7 +51,7 @@ public class HomePage extends Actions {
 
     public HomePage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
-     
+        this.scenario = scenario;
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(50));
 
@@ -67,10 +64,10 @@ public class HomePage extends Actions {
             String homeLogoText = homeLogo.getAttribute("alt");
             Assert.assertTrue(homeLogoText.contains("CCS homepage"));
             log.info("User is on CCS home page");
-            //scenario.write("User is on CCS home page");
+            scenario.log("User is on CCS home page");
         } else {
             log.info("User is not on CCS home page");
-            //scenario.write("User is not on CCS home page");
+            scenario.log("User is not on CCS home page");
         }
     }
 
@@ -85,7 +82,7 @@ public class HomePage extends Actions {
     public void ClickStartNow(String buttonName){
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].click();", startNowButton);
-      //  startNowButton.click();
+        //  startNowButton.click();
     }
 
     public void clickButton(String buttonName) {
@@ -95,7 +92,7 @@ public class HomePage extends Actions {
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
         log.info("Clicked on " + buttonName + " button");
-        //scenario.write(" User Clicked on " + buttonName + " button");
+        scenario.log(" User Clicked on " + buttonName + " button");
     }
 
 
@@ -107,9 +104,9 @@ public class HomePage extends Actions {
         WebElement element = driver.findElement(By.xpath(XPATH));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
-       // element.click();
+        // element.click();
         log.info("Buyer clicked on " + radioButtonName + " radio button");
-        //scenario.write(" Buyer clicked on " + radioButtonName + " radio button");
+        scenario.log(" Buyer clicked on " + radioButtonName + " radio button");
     }
 
     public void clickCheckBoxButton(String checkboxButtonName) {
@@ -120,7 +117,7 @@ public class HomePage extends Actions {
         executor.executeScript("arguments[0].click();", element);
         // element.click();
         log.info("Buyer clicked on " + checkboxButtonName + " checkbox  button");
-        //scenario.write(" Buyer clicked on " + checkboxButtonName + " checkbox button");
+        scenario.log(" Buyer clicked on " + checkboxButtonName + " checkbox button");
     }
 
     public String getHeaderTwo() {
@@ -139,7 +136,7 @@ public class HomePage extends Actions {
         executor.executeScript("arguments[0].click();", element);
         // element.click();
         log.info("Buyer clicked on " + buttonName + " checkbox  button");
-        //scenario.write(" Buyer clicked on " + buttonName + " checkbox button");
+        scenario.log(" Buyer clicked on " + buttonName + " checkbox button");
     }
 
     public void clickAgreementStatusFilter(String filterStatusName){

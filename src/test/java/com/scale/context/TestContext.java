@@ -5,10 +5,6 @@ import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.assertthat.selenium_shutterbug.utils.web.ScrollStrategy;
 import com.scale.utility.*;
-import com.scale.utility.BrowserFactory;
-import com.scale.utility.ConfigurationReader;
-import com.scale.utility.JSONUtility;
-import com.scale.utility.StringUtils;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -17,6 +13,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+
 import javax.imageio.ImageIO;
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -29,23 +26,24 @@ import java.util.List;
 
 public class TestContext {
 
-    public Scenario scenario;
-    public ScenarioContext scenarioContext;
-    public List<String> navigationButtonList;
-    public String allPageScreenshotFlag;
     private Logger log = LogManager.getLogger(TestContext.class);
     private WebDriver driver;
     private BrowserFactory browserFactory;
+    private PageObjectManager objectManager;
+    public Scenario scenario;
+    public ScenarioContext scenarioContext;
     private JSONUtility jsonUtilityObj;
     private ConfigurationReader configReader;
+    public List<String> navigationButtonList;
+    public String allPageScreenshotFlag;
     private String randomlyPickedKeyWord;
     private boolean isScenarioViaCSS = true;
 
 
-    @Before("@RegressionTest or @NewGM")
+    @Before
     public void setUp(Scenario scenario) throws MalformedURLException {
         log.info("=================" + scenario.getName() + " execution starts" + "===================");
-     
+        this.scenario = scenario;
         // jsonUtilityObj = new JSONUtility();
         scenarioContext = new ScenarioContext();
         configReader = new ConfigurationReader();
@@ -59,17 +57,16 @@ public class TestContext {
         System.out.println("Started in thread: " + threadId + ", in JVM: " + processName);
         log.info("Successfully launched the chrome browser");
     }
-
-
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
         scenarioContext.setKeyValue("ScenarioID", ScenarioID);
+        objectManager = new PageObjectManager(driver, scenario);
         String baseURL = configReader.get("baseURL");
         log.info("base.url:" + baseURL);
-        if (baseURL.contains("ppd.scale")) {
+        if(baseURL.contains("ppd.scale")) {
             isScenarioViaCSS = false;
         }
-        if (!isScenarioViaCSS) {
+        if(!isScenarioViaCSS) {
             if (!(searchedFramework.matches("\\w+\\srandom"))) {
                 browserFactory.launchURL(baseURL, searchedFramework.toLowerCase());
             } else {
@@ -84,11 +81,10 @@ public class TestContext {
         }
     }
 
-    @After("@RegressionTest or @NewGM")
+    @After
     public void cleanUp() throws Exception {
-        if (configReader.get("browserName").equalsIgnoreCase("chrome_profile") || configReader.get("browserName").equalsIgnoreCase("CHROME_HEADLESS")) {
-            browserFactory.deleteDirectory();
-        }
+        if(configReader.get("browserName").equalsIgnoreCase("chrome_profile")||configReader.get("browserName").equalsIgnoreCase("CHROME_HEADLESS"))
+        {browserFactory.deleteDirectory();}
         takeSnapShot();
 
         log.info("=================" + scenario.getName() + " execution ends" + "===================");
@@ -109,7 +105,9 @@ public class TestContext {
 //      eyes.abortIfNotClosed();
     }
 
-
+    public PageObjectManager getObjectManager() {
+        return objectManager;
+    }
 
     public WebDriver getDriver() {
         return driver;
@@ -119,7 +117,7 @@ public class TestContext {
         if (scenario.isFailed()) {
             //Code to take full page screenshot
             ByteArrayOutputStream imageStream = new ByteArrayOutputStream();
-            //scenario.write("URL - " + driver.getCurrentUrl());
+            scenario.log("URL - " + driver.getCurrentUrl());
             PageSnapshot snapshot = Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS, 5);
             ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0)");
 
@@ -130,7 +128,7 @@ public class TestContext {
                 e.printStackTrace();
             }
             byte[] source = imageStream.toByteArray();
-            //scenario.embed(source, "image/png","");
+            scenario.attach(source, ".png","failureImage/png");
         }
     }
 
@@ -150,17 +148,17 @@ public class TestContext {
         return isScenarioViaCSS;
     }
 
-    public BrowserFactory getBrowserFactory() {
+    public BrowserFactory getBrowserFactory(){
         return browserFactory;
     }
 
     public ConfigurationReader getConfigReader() {
         return configReader;
     }
-
     @Given("I am on a CCS website HomePage")
     public void iAmOnACCSWebsiteHomePage() {
         {
+            objectManager = new PageObjectManager(driver, scenario);
             String baseURL = configReader.get("baseURL");
             log.info("base.url:" + baseURL);
             browserFactory.launchURL(baseURL);

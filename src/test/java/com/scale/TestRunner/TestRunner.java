@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue="com.scale",
         monochrome = true,
         plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-        tags = "@APITests")
+        tags = "@RegressionTest")
 
 public class TestRunner {
 }

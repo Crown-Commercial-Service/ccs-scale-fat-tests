@@ -134,10 +134,10 @@ public class GMResultPage extends Actions {
             String gmPageTest = gmResultPage.getText();
             Assert.assertTrue(gmPageTest.contains("Based on your answers, there is"));
             log.info("User is on guided match search results");
-            //scenario.write("User is on guided match search results");
+            scenario.log("User is on guided match search results");
         } else {
             log.info("User is not on guided match search results");
-            //scenario.write("User is not on guided match search results");
+            scenario.log("User is not on guided match search results");
         }
     }
 
@@ -149,10 +149,10 @@ public class GMResultPage extends Actions {
             String gmPageTest = gmResultPage.getText();
             Assert.assertTrue(gmPageTest.contains("We need more information to help you"));
             log.info("User is on guided match search results with request for more information");
-            //scenario.write("User is on guided match search results with request for more information");
+            scenario.log("User is on guided match search results with request for more information");
         } else {
             log.info("User is not on guided match search results with request for more information");
-            //scenario.write("User is not on guided match search results with request for more information");
+            scenario.log("User is not on guided match search results with request for more information");
         }
     }
 
@@ -181,13 +181,13 @@ public class GMResultPage extends Actions {
                 initialSearchPhraseIndex = entry.getKey();
                 if (!(initialSearchPhraseIndex == 0)) {
                     log.info("The <" + initialSearchTermText + "> was not found as the first in the list, but the " + initialSearchPhraseIndex + 1);
-                    //scenario.write("The <" + initialSearchTermText + "> was not found as the first in the list, but the " + initialSearchPhraseIndex + 1);
+                    scenario.log("The <" + initialSearchTermText + "> was not found as the first in the list, but the " + initialSearchPhraseIndex + 1);
                 }
             }
         }
         if (initialSearchPhraseIndex == -1) {
             log.info("The <" + initialSearchTermText + "> was not found in the question list");
-            //scenario.write("The <" + initialSearchTermText + "> was not found in the question list");
+            scenario.log("The <" + initialSearchTermText + "> was not found in the question list");
         } else {
             returnedSearchTerm = (getQuestionsRowsText().get(initialSearchPhraseIndex).replace(initialSearchTermText, "")).replace("Change", "").trim();
         }
@@ -206,7 +206,7 @@ public class GMResultPage extends Actions {
         String finalReturnedSearchPhrase = null;
         if (frameworkLotsRecommendedIndex == -1) {
             log.info("The <" + frameworkLotsRecommendedText + "> was not found in the question list");
-            //scenario.write("The <" + frameworkLotsRecommendedText + "> was not found in the question list");
+            scenario.log("The <" + frameworkLotsRecommendedText + "> was not found in the question list");
         } else {
             returnedSearchPhrase = (getQuestionsRowsText().get(frameworkLotsRecommendedIndex).replace(frameworkLotsRecommendedText, "")).trim();
             finalReturnedSearchPhrase = returnedSearchPhrase.replace("£", "");
@@ -223,7 +223,7 @@ public class GMResultPage extends Actions {
         }
         if (initialSearchPhraseIndex == -1) {
             log.info("The <" + expectedQuestionOrAnswer + "> was not found in the question list");
-            //scenario.write("The <" + expectedQuestionOrAnswer + "> was not found in the question list");
+            scenario.log("The <" + expectedQuestionOrAnswer + "> was not found in the question list");
         }
         return initialSearchPhraseIndex;
     }
@@ -278,7 +278,7 @@ public class GMResultPage extends Actions {
             executor.executeScript("arguments[0].click();", adjacentChangeButton);
         } else {
             log.info("The mentioned question with <" + questionNumber + "> does not have the \"Change\" CTA button provided");
-            //scenario.write("The mentioned question with <" + questionNumber + "> does not have the \"Change\" CTA button provided");
+            scenario.log("The mentioned question with <" + questionNumber + "> does not have the \"Change\" CTA button provided");
         }
     }
 
@@ -324,7 +324,7 @@ public class GMResultPage extends Actions {
             lotsNumber = StringUtils.getMatchedGroupByIndexFromAString(gmResultHeader.getText(), "(\\s\\d+\\s)(lot)", 1).trim();
         } else {
             log.info("The mentioned scenario does not have recommended lots number matched");
-            //scenario.write("The mentioned scenario does not have recommended lots number matched");
+            scenario.log("The mentioned scenario does not have recommended lots number matched");
         }
         return lotsNumber;
     }
@@ -339,7 +339,7 @@ public class GMResultPage extends Actions {
             WebElement detailsLinkInUse = driver.findElements(By.xpath("//div[@class='govuk-accordion__section-heading']//following-sibling::p")).get(i);
             if (!(detailsLinkInUse.getText().equals("Show details"))) {
                 log.info("The details related to CTA is already expanded");
-                //scenario.write("The details related to CTA is already expanded");
+                scenario.log("The details related to CTA is already expanded");
             } else {
                 wait.until(ExpectedConditions.elementToBeClickable(detailsLinkInUse));
                 JavascriptExecutor executor = ((JavascriptExecutor) driver);

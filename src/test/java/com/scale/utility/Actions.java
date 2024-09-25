@@ -115,7 +115,7 @@ public class Actions {
 	        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
 	        element.click();
 	        log.info("Clicked on " + elementName + " element");
-	        //scenario.write("User Clicked on " + elementName + " option");
+	        scenario.log("User Clicked on " + elementName + " option");
 
 	    }
 
@@ -129,7 +129,7 @@ public class Actions {
 	     //   waitForSeconds(2);
 			//element.click();
 	        log.info("Clicked on " + buttonName + " button");
-	        //scenario.write(" User Clicked on " + buttonName + " button");
+	        scenario.log(" User Clicked on " + buttonName + " button");
 	    }
 
 	public void clickRadioButton(String radioButtonName) {
@@ -138,7 +138,7 @@ public class Actions {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
 		element.click();
 		log.info("Buyer clicked on " + radioButtonName + " radio button");
-		//scenario.write(" Buyer clicked on " + radioButtonName + " radio button");
+		scenario.log(" Buyer clicked on " + radioButtonName + " radio button");
 	}
 
 	public void clickCheckbox(String checkboxName) {
@@ -147,7 +147,7 @@ public class Actions {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
 		element.click();
 		log.info("Buyer clicked on " + checkboxName + " checkbox");
-		//scenario.write(" Buyer clicked on " + checkboxName + " checkbox");
+		scenario.log(" Buyer clicked on " + checkboxName + " checkbox");
 	}
 
 

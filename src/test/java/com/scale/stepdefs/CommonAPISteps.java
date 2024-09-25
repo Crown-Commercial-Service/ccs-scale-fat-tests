@@ -67,12 +67,12 @@ public class CommonAPISteps {
         apibase.getOAUTH2Grant();
         apibase.putLotSupplier();
     }
-    @When("I fire PUT Agreement endpoint and create \"([^\"]*)\"")
+    @When("I fire PUT Agreement endpoint and create {string}")
     public void iFirePUTAgreementEndpointAndCreate(String agreementNumber) {
         apibase.getOAUTH2Grant();
         apibase.putRequestedAgreement(agreementNumber);
     }
-    @Then("assert \"([^\"]*)\" is created")
+    @Then("assert {string} is created")
     public void assertIsCreated(String agreementNumber) {
         apibase.verifyGetAgreement(agreementNumber);
     }
