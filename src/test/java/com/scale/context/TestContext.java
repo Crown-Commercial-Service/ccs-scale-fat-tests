@@ -40,27 +40,39 @@ public class TestContext {
     private boolean isScenarioViaCSS = true;
 
 
-    @Before
+    @Before ("@RegressionTest or @NewGM")
     public void setUp(Scenario scenario) throws MalformedURLException {
         log.info("=================" + scenario.getName() + " execution starts" + "===================");
         this.scenario = scenario;
-        // jsonUtilityObj = new JSONUtility();
         scenarioContext = new ScenarioContext();
         configReader = new ConfigurationReader();
         allPageScreenshotFlag = configReader.get("allPageScreenshot");
         browserFactory = new BrowserFactory();
         browserFactory.initiateDriver(configReader.getBrowserName());
         driver = browserFactory.getDriver();
-        //objectManager = new PageObjectManager(driver, scenario);
+        objectManager = new PageObjectManager(driver, scenario);
         long threadId = Thread.currentThread().getId();
         String processName = ManagementFactory.getRuntimeMXBean().getName();
         System.out.println("Started in thread: " + threadId + ", in JVM: " + processName);
         log.info("Successfully launched the chrome browser");
     }
+
+    @Before ("@APITests")
+    public void setUpAPITests(Scenario scenario) {
+        log.info("=================" + scenario.getName() + " API execution starts" + "===================");
+        this.scenario = scenario;
+        scenarioContext = new ScenarioContext();
+        configReader = new ConfigurationReader();
+        allPageScreenshotFlag = configReader.get("allPageScreenshot");
+        objectManager = new PageObjectManager(driver, scenario);
+        long threadId = Thread.currentThread().getId();
+        String processName = ManagementFactory.getRuntimeMXBean().getName();
+        System.out.println("Started in thread: " + threadId + ", in JVM: " + processName);
+    }
+
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
         scenarioContext.setKeyValue("ScenarioID", ScenarioID);
-        objectManager = new PageObjectManager(driver, scenario);
         String baseURL = configReader.get("baseURL");
         log.info("base.url:" + baseURL);
         if(baseURL.contains("ppd.scale")) {
