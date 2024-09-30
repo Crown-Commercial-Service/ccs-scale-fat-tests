@@ -57,18 +57,7 @@ public class TestContext {
         log.info("Successfully launched the chrome browser");
     }
 
-    @Before ("@APITests")
-    public void setUpAPITests(Scenario scenario) {
-        log.info("=================" + scenario.getName() + " API execution starts" + "===================");
-        this.scenario = scenario;
-        scenarioContext = new ScenarioContext();
-        configReader = new ConfigurationReader();
-        allPageScreenshotFlag = configReader.get("allPageScreenshot");
-        objectManager = new PageObjectManager(driver, scenario);
-        long threadId = Thread.currentThread().getId();
-        String processName = ManagementFactory.getRuntimeMXBean().getName();
-        System.out.println("Started in thread: " + threadId + ", in JVM: " + processName);
-    }
+
 
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
@@ -93,7 +82,7 @@ public class TestContext {
         }
     }
 
-    @After
+    @After("@RegressionTest or @NewGM")
     public void cleanUp() throws Exception {
         if(configReader.get("browserName").equalsIgnoreCase("chrome_profile")||configReader.get("browserName").equalsIgnoreCase("CHROME_HEADLESS"))
         {browserFactory.deleteDirectory();}

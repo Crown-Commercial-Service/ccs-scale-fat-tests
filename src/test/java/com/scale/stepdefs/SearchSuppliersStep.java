@@ -62,8 +62,8 @@ public class SearchSuppliersStep {
     }
 
     @And("User clicks on the {string} supplier link")
-    public void userClicksOnTheSupplierLink(String filterOption) {
-        objectManager.getsearchSuppliersPageObj().selectFilterOption(filterOption);
+    public void userClicksOnTheSupplierLink(String supplierLink) {
+        objectManager.getsearchSuppliersPageObj().selectLink(supplierLink);
     }
 
 
@@ -72,5 +72,10 @@ public class SearchSuppliersStep {
         List<String> listAllTitles =  searchSuppliersPage
                 .getAllListTitles(searchSuppliersPage.getsubsectionFilterOption());
         Assert.assertEquals(subsectionFilterOption.asList(), listAllTitles);
+    }
+
+    @And("I select {string} from filter option")
+    public void iSelectFromFilterOption(String filterOption) {
+        objectManager.getsearchSuppliersPageObj().selectFilterOption(filterOption);
     }
 }

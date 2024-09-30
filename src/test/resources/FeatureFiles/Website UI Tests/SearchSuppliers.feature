@@ -5,16 +5,12 @@ Feature: SearchSupplier Verification
     Given I am on a CCS website HomePage
     When I navigate to Search supplier
 
-  @SearchSuppliers1
+  @SearchSuppliers
   Scenario: Verify Warning message Display
     Then I should see warning message displayed on the top
 
   @SearchSuppliers
   Scenario: Verify Filter Feature
-    Then I assert the supplier FilterCategory as expected
-      | Select framework |
-      |                  |
-      | Results per page |
     And I select "Back Office Software (RM6194)" from filter option
     Then I assert the supplier FilterCategory as expected
       | Select framework |

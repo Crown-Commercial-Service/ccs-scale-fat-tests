@@ -80,6 +80,14 @@ public class SearchSuppliersPage extends Actions {
         executor.executeScript("arguments[0].click();", element);
 
     }
+    public void selectLink(String supplierLink) {
+        waitForSeconds(2);
+        String XPATH = "(//*[contains(text(),'" + supplierLink + "')])[1]";
+        WebElement element = driver.findElement(By.xpath(XPATH));
+        JavascriptExecutor executor = ((JavascriptExecutor) driver);
+        executor.executeScript("arguments[0].click();", element);
+
+    }
 
 }
 
