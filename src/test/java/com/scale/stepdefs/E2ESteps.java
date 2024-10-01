@@ -4,14 +4,12 @@ import com.scale.businessPages.AboutCCSPage;
 import com.scale.businessPages.E2EPage;
 import com.scale.businessPages.HomePage;
 import com.scale.context.TestContext;
-import com.scale.framework.utility.BrowserFactory;
-import com.scale.framework.utility.ConfigurationReader;
-import com.scale.framework.utility.PageObjectManager;
-import cucumber.api.Scenario;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import com.scale.utility.BrowserFactory;
+import com.scale.utility.ConfigurationReader;
+import com.scale.utility.PageObjectManager;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -264,7 +262,7 @@ public class E2ESteps {
         testContextObj.takeSnapShot();
     }
 
-    @When("User selects the \"([^\"]*)\" radio button")
+    @When("User selects the {string} radio button")
     public void user_selects_the_radio_button(String sectorRadio) {
         homePageObj = objectManager.getHomePageObj();
         homePageObj.clickRadioButton(sectorRadio);
@@ -379,6 +377,25 @@ public class E2ESteps {
         objectManager.getE2EPageObj().clickOnAbout();
     }
 
+    @When("I navigate to Events")
+    public void iNavigateToEvents() {
+        objectManager.getE2EPageObj().clickOnEvents();
+    }
+
+    @When("I navigate to News")
+    public void iNavigateToNews() {
+        objectManager.getE2EPageObj().clickOnNews();
+    }
+
+    @When("I navigate to Search supplier")
+    public void iNavigateToSearchSupplier() {
+        objectManager.getE2EPageObj().clickOnSearchSuppliers();
+    }
+
+    @When("I navigate to Product And Services")
+    public void iNavigateToProductAndServices() {
+        objectManager.getE2EPageObj().clickOnProductAndServices();
+    }
     @When("I fill the contact form and submit")
     public void iFillTheContactFormAndSubmit() {
         objectManager.getE2EPageObj().fillContactForm();
@@ -458,5 +475,3 @@ public class E2ESteps {
 
 
 }
-
-

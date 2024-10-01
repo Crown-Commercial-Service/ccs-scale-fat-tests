@@ -1,13 +1,12 @@
+
 package com.scale.stepdefs;
 
 import com.scale.businessPages.GMLandingPage;
 import com.scale.context.TestContext;
-import com.scale.framework.utility.PageObjectManager;
-import cucumber.api.Scenario;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import com.scale.utility.PageObjectManager;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;

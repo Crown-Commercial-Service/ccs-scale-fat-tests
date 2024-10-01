@@ -2,13 +2,10 @@ package com.scale.stepdefs;
 
 
 import com.scale.context.TestContext;
-import com.scale.framework.utility.*;
+import com.scale.utility.*;
 import com.scale.businessPages.*;
-import cucumber.api.Scenario;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -50,27 +47,26 @@ public class HomeSteps {
             homePageObj = objectManager.getHomePageObj();
             homePageObj.enterFrameworkDetails(framework);
             testContextObj.takeSnapShot();
-
             homePageObj = objectManager.getHomePageObj();
             homePageObj.clickButton(buttonName);
         }
     }
 
-    @And("User clicks on the \"([^\"]*)\" button")
+    @When("User clicks on the {string} button")
     public void user_clicks_on_the_button(String buttonName) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
         testContextObj.takeSnapShot();
         homePageObj.clickButton(buttonName);
 
     }
-    @And("User clicks on the \"([^\"]*)\" link")
+    @And("User clicks on the {string} link")
     public void user_clicks_on_the_link(String linkName) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
         testContextObj.takeSnapShot();
         homePageObj.clickButton(linkName);
 
     }
-    @And("User selects \"([^\"]*)\" Option")
+    @And("User selects {string} Option")
     public void user_selects_Option(String linkName) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
         homePageObj.clickElement(linkName);
@@ -87,7 +83,7 @@ public class HomeSteps {
         assertEquals(objectManager.getHomePageObj().getHeaderTwo(), string);
     }
 
-    @And("User clicks on the \"([^\"]*)\" button on the result page")
+    @And("User clicks on the {string} button on the result page")
     public void user_clicks_on_the_button_on_the_result_Page(String buttonName) throws InterruptedException {
         homePageObj = objectManager.getHomePageObj();
         testContextObj.takeSnapShot();
@@ -95,5 +91,5 @@ public class HomeSteps {
     }
 
 
-}
 
+}

@@ -44,6 +44,7 @@ Feature: Agreement Service API tests
   Scenario:Put Agreement
     When I fire PUT Agreement endpoint and assert the status
 
+
   @APITests
   Scenario:Put Lot
     When I fire PUT Lot endpoint and assert the status
@@ -55,3 +56,8 @@ Feature: Agreement Service API tests
   @APITests
   Scenario:Put Lots Supplier
     When I fire PUT Lot supplier endpoint and assert the status
+
+  @APITests
+  Scenario:PUT an agreement and verify in GET call
+    When I fire PUT Agreement endpoint and create "RM1809"
+    Then assert "RM1809" is created

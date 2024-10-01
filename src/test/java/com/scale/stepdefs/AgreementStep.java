@@ -2,10 +2,10 @@ package com.scale.stepdefs;
 
 import com.scale.businessPages.AgreementPage;
 import com.scale.context.TestContext;
-import com.scale.framework.utility.PageObjectManager;
-import cucumber.api.Scenario;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import com.scale.utility.PageObjectManager;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.cucumber.datatable.DataTable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,6 +27,7 @@ public class AgreementStep {
         driver = testContextObj.getDriver();
         objectManager = testContextObj.getObjectManager();
         agreementPage =objectManager.getAgreementPageObj();
+
     }
 
     @Then("I should see the details section")
@@ -61,7 +62,7 @@ public class AgreementStep {
 
     @When("User clicks on the open all link")
     public void user_clicks_on_the_open_all_link() {
-        objectManager.getAgreementPageObj().clickOpenAll();
+        objectManager.getAgreementPageObj().clickOpenAll();;
     }
 
 

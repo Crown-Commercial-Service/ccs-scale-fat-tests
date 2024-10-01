@@ -1,8 +1,8 @@
 package com.scale.stepdefs;
-import com.scale.framework.utility.API.APIBase;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
+import com.scale.utility.API.APIBase;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class CommonAPISteps {
     public APIBase apibase = new APIBase();
@@ -67,6 +67,14 @@ public class CommonAPISteps {
         apibase.getOAUTH2Grant();
         apibase.putLotSupplier();
     }
-
+    @When("I fire PUT Agreement endpoint and create {string}")
+    public void iFirePUTAgreementEndpointAndCreate(String agreementNumber) {
+        apibase.getOAUTH2Grant();
+        apibase.putRequestedAgreement(agreementNumber);
+    }
+    @Then("assert {string} is created")
+    public void assertIsCreated(String agreementNumber) {
+        apibase.verifyGetAgreement(agreementNumber);
+    }
 
 }
