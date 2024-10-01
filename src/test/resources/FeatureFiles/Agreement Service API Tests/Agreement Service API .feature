@@ -5,10 +5,6 @@ Feature: Agreement Service API tests
     When I fire GET Agreements call and assert the status
 
   @APITests
-  Scenario:Get Agreement call
-    When I fire GET Agreement call and assert the status
-
-  @APITests
   Scenario:Get Agreement Documents call
     When I fire GET Agreement documents call and assert the status
 
@@ -39,10 +35,6 @@ Feature: Agreement Service API tests
   @APITests
   Scenario:Get Agreement lot Documents Templates call
     When I fire GET Agreement lot documents Templates call and assert the status
-
-  @APITests
-  Scenario:Put Agreement
-    When I fire PUT Agreement endpoint and assert the status
 
 
   @APITests

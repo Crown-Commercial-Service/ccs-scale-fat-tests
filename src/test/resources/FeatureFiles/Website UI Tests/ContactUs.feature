@@ -5,7 +5,7 @@ Feature: ContactUS Verification
     Given I am on a CCS website HomePage
     And I navigate to contact us form
 
-  @ContactCCS
+  @ContactCCS @form
   Scenario: Contact CCS - Submit form
     When I fill the contact form and submit
     Then I should see the success message

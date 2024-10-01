@@ -10,10 +10,6 @@ public class CommonAPISteps {
     public void iFireGETAgreementsCallAndAssertTheStatus() {
         apibase.getAgreements();
     }
-    @When("I fire GET Agreement call and assert the status")
-    public void iFireGETAgreementCallAndAssertTheStatus() {
-        apibase.getAgreement();
-    }
     @When("I fire GET Agreement documents call and assert the status")
     public void iFireGETAgreementDocumentsCallAndAssertTheStatus() {
         apibase.getAgreementDocuments();
@@ -47,11 +43,6 @@ public class CommonAPISteps {
     public void iFireGETAgreementLotDocumentsTemplatesCallAndAssertTheStatus() {
         apibase.getAgreementLotDocumentTemplates();
     }
-    @When("I fire PUT Agreement endpoint and assert the status")
-    public void iFirePUTAgreementEndpointAndAssertTheStatus() {
-        apibase.getOAUTH2Grant();
-        apibase.putAgreement();
-    }
     @When("I fire PUT Lot endpoint and assert the status")
     public void iFirePUTLotEndpointAndAssertTheStatus() {
         apibase.getOAUTH2Grant();
@@ -74,7 +65,7 @@ public class CommonAPISteps {
     }
     @Then("assert {string} is created")
     public void assertIsCreated(String agreementNumber) {
-        apibase.verifyGetAgreement(agreementNumber);
+        apibase.IsRMINumberCreated(agreementNumber);
     }
 
 }

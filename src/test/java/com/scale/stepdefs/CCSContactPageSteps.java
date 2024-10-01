@@ -5,6 +5,7 @@ import com.scale.context.TestContext;
 
 import com.scale.utility.PageObjectManager;
 import io.cucumber.java.Scenario;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

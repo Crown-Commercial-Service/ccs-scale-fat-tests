@@ -24,7 +24,6 @@ public class E2EPage extends Actions {
     private ConfigurationReader configReaderObj;
     private Logger log = LogManager.getLogger(E2EPage.class);
 
-
     @FindBy(id = "changed-name-hint")
     private WebElement questionPageContent;
 
@@ -301,6 +300,9 @@ public class E2EPage extends Actions {
     private WebElement menuSearchSuppliers;
     @FindBy(xpath = "//*[contains(text(),'Products and Services')]")
     private WebElement menuProductAndServices;
+    @FindBy(xpath = "//*[contains(text(),'Sectors')]")
+    private WebElement menuSectors;
+
 
     @FindBy(xpath = "//h1")
     private WebElement headingText;
@@ -316,12 +318,12 @@ public class E2EPage extends Actions {
     @FindBy(id = "email")
     private WebElement fldEmail;
 
-    @FindBy(id = "00Nb0000009IXEs")
+    @FindBy(id = "jobTitle")
     private WebElement fldJobTitle;
 
     @FindBy(id = "company")
     private WebElement fldCompany;
-    @FindBy(id = "more-detail")
+    @FindBy(id = "form-more-detail")
     private WebElement fldComment;
     @FindBy(id = "submit")
     private WebElement btnSubmit;
@@ -1067,6 +1069,7 @@ public class E2EPage extends Actions {
         Assert.assertEquals(URL, "https://webuat.crowncommercial.gov.uk/news/?&page=1");
     }
 
+
     public void clickOnFooterLinks(String BuyAndSupply) {
         switch (BuyAndSupply) {
             case "Contracts finder":
@@ -1133,6 +1136,14 @@ public class E2EPage extends Actions {
         Assert.assertEquals(expectedHeading, "Search suppliers");
     }
 
+    public void clickOnSectors() {
+        menuSectors.click();
+        waitForSeconds(3);
+        String expectedHeading = headingText.getText();
+        Assert.assertEquals(expectedHeading, "Sectors");
+    }
+
+
     public void clickOnProductAndServices() {
         menuProductAndServices.click();
         waitForSeconds(3);
@@ -1143,10 +1154,9 @@ public class E2EPage extends Actions {
     public void fillContactForm() {
         fldName.sendKeys("WebsiteAutomationUser");
         fldEmail.sendKeys("WebsiteAutomation@hotmail.com");
-        if (fldJobTitle.isDisplayed()) {
+        if (!fldJobTitle.getSize().equals(1)) {
             fldJobTitle.sendKeys("AutomationAccount");
         } else {
-
         }
 
         fldCompany.sendKeys("WebsiteAutomation");
@@ -1159,8 +1169,7 @@ public class E2EPage extends Actions {
     public void assertSuccessMessage() {
         waitForSeconds(3);
         String successMessage = lblSuccessMessage.getText();
-        Assert.assertEquals(successMessage, "Your message has been sent");
-
+        Assert.assertEquals(successMessage,"Your message has been sent");
     }
 
     public void assertHelpfulLinksComponent() {

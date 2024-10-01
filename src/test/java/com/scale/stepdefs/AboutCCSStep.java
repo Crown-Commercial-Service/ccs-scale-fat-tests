@@ -30,10 +30,10 @@ public class AboutCCSStep {
     }
 
     @Then("I assert the page heading as expected")
-    public void iAssertThePageHeadingAsExpected(DataTable subheading) {
+    public void iAssertThePageHeadingAsExpected(DataTable heading) {
         List<String> listAllTitles = aboutCCSPage
                 .getAllListTitles(aboutCCSPage.getAboutPageSubheading());
-        Assert.assertEquals(subheading.asList(), listAllTitles);
+        Assert.assertEquals(heading.asList(), listAllTitles);
     }
 
 }

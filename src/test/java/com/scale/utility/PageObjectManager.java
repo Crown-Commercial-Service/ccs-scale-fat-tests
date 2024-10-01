@@ -17,6 +17,7 @@ public class PageObjectManager {
     private GMResultPage gmResultPage;
     private ContactCCSPage contactCCSPage;
     private AgreementPage agreementPage;
+    private SectorsPage sectorsPage;
 
     private AboutCCSPage aboutCCSPage;
     private EventsPage eventsPage;
@@ -58,6 +59,9 @@ public class PageObjectManager {
     }
     public ProductAndServicesPage getproductAndServicesPageObj() {
         return productAndServicesPage == null ? productAndServicesPage = new ProductAndServicesPage(driver, scenario) : productAndServicesPage;
+    }
+    public SectorsPage getSectorsPageObj() {
+        return sectorsPage == null ? sectorsPage = new SectorsPage(driver, scenario) : sectorsPage;
     }
 
 
