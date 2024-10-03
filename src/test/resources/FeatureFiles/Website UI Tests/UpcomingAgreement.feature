@@ -1,4 +1,4 @@
-@RegressionTest1
+@RegressionTest
 Feature:Upcoming Agreement Verification
 
   Background:

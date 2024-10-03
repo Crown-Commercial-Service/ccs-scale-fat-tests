@@ -395,7 +395,10 @@ public class E2ESteps {
     public void iNavigateToSectors() {
         objectManager.getE2EPageObj().clickOnSectors();
     }
-
+    @And("I navigate to Information for buyers and suppliers")
+    public void iNavigateToInformationForBuyersAndSuppliers() {
+        objectManager.getE2EPageObj().clickOnInformationForBuyersAndSuppliers();
+    }
     @When("I navigate to Product And Services")
     public void iNavigateToProductAndServices() {
         objectManager.getE2EPageObj().clickOnProductAndServices();
