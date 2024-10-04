@@ -391,6 +391,10 @@ public class E2ESteps {
     public void iNavigateToSearchSupplier() {
         objectManager.getE2EPageObj().clickOnSearchSuppliers();
     }
+    @And("I navigate to Sectors")
+    public void iNavigateToSectors() {
+        objectManager.getE2EPageObj().clickOnSectors();
+    }
 
     @When("I navigate to Product And Services")
     public void iNavigateToProductAndServices() {
@@ -472,6 +476,7 @@ public class E2ESteps {
         objectManager.getE2EPageObj().informationforBuyerAndSupplierComponent();
         objectManager.getE2EPageObj().glossaryComponents();
     }
+
 
 
 }

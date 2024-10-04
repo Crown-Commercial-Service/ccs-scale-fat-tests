@@ -65,19 +65,8 @@ public class APIBase extends ConfigurationReader {
 
     }
 
-    public void getAgreement() {
-        baseURI = configReader.get("getAgreementURL");
-        RequestSpecification httpRequest = RestAssured.given();
-        httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
-        Response response = httpRequest.get();
-        String body = response.getBody().asString();
-        Assert.assertNotNull(response);
-        int statusCode = response.getStatusCode();
-        Assert.assertEquals(statusCode, 200);
 
-    }
-    public void verifyGetAgreement(String agreementNumber) {
+    public void IsRMINumberCreated(String agreementNumber) {
         baseURI = configReader.get("getAgreementURI")+agreementNumber;
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
@@ -220,31 +209,7 @@ public class APIBase extends ConfigurationReader {
         return accessToken;
     }
 
-    public void putAgreement() {
-        baseURI = configReader.get("putAgreementURL");
-        RequestSpecification httpRequest = RestAssured.given().auth().oauth2(getOAUTH2Grant());
-        httpRequest.header("Content-Type", "application/json");
-        httpRequest.header("x-api-key", "cQ23aZ7NWv9JjmbenMEgT8L5Ko7xPmO42ftlX9rw");
-        String payload = "{" +
-                "   \"name\":\"QA:This is a TEST Agreement\",\n" +
-                "   \"description\":\"Description:This is a TEST Agreement\",\n" +
-                "   \"startDate\":\"2020-01-01\",\n" +
-                "   \"endDate\":\"2025-01-01\",\n" +
-                "   \"detailUrl\":\"https://www.crowncommercial.gov.uk/agreements/RM3005.24\",\n" +
-                "   \"preDefinedLotRequired\":true ,\n" +
-                "   \"benefits\":[\n" +
-                "    \"striFacilisis mauris sit amet massa vitae tortor. Nisi est sit amet facilisis magna etiam tempor. Blandit massa enim nec dui nunc mattis enim ut tellusng\"\n" +
-                "  ],\n" +
-                "   \"ownerName\":\"CCS\"" +
-                "}";
-        Response response = httpRequest.body(payload).put();
-        String body = response.asString();
-        System.out.println(body);
-        Assert.assertNotNull(body);
-        int statusCode = response.getStatusCode();
-        Assert.assertEquals(statusCode, 200);
 
-    }
     public void putRequestedAgreement(String agreementNumber) {
         baseURI = configReader.get("putAgreementURI")+agreementNumber;
         RequestSpecification httpRequest = RestAssured.given().auth().oauth2(getOAUTH2Grant());
