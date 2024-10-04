@@ -56,9 +56,9 @@ public class SectorsPage extends Actions {
         return sectorPageHeading;
     }
 
-    public void selectLink(String sectorLink) {
+    public void selectLink(String link) {
         waitForSeconds(2);
-        String XPATH = "//*[contains(text(),'" + sectorLink + "')]/../div/p[2]/a";
+        String XPATH = "//*[contains(text(),'" + link + "')]";
         WebElement element = driver.findElement(By.xpath(XPATH));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);

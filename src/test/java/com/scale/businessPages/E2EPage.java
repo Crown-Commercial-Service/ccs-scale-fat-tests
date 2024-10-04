@@ -302,6 +302,8 @@ public class E2EPage extends Actions {
     private WebElement menuProductAndServices;
     @FindBy(xpath = "//*[contains(text(),'Sectors')]")
     private WebElement menuSectors;
+    @FindBy(xpath = "//*[contains(text(),'Information for buyers and suppliers')]")
+    private WebElement menuInformationForBuyersAndSuppliers;
 
 
     @FindBy(xpath = "//h1")
@@ -1142,7 +1144,9 @@ public class E2EPage extends Actions {
         String expectedHeading = headingText.getText();
         Assert.assertEquals(expectedHeading, "Sectors");
     }
-
+    public void clickOnInformationForBuyersAndSuppliers() {
+        menuInformationForBuyersAndSuppliers.click();
+    }
 
     public void clickOnProductAndServices() {
         menuProductAndServices.click();
