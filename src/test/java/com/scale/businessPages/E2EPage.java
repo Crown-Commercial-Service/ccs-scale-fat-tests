@@ -300,6 +300,9 @@ public class E2EPage extends Actions {
     private WebElement menuSearchSuppliers;
     @FindBy(xpath = "//*[contains(text(),'Products and Services')]")
     private WebElement menuProductAndServices;
+    @FindBy(xpath = "//*[contains(text(),'Social value')]")
+    private WebElement menuSocialValue;
+
     @FindBy(xpath = "//*[contains(text(),'Sectors')]")
     private WebElement menuSectors;
     @FindBy(xpath = "//*[contains(text(),'Information for buyers and suppliers')]")
@@ -1144,6 +1147,7 @@ public class E2EPage extends Actions {
         String expectedHeading = headingText.getText();
         Assert.assertEquals(expectedHeading, "Sectors");
     }
+
     public void clickOnInformationForBuyersAndSuppliers() {
         menuInformationForBuyersAndSuppliers.click();
     }
@@ -1154,6 +1158,11 @@ public class E2EPage extends Actions {
         String expectedHeading = headingText.getText();
         Assert.assertEquals(expectedHeading, "Products and Servicess");
     }
+
+    public void clickOnSocialValue() {
+        menuSocialValue.click();
+    }
+
 
     public void fillContactForm() {
         fldName.sendKeys("WebsiteAutomationUser");
@@ -1173,7 +1182,7 @@ public class E2EPage extends Actions {
     public void assertSuccessMessage() {
         waitForSeconds(3);
         String successMessage = lblSuccessMessage.getText();
-        Assert.assertEquals(successMessage,"Your message has been sent");
+        Assert.assertEquals(successMessage, "Your message has been sent");
     }
 
     public void assertHelpfulLinksComponent() {

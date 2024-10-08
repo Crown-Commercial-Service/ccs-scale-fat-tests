@@ -77,7 +77,7 @@ Feature: News Verification
     Then I assert the current url  as "https://www.crowncommercial.gov.uk/events/?&products_services=119&page=1"
 
   @News
-  Scenario: Events - Multiple Filter & Clear Filter
+  Scenario: News - Multiple Filter & Clear Filter
     Then I select "News and blogs" filter Option
     And I select "Fleet" filter Option
     And I assert the current url  as "https://webuat.crowncommercial.gov.uk/news/?&categories=26&products_services=135&page=1"

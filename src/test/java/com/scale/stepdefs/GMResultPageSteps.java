@@ -284,4 +284,7 @@ public class GMResultPageSteps {
     public void user_clicks_on_the_contact_CCS_button() {
         objectManager.getGmSearchResultPageObj().clickContactButton();
     }
+
+
+
 }

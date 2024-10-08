@@ -25,6 +25,7 @@ public class PageObjectManager {
     private SearchSuppliersPage searchSuppliersPage;
     private ProductAndServicesPage productAndServicesPage;
     private InformationForBuyersAndSuppliersPage informationForBuyersAndSuppliersPage;
+    private SocialValuePage socialValuePage;
     public PageObjectManager(WebDriver driver, Scenario scenario) {
         this.driver = driver;
         this.scenario = scenario;
@@ -54,6 +55,9 @@ public class PageObjectManager {
     }
     public InformationForBuyersAndSuppliersPage getInformationForBuyersAndSuppliersPageObj() {
         return informationForBuyersAndSuppliersPage == null ? informationForBuyersAndSuppliersPage = new InformationForBuyersAndSuppliersPage(driver, scenario) : informationForBuyersAndSuppliersPage;
+    }
+    public SocialValuePage getSocialValuePageObj() {
+        return socialValuePage == null ? socialValuePage = new SocialValuePage(driver, scenario) : socialValuePage;
     }
     public NewsPage getNewsPageObj() {
         return newsPage == null ? newsPage = new NewsPage(driver, scenario) : newsPage;
