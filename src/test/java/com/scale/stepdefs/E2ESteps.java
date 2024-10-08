@@ -33,6 +33,7 @@ public class E2ESteps {
     private ConfigurationReader configReaderObj;
 
     private AboutCCSPage aboutCCSPage;
+
     public E2ESteps(TestContext testContextObj) {
         configReaderObj = new ConfigurationReader();
         this.testContextObj = testContextObj;
@@ -372,6 +373,7 @@ public class E2ESteps {
     public void iNavigateToContactUsForm() {
         objectManager.getE2EPageObj().clickOnContacts();
     }
+
     @And("I navigate to About")
     public void iNavigateToAbout() {
         objectManager.getE2EPageObj().clickOnAbout();
@@ -391,18 +393,27 @@ public class E2ESteps {
     public void iNavigateToSearchSupplier() {
         objectManager.getE2EPageObj().clickOnSearchSuppliers();
     }
+
     @And("I navigate to Sectors")
     public void iNavigateToSectors() {
         objectManager.getE2EPageObj().clickOnSectors();
     }
+
     @And("I navigate to Information for buyers and suppliers")
     public void iNavigateToInformationForBuyersAndSuppliers() {
         objectManager.getE2EPageObj().clickOnInformationForBuyersAndSuppliers();
     }
+
     @When("I navigate to Product And Services")
     public void iNavigateToProductAndServices() {
         objectManager.getE2EPageObj().clickOnProductAndServices();
     }
+
+    @When("I navigate to Social value")
+    public void iNavigateToSocialValue() {
+        objectManager.getE2EPageObj().clickOnSocialValue();
+    }
+
     @When("I fill the contact form and submit")
     public void iFillTheContactFormAndSubmit() {
         objectManager.getE2EPageObj().fillContactForm();
@@ -479,7 +490,6 @@ public class E2ESteps {
         objectManager.getE2EPageObj().informationforBuyerAndSupplierComponent();
         objectManager.getE2EPageObj().glossaryComponents();
     }
-
 
 
 }
