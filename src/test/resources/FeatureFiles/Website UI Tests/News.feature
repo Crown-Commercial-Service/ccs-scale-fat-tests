@@ -33,7 +33,6 @@ Feature: News Verification
       | View all                      |
       | Central government            |
       | Charities                     |
-      | Communities of practice       |
       | Devolved                      |
       | Health                        |
       | Housing associations          |
@@ -72,12 +71,11 @@ Feature: News Verification
       | Technology services              |
       | Transforming Public Procurement  |
       | Travel, accommodation and venues |
-      | Software                         |
     And I select "Estates" filter Option
-    Then I assert the current url  as "https://www.crowncommercial.gov.uk/events/?&products_services=119&page=1"
+    Then I assert the current url  as "https://webuat.crowncommercial.gov.uk/news/?&products_services=119&page=1"
 
   @News
-  Scenario: Events - Multiple Filter & Clear Filter
+  Scenario: News - Multiple Filter & Clear Filter
     Then I select "News and blogs" filter Option
     And I select "Fleet" filter Option
     And I assert the current url  as "https://webuat.crowncommercial.gov.uk/news/?&categories=26&products_services=135&page=1"

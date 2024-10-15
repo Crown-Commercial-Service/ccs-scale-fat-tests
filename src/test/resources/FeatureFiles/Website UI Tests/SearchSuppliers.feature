@@ -34,6 +34,7 @@ Feature: SearchSupplier Verification
       | Corporate Finance Services 2                        |
       | Cyber Security Services 2 Expired                   |
       | Digital and IT Professional Services (DIPS)         |
+      | eDisclosure and Review Services 2                   |
       | eDisclosure Services Expired                        |
       | Learning and Development                            |
       | Management Consultancy Framework (MCF) Expired      |

@@ -62,7 +62,7 @@ public class SearchSuppliersPage extends Actions {
     public void assertWarningMessage() {
         waitForSeconds(3);
         String expectedHeading = String.valueOf(warningMessage.getLocation());
-        Assert.assertEquals(expectedHeading,"(80, 703)");
+        Assert.assertEquals(expectedHeading,"(311, 702)");
     }
     public List<WebElement> getFilterCategoryType() {
         return filterCategoryType;

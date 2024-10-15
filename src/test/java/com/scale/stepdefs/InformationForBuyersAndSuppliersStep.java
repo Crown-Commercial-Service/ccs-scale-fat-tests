@@ -52,7 +52,7 @@ public class InformationForBuyersAndSuppliersStep {
 
     @And("I click on {string} link")
     public void iClickOnLink(String link) {
-        objectManager.getSectorsPageObj().selectLink(link);
+        objectManager.getInformationForBuyersAndSuppliersPageObj().selectLink(link);
 
     }
 }
