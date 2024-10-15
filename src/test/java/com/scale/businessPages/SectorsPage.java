@@ -53,21 +53,24 @@ public class SectorsPage extends Actions {
 
 
     public List<WebElement> getSectorPageHeading() {
+        waitForSeconds(3);
         return sectorPageHeading;
     }
 
-    public void selectLink(String link) {
+    public void selectLinkFromCard(String link) {
         waitForSeconds(2);
-        String XPATH = "//*[contains(text(),'" + link + "')]";
+        String XPATH = "//*[contains(text(),'" + link + "')]//..//div//p[2]//a";
         WebElement element = driver.findElement(By.xpath(XPATH));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
 
     }
     public List<WebElement> getSectorsSubPageHeading() {
+        waitForSeconds(5);
         return SectorsSubPageHeading;
     }
     public List<WebElement> getSectorsTabHeading() {
+        waitForSeconds(3);
         return SectorsTabHeading;
     }
     public void clickOnDownload(){
@@ -84,6 +87,7 @@ public class SectorsPage extends Actions {
     }
 
     public List<WebElement> getErrorList() {
+        waitForSeconds(3);
         return ErrorList;
     }
     public void assertSuccessMessage() {

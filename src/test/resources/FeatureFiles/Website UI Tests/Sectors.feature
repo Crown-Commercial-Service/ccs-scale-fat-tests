@@ -13,7 +13,7 @@ Feature:Sectors Verification
       | Housing associations                       |
       | Schools and academies                      |
       | Central government and arm's length bodies |
-      | Universities and college                   |
+      | Universities and colleges                   |
       | Police and emergency services              |
       | Charities                                  |
       | Devolved                                   |
@@ -87,7 +87,6 @@ Feature:Sectors Verification
     Then I assert the sector page heading as expected
       | Making responsible buying decisions                |
       | Our bitesize guides to common procurement concepts |
-      | Bringing power to your procurement                 |
     Then I fill the contact form and submit
     And I should see the success message
 
@@ -107,7 +106,6 @@ Feature:Sectors Verification
     Then I assert the sector page heading as expected
       | Making responsible buying decisions                |
       | Our bitesize guides to common procurement concepts |
-      | Bringing power to your procurement                 |
     Then I fill the contact form and submit
     And I should see the success message
 

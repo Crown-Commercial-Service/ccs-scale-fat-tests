@@ -32,7 +32,7 @@ Feature: Event Verification
       | Engagement                |
       | Live webinar              |
     And I select "Engagement" filter Option
-    And I assert the current url  as "https://webuat.crowncommercial.gov.uk/events/?&event_type=183&page=1"
+    And I assert the current url  as "https://webuat.crowncommercial.gov.uk/events/?&event_type=186&page=1"
 
 
   @Events
@@ -62,7 +62,7 @@ Feature: Event Verification
       | HR and workforce                           |
       | Outsourced services                        |
     And I select "Energy" filter Option
-    And I assert the current url  as "https://webuat.crowncommercial.gov.uk/events/?&event_type=183&page=1"
+    And I assert the current url  as "https://webuat.crowncommercial.gov.uk/events/?&products_services=126&page=1"
 
 
   @Events
@@ -78,7 +78,6 @@ Feature: Event Verification
       | Universities and colleges     |
       | Devolved                      |
       | Central government            |
-      | Communities of practice       |
       | Supplier                      |
     And I select "Health" filter Option
     And I assert the current url  as "https://webuat.crowncommercial.gov.uk/events/?&sectors=112&page=1"
@@ -88,7 +87,7 @@ Feature: Event Verification
   Scenario: Events - Multiple Filter & Clear Filter
     Then I select "Engagement" filter Option
     And I select "Health" filter Option
-    And I assert the current url  as "https://webuat.crowncommercial.gov.uk/events/?&event_type=183&sectors=112&page=1"
+    And I assert the current url  as "https://webuat.crowncommercial.gov.uk/events/?&event_type=186&sectors=112&page=1"
     Then I click on clear filter
     And I assert the current url  as "https://webuat.crowncommercial.gov.uk/events/?&page=1"
 

@@ -267,7 +267,7 @@ public class E2EPage extends Actions {
     private WebElement homepageGlossaryComponents;
     @FindBy(xpath = "//*[@class='govuk-heading-m'][text() ='Information for buyers and suppliers']")
     private WebElement informationForBuyerAndSupplierHeading;
-    @FindBy(xpath = "//*[@class='govuk-heading-m'][text() ='Glossary']")
+    @FindBy(xpath = "//h3[@class='govuk-heading-m' and contains(text(), 'Glossary ')]")
     private WebElement glossaryHeading;
 
     @FindBy(xpath = "//*[@class='apollo-call-to-action apollo-call-to-action--help']")
@@ -278,15 +278,14 @@ public class E2EPage extends Actions {
     private WebElement btnBackToTop;
     @FindBy(xpath = "//*[contains(text(),'Browse all news articles')]")
     private WebElement linkBrowseAllNewsArticles;
-    @FindBy(xpath = "//*[contains(text(),'Contracts finder')]")
+    @FindBy(xpath = "//*[contains(text(),'Contracts Finder')]")
     private WebElement ContractsFinder;
-    @FindBy(xpath = "//*[contains(text(),'Sign in to purchasing platform')]")
-    private WebElement SignInToPurchasingplatform;
-    @FindBy(xpath = "//*[contains(text(),'Sign in to digital marketplace')]")
-    private WebElement SignInToDigitalMarketplace;
-    @FindBy(xpath = "//*[contains(text(),'Sign in to fleet portal')]")
-    private WebElement SignInToFleetPortal;
-
+    @FindBy(xpath = "//*[contains(text(),'Find a Tender')]")
+    private WebElement FindATender;
+    @FindBy(xpath = "(//*[contains(text(),'Glossary')])[2]")
+    private WebElement Glossary;
+    @FindBy(xpath = "//*[contains(text(),'Register for eMarketplace')]")
+    private WebElement RegisterForeMarketplace;
 
     @FindBy(xpath = "(//*[contains(text(),'Contact')])[1]")
     private WebElement menuContact;
@@ -298,7 +297,7 @@ public class E2EPage extends Actions {
     private WebElement menuNews;
     @FindBy(xpath = "(//*[contains(text(),'Search suppliers')])[1]")
     private WebElement menuSearchSuppliers;
-    @FindBy(xpath = "//*[contains(text(),'Products and Services')]")
+    @FindBy(xpath = "//*[contains(text(),'Products and services')]")
     private WebElement menuProductAndServices;
     @FindBy(xpath = "//*[contains(text(),'Social value')]")
     private WebElement menuSocialValue;
@@ -1084,25 +1083,25 @@ public class E2EPage extends Actions {
                     Assert.assertEquals(URLCF, "https://www.gov.uk/contracts-finder");
                 }
                 break;
-            case "Sign in to purchasing platform":
-                if (SignInToPurchasingplatform.isDisplayed()) {
-                    SignInToPurchasingplatform.click();
-                    String URLPP = driver.getCurrentUrl();
-                    Assert.assertEquals(URLPP, "https://purchasingplatform.crowncommercial.gov.uk/mp-welcome");
+            case "Find a Tender":
+                if (FindATender.isDisplayed()) {
+                    FindATender.click();
+                    String URLFAT = driver.getCurrentUrl();
+                    Assert.assertEquals(URLFAT, "https://www.gov.uk/find-tender");
                 }
                 break;
-            case "Sign in to digital marketplace":
-                if (SignInToDigitalMarketplace.isDisplayed()) {
-                    SignInToDigitalMarketplace.click();
-                    String URLDMP = driver.getCurrentUrl();
-                    Assert.assertEquals(URLDMP, "https://www.applytosupply.digitalmarketplace.service.gov.uk/user/login");
+            case "Glossary":
+                if (Glossary.isDisplayed()) {
+                    Glossary.click();
+                    String URLGlossary = driver.getCurrentUrl();
+                    Assert.assertEquals(URLGlossary, "https://webuat.crowncommercial.gov.uk/glossary");
                 }
                 break;
-            case "Sign in to fleet portal":
-                if (SignInToFleetPortal.isDisplayed()) {
-                    SignInToFleetPortal.click();
-                    String URLFP = driver.getCurrentUrl();
-                    Assert.assertEquals(URLFP, "https://fleetportal.crowncommercial.gov.uk/login.mth");
+            case "Register for eMarketplace":
+                if (RegisterForeMarketplace.isDisplayed()) {
+                    RegisterForeMarketplace.click();
+                    String URLEMP = driver.getCurrentUrl();
+                    Assert.assertEquals(URLEMP, "https://webuat.crowncommercial.gov.uk/emarketplace-registration-form");
                 }
                 break;
 
@@ -1120,7 +1119,7 @@ public class E2EPage extends Actions {
         menuAbout.click();
         waitForSeconds(3);
         String expectedHeading = headingText.getText();
-        Assert.assertEquals(expectedHeading, "About Crown Commercial Service (CCS)");
+        Assert.assertEquals(expectedHeading, "About Crown Commercial Service");
     }
 
     public void clickOnEvents() {
@@ -1156,7 +1155,7 @@ public class E2EPage extends Actions {
         menuProductAndServices.click();
         waitForSeconds(3);
         String expectedHeading = headingText.getText();
-        Assert.assertEquals(expectedHeading, "Products and Servicess");
+        Assert.assertEquals(expectedHeading, "Products and services");
     }
 
     public void clickOnSocialValue() {

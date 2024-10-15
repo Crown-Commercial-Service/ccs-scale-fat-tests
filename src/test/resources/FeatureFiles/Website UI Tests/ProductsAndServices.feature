@@ -16,10 +16,4 @@ Feature: Product And Services Verification
   @ProductAndService
   Scenario: Verify  Latest news and guidance Component
     Then I should assert Latest news and guidance and navigation
-    Then I assert the current url  as "https://webuat.crowncommercial.gov.uk/news/?&categories=29,186,26,168&products_services=166,119,164,121,120,118&page=1"
-
-  @ProductAndService
-  Scenario: Verify  Upcoming events and webinars Component
-    Then I should assert upcoming events and webinars component
-    And I assert the current url  as "https://webuat.crowncommercial.gov.uk/events/?&page=1"
-
+    Then I assert the current url  as "https://webuat.crowncommercial.gov.uk/news/?&categories=29,188,26,168&products_services=166,121,119,181,118,172,164&page=1"

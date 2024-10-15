@@ -47,6 +47,15 @@ public class InformationForBuyersAndSuppliersPage extends Actions {
         Assert.assertEquals(3, relatedArticlesCount);
 
     }
+    public void selectLink(String link) {
+        waitForSeconds(2);
+        String XPATH = "//*[contains(text(),'" + link + "')]";
+        WebElement element = driver.findElement(By.xpath(XPATH));
+        JavascriptExecutor executor = ((JavascriptExecutor) driver);
+        executor.executeScript("arguments[0].click();", element);
+
+    }
+
 
 }
 

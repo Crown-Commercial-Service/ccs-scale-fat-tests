@@ -42,7 +42,7 @@ public class SectorsStep {
 
     @And("I click on {string} sector link")
     public void iClickOnSectorLink(String sectorLink) {
-        objectManager.getSectorsPageObj().selectLink(sectorLink);
+        objectManager.getSectorsPageObj().selectLinkFromCard(sectorLink);
     }
 
 

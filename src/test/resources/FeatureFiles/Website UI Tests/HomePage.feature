@@ -30,10 +30,10 @@ Feature: HomePage Verification
   Scenario Outline: Verify Buy and Supply Footer Navigation
     When I click on footer "<BuyAndSupply>" link verify the navigation
     Examples:
-      | BuyAndSupply                   |
-      | Contracts finder               |
-      | Sign in to purchasing platform |
-      | Sign in to digital marketplace |
-      | Sign in to fleet portal        |
+      | BuyAndSupply              |
+      | Contracts Finder          |
+      | Find a Tender             |
+      | Glossary                  |
+      | Register for eMarketplace |
 
 
