@@ -31,6 +31,5 @@ forceLocal: true
 selfHeal: true
 acceptInsecureCerts: true
 
-percy: true
-percyCaptureMode: auto
+
 
