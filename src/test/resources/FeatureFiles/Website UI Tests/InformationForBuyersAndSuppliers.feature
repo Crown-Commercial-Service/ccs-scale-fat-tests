@@ -3,7 +3,7 @@ Feature:Information for buyers and suppliers Verification
 
   Background:
     Given I am on a CCS website HomePage
-    And I navigate to Information for buyers and suppliers
+    And I navigate to "Information for buyers and suppliers"
 
   @InformationForBuyersAndSuppliers
   Scenario: Verify Cards-Information for new buyers and suppliers

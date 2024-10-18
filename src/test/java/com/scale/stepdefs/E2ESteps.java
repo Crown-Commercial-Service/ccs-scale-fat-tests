@@ -1,5 +1,6 @@
 package com.scale.stepdefs;
 
+import com.browserstack.PercySDK;
 import com.scale.businessPages.AboutCCSPage;
 import com.scale.businessPages.E2EPage;
 import com.scale.businessPages.HomePage;
@@ -17,6 +18,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -369,50 +371,15 @@ public class E2ESteps {
         objectManager.getE2EPageObj().clickOnFooterLinks(BuyAndSupply);
     }
 
-    @And("I navigate to contact us form")
-    public void iNavigateToContactUsForm() {
-        objectManager.getE2EPageObj().clickOnContacts();
+
+    @When("I navigate to {string}")
+    public void iNavigateTo(String textMenu) {
+        objectManager.getE2EPageObj().clickOnMenu(textMenu);
+        HashMap<String, Object> options = new HashMap<String, Object>();
+        options.put("fullPage", true);
+        PercySDK.screenshot(driver, textMenu, options);
     }
 
-    @And("I navigate to About")
-    public void iNavigateToAbout() {
-        objectManager.getE2EPageObj().clickOnAbout();
-    }
-
-    @When("I navigate to Events")
-    public void iNavigateToEvents() {
-        objectManager.getE2EPageObj().clickOnEvents();
-    }
-
-    @When("I navigate to News")
-    public void iNavigateToNews() {
-        objectManager.getE2EPageObj().clickOnNews();
-    }
-
-    @When("I navigate to Search supplier")
-    public void iNavigateToSearchSupplier() {
-        objectManager.getE2EPageObj().clickOnSearchSuppliers();
-    }
-
-    @And("I navigate to Sectors")
-    public void iNavigateToSectors() {
-        objectManager.getE2EPageObj().clickOnSectors();
-    }
-
-    @And("I navigate to Information for buyers and suppliers")
-    public void iNavigateToInformationForBuyersAndSuppliers() {
-        objectManager.getE2EPageObj().clickOnInformationForBuyersAndSuppliers();
-    }
-
-    @When("I navigate to Product And Services")
-    public void iNavigateToProductAndServices() {
-        objectManager.getE2EPageObj().clickOnProductAndServices();
-    }
-
-    @When("I navigate to Social value")
-    public void iNavigateToSocialValue() {
-        objectManager.getE2EPageObj().clickOnSocialValue();
-    }
 
     @When("I fill the contact form and submit")
     public void iFillTheContactFormAndSubmit() {
@@ -439,15 +406,6 @@ public class E2ESteps {
         objectManager.getE2EPageObj().TalkToUsComponent();
     }
 
-    @And("I navigate to Search agreement")
-    public void iNavigateToSearchAgreement() {
-        objectManager.getE2EPageObj().clickOnSearchAgreement();
-    }
-
-    @And("I navigate to Upcoming agreement")
-    public void iNavigateToUpcomingAgreement() {
-        objectManager.getE2EPageObj().clickOnUpcomingAgreement();
-    }
 
     @Then("I should verify Live filter is defaulted")
     public void iShouldVerifyLiveFilterIsDefaulted() {

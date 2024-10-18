@@ -3,7 +3,7 @@ Feature: SearchAgreement Verification
 
   Background:
     Given I am on a CCS website HomePage
-    And I navigate to Search agreement
+    And I navigate to "Search agreement"
 
 @SearchAgreement
   Scenario: Verify Search feature

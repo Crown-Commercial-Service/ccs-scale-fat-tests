@@ -3,7 +3,7 @@ Feature: Event Verification
 
   Background:
     Given I am on a CCS website HomePage
-    When I navigate to Events
+    When I navigate to "Events"
 
   @Events
   Scenario: Events -FilterCategory
