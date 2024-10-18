@@ -3,7 +3,7 @@ Feature: SocialValue Verification
 
   Background:
     Given I am on a CCS website HomePage
-    When I navigate to Social value
+    When I navigate to "Social value"
 
   @SocialValue
   Scenario: SocialValue-PageHeading and  form navigation

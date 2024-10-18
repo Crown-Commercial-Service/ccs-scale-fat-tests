@@ -3,7 +3,7 @@ Feature: ContactUS Verification
 
   Background:
     Given I am on a CCS website HomePage
-    And I navigate to contact us form
+    And I navigate to "Contact"
 
   @ContactCCS @form
   Scenario: Contact CCS - Submit form

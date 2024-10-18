@@ -3,7 +3,7 @@ Feature: About Verification
 
   Background:
     Given I am on a CCS website HomePage
-    When I navigate to About
+    When I navigate to "About"
 
   @AboutCCS
   Scenario: About CCS

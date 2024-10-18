@@ -3,7 +3,7 @@ Feature: SearchSupplier Verification
 
   Background:
     Given I am on a CCS website HomePage
-    When I navigate to Search supplier
+    When I navigate to "Search supplier"
 
   @SearchSuppliers
   Scenario: Verify Warning message Display

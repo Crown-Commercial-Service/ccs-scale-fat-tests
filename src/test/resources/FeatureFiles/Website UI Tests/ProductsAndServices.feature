@@ -3,7 +3,7 @@ Feature: Product And Services Verification
 
   Background:
     Given I am on a CCS website HomePage
-    When I navigate to Product And Services
+    When I navigate to "Product And Services"
 
   @ProductAndService
   Scenario: Verify Top card layout & Additional services and agreements

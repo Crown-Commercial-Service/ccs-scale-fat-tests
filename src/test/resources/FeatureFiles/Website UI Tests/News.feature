@@ -3,7 +3,7 @@ Feature: News Verification
 
   Background:
     Given I am on a CCS website HomePage
-    When I navigate to News
+    When I navigate to "News"
 
   @News
   Scenario: News -FilterCategory
