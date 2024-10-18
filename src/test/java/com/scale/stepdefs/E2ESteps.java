@@ -299,6 +299,9 @@ public class E2ESteps {
 
     @Then("I should see the PPG related components")
     public void iShouldSeeThePPGRelatedComponents() {
+        HashMap<String, Object> options = new HashMap<String, Object>();
+        options.put("fullPage", true);
+        PercySDK.screenshot(driver, "HomePage", options);
         objectManager.getE2EPageObj().assertPPGComponents();
         log.info("PPG components are present");
     }
