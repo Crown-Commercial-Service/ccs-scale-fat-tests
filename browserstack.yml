@@ -26,8 +26,8 @@ consoleLogs: info
 accessibility: true
 parallelsPerPlatform: 3
 browserstackLocal: true
-#browserStackLocalOptions:
-#forceLocal: true
+browserStackLocalOptions:
+forceLocal: true
 selfHeal: true
 acceptInsecureCerts: true
 
