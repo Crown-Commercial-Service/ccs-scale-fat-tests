@@ -3,7 +3,7 @@ Feature:Sectors Verification
 
   Background:
     Given I am on a CCS website HomePage
-    And I navigate to Sectors
+    And I navigate to "Sectors"
 
   @Sectors
   Scenario: Verify Cards-Heading

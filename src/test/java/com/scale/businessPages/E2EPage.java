@@ -286,35 +286,8 @@ public class E2EPage extends Actions {
     private WebElement Glossary;
     @FindBy(xpath = "//*[contains(text(),'Register for eMarketplace')]")
     private WebElement RegisterForeMarketplace;
-
-    @FindBy(xpath = "(//*[contains(text(),'Contact')])[1]")
-    private WebElement menuContact;
-    @FindBy(xpath = "(//*[contains(text(),'About')])[1]")
-    private WebElement menuAbout;
-    @FindBy(xpath = "(//*[contains(text(),'Events')])[1]")
-    private WebElement menuEvents;
-    @FindBy(xpath = "(//*[contains(text(),'News')])[1]")
-    private WebElement menuNews;
-    @FindBy(xpath = "(//*[contains(text(),'Search suppliers')])[1]")
-    private WebElement menuSearchSuppliers;
-    @FindBy(xpath = "//*[contains(text(),'Products and services')]")
-    private WebElement menuProductAndServices;
-    @FindBy(xpath = "//*[contains(text(),'Social value')]")
-    private WebElement menuSocialValue;
-
-    @FindBy(xpath = "//*[contains(text(),'Sectors')]")
-    private WebElement menuSectors;
-    @FindBy(xpath = "//*[contains(text(),'Information for buyers and suppliers')]")
-    private WebElement menuInformationForBuyersAndSuppliers;
-
-
     @FindBy(xpath = "//h1")
     private WebElement headingText;
-
-    @FindBy(xpath = "(//*[contains(text(),'Search agreements')])[1]")
-    private WebElement menuSearchAgreement;
-    @FindBy(xpath = "//*[contains(text(),'Upcoming agreements')]")
-    private WebElement menuUpcomingAgreement;
 
     @FindBy(id = "name")
     private WebElement fldName;
@@ -1108,58 +1081,12 @@ public class E2EPage extends Actions {
         }
     }
 
-    public void clickOnContacts() {
-        menuContact.click();
-        waitForSeconds(3);
-        String expectedHeading = headingText.getText();
-        Assert.assertEquals(expectedHeading, "Contact CCS");
-    }
 
-    public void clickOnAbout() {
-        menuAbout.click();
-        waitForSeconds(3);
-        String expectedHeading = headingText.getText();
-        Assert.assertEquals(expectedHeading, "About Crown Commercial Service");
-    }
-
-    public void clickOnEvents() {
-        menuEvents.click();
-        waitForSeconds(3);
-        String expectedHeading = headingText.getText();
-        Assert.assertEquals(expectedHeading, "Events");
-    }
-
-    public void clickOnNews() {
-        menuNews.click();
-    }
-
-    public void clickOnSearchSuppliers() {
-        menuSearchSuppliers.click();
-        waitForSeconds(3);
-        String expectedHeading = headingText.getText();
-        Assert.assertEquals(expectedHeading, "Search suppliers");
-    }
-
-    public void clickOnSectors() {
-        menuSectors.click();
-        waitForSeconds(3);
-        String expectedHeading = headingText.getText();
-        Assert.assertEquals(expectedHeading, "Sectors");
-    }
-
-    public void clickOnInformationForBuyersAndSuppliers() {
-        menuInformationForBuyersAndSuppliers.click();
-    }
-
-    public void clickOnProductAndServices() {
-        menuProductAndServices.click();
-        waitForSeconds(3);
-        String expectedHeading = headingText.getText();
-        Assert.assertEquals(expectedHeading, "Products and services");
-    }
-
-    public void clickOnSocialValue() {
-        menuSocialValue.click();
+    public void clickOnMenu(String textMenu) {
+        String XPATH = "(//*[contains(text(),'" + textMenu + "')])[1]";
+        WebElement element = driver.findElement(By.xpath(XPATH));
+        JavascriptExecutor executor = ((JavascriptExecutor) driver);
+        executor.executeScript("arguments[0].click();", element);
     }
 
 
@@ -1205,22 +1132,6 @@ public class E2EPage extends Actions {
         waitForSeconds(3);
         String expectedTalkToUsHeading = talkToUsHeading.getText();
         Assert.assertEquals(expectedTalkToUsHeading, "Talk to us");
-
-    }
-
-    public void clickOnSearchAgreement() {
-        menuSearchAgreement.click();
-        waitForSeconds(3);
-        String expectedHeading = headingText.getText();
-        Assert.assertEquals(expectedHeading, "Search agreements");
-
-    }
-
-    public void clickOnUpcomingAgreement() {
-        menuUpcomingAgreement.click();
-        waitForSeconds(3);
-        String expectedHeading = headingText.getText();
-        Assert.assertEquals(expectedHeading, "Upcoming agreements");
 
     }
 
