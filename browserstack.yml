@@ -27,7 +27,7 @@ accessibility: true
 parallelsPerPlatform: 3
 browserstackLocal: true
 browserStackLocalOptions:
-forceLocal: true
+#forceLocal: true
 selfHeal: true
 acceptInsecureCerts: true
 
