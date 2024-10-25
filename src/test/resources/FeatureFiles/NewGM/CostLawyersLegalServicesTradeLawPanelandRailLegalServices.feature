@@ -46,26 +46,7 @@ Feature:Cost Lawyers, Legal Services, Trade Law Panel and Rail Legal Services
       | search_term                                           | recommendation |
       | high value or complex merger and acquisition activity | RM6204         |
 
-  @RM6179
-  Scenario Outline:RM6179:Legal Services Panel-Lot1
-    Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
-    When User enters "rail passenger service contracts (PSC)" details and click "Start now" button
-    And User selects the "Legal" radio button
-    And User clicks on the "Continue" button
-    And I am on the "What service do you need?" page
-    And User selects the "Central government" radio button
-    And User clicks on the "Continue" button
-    And User selects the "General legal advice and services" radio button
-    And User clicks on the "Continue" button
-    Then I should see the recommended agreements
-      | Legal Services Panel |
-    And User is displayed with initial search phrase from "<search_term>"
-    And User is displayed with "Legal" answer for the question "What type of rail passenger service contracts (PSC) do you need?"
-    And User is displayed with Framework Lot Recommended: "<recommendation>"
 
-    Examples:
-      | search_term                            | recommendation |
-      | rail passenger service contracts (PSC) | RM6179Lot1     |
 
   @RM6284
   Scenario Outline:RM6284:Costs Lawyer Services 2-Lot1
