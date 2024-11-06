@@ -3,6 +3,7 @@ package com.scale.utility;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -82,11 +83,13 @@ public class BrowserFactory {
     }
 
     public void launchURL(String url) {
+        Assert.assertNotNull(url);
         driver.get(url);
         log.info(url + " is launched");
     }
 
     public void launchURL(String url, String portalExtension) {
+        Assert.assertNotNull(url);
         driver.get(url + portalExtension);
         log.info(url + " is launched");
     }

@@ -161,7 +161,8 @@ public class TestContext {
     public void iAmOnACCSWebsiteHomePage() {
         {
             objectManager = new PageObjectManager(driver, scenario);
-            String baseURL = configReader.get("baseURL");
+           // String baseURL = configReader.get("baseURL");
+            String baseURL = System.getProperty("baseURL");
             log.info("base.url:" + baseURL);
             browserFactory.launchURL(baseURL);
         }
