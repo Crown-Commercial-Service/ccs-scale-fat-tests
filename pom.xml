@@ -33,7 +33,7 @@
     <properties>
         <rest.assured.version>3.2.0</rest.assured.version>
         <cucumber.version>7.18.1</cucumber.version>
-        <selenium.webdriver.version>4.11.0</selenium.webdriver.version>
+        <selenium.webdriver.version>4.14.0</selenium.webdriver.version>
         <junit.version>5.11.0</junit.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <surefire.fork.count>6</surefire.fork.count>
