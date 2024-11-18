@@ -38,6 +38,7 @@ Feature:Demand Management & Renewables FrameworkAndRenewables DPS
     And I am on the "What service do you need?" page
     And User selects the "Solar photovoltaic services" radio button
     And User clicks on the "Continue" button
+    Then User clicks on the open all link
     Then I should see the recommended agreements
       | Demand Management & Renewables Framework |
     And User is displayed with initial search phrase from "<search_term>"
@@ -46,4 +47,4 @@ Feature:Demand Management & Renewables FrameworkAndRenewables DPS
 
     Examples:
       | search_term        | recommendation |
-      | Carbon Off-Setting | RM6314Lot1.1   |
+      | Carbon Offsetting | RM6314Lot1.1   |
