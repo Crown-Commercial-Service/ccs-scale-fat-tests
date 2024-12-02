@@ -260,6 +260,10 @@ public class GMResultPageSteps {
                 (objectManager.getGmSearchResultPageObj().getAgreementResultText());
         Assert.assertEquals(results.asList(), listAllTitles);
     }
+    @Then("I should see the agreement type")
+    public void iShouldSeeTheAgreementType(String expectedAgreementType) {
+        Assert.assertEquals("The actual agreement type is not matching", expectedAgreementType, (objectManager.getGmSearchResultPageObj().getAgreementTypeText()));
+    }
 
     @Then("I should see the agreement type")
     public void iShouldSeeTheAgreementType(String expectedAgreementType) {

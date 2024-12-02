@@ -26,75 +26,102 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import static java.lang.Integer.parseInt;
-import static org.w3c.dom.xpath.XPathResult.FIRST_ORDERED_NODE_TYPE;
 
 public class GMResultPage extends Actions {
-    public String contactCcs = "//*[@class='contact-ccs-btn']/a";
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
     private Logger log = LogManager.getLogger(GMResultPage.class);
+
     @FindBy(id = "definitions")
     private WebElement routesToMarketDefinition;
+
     @FindBy(xpath = "//h2[@class='govuk-heading-xl page-title govuk-!-margin-bottom-2'][contains(text(),'Based on your answers, there is')]")
     private WebElement gmPageResultTitle;
+
     @FindBy(xpath = "//div[@class='govuk-summary-list__row']")
     private WebElement questionsList;
+
     @FindBy(xpath = "//p[contains(text(),'Show details')]")
     private WebElement btnShowDetails;
+
     @FindBy(xpath = "//h2[@class='govuk-heading-xl page-title']")
     private WebElement gmResultHeader;
+
     @FindBy(xpath = "//a[@class='govuk-link'][contains(text(), 'Recommendation')]")
     private WebElement recommendationCta;
+
     @FindBy(xpath = "//a[@class='govuk-link'][contains(text(), 'What are your options')]")
     private WebElement whatAreYourOptionsCta;
+
     @FindBy(xpath = "//a[@class='govuk-link'][conYtains(text(), 'Definitions')]")
     private WebElement definitionsCta;
+
     @FindBy(xpath = "//a[@class='govuk-link'][contains(text(), 'Your answers')]")
     private WebElement yourAnswersCta;
+
     @FindBy(xpath = "//span[@class='govuk-details__summary-text'][contains(text(), 'Details')]")
     private WebElement detailsCta;
+
     @FindBy(xpath = "//a[@class='govuk-link'][contains(text(), 'Linen and Laundry Services')]")
     private WebElement linenAndLaundryServicesLink;
+
     @FindBy(xpath = "//a[@class='govuk-link'][contains(text(), 'Contact')]")
     private WebElement contactCCSLink;
+
     @FindBy(xpath = "//a[contains(text(), 'Start over to change your answers')]")
     private WebElement startOverToChangeYourAnswersCTA;
+
     @FindBy(id = "accordion-default-heading-1")
     private WebElement recommendationSummaryTitleSection;
+
     @FindBy(id = "accordion-with-summary-sections-summary-1")
     private WebElement recommendationSummaryBodySection;
+
     @FindBy(xpath = "//details[@class='govuk-details']")
     private WebElement detailSectionContent;
+
     @FindBy(xpath = "//span[@class='govuk-details__summary-text']")
     private WebElement detailSectionCta;
+
     @FindBy(xpath = "//button[@class='govuk-accordion__open-all']")
     private WebElement openAllCta;
+
     @FindBy(xpath = "//button[@class='govuk-accordion__section-button']")
     private WebElement accordions;
+
     @FindBy(xpath = "//p[@class='govuk-link'][contains(text(), 'Details')]")
     private WebElement detailsLink;
+
     @FindBy(xpath = "//div[@id='accordion-with-summary-sections-content-1']//following-sibling::p")
     private WebElement frameworkIdAndExpirationDateSection;
+
     @FindBy(xpath = "//div[@id='accordion-with-summary-sections-content-1']//following-sibling::p[last()]")
     private WebElement frameworkDescriptionSection;
+
     @FindBy(linkText = "//p[contains(text(),'Show Details')]")
     private WebElement showDetails;
+
     @FindBy(xpath = "//div//button//h3")
     private List<WebElement> agreementResultText;
-    @FindBy(xpath = "//strong[normalize-space(text())='Agreement Type:']/following-sibling::text()[1]")
-    private WebElement agreementTypeText;
+
     @FindBy(xpath = "//*[@class='govuk-summary-list__value']")
     private List<WebElement> summaryListText;
+
     @FindBy(xpath = "//*[@id='accordion-default-heading-1']/h3")
     private WebElement agreementResultTextOne;
+
     @FindBy(xpath = "//*[@id='accordion-default-heading-2']/h3")
     private WebElement agreementResultTextTwo;
+
     @FindBy(xpath = "(//h3)[1]")
     private WebElement lblEnergySolution;
 
+
+    public String contactCcs = "//*[@class='contact-ccs-btn']/a";
+
     public GMResultPage(WebDriver driver, Scenario scenario) {
         this.driver = driver;
-
+     
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(30));
     }
@@ -341,7 +368,7 @@ public class GMResultPage extends Actions {
                 description, actualDescription);
     }
 
-    public void checkMappedListItems(String message, String xPath, Map<Integer, String> map, String configFilePath, String... configurationConcatenation) {
+    public void checkMappedListItems(String message, String xPath, Map<Integer, String> map, String configFilePath, String... configurationConcatenation){
         String concatProperty = configurationConcatenation.length > 0 ? configurationConcatenation[0] : "";
         ConfigurationReader reader = new ConfigurationReader(configFilePath);
         map.entrySet().stream().
@@ -361,21 +388,21 @@ public class GMResultPage extends Actions {
     }
 
     // TODO: 8/7/2020 rework method when needed
-    public void checkAdjacentStartProcurementButton(String[] recommendations) {
+    public void checkAdjacentStartProcurementButton(String[] recommendations){
         Map<Integer, String> recommendationsCollection = IntStream.range(0, recommendations.length).boxed().collect(Collectors.toMap(i -> i, i -> recommendations[i]));
         String recommendationTitleXpath = "//div//following-sibling::h3[%s]";
         String startProcurementButtonXpath = "//div//following-sibling::h3[%s]//following-sibling::div//button";
         checkMappedListItems("recommendation title", recommendationTitleXpath, recommendationsCollection, "config//LotsRecommendation.properties");
         recommendationsCollection.entrySet().stream()
                 .forEach(e -> Assert.assertTrue("The start procurement button was not found adjacent to  <" + e.getValue() +
-                        "> section", driver.findElement(By.xpath(String.format(startProcurementButtonXpath, (e.getKey() + 1)))).isDisplayed()));
+                                "> section", driver.findElement(By.xpath(String.format(startProcurementButtonXpath, (e.getKey() + 1)))).isDisplayed()));
     }
 
-    public void checkFacilitiesManagementHeader() {
+    public void checkFacilitiesManagementHeader(){
         checkTitleFromMainSection("Facilities Management Marketplace");
     }
 
-    public void checkEscapeRouteHeaderContent(String expectedTitle, int... indexes) {
+    public void checkEscapeRouteHeaderContent(String expectedTitle, int... indexes){
         int index = indexes.length > 0 ? indexes[0] : 1;
         checkTitleFromMainSection(expectedTitle, index);
     }
@@ -388,11 +415,9 @@ public class GMResultPage extends Actions {
         Assert.assertTrue("The routes to market definitions are not displayed in the UI", routesToMarketDefinition.isDisplayed());
         Assert.assertEquals("The expected routes to market definitions content is not the same with the actual", expectedRoutesDefinitionContent, getRoutesToMarketDefinitionContent());
     }
-
     public void clickShowDetails() {
         btnShowDetails.click();
     }
-
     public void clickElementWithJavaScript(String xpath) {
         WebElement element = driver.findElement(By.xpath(xpath));
         JavascriptExecutor executor = (JavascriptExecutor) driver;
@@ -400,31 +425,25 @@ public class GMResultPage extends Actions {
         log.info("Clicked on specified element");
     }
 
-    public List<WebElement> getAgreementResultText() {
+    public List<WebElement> getAgreementResultText(){
         return agreementResultText;
     }
-
-    public void checkAgreementType(String expectedAgreementType,WebDriver driver) {
-        Assert.assertEquals("The actual agreement type is not matching", expectedAgreementType,getAgreementTypeText(driver));
-    }
-
 
     public List<WebElement> getSummaryListText() {
         return summaryListText;
     }
 
-    public void clickContactButton() {
+    public void clickContactButton(){
         clickElementWithJavaScript(contactCcs);
     }
 
-    public String getAgreementResultTextOne() {
+    public String getAgreementResultTextOne(){
         return agreementResultTextOne.getText();
     }
 
-    public String getAgreementResultTextTwo() {
+    public String getAgreementResultTextTwo(){
         return agreementResultTextTwo.getText();
     }
-
     public void assertEnergyResult(String energySolution) {
         waitForSeconds(1);
         String expectedEnergySolution = lblEnergySolution.getText();
