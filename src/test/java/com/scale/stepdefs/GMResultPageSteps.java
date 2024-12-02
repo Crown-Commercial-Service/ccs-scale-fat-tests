@@ -95,6 +95,7 @@ public class GMResultPageSteps {
         gmResultPage.checkTheAnswerForTheQuestion(question, answer);
         testContextObj.takeSnapShot();
     }
+
     @Then("I should see {string} Energy Solution Results")
     public void i_should_see_Energy_Solution_Results(String energySolution) {
         gmResultPage = objectManager.getGmSearchResultPageObj();
@@ -259,6 +260,13 @@ public class GMResultPageSteps {
                 (objectManager.getGmSearchResultPageObj().getAgreementResultText());
         Assert.assertEquals(results.asList(), listAllTitles);
     }
+    @Then("I should see the agreement type")
+    public void iShouldSeeTheAgreementType(String expectedAgreementType) {
+        gmResultPage = objectManager.getGmSearchResultPageObj();
+        gmResultPage.checkAgreementType(expectedAgreementType,driver);
+        testContextObj.takeSnapShot();
+    }
+
 
     @Then("I should see the following summary list values")
     public void i_should_see_the_following_summary_list_values(DataTable title) {
@@ -284,7 +292,6 @@ public class GMResultPageSteps {
     public void user_clicks_on_the_contact_CCS_button() {
         objectManager.getGmSearchResultPageObj().clickContactButton();
     }
-
 
 
 }

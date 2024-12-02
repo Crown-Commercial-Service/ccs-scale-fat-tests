@@ -62,7 +62,8 @@ public class TestContext {
     @Given("User logs in to the CCS application for \"([^\"]*)\" and \"([^\"]*)\"$")
     public void user_reaches_the_landing_page_after_the_search(String ScenarioID, String searchedFramework) throws MalformedURLException, InterruptedException, FileNotFoundException {
         scenarioContext.setKeyValue("ScenarioID", ScenarioID);
-        String baseURL = configReader.get("baseURL");
+        //String baseURL = configReader.get("baseURL");
+        String baseURL = System.getProperty("baseURL");
         log.info("base.url:" + baseURL);
         if(baseURL.contains("ppd.scale")) {
             isScenarioViaCSS = false;
@@ -160,7 +161,8 @@ public class TestContext {
     public void iAmOnACCSWebsiteHomePage() {
         {
             objectManager = new PageObjectManager(driver, scenario);
-            String baseURL = configReader.get("baseURL");
+           // String baseURL = configReader.get("baseURL");
+            String baseURL = System.getProperty("baseURL");
             log.info("base.url:" + baseURL);
             browserFactory.launchURL(baseURL);
         }

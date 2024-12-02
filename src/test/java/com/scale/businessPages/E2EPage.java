@@ -317,6 +317,7 @@ public class E2EPage extends Actions {
     @FindBy(id = "all")
     private WebElement chkBoxViewALL;
 
+
     @FindBy(id = "expired")
     private WebElement chkBoxExpired;
     @FindBy(xpath = "//*[@class='ccs-filters-summary__list']")
@@ -1180,6 +1181,13 @@ public class E2EPage extends Actions {
         String expectedFilterSummary = filterSummary.getText();
         Assert.assertEquals(expectedFilterSummary, "Live\nand\nExpired");
     }
+    public void clickOnSearchAgreement(String breadCrumbs) {
+        String XPATH = "//*[normalize-space(text()) = '" + breadCrumbs + "']";
+        WebElement element = driver.findElement(By.xpath(XPATH));
+        JavascriptExecutor executor = ((JavascriptExecutor) driver);
+        executor.executeScript("arguments[0].click();", element);
+    }
+
 
 
 }

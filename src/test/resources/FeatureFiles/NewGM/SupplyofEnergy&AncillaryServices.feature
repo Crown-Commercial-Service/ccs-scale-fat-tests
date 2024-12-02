@@ -15,6 +15,8 @@ Feature:RM6251: Supply of Energy 2
     When User clicks on the "Continue" button
     Then I should see the recommended agreements
       | Supply of Energy 2 |
+    Then I should see the agreement type
+      | PCR06 Framework |
     And User is displayed with initial search phrase from "<search_term>"
     And User is displayed with "Supply of electricity" answer for the question "What service do you need?"
     And User is displayed with Framework Lot Recommended: "<recommendation>"
@@ -29,6 +31,8 @@ Feature:RM6251: Supply of Energy 2
     When User clicks on the "Continue" button
     Then I should see the recommended agreements
       | Supply of Energy 2 |
+    Then I should see the agreement type
+      | PCR06 Framework |
     And User is displayed with initial search phrase from "<search_term>"
     And User is displayed with "Supply of gas" answer for the question "What service do you need?"
     And User is displayed with Framework Lot Recommended: "<recommendation>"

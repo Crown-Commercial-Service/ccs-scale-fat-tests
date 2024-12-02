@@ -453,4 +453,8 @@ public class E2ESteps {
     }
 
 
+    @When("I click on on the {string} from the breadcrumbs")
+    public void iClickOnOnTheFromTheBreadcrumbs(String breadCrumbs) {
+        objectManager.getE2EPageObj().clickOnSearchAgreement(breadCrumbs);
+    }
 }

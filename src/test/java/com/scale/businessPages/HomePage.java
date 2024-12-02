@@ -20,33 +20,33 @@ public class HomePage extends Actions {
 
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
-    private Logger log = LogManager.getLogger(HomePage.class);
-
-
     /*@FindBy(how = How.XPATH, using = "//button[@class='homepage-hero__search-button']")
     private WebElement searchButton;*/
-
+    private Logger log = LogManager.getLogger(HomePage.class);
     @FindBy(xpath = "//button[@class='homepage-hero__search-button']")
     private WebElement searchButton;
-
     @FindBy(xpath = "//input[@id='framework_q']")
     private WebElement enterFrameworkDetails;
-
     @FindBy(partialLinkText = "Start now")
     private WebElement startNowButton;
+    @FindBy(xpath = "//a[contains(text(),'Cookie settings')]")
+    private WebElement linkCookieSettings;
+    @FindBy(xpath = "//*[@id='usage-2']")
+    private WebElement chkBoxOff;
+    @FindBy(xpath = "//button[contains(text(),'Save changes')]")
+    private WebElement btnSaveChanges;
 
+
+    @FindBy(xpath = "//*[@class='cookie-updated-notice js-live-area']/p")
+    private WebElement lblSuccessMessage;
     @FindBy(xpath = "//h1")
     private WebElement headerOne;
-
     @FindBy(xpath = "//h2[@class='govuk-heading-xl page-title']/strong")
     private WebElement headerTwo;
-
     @FindBy(xpath = "//div[3]/div/div[2]/form/div/div/input[@id='framework_q']")
     private WebElement searchFrameworkField;
-
     @FindBy(xpath = "//div[3]/div/div[2]/form/div/div/button[@class='homepage-hero__search-button']")
     private WebElement searchAgreementButton;
-
     private String searchAgreementBtn = "//div[3]/div/div[2]/form/div/div/button[@class='homepage-hero__search-button']";
 
     public HomePage(WebDriver driver, Scenario scenario) {
@@ -56,6 +56,7 @@ public class HomePage extends Actions {
         this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(50));
 
     }
+
 
     public void homePage1() {
         WebElement homeLogo = driver.findElement(By.xpath("//a[@class='logo']//img"));
@@ -79,15 +80,15 @@ public class HomePage extends Actions {
         //clickButton("search");
     }
 
-    public void ClickStartNow(String buttonName){
-        JavascriptExecutor executor = (JavascriptExecutor)driver;
+    public void ClickStartNow(String buttonName) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click();", startNowButton);
         //  startNowButton.click();
     }
 
     public void clickButton(String buttonName) {
         waitForSeconds(2);
-        String XPATH = "//*[contains(text(),'" + buttonName +"')]";
+        String XPATH = "//*[contains(text(),'" + buttonName + "')]";
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
@@ -95,12 +96,9 @@ public class HomePage extends Actions {
         scenario.log(" User Clicked on " + buttonName + " button");
     }
 
-
-
-
     public void clickRadioButton(String radioButtonName) {
         waitForSeconds(2);
-        String XPATH = "//*[contains(text(),'"+ radioButtonName +"')]//preceding-sibling::input[@type='radio']";
+        String XPATH = "//*[contains(text(),'" + radioButtonName + "')]//preceding-sibling::input[@type='radio']";
         WebElement element = driver.findElement(By.xpath(XPATH));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
@@ -111,7 +109,7 @@ public class HomePage extends Actions {
 
     public void clickCheckBoxButton(String checkboxButtonName) {
         waitForSeconds(3);
-        String XPATH = "//*[contains(text(),'"+ checkboxButtonName +"')]//preceding-sibling::input[@type='checkbox']";
+        String XPATH = "//*[contains(text(),'" + checkboxButtonName + "')]//preceding-sibling::input[@type='checkbox']";
         WebElement element = driver.findElement(By.xpath(XPATH));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
@@ -130,7 +128,7 @@ public class HomePage extends Actions {
 
     public void clickContactButton(String buttonName) {
         waitForSeconds(3);
-        String XPATH = "//p/a[contains(text(),'" + buttonName +"')]";
+        String XPATH = "//p/a[contains(text(),'" + buttonName + "')]";
         WebElement element = driver.findElement(By.xpath(XPATH));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
@@ -139,14 +137,42 @@ public class HomePage extends Actions {
         scenario.log(" Buyer clicked on " + buttonName + " checkbox button");
     }
 
-    public void clickAgreementStatusFilter(String filterStatusName){
-        String XPATH = "//*[@id= '"+ filterStatusName +"']";
+    public void clickAgreementStatusFilter(String filterStatusName) {
+        String XPATH = "//*[@id= '" + filterStatusName + "']";
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XPATH)));
         JavascriptExecutor executor = ((JavascriptExecutor) driver);
         executor.executeScript("arguments[0].click();", element);
     }
+
     public void naviagteToPage(String url) {
         driver.navigate().to(url);
     }
+
+    public void clickOnCookieSetting() {
+        linkCookieSettings.click();
+
+    }
+
+    public void turnOffCookieSetting() {
+        chkBoxOff.click();
+
+    }
+
+    public void clickOnSaveChanges() {
+        btnSaveChanges.click();
+
+    }
+
+    public void assertSuccessMessage() {
+        waitForSeconds(3);
+        String successMessage = lblSuccessMessage.getText();
+        Assert.assertEquals(successMessage, "Your cookie settings were saved.");
+
+    }
+    public void verifySelectedOption() {
+        chkBoxOff.isSelected();
+
+    }
+
 
 }
