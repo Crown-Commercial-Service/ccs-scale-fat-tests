@@ -449,5 +449,8 @@ public class GMResultPage extends Actions {
         String expectedEnergySolution = lblEnergySolution.getText();
         Assert.assertEquals(expectedEnergySolution, energySolution);
     }
+    public void checkAgreementType(String expectedAgreementType,WebDriver driver) {
+        Assert.assertEquals("The actual agreement type is not matching", expectedAgreementType, getAgreementTypeText(driver));
+    }
 }
 

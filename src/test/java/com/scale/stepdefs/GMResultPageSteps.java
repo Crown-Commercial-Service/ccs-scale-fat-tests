@@ -262,11 +262,6 @@ public class GMResultPageSteps {
     }
     @Then("I should see the agreement type")
     public void iShouldSeeTheAgreementType(String expectedAgreementType) {
-        Assert.assertEquals("The actual agreement type is not matching", expectedAgreementType, (objectManager.getGmSearchResultPageObj().getAgreementTypeText()));
-    }
-
-    @Then("I should see the agreement type")
-    public void iShouldSeeTheAgreementType(String expectedAgreementType) {
         gmResultPage = objectManager.getGmSearchResultPageObj();
         gmResultPage.checkAgreementType(expectedAgreementType,driver);
         testContextObj.takeSnapShot();
