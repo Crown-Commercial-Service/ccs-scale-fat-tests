@@ -36,4 +36,9 @@ Feature: HomePage Verification
       | Glossary                  |
       | Register for eMarketplace |
 
-
+  @UPT
+  Scenario: Verify Cookie settings
+    When I click on Cookie settings
+    And I chance the choice to off for the question Cookies that measure website use
+    Then I should assert the success message
+    And I verify the selected option is stored

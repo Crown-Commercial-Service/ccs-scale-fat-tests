@@ -48,4 +48,6 @@ public class SocialValueStep {
     public void iClickOnGetInTouchButton(String button) {
         objectManager.getSocialValuePageObj().clickOnButton(button);
     }
+
+
 }

@@ -13,8 +13,11 @@ Feature:RM6314:Demand Management & Renewables Framework
     And User clicks on the "Continue" button
     And User selects the "Energy advisory, design and technical services" radio button
     And User clicks on the "Continue" button
+    And User clicks on the open all link
     Then I should see the recommended agreements
       | Demand Management & Renewables Framework |
+    Then I should see the agreement type
+      | Open Framework |
     And User is displayed with initial search phrase from "<search_term>"
     And User is displayed with "Energy Demand Management Generation Services" answer for the question "What type of Carbon Net Zero do you need?"
     And User is displayed with Framework Lot Recommended: "<recommendation>"
