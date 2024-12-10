@@ -91,5 +91,29 @@ public class HomeSteps {
     }
 
 
+    @When("I click on Cookie settings")
+    public void iClickOnCookieSettings() {
+        homePageObj = objectManager.getHomePageObj();
+        homePageObj.clickOnCookieSetting();
+    }
+    @And("I chance the choice to off for the question Cookies that measure website use")
+    public void iChanceTheChoiceToOffForTheQuestionCookiesThatMeasureWebsiteUse() {
+        homePageObj = objectManager.getHomePageObj();
+        homePageObj.turnOffCookieSetting();
+        homePageObj.clickOnSaveChanges();
+    }
+
+
+    @Then("I should assert the success message")
+    public void iShouldAssertTheSuccessMessage() {
+        homePageObj = objectManager.getHomePageObj();
+        homePageObj.assertSuccessMessage();
+    }
+    @And("I verify the selected option is stored")
+    public void iVerifyTheSelectedOptionIsStored() {
+        homePageObj = objectManager.getHomePageObj();
+        homePageObj.verifySelectedOption();
+    }
+
 
 }

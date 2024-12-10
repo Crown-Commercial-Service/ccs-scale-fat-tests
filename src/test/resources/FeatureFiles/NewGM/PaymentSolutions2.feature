@@ -1,6 +1,7 @@
 Feature:RM6186: Fuel Cards and Associated Services VI
+
   @NewGM
-  @RM6186
+    @RM6186
   Scenario Outline:RM6186: Fuel Cards and Associated Services VI
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "gpc" details and click "Start now" button
@@ -22,8 +23,9 @@ Feature:RM6186: Fuel Cards and Associated Services VI
     Examples:
       | search_term | recommendation |
       | gpc         | RM6186         |
+
   @NewGM
-  @RM6248
+    @RM6248
   Scenario Outline:RM6248: Payment Solutions 2-Lot1
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Finance Conduct Authority" details and click "Start now" button
@@ -38,6 +40,8 @@ Feature:RM6186: Fuel Cards and Associated Services VI
     And User clicks on the "Continue" button
     Then I should see the recommended agreements
       | Payment Solutions 2 |
+    Then I should see the agreement type
+      | PCR15 Framework |
     And User is displayed with initial search phrase from "<search_term>"
     And User is displayed with "Procurement card" answer for the question "What service do you need?"
     And User is displayed with Framework Lot Recommended: "<recommendation>"

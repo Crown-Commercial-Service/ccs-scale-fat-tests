@@ -34,4 +34,16 @@ Feature: SearchAgreement Verification
   Scenario: Verify Upcoming agreements,Helpful Links and AgreementPricing Components
     Then I should see page component on search Agreement page
 
+  @UPT
+  Scenario: Verify GM Breadcrumbs
+    And User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    And User enters "Finance Conduct Authority" details and click "Start now" button
+    When I click on on the "Search agreement" from the breadcrumbs
+    Then I am on the "Search agreements for Finance Conduct Authority" page
 
+  @UPT
+  Scenario: Verify GM Breadcrumbs
+    And User logs in to the CCS application for "<ScenarioID>" and "<framework>"
+    And User enters "Finance Conduct Authority" details and click "Start now" button
+    When I click on on the "Back to start" from the breadcrumbs
+    Then I am on the "Find a commercial agreement" page
