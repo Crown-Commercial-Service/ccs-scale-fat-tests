@@ -1,4 +1,4 @@
-@NewGM1
+@NewGM
 Feature:Post and Courier
 
   @RM6171
