@@ -4,7 +4,7 @@ Feature: News Verification
   Background:
     Given I am on a CCS website HomePage
     When I navigate to "News"
-
+  @Prod_Sanity
   @News
   Scenario: News -FilterCategory
     Then I assert the FilterCategory as expected

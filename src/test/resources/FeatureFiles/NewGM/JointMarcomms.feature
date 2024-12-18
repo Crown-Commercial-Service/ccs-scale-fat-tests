@@ -1,7 +1,8 @@
 @NewGM
 Feature:Joint Marcomms
 
-  @RM6123
+  @Prod_Sanity
+    @RM6123
   Scenario Outline:RM6123:Media Services -Lot2
     Given User logs in to the CCS application for "<ScenarioID>" and "<framework>"
     When User enters "Marine research services" details and click "Start now" button

@@ -9,6 +9,7 @@ Feature: About Verification
   Scenario: About CCS
     Then I should see About page component
 
+  @Prod_Sanity
   @AboutCCS
   Scenario: About CCS
     Then I assert the page heading as expected

@@ -4,7 +4,7 @@ Feature:Information for buyers and suppliers Verification
   Background:
     Given I am on a CCS website HomePage
     And I navigate to "Information for buyers and suppliers"
-
+  @Prod_Sanity
   @InformationForBuyersAndSuppliers
   Scenario: Verify Cards-Information for new buyers and suppliers
     Then I assert the Card heading as expected on Information for new buyers and suppliers layout

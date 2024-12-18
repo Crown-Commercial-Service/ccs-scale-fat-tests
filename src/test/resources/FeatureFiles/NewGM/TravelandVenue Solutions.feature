@@ -8,8 +8,8 @@ Feature:RM6217:Travel and Venue Solutions
     When User selects the "Travel" radio button
     When User clicks on the "Continue" button
     And I am on the "What service do you need?" page
-
-  @NewGM
+  @Prod_Sanity
+    @NewGM
   Scenario Outline:RM6217:Travel and Venue Solutions - LOT3
     When User selects the "Travel" radio button
     When User clicks on the "Continue" button

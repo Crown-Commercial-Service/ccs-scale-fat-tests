@@ -6,6 +6,7 @@ Feature: Event Verification
     When I navigate to "Events"
 
   @Events
+  @Prod_Sanity
   Scenario: Events -FilterCategory
     Then I assert the FilterCategory as expected
       | Event audience        |

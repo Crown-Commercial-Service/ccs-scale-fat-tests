@@ -34,7 +34,7 @@ Feature:Sectors Verification
     Then I fill the contact form and submit
     And I should see the success message
 
-  @Sectors
+  @Sectors @form
   Scenario: Verify:Health
     And I click on "Health" sector link
     Then I assert the sector page heading as expected
@@ -48,7 +48,7 @@ Feature:Sectors Verification
     Then I fill the contact form and submit
     And I should see the success message
 
-  @Sectors
+  @Sectors @form
   Scenario: Verify:Housing associations
     And I click on "Housing associations" sector link
     Then I assert the sector page heading as expected
@@ -59,7 +59,7 @@ Feature:Sectors Verification
     Then I fill the contact form and submit
     And I should see the success message
 
-  @Sectors
+  @Sectors @form
   Scenario: Verify:Schools and academies
     And I click on "Schools and academies" sector link
     Then I assert the sector page heading as expected
