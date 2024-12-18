@@ -3,7 +3,7 @@ Feature: HomePage Verification
 
   Background:
     Given I am on a CCS website HomePage
-
+  @Prod_Sanity
   @HomePage
   Scenario: Verify the HomePage components
     Then I should see the PPG related components
