@@ -29,7 +29,7 @@ Feature: SearchAgreement Verification
     And I should verify Live filter is defaulted
     When I select Expired Option
     Then I verify the filter summary
-
+  @Prod_Sanity
   @SearchAgreement
   Scenario: Verify Upcoming agreements,Helpful Links and AgreementPricing Components
     Then I should see page component on search Agreement page

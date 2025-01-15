@@ -4,7 +4,7 @@ Feature:Upcoming Agreement Verification
   Background:
     Given I am on a CCS website HomePage
     And I navigate to "Upcoming agreement"
-
+  @Prod_Sanity
   @SearchUpcomingAgreement
   Scenario: Verify Filter feature
     And I should verify View All filter is defaulted
